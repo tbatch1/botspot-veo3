@@ -33,12 +33,12 @@ const VideoGenerationSchema = new mongoose.Schema({
   model: {
     type: String,
     required: true,
-    enum: ['veo-3.0-generate-001', 'veo-3-fast-generate-001']
+    enum: ['veo-3.0-generate-001', 'veo-3.0-fast-generate-001']
   },
   config: {
     aspectRatio: {
       type: String,
-      enum: ['16:9', '9:16'],
+      enum: ['16:9'],
       default: '16:9'
     },
     resolution: {
@@ -48,7 +48,7 @@ const VideoGenerationSchema = new mongoose.Schema({
     },
     duration: {
       type: Number,
-      min: 4,
+      min: 8,
       max: 8,
       default: 8
     }
@@ -412,7 +412,7 @@ async function seedTemplates() {
       category: 'intro',
       prompt: 'Dramatic reveal of trading platform with rising cryptocurrency charts, professional cinematic lighting, camera push in effect',
       config: {
-        model: 'veo-3-fast-generate-001',
+        model: 'veo-3.0-fast-generate-001',
         aspectRatio: '16:9',
         resolution: '1080p',
         duration: 8
@@ -425,7 +425,7 @@ async function seedTemplates() {
       category: 'celebration',
       prompt: 'Green candlesticks rising rapidly with dollar signs floating upward, gold coins falling like rain',
       config: {
-        model: 'veo-3-fast-generate-001',
+        model: 'veo-3.0-fast-generate-001',
         aspectRatio: '16:9',
         resolution: '1080p',
         duration: 8
@@ -438,7 +438,7 @@ async function seedTemplates() {
       category: 'corporate',
       prompt: 'Close-up hands typing on mechanical keyboard with trading charts reflected in glasses',
       config: {
-        model: 'veo-3-fast-generate-001',
+        model: 'veo-3.0-fast-generate-001',
         aspectRatio: '16:9',
         resolution: '1080p',
         duration: 8

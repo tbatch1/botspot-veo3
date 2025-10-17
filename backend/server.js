@@ -1,6 +1,9 @@
 // server.js - Express REST API for Veo 3 Service
 // Install: npm install express express-rate-limit helmet cors morgan multer
 
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '.env') });
+
 const express = require('express');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
@@ -8,6 +11,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 const multer = require('multer');
 const { Veo3Service, ValidationError, APIError, TimeoutError } = require('./veo3-service');
+const PromptOptimizer = require('./prompt-optimizer');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -51,8 +55,12 @@ app.use('/api/', apiLimiter);
 const veo3Service = new Veo3Service(process.env.GEMINI_API_KEY, {
   maxRetries: 3,
   timeout: 600000,
-  pollInterval: 10000
+  pollInterval: 10000,
+  mock: process.env.VEO3_MOCK === 'true' || (!process.env.GEMINI_API_KEY && process.env.NODE_ENV !== 'production')
 });
+
+// Initialize prompt optimizer
+const promptOptimizer = new PromptOptimizer();
 
 // ============================================
 // ERROR HANDLING MIDDLEWARE
@@ -149,27 +157,82 @@ app.get('/api/health', asyncHandler(async (req, res) => {
  * @access  Public (should be authenticated in production)
  */
 app.post('/api/videos/generate', asyncHandler(async (req, res) => {
-  const { prompt, model, aspectRatio, resolution, duration, userId } = req.body;
+  const { prompt, model, aspectRatio, resolution, duration, userId, optimizePrompt = true } = req.body;
+  const { negativePrompt, seed, personGeneration, image, mock } = req.body;
 
   // Generate unique request ID
   const requestId = `req_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
 
-  // Start generation (will return immediately, video generates async)
-  const result = await veo3Service.generateVideo({
-    prompt,
-    model,
-    aspectRatio,
-    resolution,
-    duration,
-    userId: userId || 'anonymous',
-    requestId
-  });
+  console.log(`\n${'*'.repeat(80)}`);
+  console.log(`[SERVER ${requestId}] 📥 VIDEO GENERATION REQUEST RECEIVED`);
+  console.log(`${'*'.repeat(80)}`);
+  console.log(`[SERVER ${requestId}] User: ${userId || 'anonymous'}`);
+  console.log(`[SERVER ${requestId}] Model: ${model}`);
+  console.log(`[SERVER ${requestId}] Duration: ${duration}s`);
+  console.log(`[SERVER ${requestId}] Resolution: ${resolution}`);
+  console.log(`[SERVER ${requestId}] Aspect Ratio: ${aspectRatio}`);
+  console.log(`[SERVER ${requestId}] Prompt length: ${prompt?.length || 0} chars`);
+  console.log(`${'*'.repeat(80)}\n`);
 
-  res.status(202).json({
-    success: true,
-    message: 'Video generation completed',
-    data: result
-  });
+  // Optimize prompt if requested
+  let finalPrompt = prompt;
+  let promptMetadata = null;
+
+  if (optimizePrompt && prompt) {
+    console.log(`[SERVER ${requestId}] 🔧 Optimizing prompt...`);
+    const optimized = promptOptimizer.optimize(prompt, {
+      enhanceVisuals: true,
+      addTradingContext: true,
+      ensureCompliance: true,
+      targetLength: 'optimal'
+    });
+    finalPrompt = optimized.optimized;
+    promptMetadata = optimized.metadata;
+
+    console.log(`[SERVER ${requestId}] ✅ Prompt optimized: ${prompt.length} → ${finalPrompt.length} chars`);
+    console.log(`[SERVER ${requestId}] Compliance issues fixed: ${promptMetadata.complianceIssuesFixed}`);
+  }
+
+  try {
+    // Start generation (will return immediately, video generates async)
+    console.log(`[SERVER ${requestId}] 🚀 Forwarding to Veo3Service...`);
+    const result = await veo3Service.generateVideo({
+      prompt: finalPrompt,
+      model,
+      aspectRatio,
+      resolution,
+      duration,
+      mock,
+      negativePrompt,
+      seed,
+      personGeneration,
+      image,
+      userId: userId || 'anonymous',
+      requestId
+    });
+
+    // Add prompt optimization metadata to response
+    if (promptMetadata) {
+      result.promptOptimization = {
+        original: prompt,
+        optimized: finalPrompt,
+        ...promptMetadata
+      };
+    }
+
+    console.log(`[SERVER ${requestId}] ✅ Returning success response to client`);
+    console.log(`[SERVER ${requestId}] Video URL: ${result.video.url}\n`);
+
+    res.status(202).json({
+      success: true,
+      message: 'Video generation completed',
+      data: result
+    });
+  } catch (error) {
+    console.error(`[SERVER ${requestId}] ❌ Generation failed in server handler`);
+    console.error(`[SERVER ${requestId}] Error:`, error.message);
+    throw error; // Let error handler middleware catch it
+  }
 }));
 
 /**
@@ -195,7 +258,37 @@ app.post('/api/videos/estimate-cost', asyncHandler(async (req, res) => {
       duration,
       model,
       estimatedCost: `$${cost}`,
-      pricePerSecond: model.includes('fast') ? '$0.40' : '$0.50'
+      pricePerSecond: model === 'veo-3.0-fast-generate-001' ? '$0.15' : '$0.40'
+    }
+  });
+}));
+
+/**
+ * @route   POST /api/prompts/optimize
+ * @desc    Optimize a prompt for trading video generation
+ * @access  Public
+ */
+app.post('/api/prompts/optimize', asyncHandler(async (req, res) => {
+  const { prompt, options } = req.body;
+
+  if (!prompt) {
+    return res.status(400).json({
+      success: false,
+      error: 'Prompt is required'
+    });
+  }
+
+  // Optimize the prompt
+  const optimized = promptOptimizer.optimize(prompt, options);
+
+  // Also get quality analysis
+  const analysis = promptOptimizer.analyzePrompt(prompt);
+
+  res.json({
+    success: true,
+    data: {
+      ...optimized,
+      analysis
     }
   });
 }));
@@ -208,28 +301,26 @@ app.post('/api/videos/estimate-cost', asyncHandler(async (req, res) => {
 app.get('/api/models', (req, res) => {
   res.json({
     success: true,
-    data: {
-      models: [
-        {
-          id: 'veo-3-fast-generate-001',
-          name: 'Veo 3 Fast',
-          description: 'Faster generation, optimized for quick iterations',
-          pricePerSecond: '$0.40',
-          maxDuration: 8,
-          resolutions: ['720p', '1080p'],
-          aspectRatios: ['16:9', '9:16']
-        },
-        {
-          id: 'veo-3.0-generate-001',
-          name: 'Veo 3 Standard',
-          description: 'Higher quality, best for final production',
-          pricePerSecond: '$0.50',
-          maxDuration: 8,
-          resolutions: ['720p', '1080p'],
-          aspectRatios: ['16:9', '9:16']
-        }
-      ]
-    }
+    data: [
+      {
+        id: 'veo-3.0-fast-generate-001',
+        name: 'Veo 3 Fast',
+        description: 'Faster generation, optimized for quick iterations',
+        pricePerSecond: '$0.15',
+        maxDuration: 8,
+        resolutions: ['720p', '1080p'],
+        aspectRatios: ['16:9']
+      },
+      {
+        id: 'veo-3.0-generate-001',
+        name: 'Veo 3 Standard',
+        description: 'Higher quality, best for final production',
+        pricePerSecond: '$0.40',
+        maxDuration: 8,
+        resolutions: ['720p', '1080p'],
+        aspectRatios: ['16:9']
+      }
+    ]
   });
 });
 
@@ -295,6 +386,66 @@ app.post('/api/videos/batch', asyncHandler(async (req, res) => {
 }));
 
 /**
+ * @route   GET /api/stats
+ * @desc    Get platform-wide statistics
+ * @access  Public
+ */
+app.get('/api/stats', asyncHandler(async (req, res) => {
+  try {
+    const { VideoGeneration, User } = require('./models');
+
+    // Get total videos generated
+    const totalVideos = await VideoGeneration.countDocuments({ status: 'completed' });
+
+    // Get active users (active in last 30 days) - fallback to count all if User model unavailable
+    let activeUsers = 0;
+    try {
+      const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+      activeUsers = await User.countDocuments({
+        lastActivity: { $gte: thirtyDaysAgo }
+      });
+    } catch (err) {
+      // If no users in DB, use fallback calculation
+      activeUsers = Math.floor(totalVideos / 12) || 0;
+    }
+
+    // Get total revenue (sum of actual costs)
+    const revenueData = await VideoGeneration.aggregate([
+      { $match: { status: 'completed' } },
+      { $group: { _id: null, total: { $sum: '$cost.actual' } } }
+    ]);
+
+    const totalRevenue = revenueData.length > 0 ? revenueData[0].total : 0;
+
+    console.log('[STATS] Fetched platform stats:', {
+      totalVideos,
+      activeUsers,
+      totalRevenue: `$${totalRevenue.toFixed(2)}`
+    });
+
+    res.json({
+      success: true,
+      data: {
+        videosGenerated: totalVideos,
+        botsActive: activeUsers,
+        totalRevenue: parseFloat(totalRevenue.toFixed(2))
+      }
+    });
+  } catch (error) {
+    console.error('[STATS ERROR]', error);
+    // Return fallback stats if database query fails
+    res.json({
+      success: true,
+      data: {
+        videosGenerated: 0,
+        botsActive: 0,
+        totalRevenue: 0
+      }
+    });
+  }
+}));
+
+/**
  * @route   GET /api/templates
  * @desc    Get pre-built prompt templates
  * @access  Public
@@ -302,42 +453,40 @@ app.post('/api/videos/batch', asyncHandler(async (req, res) => {
 app.get('/api/templates', (req, res) => {
   res.json({
     success: true,
-    data: {
-      templates: [
-        {
-          id: 'launch-intro',
-          name: 'Launch Intro',
-          category: 'intro',
-          prompt: 'Dramatic reveal of trading platform with rising cryptocurrency charts, professional cinematic lighting, camera push in effect, synchronized keyboard typing sounds',
-          tags: ['cinematic', 'intro', 'trading'],
-          estimatedCost: '$3.20'
-        },
-        {
-          id: 'profit-viz',
-          name: 'Profit Visualization',
-          category: 'celebration',
-          prompt: 'Green candlesticks rising rapidly with dollar signs floating upward, gold coins falling like rain, celebration mood, triumphant music',
-          tags: ['celebration', 'profit', 'energetic'],
-          estimatedCost: '$3.20'
-        },
-        {
-          id: 'trader-closeup',
-          name: 'Professional Trader',
-          category: 'corporate',
-          prompt: 'Close-up hands typing on mechanical keyboard with trading charts reflected in glasses, professional office setting, ambient office sounds',
-          tags: ['corporate', 'professional', 'closeup'],
-          estimatedCost: '$3.20'
-        },
-        {
-          id: 'speed-transition',
-          name: 'Speed Transition',
-          category: 'transition',
-          prompt: 'Fast-paced montage of trading indicators flashing, numbers changing rapidly, high-energy tech aesthetic, electronic swoosh sounds',
-          tags: ['transition', 'fast', 'tech'],
-          estimatedCost: '$2.00'
-        }
-      ]
-    }
+    data: [
+      {
+        id: 'launch-intro',
+        name: 'Launch Intro',
+        category: 'intro',
+        prompt: 'Dramatic reveal of trading platform with rising cryptocurrency charts, professional cinematic lighting, camera push in effect, synchronized keyboard typing sounds',
+        tags: ['cinematic', 'intro', 'trading'],
+        estimatedCost: '$3.20'
+      },
+      {
+        id: 'profit-viz',
+        name: 'Profit Visualization',
+        category: 'celebration',
+        prompt: 'Green candlesticks rising rapidly with dollar signs floating upward, gold coins falling like rain, celebration mood, triumphant music',
+        tags: ['celebration', 'profit', 'energetic'],
+        estimatedCost: '$3.20'
+      },
+      {
+        id: 'trader-closeup',
+        name: 'Professional Trader',
+        category: 'corporate',
+        prompt: 'Close-up hands typing on mechanical keyboard with trading charts reflected in glasses, professional office setting, ambient office sounds',
+        tags: ['corporate', 'professional', 'closeup'],
+        estimatedCost: '$3.20'
+      },
+      {
+        id: 'speed-transition',
+        name: 'Speed Transition',
+        category: 'transition',
+        prompt: 'Fast-paced montage of trading indicators flashing, numbers changing rapidly, high-energy tech aesthetic, electronic swoosh sounds',
+        tags: ['transition', 'fast', 'tech'],
+        estimatedCost: '$2.00'
+      }
+    ]
   });
 });
 
