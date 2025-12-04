@@ -1,0 +1,31 @@
+[
+  {
+    "id": "req_1763234082218_x8pphei92",
+    "title": "build a dope botspot.trade options video with a cool animation character that fi",
+    "thumbnail": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=800&q=80",
+    "sourceUrl": "https://generativelanguage.googleapis.com/v1beta/files/3qmjhj4t4icb:download?alt=media",
+    "localPath": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\backend\\downloads\\req_1763234082218_x8pphei92.mp4",
+    "publicPath": "/videos/req_1763234082218_x8pphei92.mp4",
+    "duration": 8,
+    "model": "veo-3.1-fast-generate-preview",
+    "category": "studio",
+    "createdAt": "2025-11-15T19:16:46.366Z",
+    "views": 0,
+    "userId": "demo-user"
+  },
+  {
+    "id": "req_1763219672703_gtjv94we0",
+    "title": "Botspot neon trader scan",
+    "thumbnail": "/thumbnails/req_1763219672703_gtjv94we0.jpg",
+    "sourceUrl": "https://generativelanguage.googleapis.com/v1beta/files/bwyh45jjpwfa:download",
+    "duration": 4,
+    "model": "veo-3.1-fast-generate-preview",
+    "category": "studio",
+    "createdAt": "2025-11-15T15:17:25.835Z",
+    "views": 0,
+    "userId": "demo-user",
+    "localPath": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\backend\\downloads\\req_1763219672703_gtjv94we0.mp4",
+    "publicPath": "/videos/req_1763219672703_gtjv94we0.mp4",
+    "thumbnailPath": "/thumbnails/req_1763219672703_gtjv94we0.jpg"
+  }
+]

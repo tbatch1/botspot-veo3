@@ -1,12 +1,10 @@
 // Learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom'
 
-// Polyfills for MSW and Node environment
-if (typeof global.TextEncoder === 'undefined') {
-  const { TextEncoder, TextDecoder } = require('util');
-  global.TextEncoder = TextEncoder;
-  global.TextDecoder = TextDecoder;
-}
-
 // Mock fetch for tests
-global.fetch = jest.fn();
+if (typeof global.fetch === 'undefined') {
+  global.fetch = jest.fn();
+} else {
+  const originalFetch = global.fetch;
+  global.fetch = jest.fn(originalFetch.bind(global));
+}

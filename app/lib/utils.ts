@@ -69,8 +69,36 @@ export function validatePrompt(prompt: string): { valid: boolean; error?: string
   return { valid: true };
 }
 
+// Model pricing table (USD per second)
+export const MODEL_PRICING: Record<string, number> = {
+  'veo-3.1-generate-preview': 0.5,
+  'veo-3.1-fast-generate-preview': 0.35,
+  'veo-3.0-generate-001': 0.4,
+  'veo-3.0-fast-generate-001': 0.15,
+};
+
+const MODEL_DURATION_LIMITS: Record<
+  string,
+  { minDuration: number; maxDuration: number }
+> = {
+  'veo-3.1-generate-preview': { minDuration: 4, maxDuration: 8 },
+  'veo-3.1-fast-generate-preview': { minDuration: 4, maxDuration: 8 },
+  'veo-3.0-generate-001': { minDuration: 4, maxDuration: 8 },
+  'veo-3.0-fast-generate-001': { minDuration: 4, maxDuration: 8 },
+};
+
+export function getModelPrice(model: string): number {
+  return MODEL_PRICING[model] ?? 0.4;
+}
+
+export function getDurationRange(model: string): {
+  minDuration: number;
+  maxDuration: number;
+} {
+  return MODEL_DURATION_LIMITS[model] ?? { minDuration: 8, maxDuration: 8 };
+}
+
 // Calculate video cost
 export function calculateCost(duration: number, model: string): number {
-  const pricePerSecond = model === 'veo-3.0-fast-generate-001' ? 0.15 : 0.40;
-  return duration * pricePerSecond;
+  return duration * getModelPrice(model);
 }

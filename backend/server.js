@@ -48,6 +48,15 @@ const apiLimiter = rateLimit({
 
 app.use('/api/', apiLimiter);
 
+// Serve downloaded videos
+const fs = require('fs');
+const downloadsDir = path.join(__dirname, 'downloads');
+if (!fs.existsSync(downloadsDir)) {
+  fs.mkdirSync(downloadsDir, { recursive: true });
+}
+app.use('/videos', express.static(downloadsDir));
+console.log(`[STATIC] Serving videos from: ${downloadsDir}`);
+
 // ============================================
 // INITIALIZE VEO3 SERVICE
 // ============================================
@@ -303,22 +312,25 @@ app.get('/api/models', (req, res) => {
     success: true,
     data: [
       {
+        id: 'veo-3.0-generate-001',
+        name: 'Veo 3 Standard',
+        description: 'High quality video generation',
+        pricePerSecond: '$0.40',
+        maxDuration: 8
+      },
+      {
         id: 'veo-3.0-fast-generate-001',
         name: 'Veo 3 Fast',
         description: 'Faster generation, optimized for quick iterations',
         pricePerSecond: '$0.15',
-        maxDuration: 8,
-        resolutions: ['720p', '1080p'],
-        aspectRatios: ['16:9']
+        maxDuration: 8
       },
       {
-        id: 'veo-3.0-generate-001',
-        name: 'Veo 3 Standard',
-        description: 'Higher quality, best for final production',
-        pricePerSecond: '$0.40',
-        maxDuration: 8,
-        resolutions: ['720p', '1080p'],
-        aspectRatios: ['16:9']
+        id: 'nano-banana-preview',
+        name: 'Nano Banana',
+        description: 'Experimental preview model',
+        pricePerSecond: '$0.15',
+        maxDuration: 8
       }
     ]
   });
@@ -353,7 +365,7 @@ app.post('/api/videos/batch', asyncHandler(async (req, res) => {
     try {
       const video = videos[i];
       const requestId = `batch_${Date.now()}_${i}`;
-      
+
       const result = await veo3Service.generateVideo({
         ...video,
         userId: userId || 'anonymous',
@@ -516,7 +528,7 @@ const server = app.listen(PORT, () => {
 ╔═══════════════════════════════════════════╗
 ║   Botspot Veo 3 API Server Running       ║
 ╠═══════════════════════════════════════════╣
-║   Port: ${PORT}                            
+║   Port: ${PORT}
 ║   Environment: ${process.env.NODE_ENV || 'development'}
 ║   API Key: ${process.env.GEMINI_API_KEY ? '✓ Set' : '✗ Missing'}
 ╚═══════════════════════════════════════════╝

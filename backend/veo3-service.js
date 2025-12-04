@@ -76,6 +76,11 @@ class Veo3Service {
         name: 'Veo 3 Fast',
         pricePerSecond: 0.15,
         maxDuration: 8
+      },
+      'nano-banana-preview': {
+        name: 'Nano Banana',
+        pricePerSecond: 0.15,
+        maxDuration: 8
       }
     };
   }
@@ -262,7 +267,6 @@ class Veo3Service {
             aspectRatio: config.aspectRatio,
             resolution: config.resolution,
             durationSeconds: config.duration,
-            generateAudio: true,
             personGeneration: config.personGeneration || defaultPersonGen,
             ...(config.negativePrompt ? { negativePrompt: config.negativePrompt } : {}),
             ...(config.seed !== undefined ? { seed: config.seed } : {})
@@ -454,7 +458,7 @@ class Veo3Service {
    */
   async healthCheck() {
     const apiKeyStatus = this.apiKey ? 'configured' : 'missing';
-    const canGenerate = this.mock || (this.apiKey && this.genAI);
+    const canGenerate = !!(this.mock || (this.apiKey && this.genAI));
 
     return {
       status: canGenerate ? 'healthy' : 'partial',

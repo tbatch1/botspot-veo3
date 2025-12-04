@@ -51,7 +51,7 @@ export function Gallery() {
     const fetchVideos = async () => {
       try {
         setLoading(true);
-        const fetchedVideos = await apiClient.getVideos('anonymous', 50);
+        const fetchedVideos = await apiClient.getVideos(undefined, 50);
         setVideos(fetchedVideos);
         log.info('Videos loaded from API', { count: fetchedVideos.length });
       } catch (error) {

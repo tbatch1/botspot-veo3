@@ -105,13 +105,13 @@ describe('utils', () => {
 
   describe('calculateCost', () => {
     it('should calculate cost for fast model', () => {
-      expect(calculateCost(5, 'veo-3-fast-generate-001')).toBe(2.0);
-      expect(calculateCost(10, 'veo-3-fast-generate-001')).toBe(4.0);
+      expect(calculateCost(5, 'veo-3.1-fast-generate-preview')).toBe(1.75);
+      expect(calculateCost(10, 'veo-3.1-fast-generate-preview')).toBe(3.5);
     });
 
     it('should calculate cost for standard model', () => {
-      expect(calculateCost(5, 'veo-3.0-generate-001')).toBe(2.5);
-      expect(calculateCost(10, 'veo-3.0-generate-001')).toBe(5.0);
+      expect(calculateCost(5, 'veo-3.1-generate-preview')).toBe(2.5);
+      expect(calculateCost(10, 'veo-3.1-generate-preview')).toBe(5.0);
     });
   });
 });

@@ -7,7 +7,11 @@ export interface Template {
   prompt: string;
   tags: string[];
   duration: number;
-  model: 'veo-3.1-generate-preview' | 'veo-3.0-generate-001';
+  model:
+    | 'veo-3.1-generate-preview'
+    | 'veo-3.1-fast-generate-preview'
+    | 'veo-3.0-generate-001'
+    | 'veo-3.0-fast-generate-001';
 }
 
 export const templates: Template[] = [

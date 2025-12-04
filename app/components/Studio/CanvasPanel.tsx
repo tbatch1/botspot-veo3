@@ -44,7 +44,7 @@ export function CanvasPanel({ status, progress, videoUrl, error, onRetry }: Canv
         </CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col h-[calc(100%-80px)]">
-        <div className="flex-1 bg-gray-900 rounded-xl overflow-hidden relative flex items-center justify-center min-h-[400px]">
+        <div className="flex-1 bg-gray-900 rounded-xl overflow-hidden relative flex items-center justify-center aspect-video max-h-[520px] mx-auto w-full">
           <AnimatePresence mode="wait">
             {/* Idle state */}
             {status === 'idle' && (

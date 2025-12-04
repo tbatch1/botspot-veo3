@@ -26,3 +26,5 @@ Thumbs.db
 # Builds
 build/
 dist/
+.env
+service-account.json
