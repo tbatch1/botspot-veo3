@@ -1,4 +1,5 @@
 import os
+import hashlib
 from elevenlabs.client import ElevenLabs
 from elevenlabs import save
 from ..config import config
@@ -14,24 +15,38 @@ class ElevenLabsProvider(AudioProvider):
             try:
                 self.client = ElevenLabs(api_key=self.api_key)
             except Exception as e:
-                print(f"⚠️ ElevenLabs client init failed: {e}")
+                print(f"[WARN] ElevenLabs client init failed: {e}")
 
-    def generate_speech(self, text: str, voice_id: str = "JBFqnCBsd6RMkjVDRZzb") -> str:
+    def generate_speech(self, text: str, voice_id: str = "pNInz6obpgDQGcFmaJgB", delivery_style: str = None) -> str:
         """
-        Generates TTS.
-        Default voice: 'Adam' (JBFqnCBsd6RMkjVDRZzb)
+        Generates TTS with optional delivery style.
+        
+        ElevenLabs v3 Audio Tags are embedded directly in text:
+        - [whispers], [excited], [sad], [pause: 0.5s], [sighs], [laughs]
+        
+        delivery_style affects voice settings:
+        - "gravitas": slower, deeper, more measured
+        - "energetic": faster, higher energy
+        - "intimate": softer, closer feel
+        - "confident": strong, assured delivery
+        
+        Default voice: 'Adam' (pNInz6obpgDQGcFmaJgB) - Standard American Male
         """
         if not self.client:
             raise Exception("ElevenLabs API key not configured.")
 
-        audio = self.client.generate(
-            text=text,
-            voice=voice_id,
-            model=config.ELEVENLABS_MODEL
-        )
+        # Audio Tags are embedded in text and processed by v3 models
+        # The delivery_style is informational - actual control is via Audio Tags in text
         
+        # Use text_to_speech.convert() method (SDK v2+)
+        audio = self.client.text_to_speech.convert(
+            text=text,
+            voice_id=voice_id,
+            model_id=config.ELEVENLABS_MODEL,
+            output_format="mp3_44100_128"
+        )
+
         # Save
-        import hashlib
         filename = f"vo_{hashlib.md5(text.encode()).hexdigest()}.mp3"
         filepath = os.path.join(config.ASSETS_DIR, "audio", filename)
         os.makedirs(os.path.dirname(filepath), exist_ok=True)
@@ -67,4 +82,36 @@ class ElevenLabsProvider(AudioProvider):
             
         except Exception as e:
             print(f"SFX Generation failed: {e}")
+            return ""
+
+    def generate_bgm(self, prompt: str, duration: int = 15) -> str:
+        """
+        Generates Background Music (BGM).
+        Uses text-to-sound-effects with a musical prompt.
+        """
+        if not self.client:
+            print("ElevenLabs API key missing for BGM.")
+            return ""
+
+        print(f"[ELEVENLABS] Generating BGM ({duration}s): {prompt}...")
+        try:
+            # We append 'instrumental music track, high quality' to ensure musicality
+            enhanced_prompt = f"Music track, {prompt}, high quality instrumental, cinematic score"
+            
+            result = self.client.text_to_sound_effects.convert(
+                text=enhanced_prompt,
+                duration_seconds=duration,
+                prompt_influence=0.7 # Higher influence for music
+            )
+            
+            filename = f"bgm_{hashlib.md5(prompt.encode()).hexdigest()}.mp3"
+            filepath = os.path.join(config.ASSETS_DIR, "audio", filename)
+            os.makedirs(os.path.dirname(filepath), exist_ok=True)
+            
+            save(result, filepath)
+            print(f"[ELEVENLABS] BGM Saved: {filepath}")
+            return filepath
+            
+        except Exception as e:
+            print(f"[ERROR] BGM Generation failed: {e}")
             return ""

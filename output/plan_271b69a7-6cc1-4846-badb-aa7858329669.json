@@ -1,0 +1,155 @@
+{
+  "id": "271b69a7-6cc1-4846-badb-aa7858329669",
+  "user_input": "Create a commercial for make a good ad . \n        Style: Cinematic. \n        Mood: Premium. \n        Camera: Steadicam. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+  "status": "images_complete",
+  "error": null,
+  "seed": 1435636141,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "[pause: 0.2s] What if every ad truly connected?",
+        "time_range": "0-3s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_e85c235a11af111817787d8b0762bbde.mp3"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "[sighs] The struggle to stand out is real.",
+        "time_range": "3-6s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_a5a7ff880a5d5a135f8660ca65392604.mp3"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "[excited] Now, unlock exceptional creative precision.",
+        "time_range": "6-10s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_51c4f1aba81b2687d1e24157adefc540.mp3"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Botspot.trade. Your ad, optimized.",
+        "time_range": "10-15s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_2bdba814ff9406b3c13e8b7f5f176dc0.mp3"
+      }
+    ],
+    "mood": "Premium",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Standard cinematic presentation with natural film grain. A sleek, minimalist tablet displaying the 'Botspot.trade' interface, with a glowing, intricate data visualization of advertising campaign performance, showing a subtle flicker or 'error' indicator in the data flow. Extreme close-up (ECU) on the tablet's screen, focusing on the intricate patterns and the slight 'error' indicator, centered in safe zone. Rembrandt lighting with soft box key light positioned at 45 degrees, subtle rim light highlights edges and curves of the tablet, dark gradient background creates professional depth, high-end studio setup, dramatic shadows define form. hollywood_blockbuster color grade with rich contrast, warm amber and deep indigo tones emphasizing data intricacies and the subtle problem. Shot on Arri Alexa LF full-frame sensor, 4.5K resolution, professional cinema camera, Canon CN-E anamorphic lens with characteristic horizontal lens flares, with subtle lens distortion and natural sensor noise, minimal motion blur, Vista Vision large format, premium image quality.",
+        "audio_prompt": "AMBIANCE: Quiet hum of high-tech server racks in a modern studio. SFX: Subtle, almost imperceptible electronic glitching sound, soft interface hum. MUSIC MOOD: dramatic",
+        "motion_prompt": "Slow 180-degree arc around the tablet, establishing its intricate display and the subtle data anomaly.",
+        "duration": 5,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": null,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_84105f2e78d3e490b9757e2d7c5ae950.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Standard cinematic presentation with natural film grain. The same determined female advertising executive from Scene 1, in her late 30s with a sharp bob haircut and a dark charcoal power suit, now looking at the same sleek, minimalist tablet displaying the 'Botspot.trade' interface. Her expression transitions from a subtle frown of concern to a focused curiosity, then to a quiet understanding and relief. The data visualization on the tablet now shows stable, optimizing performance without the previous 'error'. Medium shot (MS), chest to head framing of the executive, with the tablet interface partially visible in the foreground, creating a balanced and relatable composition, centered in safe zone. Cool color temperature 5600K creates clinical precision, sharp edge lighting defines clean lines and surfaces on her and the tablet, cyan and magenta colored gels create futuristic atmosphere, minimal shadows for high-tech aesthetic, subtly shifting to slightly warmer light on her face as she understands. hollywood_blockbuster color grade, emphasizing cool, precise blues and greens, transitioning to a more balanced, clean aesthetic reflecting clarity. RED 8K Monstro sensor with 16-bit color depth, ultra-high resolution cinema capture, Canon CN-E anamorphic lens with characteristic horizontal lens flares, with subtle lens distortion and natural sensor noise, minimal motion blur, IMAX large format sensor, maximum resolution and clarity.",
+        "audio_prompt": "AMBIANCE: Controlled, low-volume office drone, distant keyboard clicks. SFX: A soft, reassuring chime as the data visualization on the tablet stabilizes and optimizes, a subtle 'whoosh' as new data flows smoothly. MUSIC MOOD: tech",
+        "motion_prompt": "Static wide shot, locked-off tripod, observational documentary perspective, contemplative framing.",
+        "duration": 5,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": null,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_9a9ecfa7c6c8c01c1654db4cf70f277f.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Standard cinematic presentation with natural film grain. The same determined female advertising executive from Scene 1, now standing confidently in a sleek, minimalist penthouse office overlooking a vibrant city skyline at dusk. She holds the same sleek, minimalist tablet, now displaying a triumphant 'campaign successful' message and the 'Botspot.trade' logo prominently. Her posture is assured, a subtle smile of accomplishment on her face. Wide shot (WS), subject head-to-toe visible in the center 80% of frame, clear environmental context of the luxurious office and city view, balanced composition, establishing perspective. Soft even lighting with minimal shadows, white or neutral backdrop of the modern office interior, complemented by the warm, golden hour glow from the city outside, clean and simple aesthetic, product-focused with no distraction. hollywood_blockbuster color grade, rich and warm, emphasizing the aspirational success and premium environment, subtle lens flare from the cityscape. Shot on Arri Alexa LF full-frame sensor, 4.5K resolution, professional cinema camera, Sigma Art 40mm f/1.4, sharp cinematic rendering, with subtle lens distortion and natural sensor noise, minimal motion blur, Full-frame sensor depth and dramatic subject isolation.",
+        "audio_prompt": "AMBIANCE: Distant, muffled city sounds, gentle evening breeze. SFX: A soft, triumphant UI confirmation sound, a subtle, almost imperceptible 'click' as she taps the screen. MUSIC MOOD: luxury",
+        "motion_prompt": "Slow 180-degree arc around the executive and the tablet, revealing the expansive, premium environment and reinforcing her success.",
+        "duration": 5,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": null,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_d4d8c00e7116c16fc8dd2fc4e9ec9640.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "Commercial for Create a commercial for make a good ad . \n        Style: Cinematic. \n        Mood: Premium. \n        Camera: Steadicam. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+    "visual_language": "Standard cinematic presentation with natural film grain",
+    "story_beats": {
+      "hook": "Opening arresting visual of the product or problem",
+      "problem": "Relatable pain point the audience recognizes",
+      "solution_reveal": "Product enters as the solution",
+      "transformation": "Visible change and relief",
+      "payoff": "Aspirational outcome with call to action"
+    },
+    "audience_hook": "Quality and Performance",
+    "cinematic_direction": {
+      "mood_notes": "Professional",
+      "lighting_notes": "Balanced",
+      "camera_notes": "Steady"
+    }
+  },
+  "research_brief": "{\n  \"Product/Service Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empowers users to create and deploy AI-powered trading bots and profitable strategies in seconds, without requiring any coding knowledge.\",\n  \"Target Audience\": \"Individual traders, investors, or financial enthusiasts seeking to automate their trading strategies using AI, particularly those without programming experience.\",\n  \"Top 5 Key Features\": [\n    \"Rapid AI Trading Agent Creation & Deployment\",\n    \"Fully Automated Trading Execution\",\n    \"No-Code Strategy Builder\",\n    \"Focus on Profitable Strategy Generation\",\n    \"24/7 Continuous Trading Bot Operation\"\n  ],\n  \"Brand Tone\": \"Innovative, Empowering, Accessible, Efficient, Cutting-edge\",\n  \"Industry\": \"Fintech, AI, Automated Trading, Financial Technology\",\n  \"Competitors Mentioned\": \"None\",\n  \"One-Sentence Pitch\": \"BotSpot revolutionizes trading by allowing anyone to create and deploy AI trading agents in seconds to automatically execute profitable strategies 24/7, no coding required.\"\n}",
+  "detected_style": {
+    "aesthetic": "photorealistic",
+    "format": "product_showcase",
+    "tone": "dramatic",
+    "pacing": "fast",
+    "confidence": 0.7083333333333333,
+    "confidence_breakdown": {
+      "aesthetic": 0.3333333333333333,
+      "format": 1.0,
+      "tone": 1.0,
+      "pacing": 0.5
+    }
+  },
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\bgm_31e2f3f472f5b7c35fc2c34567da3150.mp3",
+  "video_model": "veo",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": [
+    "[12:32:29] [RESEARCH] Analyzing target URL: https://botspot.trade/...",
+    "[12:32:29] [RESEARCH] Site analysis complete. Extracted 1031 chars of context.",
+    "[12:32:29] [STRATEGY] Initializing creative brainstorm for: Create a commercial for make a good ad . \n        Style: Cinematic. \n        Mood: Premium. \n        Camera: Steadicam. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+    "[12:33:21] [STRATEGY] Strategic angle developed: N/A",
+    "[12:33:21] [GPT-5.2] Formatting scenes with spatial reasoning...",
+    "[12:33:22] [GPT-5.2] Formatted 0 scenes with spatial specs.",
+    "[12:33:22] [WARNING] GPT-5.2 returned 0 scenes. Falling back to Gemini...",
+    "[12:33:22] [GEMINI] Fallback: Generating cinematic screenplay...",
+    "[12:33:46] [GEMINI] Screenplay generated with 3 scenes.",
+    "[12:33:57] [PHASE 1.5] Detecting creative style intent...",
+    "[12:33:57] [STYLE] Aesthetic detected: photorealistic (33% confidence)",
+    "[12:33:57] [STYLE] Format: product_showcase",
+    "[12:33:57] [STYLE] Tone: dramatic",
+    "[12:33:57] [SYSTEM] PLAN_COMPLETE. Transitioning to Asset Generation Phase.",
+    "[12:34:34] [APPROVAL_GATE_1] User approved strategy. Starting image + audio generation...",
+    "[12:34:34] [PHASE 3A] Starting Asset Generation...",
+    "[12:34:35] [VISUALS] Fal.ai Flux 1.1 Pro initialized",
+    "[12:34:39] [OPTIMIZATION] Parallel image generation enabled",
+    "[12:34:40] [ERROR] Scene 2 failed",
+    "[12:34:40] [ERROR] Scene 3 failed",
+    "[12:34:40] [ERROR] Scene 1 failed",
+    "[12:34:40] [PERFORMANCE] Parallel image generation: 1.4s",
+    "[12:34:40] [ERROR] Parallel generation failed: All scenes failed image generation. Check Fal.ai API key or credits.",
+    "[12:34:40] [FALLBACK] Using sequential image generation",
+    "[12:34:40] [ERROR] Scene 1 failed: cannot access local variable 'imagen' where it is not associated with a value",
+    "[12:34:40] [ERROR] Scene 2 failed: cannot access local variable 'imagen' where it is not associated with a value",
+    "[12:34:40] [ERROR] Scene 3 failed: cannot access local variable 'imagen' where it is not associated with a value",
+    "[12:34:40] [OPTIMIZATION] Parallel audio generation enabled",
+    "[12:34:51] [PERFORMANCE] Parallel audio generation: 10.7s",
+    "[12:34:51] [APPROVAL_GATE_1] Images + Audio complete. Awaiting user approval..."
+  ]
+}

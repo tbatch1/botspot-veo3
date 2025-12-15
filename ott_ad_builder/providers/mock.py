@@ -11,13 +11,28 @@ from .base import ImageProvider, VideoProvider, AudioProvider
 class MockImagenProvider(ImageProvider):
     """Mock Imagen 3 provider - returns placeholder images."""
 
-    def generate_image(self, prompt: str, aspect_ratio: str = "16:9") -> str:
+    def generate_image(
+        self,
+        prompt: str,
+        aspect_ratio: str = "16:9",
+        seed: int = None,
+        image_input: str = None
+    ) -> str:
         """Generate a mock image (placeholder)."""
         print(f"[MOCK IMAGEN] Generating image for: {prompt[:50]}...")
+
+        # Mock providers can simulate the parameters for testing
+        if seed is not None:
+            print(f"[MOCK IMAGEN] Using seed: {seed} (mock behavior)")
+
+        if image_input is not None:
+            print(f"[MOCK IMAGEN] Using image input: {os.path.basename(image_input)} (mock behavior)")
+
         time.sleep(0.5)  # Simulate API delay
 
-        # Create placeholder path
-        filename = f"mock_image_{abs(hash(prompt)) % 10000}.png"
+        # Create placeholder path (incorporate seed if provided for better testing)
+        hash_input = f"{prompt}_{seed}" if seed is not None else prompt
+        filename = f"mock_image_{abs(hash(hash_input)) % 10000}.png"
         filepath = os.path.join("assets", "images", filename)
 
         # Ensure directory exists
@@ -30,7 +45,7 @@ class MockImagenProvider(ImageProvider):
         with open(filepath, 'wb') as f:
             f.write(placeholder_png)
 
-        print(f"[MOCK IMAGEN] ✅ Generated: {filepath}")
+        print(f"[MOCK IMAGEN] [OK] Generated: {filepath}")
         return filepath
 
 
@@ -54,7 +69,7 @@ class MockRunwayProvider(VideoProvider):
         with open(filepath, 'wb') as f:
             f.write(b'')  # Empty file as placeholder
 
-        print(f"[MOCK RUNWAY] ✅ Generated: {filepath}")
+        print(f"[MOCK RUNWAY] [OK] Generated: {filepath}")
         return filepath
 
 
@@ -77,7 +92,7 @@ class MockElevenLabsProvider(AudioProvider):
         with open(filepath, 'wb') as f:
             f.write(b'')
 
-        print(f"[MOCK ELEVENLABS] ✅ Generated: {filepath}")
+        print(f"[MOCK ELEVENLABS] [OK] Generated: {filepath}")
         return filepath
 
     def generate_sfx(self, prompt: str) -> str:
@@ -96,5 +111,5 @@ class MockElevenLabsProvider(AudioProvider):
         with open(filepath, 'wb') as f:
             f.write(b'')
 
-        print(f"[MOCK ELEVENLABS] ✅ Generated: {filepath}")
+        print(f"[MOCK ELEVENLABS] [OK] Generated: {filepath}")
         return filepath

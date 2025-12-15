@@ -1,0 +1,114 @@
+{
+  "id": "3851cfdd-636f-4f03-a4f9-9f741906fd52",
+  "user_input": "Create a commercial for cool ad for our company with a unique story and character . \n        Style: Cinematic, Analog Film. \n        Mood: Premium, Aspirational. \n        Camera: Steadicam, Gimbal, Crane. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+  "status": "planning",
+  "error": null,
+  "seed": 2272642177,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Imagine more time for yourself. Botspot.trade helps intelligent systems manage market activity, potentially freeing up your schedule.",
+        "time_range": "0-15s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Premium, Aspirational",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Shot on Panavision Millennium XL2 with Panavision C-Series Anamorphic lenses. Kodak Vision3 200T 5213 film stock simulation with pronounced halation bleeding from screen glows and city lights. Heavy chromatic aberration on lens edges, 35mm grain structure at ISO 800 equivalent. Visible dust particles in light beams, slight barrel distortion on wide shots. Natural skin texture with visible pores, fatigue lines, stubble shadow. A tired man in his late 30s, sallow skin, deep under-eye circles, wearing a wrinkled t-shirt and sweatpants, his hair disheveled. He sits hunched over a glowing laptop at a cluttered desk in a dim, urban apartment. Locked-off Steadicam with subtle breathing, claustrophobic framing. Medium Full Shot (MFS) of the man and his laptop, slightly low angle. Single harsh laptop screen as the key light, casting blue tones on his face. Practicals only visible (a small desk lamp with a visible tungsten filament), deep shadows consuming the apartment beyond the desk. Vintage analog film look, blue and desaturated tones dominating, pronounced screen glow halation. Panavision Millennium XL2 cinema camera, Panavision C-Series Anamorphic lens, shallow depth of field focusing on his face and the screen, 35mm film grain, centered in safe zone.",
+        "audio_prompt": "Subtle hum of a laptop fan, distant city sirens, soft keyboard clicks, a tired sigh.",
+        "motion_prompt": "Locked-off Steadicam with subtle breathing, focusing on the character's exhaustion as he closes his laptop lid.",
+        "duration": 4,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": null,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Shot on Panavision Millennium XL2 with Panavision C-Series Anamorphic lenses. Kodak Vision3 200T 5213 film stock simulation with pronounced halation bleeding from screen glows and city lights. Heavy chromatic aberration on lens edges, 35mm grain structure at ISO 800 equivalent. Visible dust particles in light beams, slight barrel distortion on wide shots. Natural skin texture with visible pores, fatigue lines, stubble shadow. The same man from scene 1, now looking noticeably rested, a faint stubble visible, wearing a soft, comfortable bathrobe. He slowly sits up in bed as warm morning light filters into his minimalist bedroom. Slow crane rise from ground level to a medium shot as the man sits up and then walks towards a sun-drenched window, suggesting elevation and release. Soft window light with visible dust motes dancing in the air, creating gentle lens flare from the morning sun and organic halation. Warm, golden color temperature. Vintage analog film look, warm and inviting golden tones, gentle contrast. Panavision Millennium XL2 cinema camera, Panavision C-Series Anamorphic lens, wide aperture for a dreamy, shallow depth of field, 35mm film grain, centered in safe zone.",
+        "audio_prompt": "Gentle bird chirps, distant traffic muffled, soft rustle of bedsheets, a contented stretch.",
+        "motion_prompt": "Slow crane rise as the man from scene 1 gracefully moves from bed towards the window, revealing more of the bright, airy room.",
+        "duration": 4,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": null,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Shot on Panavision Millennium XL2 with Panavision C-Series Anamorphic lenses. Kodak Vision3 200T 5213 film stock simulation with pronounced halation bleeding from screen glows and city lights. Heavy chromatic aberration on lens edges, 35mm grain structure at ISO 800 equivalent. Visible dust particles in light beams, slight barrel distortion on wide shots. Natural skin texture with visible pores, fatigue lines, stubble shadow. The same man from scene 1 and 2, now standing by the window, holding his modern smartphone. The screen displays a clean, user-friendly interface with green lines indicating profitable trades executed overnight by his AI bot. Close-up (CU) on the man's hand holding the smartphone, slowly pushing in to highlight the phone screen, then subtly panning up to his serene face. The soft morning light from the window illuminates the scene, creating a subtle catchlight in his eyes as he glances at the phone. The phone screen itself casts a soft, cool glow. Vintage analog film look, bright and clear, with subtle halation around the phone screen. Panavision Millennium XL2 cinema camera, Panavision C-Series Anamorphic lens, macro capabilities for sharp detail on the phone screen, 35mm film grain, centered in safe zone.",
+        "audio_prompt": "A subtle 'ping' notification sound, soft ambient room tone, very faint city sounds.",
+        "motion_prompt": "Subtle gimbal push-in on the smartphone screen, then a gentle tilt up to the relaxed face of the man from scene 1 and 2, revealing a calm smile.",
+        "duration": 4,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": null,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 4,
+        "visual_prompt": "Shot on Panavision Millennium XL2 with Panavision C-Series Anamorphic lenses. Kodak Vision3 200T 5213 film stock simulation with pronounced halation bleeding from screen glows and city lights. Heavy chromatic aberration on lens edges, 35mm grain structure at ISO 800 equivalent. Visible dust particles in light beams, slight barrel distortion on wide shots. Natural skin texture with visible pores, fatigue lines, stubble shadow. The same man from scene 1, 2, and 3, now wearing a simple, well-fitting t-shirt, leisurely sipping from a ceramic coffee mug by the open window. Below him, the bustling city is alive with early morning activity. Gimbal push-in on the man's face, settling into a Medium Close-Up (MCU) that captures his peaceful expression and the steam from his coffee, conveying stillness and liberation. Golden hour warmth bathing the scene from behind, creating a natural rim light around the man's head and shoulders, with atmospheric haze visible. Soft front fill light. Vintage analog film look, rich golden and amber tones, aspirational and serene. Panavision Millennium XL2 cinema camera, Panavision C-Series Anamorphic lens, natural lens flare from the sun, wide aperture for creamy background blur, 35mm film grain, centered in safe zone.",
+        "audio_prompt": "Soft clinking of a ceramic mug, gentle morning city murmur, a contented sigh, distant chimes or pleasant non-intrusive music beginning softly and fading.",
+        "motion_prompt": "Smooth gimbal push-in, culminating in a stable Medium Close-Up on the man from scene 1, 2, and 3, holding his coffee.",
+        "duration": 3,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": null,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "The Night Owl",
+    "visual_language": "Shot on Panavision Millennium XL2 with Panavision C-Series Anamorphic lenses. Kodak Vision3 200T 5213 film stock simulation with pronounced halation bleeding from screen glows and city lights. Heavy chromatic aberration on lens edges, 35mm grain structure at ISO 800 equivalent. Visible dust particles in light beams, slight barrel distortion on wide shots. Natural skin texture with visible pores, fatigue lines, stubble shadow.",
+    "narrative_arc": "A weary trader sits alone in a dim apartment at 3AM, eyes bloodshot from watching charts—he finally closes his laptop and walks away. Cut to morning light streaming through curtains as he wakes rested, while his phone screen shows his AI bot executing profitable trades overnight. Final shot: he sips coffee by the window, city alive below him, free from the screen's chains.",
+    "audience_hook": "The exhausted retail trader's fantasy: reclaim your sleep, your sanity, your life—while an intelligent system works the markets you can't.",
+    "cinematic_direction": {
+      "mood_notes": "Premium aspiration achieved through restraint, not excess. The transformation from digital imprisonment to analog freedom. First half feels suffocating and blue-lit; second half opens into warm, golden liberation. Silence speaks louder than dialogue.",
+      "lighting_notes": "Opening: Single harsh laptop screen as key light, practicals only (desk lamp with visible tungsten filament), deep shadows eating the frame. Transition: Soft window light with visible dust motes, lens flare from morning sun creating organic halation. Closing: Golden hour warmth, backlit subject creating natural rim light and atmospheric haze.",
+      "camera_notes": "Opening: Locked-off Steadicam with subtle breathing, claustrophobic framing. Transition: Slow crane rise as character walks to window, suggesting elevation and release. Closing: Gimbal push-in on subject's face, settling into stillness—the calm after years of chaos."
+    },
+    "production_recommendations": {
+      "visual_engine": "flux",
+      "video_engine": "runway",
+      "voice_vibe": "No voiceover—let silence and ambient room tone carry the weight. Final frame: single text card in elegant serif typography. If VO is required: whispered, intimate male voice, slight vocal fry from exhaustion transforming to quiet confidence. Think late-night radio host, not announcer."
+    }
+  },
+  "research_brief": "{\n  \"Product/Service Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empowers users to create and deploy AI-powered, automated trading bots and profitable strategies in seconds, without any coding required.\",\n  \"Target Audience\": \"Individual traders, beginners, retail investors, or anyone interested in automated AI trading without coding expertise.\",\n  \"Top 5 Key Features\": [\n    \"AI Trading Agent Creation & Deployment\",\n    \"No-code strategy building\",\n    \"Automated trading functionality\",\n    \"Rapid strategy development ('in seconds')\",\n    \"24/7 market monitoring and execution\"\n  ],\n  \"Brand Tone\": \"Innovative, Empowering, Efficient, Accessible\",\n  \"Industry\": \"FinTech, Automated Trading, AI\",\n  \"Competitors Mentioned\": \"None\",\n  \"One-Sentence Pitch\": \"BotSpot empowers anyone to create and deploy AI trading bots in seconds, automating profitable strategies 24/7 without needing to code.\"\n}",
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": null,
+  "video_model": "runway",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": [
+    "[14:40:32] [RESEARCH] Analyzing target URL: https://botspot.trade/...",
+    "[14:40:37] [RESEARCH] Site analysis complete. Extracted 910 chars of context.",
+    "[14:40:37] [STRATEGY] Initializing creative brainstorm for: Create a commercial for cool ad for our company with a unique story and character . \n        Style: Cinematic, Analog Film. \n        Mood: Premium, Aspirational. \n        Camera: Steadicam, Gimbal, Crane. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+    "[14:40:54] [STRATEGY] Strategic angle developed: N/A",
+    "[14:40:54] [GEMINI] Generating cinematic screenplay & shotlist...",
+    "[14:41:23] [GEMINI] Screenplay generated with 4 scenes."
+  ]
+}

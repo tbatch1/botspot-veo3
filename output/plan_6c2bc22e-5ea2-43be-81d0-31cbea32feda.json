@@ -1,0 +1,46 @@
+{
+  "id": "6c2bc22e-5ea2-43be-81d0-31cbea32feda",
+  "user_input": "coffee",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Elevate your every day.",
+        "time_range": "0-8s",
+        "audio_path": "assets\\audio\\mock_speech_7131.mp3"
+      }
+    ],
+    "mood": "Aspirational",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A minimalist, sleek matte black ceramic coffee mug, filled with rich, dark coffee, a delicate wisp of steam rising gracefully. The mug sits on a clean, light-colored wooden table, illuminated by cinematic three-point lighting with a soft key light highlighting the steam and the coffee's surface. Medium close-up, perfectly centered within the safe zone, showcasing the coffee's warmth and depth.",
+        "audio_prompt": "Subtle ambient sounds of a peaceful morning, a distant, muffled city hum.",
+        "motion_prompt": "Locked-off static shot.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\61de5bdd7ded697de8c7e7242c65ed81.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_5764.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "The same sleek matte black ceramic coffee mug from scene 1. An elegant, gender-neutral hand with refined features gently reaches into the frame and picks up the mug, revealing the minimalist wooden table underneath. The same cinematic three-point lighting illuminates the scene, maintaining consistency. The mug remains the central focus as it's lifted, maintaining a premium aesthetic.",
+        "audio_prompt": "Soft, subtle ceramic clinking as the mug is lifted, followed by a gentle, warm hum.",
+        "motion_prompt": "Slow, subtle Steadicam drift upwards, following the mug as it's lifted, ensuring the mug remains centered in the frame.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\32bf11373b980e4f3e349021fe6292e5.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_3911.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

@@ -41,7 +41,7 @@ class CompositionProvider:
         - Describe a unified lighting scheme (e.g., "soft diffused sunlight").
         - Describe a consistent color palette.
         - Ensure the perspective and scale of objects match.
-        - Add cinematic keywords: "photorealistic", "8k", "highly detailed", "cinematic composition".
+        - Add technical keywords: "35mm film grain", "sensor noise ISO 3200", "chromatic aberration", "natural halation on highlights".
         """
         
         if prompt_instruction:
@@ -64,7 +64,7 @@ class CompositionProvider:
         # We will generate a prompt that *claims* to be a mix.
         # In a full version, we'd use: model.generate_content([prompt, img1, img2...])
         
-        merged_prompt = f"A creative composition combining elements of {', '.join([os.path.basename(p) for p in image_paths])}. {prompt_instruction or ''}. High resolution, photorealistic, cinematic lighting."
+        merged_prompt = f"A creative composition combining elements of {', '.join([os.path.basename(p) for p in image_paths])}. {prompt_instruction or ''}. Shot on 35mm film stock with natural grain structure, soft halation on highlights, subtle chromatic aberration."
         
         # 2. Generate with Imagen
         print(f"Generating composition with prompt: {merged_prompt}")

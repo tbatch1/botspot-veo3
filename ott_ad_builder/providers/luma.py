@@ -27,5 +27,5 @@ class LumaProvider(VideoProvider):
         # So we might raise NotImplementedError if image_path is local and not a URL.
         # OR we skip this for now and focus on Runway which supports Data URIs.
         
-        print("⚠️ Luma Provider: Local file upload not implemented yet. Skipping.")
+        print("[WARN] Luma Provider: Local file upload not implemented yet. Skipping.")
         raise NotImplementedError("Luma requires public image URLs.")

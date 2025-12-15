@@ -1,0 +1,59 @@
+{
+  "id": "071bcafa-bccb-4f4f-9856-1fc03fa0a8e4",
+  "user_input": "Phone",
+  "status": "planning",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Unleash your potential. This isn't just a phone; it's the power you demand, realized.",
+        "time_range": "0-5s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Bold",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A cutting-edge smartphone with a sleek, unibody design crafted from aerospace-grade titanium in a deep obsidian black finish. It features a micro-etched, anti-glare sapphire display and precision-machined edges, with subtle, reflective chamfers that catch light. The rear camera module is seamlessly integrated, hinting at powerful optics beneath a minimalist aesthetic, exuding an aura of understated dominance.\nExtreme close-up (ECU) on the phone's meticulously crafted titanium edge and the subtle texture of its anti-glare sapphire display, revealing minute product details and intricate patterns with technical precision, centered in the safe zone.\nGolden hour soft sunlight streaming through a large window, creating a gentle ambient bounce fill from white walls, with a warm color temperature of 3200K, producing an inviting glow, and shallow depth of field beautifully isolating the subject.\nDesaturated bleach bypass processing, high contrast with intentionally reduced color saturation, a gritty action film aesthetic with a silver retention look, conveying intense drama.\nShot on Arri Alexa Mini LF, a compact large format cinema camera (Netflix approved), utilizing a 24mm f/1.4 wide-angle prime lens to enhance environmental storytelling, capturing full-frame sensor depth and dramatic subject isolation.",
+        "audio_prompt": "Subtle, deep atmospheric hum with a slight metallic resonance.",
+        "motion_prompt": "A precise, deliberate macro push-in movement, as if a specialized camera rig slowly tracks forward, sweeping over the phone's surface to reveal its intricate details from a dramatic, low perspective.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "The same cutting-edge smartphone from scene 1, now held confidently in the hand of a discerning individual, their hand partially visible, highlighting the phone's ergonomic design and premium materials.\nMedium shot (MS), framing the phone and the individual's hand from chest to head, composed for balanced, relatable presence at a conversational distance, keeping the phone prominently in the center 80% of the frame.\nSoft three-point lighting setup, a balanced key-to-fill ratio of 2:1, illuminating the phone against a clean, neutral background, creating a professional, corporate aesthetic that is flattering and polished.\nDesaturated bleach bypass processing, high contrast with intentionally reduced color saturation, a gritty action film aesthetic with a silver retention look, conveying intense drama.\nShot on Arri Alexa Mini LF, a compact large format cinema camera (Netflix approved), using Cooke S4 prime lenses known for their organic bokeh character, providing a traditional cinematic look with a Super 35mm sensor crop.",
+        "audio_prompt": "Quiet, focused hum of a high-end device operating, subtly mixed with ambient corporate office atmosphere.",
+        "motion_prompt": "A slow, deliberate rack focus, shifting attention from a subtly out-of-focus, minimalist background environment to the sharp, commanding presence of the phone in hand, creating a spotlight reveal.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "The same cutting-edge smartphone from scene 1, now positioned as the sole hero, commanding the frame, placed on a highly reflective, dark surface, with its integrated logo subtly catching light.\nA powerful wide shot (WS), allowing the phone to dominate the frame against its environment, providing clear contextual presence, with the phone centered within the 80% safe zone.\nDramatic side lighting intensely sculpts the phone's curves and body lines, with a strong rim light highlighting its metallic finish and reflective surfaces, all against a studio black infinity background for complete isolation, using a hard directional key light to emphasize form.\nDesaturated bleach bypass processing, high contrast with intentionally reduced color saturation, a gritty action film aesthetic with a silver retention look, conveying intense drama.\nShot on Panavision DXL2 cinema camera, a professional Hollywood production standard, employing Cooke S4 prime lenses for their organic bokeh character, captured in Vista Vision large format for premium image quality.",
+        "audio_prompt": "Deep, resonant final chord of a cinematic score, with a faint, decisive click sound as the phone's logo appears in sharp focus.",
+        "motion_prompt": "A slow, confident push-in, transitioning from the wide hero shot of the phone to a subtle rack focus on its integrated logo, serving as a brand resolution and signature statement.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade"
+}

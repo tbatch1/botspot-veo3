@@ -1,0 +1,59 @@
+{
+  "id": "c801aa41-125b-4f9f-b4da-5e9de7ed7b15",
+  "user_input": "Botspot.trade - AI Trading Agents",
+  "status": "failed",
+  "error": "Generation failed: filter() missing 1 required positional argument: 'filter_name'",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Market chaos? Botspot.trade AI agents are designed to assist you in navigating it, helping you stay on top of things.",
+        "time_range": "0-8s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Helpful & quirky",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3, A smartphone screen displaying the Botspot.trade app interface, vibrant green and white elements, showing highly volatile stock charts with red down-arrows, screen texture visible. Extreme close-up (ECU), minute product detail, surface texture visible, intricate patterns, macro perspective, technical precision, with the important UI elements centered within the safe zone. Low-key chiaroscuro with hard single-source key light, deep dramatic shadows across half the frame casting mystery, film noir aesthetic, 3:1 key-to-fill ratio for high contrast, theatrical mood. 35mm analog film grain texture visible, slightly faded colors suggesting age, warm golden highlights, cool blue shadows, nostalgic 1970s Kodachrome aesthetic, retro charm. RED 8K Monstro sensor with 16-bit color depth, ultra-high resolution cinema capture, Sigma Art 40mm f/1.4, sharp cinematic rendering, IMAX large format sensor, maximum resolution and clarity.",
+        "audio_prompt": "Tense, subtle electronic hum and very faint, distant frantic keyboard typing.",
+        "motion_prompt": "Slow dolly back from close detail, gradually revealing the anxious hands of a 30s male trader holding the smartphone.",
+        "duration": 3,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\e68fd3f645828b6380bb7addec7e0e36.png",
+        "video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\videos\\04a3e595f90ca7b5c545000422917885.mp4",
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_0db235a6ef4d7b05eef6e7f05e13e9b6.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3, The same 30s male trader from scene 1, wearing a charcoal grey t-shirt, now with heightened panic visible on his face, eyes wide, holding the smartphone with the Botspot.trade app in focus. From the right, Panic Button Tom, a calm 40s male with a friendly smile, wearing a crisp green polo shirt and neutral trousers, casually steps into frame. Both subjects centered within the safe zone. Medium shot (MS), chest to head framing, standard dialogue composition, balanced and relatable, conversational distance. Hard directional light with deep blacks, fashion editorial aesthetic, bold dramatic shadows, striking visual impact, magazine-quality lighting. 35mm analog film grain texture visible, slightly faded colors suggesting age, warm golden highlights, cool blue shadows, nostalgic 1970s Kodachrome aesthetic, retro charm. Sony Venice 2 full-frame 8.6K sensor, cutting-edge digital cinema technology, Sigma Art 40mm f/1.4, sharp cinematic rendering, IMAX large format sensor, maximum resolution and clarity.",
+        "audio_prompt": "Faint, anxious breathing from the trader, then a subtle, calming 'ding' sound as Tom appears.",
+        "motion_prompt": "Slow vertical crane down, subtly emphasizing the smartphone and then Tom's presence as he steps into frame.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_c5f3adf0eb9cdf327e7a1f39f3c25d0f.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3, The same 30s male trader from scene 1, now visibly relieved and slightly bewildered, observes the smartphone with the Botspot.trade app. Panic Button Tom from scene 2, still in his green polo, stands beside him with a reassuring smile, subtly gesturing towards the phone screen where the Botspot.trade AI agent interface shows stable, positive trading charts. Both subjects and the phone are clearly visible and centered within the safe zone. Wide shot (WS), subject head-to-toe visible, clear environmental context (a clean, bright, modern office/home setting with crisp greens and neutral tones), balanced composition, establishing perspective. Soft warm-toned lighting 2700K, practical lamps visible in frame, cozy intimate atmosphere, home environment feel, comforting glow. 35mm analog film grain texture visible, slightly faded colors suggesting age, warm golden highlights, cool blue shadows, nostalgic 1970s Kodachrome aesthetic, retro charm. Sony Venice 2 full-frame 8.6K sensor, cutting-edge digital cinema technology, 24mm f/1.4 wide-angle prime, environmental storytelling lens, Anamorphic 2.39:1 cinematic scope aspect ratio, theatrical presentation.",
+        "audio_prompt": "Quiet, confident clicks from the Botspot.trade app, a sigh of relief from the trader, and a subtle, friendly background hum.",
+        "motion_prompt": "Slow pan, subtly emphasizing the calm interaction between Tom and the trader, and then settling on the stable Botspot.trade interface on the phone screen.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_c7869241895bb0aab156369fdaf4a339.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade"
+}

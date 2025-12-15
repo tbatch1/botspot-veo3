@@ -1,0 +1,46 @@
+{
+  "id": "63307702-3eed-41c7-9bf4-e0455532025d",
+  "user_input": "Create a Premium commercial for a product in the style of Cinematic, Cyberpunk. Target platform: Netflix. Duration: 15s.",
+  "status": "planning",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "The future. Yours to command.",
+        "time_range": "0-8s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Premium",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A sleek, obsidian-black hexagonal personal device, approximately 4 inches across, with subtle glowing cyan lines tracing its edges and a faint holographic shimmer emanating from its center. Cyberpunk-style hard key light from above creates sharp shadows, complemented by a soft neon magenta rim light from the side, highlighting its contours. Medium close-up, perfectly centered within the safe zone.",
+        "audio_prompt": "Low, atmospheric synth drone with faint, ethereal digital whispers.",
+        "motion_prompt": "Subtle Steadicam drift, almost imperceptible, holding steady.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "The same obsidian-black hexagonal personal device from scene 1. The camera orbits slowly, revealing a hidden biometric scanner etched into its side, reflecting the dynamic interplay of deep blues and purples from a rain-slicked cyberpunk cityscape. The device remains centered, maintaining a dramatic contrast and premium aesthetic.",
+        "audio_prompt": "The atmospheric synth drone deepens, joined by subtle, rhythmic electronic pulses.",
+        "motion_prompt": "Slow, controlled 90-degree orbital track around the device, counter-clockwise.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

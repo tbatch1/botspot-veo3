@@ -15,17 +15,25 @@ if runway_key:
 class AppConfig(BaseModel):
     """Application Configuration Validation"""
     GEMINI_API_KEY: str = Field(..., description="Google Cloud Gemini API Key")
+    ANTHROPIC_API_KEY: str = Field(default="", description="Anthropic API Key (Claude)")
+    OPENAI_API_KEY: str = Field(default="", description="OpenAI API Key (GPT-5.2)")
+    FAL_API_KEY: str = Field(default="", description="Fal.ai API Key (Flux 1.1 Pro)")
+    REPLICATE_API_TOKEN: str = Field(default="", description="Replicate API Token (Flux fallback)")
     RUNWAY_API_KEY: str = Field(..., description="RunwayML API Key")
     ELEVENLABS_API_KEY: str = Field(..., description="ElevenLabs API Key")
-    
-    # Model Constants - OTT BROADCAST QUALITY (Nov 2025)
-    IMAGEN_MODEL: str = "imagen-4.0-generate-001"  # Imagen 4 GA - Broadcast quality
-    LEGACY_IMAGEN_MODEL: str = "imagen-3.0-generate-002"  # Imagen 3 Fallback
+
+    # Model Constants - PREMIUM QUALITY (Dec 2025 - Upgraded for quality-first clients)
+    IMAGEN_MODEL: str = "imagen-4.0-ultra-generate-001"  # Imagen 4 Ultra - Highest Quality
+    LEGACY_IMAGEN_MODEL: str = "imagen-4.0-generate-001"  # Imagen 4 Standard Fallback
+    FLUX_MODEL: str = "black-forest-labs/flux-1.1-pro" # Replicate fallback
+    FAL_FLUX_MODEL: str = "fal-ai/flux/v1.1-pro"  # Fal.ai Flux 1.1 Pro (Primary)
     RUNWAY_MODEL: str = "gen3a_turbo"
     ELEVENLABS_MODEL: str = "eleven_turbo_v2_5"
     LUMIERE_MODEL: str = "veo-3.1-generate-preview" # Veo 3.1 - 1080p output, native audio
     COMPOSITION_MODEL: str = "gemini-2.5-flash" # Script generation with OTT guidance
-    IMAGE_RESOLUTION: str = "16:9"  # OTT broadcast aspect ratio (Imagen will generate at max quality)
+    STRATEGIST_MODEL: str = "claude-opus-4-5-20251101" # Claude Opus 4.5 (Nov 2025)
+    GPT52_MODEL: str = "gpt-5.2"  # GPT-5.2 Spatial Reasoning (Dec 11, 2025)
+    IMAGE_RESOLUTION: str = "16:9"  # OTT broadcast aspect ratio
     
     # Paths - use absolute paths for reliability
     ASSETS_DIR: str = os.path.join(os.path.dirname(os.path.dirname(__file__)), "assets")
@@ -39,6 +47,10 @@ def load_config() -> AppConfig:
     """Load and validate configuration."""
     # Get API keys from environment, use dummy values for mock mode
     gemini_key = os.getenv("GEMINI_API_KEY", "")
+    anthropic_key = os.getenv("ANTHROPIC_API_KEY", "")
+    openai_key = os.getenv("OPENAI_API_KEY", "")
+    fal_key = os.getenv("FAL_API_KEY", "")
+    replicate_key = os.getenv("REPLICATE_API_TOKEN", "")
     runway_key = os.getenv("RUNWAY_API_KEY", "mock_runway_key")
     eleven_key = os.getenv("ELEVENLABS_API_KEY", "mock_elevenlabs_key")
 
@@ -48,6 +60,10 @@ def load_config() -> AppConfig:
 
     return AppConfig(
         GEMINI_API_KEY=gemini_key,
+        ANTHROPIC_API_KEY=anthropic_key,
+        OPENAI_API_KEY=openai_key,
+        FAL_API_KEY=fal_key,
+        REPLICATE_API_TOKEN=replicate_key,
         RUNWAY_API_KEY=runway_key,
         ELEVENLABS_API_KEY=eleven_key
     )

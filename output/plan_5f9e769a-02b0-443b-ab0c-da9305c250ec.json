@@ -1,0 +1,59 @@
+{
+  "id": "5f9e769a-02b0-443b-ab0c-da9305c250ec",
+  "user_input": "Botspot.trade - AI Trading Agents",
+  "status": "completed",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Tired of trading panic? Let BotSpot's AI agents work 24/7 to help streamline your trading.",
+        "time_range": "0-5s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Helpful & quirky",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3, A sweating, trembling hand of a male retail trader, mid-30s, with visibly frayed cuticles and slight stubble on the wrist, hovering uselessly over a high-end mechanical keyboard, on a sleek, minimalist desk setup. Red plummeting stock charts are reflected faintly in his moist skin. The desk is clean, bright white, with a subtle pop of BotSpot brand green in a small plant pot. Imperfect, real skin texture and pores visible, centered in safe zone. Extreme close-up shot, focusing intensely on the hand and keyboard. Golden hour soft sunlight streaming from a large window off-frame, gentle ambient bounce fill from white walls, warm color temperature 3200K creating an inviting glow, shallow depth of field isolating the subject beautifully. Desaturated bleach bypass processing, high contrast with intentionally reduced color saturation, gritty action film aesthetic, silver retention look, intense drama. Shot on Sony Venice 2 full-frame 8.6K sensor with Canon CN-E anamorphic lens, Super 35mm sensor crop for traditional cinematic look.",
+        "audio_prompt": "Faint, anxious keyboard clicks and a soft, low hum of computer fans.",
+        "motion_prompt": "Crane up gently and smoothly from desk level, revealing more of the trading setup and the trader's tense posture.",
+        "duration": 2,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\8af29cf1a39c4bb0e0471da0fa47a29d.png",
+        "video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\videos\\5844e2f0428194a16ef176b7a898e79d.mp4",
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_108df405f3bb764d9fcc39d6f2c9a0a3.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3, The same male retail trader from scene 1, mid-30s, now visible from chest to head, looking utterly distraught at his multi-monitor setup displaying alarming red market data. His face is pale with a sheen of sweat, pores and stressed skin texture visible. Suddenly, 'Tom,' a clean-cut male, early 30s, with a genuinely calm smile and pristine BotSpot brand green polo shirt, appears smoothly into the right side of the frame, holding a small tablet displaying the BotSpot AI interface. Both are centered in safe zone, with Tom slightly off-center to imply his entrance. Medium shot, framed chest to head for both subjects, conversational distance. Soft three-point lighting setup, balanced key-to-fill ratio 2:1, professional corporate aesthetic with Tom appearing unnaturally well-lit, flattering and polished, the trader's face highlighted by his screen's red glow. Desaturated bleach bypass processing, high contrast with intentionally reduced color saturation, gritty action film aesthetic, silver retention look, intense drama. Shot on RED 8K Monstro sensor with 16-bit color depth, using an 85mm f/1.4 lens with gorgeous compression and creamy background blur, IMAX large format sensor.",
+        "audio_prompt": "A sudden, subtle 'whoosh' sound effect as Tom appears, followed by quiet corporate office atmosphere with faint clicks.",
+        "motion_prompt": "A smooth, subtle tracking shot slowly follows Tom as he casually slides into frame from the right, revealing him offering a solution to the panicking trader, keeping both subjects centered.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_2992b10e0855c7ef326d90e5c1901dd7.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3, A wide shot of the same male retail trader from scene 1, mid-30s, now peacefully asleep in his bed, a serene expression on his face, head-to-toe visible in a cozy bedroom. In the foreground, subtly integrated into the room, is a monitor displaying the Botspot.trade AI interface, glowing with a subtle green accent light, showing constant, profitable activity. The same Tom from BotSpot, early 30s, casually peeks into frame from the side, gives a calm, confident thumbs up to the camera with a subtle, knowing smile. All important subjects are centered in safe zone. Wide shot, establishing the peaceful home environment, with both the sleeping trader and Tom clearly visible, balanced composition. Rembrandt lighting with a soft box key light positioned at 45 degrees, subtle rim light highlighting the edges of the sleeping trader and Tom, a dark gradient background in the sleeping area creates professional depth, high-end studio setup feel applied to a home bedroom. Desaturated bleach bypass processing, high contrast with intentionally reduced color saturation, gritty action film aesthetic, silver retention look, intense drama. Shot on RED 8K Monstro sensor with 16-bit color depth, using Zeiss Master Prime cinema lenses for clinical sharpness and precision, Vista Vision large format.",
+        "audio_prompt": "Soft, peaceful ambient sleep sounds (e.g., distant crickets, gentle breathing) subtly mixing with the hum of the BotSpot interface.",
+        "motion_prompt": "A smooth crane up and away motion, gradually fading to black as Tom holds the thumbs up, providing an elegant ending flourish.",
+        "duration": 1,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_9e7dbdc4ec4ef491ebfb3e8ca7e58dc7.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\output\\final_ad.mp4",
+  "video_model": "runway",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade"
+}

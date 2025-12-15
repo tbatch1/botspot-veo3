@@ -1,0 +1,46 @@
+{
+  "id": "fc05ce3f-d394-49b1-bb05-a0b95eb05573",
+  "user_input": "chocolate",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Pure bliss, in every bite.",
+        "time_range": "0-8s",
+        "audio_path": "assets\\audio\\mock_speech_5931.mp3"
+      }
+    ],
+    "mood": "Indulgent",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A extreme close-up shot of rich, dark chocolate slowly melting on a pristine surface, with soft, warm lighting emphasizing its smooth, glossy texture.",
+        "audio_prompt": "Gentle crackling and faint ambient hum.",
+        "motion_prompt": "Slow push-in.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\dbdfabeb2d093fef40c803fe0a2eb3ec.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_4119.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "A close-up, low angle shot of a hand gracefully breaking a piece of artisan chocolate, revealing its intricate layers, bathed in cinematic golden hour light.",
+        "audio_prompt": "Crisp snap of chocolate, soft background rustle.",
+        "motion_prompt": "Static shot with a subtle tilt up.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\a166e2c9c6b92fe6af1f46593132c091.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_8127.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

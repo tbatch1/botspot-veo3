@@ -1,0 +1,103 @@
+{
+  "id": "906ddcdb-604c-419e-95b2-b2718de47e95",
+  "user_input": "Botspot.trade - AI Trading Agents",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "seed": 1295204413,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Tired of the storm? Botspot's AI agents offer advanced precision, designed to help you navigate market complexities. Empower your trading decisions and pursue your aspirations.",
+        "time_range": "0-15s",
+        "audio_path": "c:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_1147296a04323cc2fc92da85cf2ea77f.mp3"
+      }
+    ],
+    "mood": "Premium, Aspirational, Mysterious",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Shot on RED Komodo 6K with vintage Helios 44-2 58mm lenses for swirling bokeh distortion. Heavy chromatic aberration on edge frames. 35mm Kodak Double-X 5222 black-and-white stock simulation transitioning to Ektachrome 100D color. Pronounced halation bleeding from any light source. ISO 2500 sensor noise visible in shadow areas. Skin rendered with visible pores, micro-imperfections, and subsurface vein mapping under harsh directional light.\nA solitary male trader, late 40s, with deep lines around his tired eyes, visible stubble, and a threadbare dark grey sweater. His hand, with prominent veins and fine lines, trembles slightly on a worn keyboard, reflecting sickly blue-green light from multiple monitors.\nExtreme close-up (ECU) on the trader's trembling hand and forearm, revealing subsurface vein mapping and skin texture, shot from a high angle looking down, framed slightly off-center to emphasize unease.\nLow-key chiaroscuro with harsh, flickering practical light from multiple monitors casting sickly blue-green wash with violent contrast ratios onto his skin, deep dramatic shadows dominating 70% of the frame, film noir aesthetic.\nTeal and orange color grade with high contrast, crushed blacks, warm skin tones against cool backgrounds, 35mm film grain texture, organic analog feel.\nShot on Arri Alexa Mini LF with a 50mm f/1.2 portrait lens.",
+        "audio_prompt": "Distant, low hum of server fans, faint, erratic clicks of a mouse, heavy, anxious breathing.",
+        "motion_prompt": "A wide crane shot, slow and majestic, descending from a high angle into the chaotic scene, coming to rest on the ECU of the trader's hand, with subtle, uneasy orbital drift.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "c:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_22f98938fbfcc84a0e376001a9eac911.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Shot on RED Komodo 6K with vintage Helios 44-2 58mm lenses for swirling bokeh distortion. Heavy chromatic aberration on edge frames. 35mm Kodak Double-X 5222 black-and-white stock simulation transitioning to Ektachrome 100D color. Pronounced halation bleeding from any light source. ISO 2500 sensor noise visible in shadow areas. Skin rendered with visible pores, micro-imperfections, and subsurface vein mapping under harsh directional light.\nThe same solitary male trader from scene 1, his weathered face now illuminated by a single, impossibly calm, geometric interface on his monitor. He wears the same threadbare dark grey sweater, his eyes wide with dawning recognition. The screen displays abstract, serene data visualizations in cool blue and white tones.\nMedium shot (MS) of the trader from scene 1, chest to head framing, eye-level, looking intently at the interface, framed with the screen's emerging light on his face.\nSingle motivated shaft of warm amber light cutting through the darkness like a blade, illuminating the trader's face and the screen, with visible volumetric haze in the light beams, deep shadows maintaining a mysterious and cinematic mood.\nTeal and orange color grade with high contrast, crushed blacks, warm skin tones against cool backgrounds, transitioning from black-and-white simulation to Ektachrome 100D color.\nShot on Arri Alexa LF with a 50mm f/1.2 portrait lens, IMAX large format sensor quality.",
+        "audio_prompt": "The chaotic sounds recede, replaced by a subtle, evolving electronic hum and soft, rhythmic chimes.",
+        "motion_prompt": "A smooth Steadicam float, tracking slowly around the trader and the emerging interface, decelerating slightly, emphasizing a shift from chaos to focus.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "c:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_4067e6b243b420ae37a8edebb6474ae1.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Shot on RED Komodo 6K with vintage Helios 44-2 58mm lenses for swirling bokeh distortion. Heavy chromatic aberration on edge frames. 35mm Kodak Double-X 5222 black-and-white stock simulation transitioning to Ektachrome 100D color. Pronounced halation bleeding from any light source. ISO 2500 sensor noise visible in shadow areas. Skin rendered with visible pores, micro-imperfections, and subsurface vein mapping under harsh directional light.\nThe same solitary male trader from scene 1, now standing relaxed by a large window, head-to-toe visible, wearing the same dark grey sweater. His shoulders are dropped, and a profound sense of calm and relief washes over his face, revealing visible pores and micro-imperfections under the soft light.\nWide shot (WS) of the trader from scene 1, head-to-toe visible, clear environmental context of a sun-lit room, framed from a slightly low angle, holding uncomfortably long on his relieved expression.\nSoft, diffused dawn light with visible dust particles floating in the air, creating subtle lens flare around the window, high contrast and vibrant saturation. All lighting motivated by in-scene sources.\nTeal and orange color grade with high contrast, crushed blacks, warm skin tones against cool backgrounds, Ektachrome 100D color.\nShot on RED 8K Monstro sensor with a 35mm f/1.4 prime lens, Vista Vision large format.",
+        "audio_prompt": "Soft, diffused dawn light ambiance, distant bird calls, the sound of a deep, relieved exhale from the trader.",
+        "motion_prompt": "Static wide shot, locked-off tripod, holding still, contemplative framing.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "c:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_533ab7d3d1ace12df859516caa0d281b.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "The Eye of the Storm",
+    "visual_language": "Shot on RED Komodo 6K with vintage Helios 44-2 58mm lenses for swirling bokeh distortion. Heavy chromatic aberration on edge frames. 35mm Kodak Double-X 5222 black-and-white stock simulation transitioning to Ektachrome 100D color. Pronounced halation bleeding from any light source. ISO 2500 sensor noise visible in shadow areas. Skin rendered with visible pores, micro-imperfections, and subsurface vein mapping under harsh directional light.",
+    "narrative_arc": "A solitary trader drowns in a maelstrom of flickering screens, crumbling charts, and violent market data—hands trembling, sweat beading on weathered skin. A single interface emerges from the chaos: clean, geometric, impossibly calm—the Botspot agent awakens. The storm dissolves into crystalline stillness as the AI works silently, and our trader exhales into newfound sovereignty.",
+    "audience_hook": "Liberation from the tyranny of constant vigilance—the promise that intelligent systems can trade while you sleep, removing human panic from the equation and replacing it with cold, beautiful precision.",
+    "cinematic_direction": {
+      "mood_notes": "Premium mystery achieved through visual restraint—never reveal the full picture. Aspirational quality comes from the contrast between human fragility and machine elegance. The 'premium' feel emerges from texture and imperfection, not polish. Let shadows dominate 70% of frame composition.",
+      "lighting_notes": "Opening storm sequence: Harsh, flickering practical sources only—multiple monitors casting sickly blue-green wash with violent contrast ratios. Transition moment: Single shaft of warm amber light cutting through darkness like a blade. Resolution: Soft, diffused dawn light with visible dust particles floating in air. All lighting motivated by in-scene sources.",
+      "camera_notes": "Steadicam with intentional drift and micro-corrections visible. Opening: Orbiting movement around subject, slightly too fast, creating unease. Storm peak: Subtle dutch angle, camera breathing with subject's anxiety. Calm arrival: Movement decelerates to near-stillness, final shot holds uncomfortably long on the trader's relieved expression—letting imperfect skin texture tell the story."
+    },
+    "production_recommendations": {
+      "visual_engine": "flux",
+      "video_engine": "runway",
+      "voice_vibe": "Sparse, almost reluctant narration—low baritone with natural room reverb, as if recorded in an empty trading floor at 3 AM. Measured pauses. No urgency. The voice of someone who has already found the answer and is sharing it like a secret."
+    }
+  },
+  "research_brief": "{\n  \"Product Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Automated, profitable AI trading bots, built and deployed rapidly without coding expertise, trading 24/7.\",\n  \"Target Audience\": \"Retail traders, amateur investors, or anyone interested in automated trading strategies without needing coding knowledge.\",\n  \"Key Features\": [\n    \"AI-powered trading agent creation\",\n    \"Automated trading execution\",\n    \"No-code strategy building\",\n    \"24/7 bot operation\"\n  ],\n  \"Brand Vibe\": \"Innovative, Automated, Accessible, Empowering, High-Tech\",\n  \"Industry\": \"Fintech, Algorithmic Trading, AI/ML in Finance\"\n}",
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": "c:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\bgm_6e6479c1089362480553978a8c1bb583.mp3",
+  "video_model": "runway",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": [
+    "[11:37:32] [RESEARCH] Analyzing target URL: https://botspot.trade...",
+    "[11:37:37] [RESEARCH] Site analysis complete. Extracted 619 chars of context.",
+    "[11:37:37] [STRATEGY] Initializing creative brainstorm for: Botspot.trade - AI Trading Agents",
+    "[11:37:58] [STRATEGY] Strategic angle developed: N/A",
+    "[11:37:58] [GEMINI] Generating cinematic screenplay & shotlist...",
+    "[11:38:21] [GEMINI] Screenplay generated with 3 scenes.",
+    "[11:38:32] [PHASE 3] Starting Asset Generation...",
+    "[11:38:33] [VISUALS] Initialized Flux 1.1 Pro (High Fidelity)",
+    "[11:38:38] [FLUX] Generating visuals for Scene 1...",
+    "[11:38:39] [ERROR] Image Gen Failed for Scene 1: ReplicateError Details:\ntitle: Insufficient credit\nstatus: 402\ndetail: You have insufficient credit to run this model. Go to https://replicate.com/account/billing#billing to purchase credit. Once you purchase credit, please wait a few minutes before trying again.",
+    "[11:38:39] [FAILOVER] Flux failed. Retrying Scene 1 with Imagen...",
+    "[11:38:40] [FLUX] Generating visuals for Scene 2...",
+    "[11:38:40] [ERROR] Image Gen Failed for Scene 2: ReplicateError Details:\nstatus: 429\ndetail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~9s.",
+    "[11:38:40] [FAILOVER] Flux failed. Retrying Scene 2 with Imagen...",
+    "[11:38:42] [FLUX] Generating visuals for Scene 3...",
+    "[11:38:42] [ERROR] Image Gen Failed for Scene 3: ReplicateError Details:\nstatus: 429\ndetail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~7s.",
+    "[11:38:42] [FAILOVER] Flux failed. Retrying Scene 3 with Imagen...",
+    "[11:39:13] [PHASE 4] Starting Motion Synthesis (runway)...",
+    "[11:39:15] [PHASE 5] Assembling Final Video..."
+  ]
+}

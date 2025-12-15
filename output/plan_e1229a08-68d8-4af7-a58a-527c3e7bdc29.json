@@ -1,0 +1,59 @@
+{
+  "id": "e1229a08-68d8-4af7-a58a-527c3e7bdc29",
+  "user_input": "Botspot.trade - AI Trading Agents",
+  "status": "planning",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Markets got you stressed? Botspot's AI agents can help you analyze market data efficiently, empowering you to make informed decisions. Try it now!",
+        "time_range": "0-5s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Helpful & quirky",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3, A male hand, 30s-40s, knuckles white and slightly trembling, with visible pores and natural skin texture, hovering over a computer mouse on a dark desk. The computer screen, out of focus but visible, displays a rapidly crashing red stock chart with intricate graph lines and sharp, analytical data points.",
+        "audio_prompt": "Quiet corporate office atmosphere, with subtle, anxiety-inducing keyboard clicks and mouse movements.",
+        "motion_prompt": "Static and locked-off camera, no movement, holding the extreme close-up view with contemplative framing, centered in safe zone.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3, The same 38-year-old male trader from scene 1, Caucasian, with short, messy brown hair and visible five o'clock shadow, wearing a crumpled light blue button-up shirt. He is slumped over his desk, head in hands, clearly frazzled and exhausted, with visible pores and slight wrinkles on his face. A large monitor in front of him prominently displays crashing red stock charts with complex data visualizations.",
+        "audio_prompt": "Quiet corporate office atmosphere, soft distressed sighs, and very subtle, distant city sounds.",
+        "motion_prompt": "Static and locked-off camera from an overhead bird's eye view, framing the trader from chest to head and his monitor, product centered perfectly in frame, symmetrical balance, no jarring movements.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3, The same 38-year-old male trader from scene 2, now relaxed and smiling, sipping coffee, with natural pores and clear skin texture. Standing casually beside him is Tom, a 45-year-old man, Caucasian, with neatly combed dark brown hair, a warm and confident smile, wearing a clean, fitted Botspot-branded emerald green polo shirt, his skin showing natural texture and minimal imperfections. The computer monitor now displays vibrant green profit charts and positive growth indicators.",
+        "audio_prompt": "Quiet corporate office atmosphere, with the gentle clinking of a coffee cup and a relaxed, satisfied hum.",
+        "motion_prompt": "Gentle and slow push-in movement towards the subjects, smoothly increasing emphasis and providing a definitive ending, centered in safe zone.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade"
+}

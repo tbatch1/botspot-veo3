@@ -1,0 +1,46 @@
+{
+  "id": "e3c200ed-27f2-4131-87ca-c5e865cbce23",
+  "user_input": "luxury watch",
+  "status": "failed",
+  "error": "Generation failed: ffmpeg error (see stderr output for detail)",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Precision. Elegance. Legacy.",
+        "time_range": "0-8s",
+        "audio_path": "assets\\audio\\mock_speech_9.mp3"
+      }
+    ],
+    "mood": "Aspirational",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A close-up hero shot of a polished rose gold luxury watch on a dark alligator leather strap. The watch face is pristine, showing intricate complications. The watch is perfectly centered on a minimalist slate grey surface. Soft key light highlights the metal and sapphire crystal, with subtle golden hour backlight creating a rim light effect.",
+        "audio_prompt": "Subtle ticking sound of a high-end mechanical watch, gentle hum of a luxury lounge.",
+        "motion_prompt": "Locked-off static shot.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\79e2816e691ec99059405fdf84a23c3d.png",
+        "video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\videos\\ff5b0da02b142ac80bb299dea5b9b476.mp4",
+        "sfx_path": "assets\\audio\\mock_sfx_2390.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "The same polished rose gold luxury watch from scene 1, now elegantly worn on the wrist of a discerning individual (only the lower forearm and watch are visible). The background is a softly blurred, sophisticated urban skyline at dusk. Cinematic three-point lighting emphasizes the watch's craftsmanship and the subtle texture of a tailored sleeve cuff.",
+        "audio_prompt": "Muted city sounds, distant sophisticated lounge music.",
+        "motion_prompt": "Slow dolly push-in towards the watch face, highlighting its intricate details.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\70d4109954b1873d56842e4d77780112.png",
+        "video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\videos\\d6892a35f6c57ce46b787b64c027f256.mp4",
+        "sfx_path": "assets\\audio\\mock_sfx_5880.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

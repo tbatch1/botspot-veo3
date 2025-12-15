@@ -1,0 +1,90 @@
+{
+  "id": "624a4eba-4509-4960-a862-7c12410d6cda",
+  "user_input": "Create a commercial for creative ad for our company. \n        Style: Cinematic, 3D Render. \n        Mood: Premium, Aspirational. \n        Camera: Steadicam, Crane. \n        Target platform: Netflix, Hulu. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+  "status": "planning",
+  "error": null,
+  "seed": 258657444,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Your money works tirelessly, an invisible engine driving your future. BotSpot: intelligent growth, supporting your peace of mind.",
+        "time_range": "0-15s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Premium, Aspirational",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Shot on RED V-Raptor 8K VV with Panavision Ultra Speed MKII vintage primes. Heavy halation bloom on digital interfaces, chromatic aberration on edge highlights. Fuji Eterna 500T film stock emulation with lifted blacks and subtle cyan shadows. 35mm grain structure at ISO 2500. Shallow depth of field with breathing focus pulls. Micro lens flares from practical light sources. A 30-year-old female professional with sleek, shoulder-length dark brown hair, wearing a loose-fitting, soft grey silk sleep shirt, her face serene and relaxed in deep sleep, centered in safe zone. Extreme close-up (ECU) on the woman's closed eye, showing minute skin texture and the delicate flutter of her eyelashes. Dramatic side lighting from a cool blue LED (simulating moonlight) creating deep shadows on one side of her face, with a subtle rim light from the opposite side highlighting the contours of her cheek and hair, studio black infinity background for complete isolation, hard directional key light sculpts form. fuji_film_stock color grade with Fuji Eterna 500T emulation. Shot on Panavision DXL2 cinema camera with Sigma Art 40mm f/1.4 lens. Super 35mm sensor crop for traditional cinematic look.",
+        "audio_prompt": "Soft, distant city hum and very subtle, organic sound of tranquil breathing.",
+        "motion_prompt": "Slow and deliberate dolly back, starting from the extreme close-up of the woman's closed eye, gradually revealing her entire peaceful face, then pulling further back to show her shoulders and the soft blue moonlight illuminating her from a nearby window, no jarring movements, stabilized.",
+        "duration": 6,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Shot on RED V-Raptor 8K VV with Panavision Ultra Speed MKII vintage primes. Heavy halation bloom on digital interfaces, chromatic aberration on edge highlights. Fuji Eterna 500T film stock emulation with lifted blacks and subtle cyan shadows. 35mm grain structure at ISO 2500. Shallow depth of field with breathing focus pulls. Micro lens flares from practical light sources. The same 30-year-old female professional from scene 1, still sleeping peacefully, centered in safe zone. Above her, an abstract, ethereal 3D visualization of an 'Invisible Engine' AI trading agent manifests as glowing, interconnected geometric forms (cubes, spheres, lines) in elegant, swift motion, representing data and trades. Medium shot (MS), initially showing her chest to head, then expanding as the crane moves up to reveal the abstract AI above her. Rembrandt lighting on the sleeping woman with a soft box key light (cool blue) at 45 degrees defining her peaceful face. The abstract 3D AI elements glow with internal, soft green and gold light, subtly reflecting on the dark gradient background, high-end studio setup with volumetric haze catching light beams. fuji_film_stock color grade with Fuji Eterna 500T emulation. Shot on Sony Venice 2 full-frame 8.6K sensor with 35mm f/1.4 prime lens, 35mm film grain texture and organic analog feel.",
+        "audio_prompt": "Subtle, harmonious digital tones and soft atmospheric hum, synchronized with geometric movements of the AI.",
+        "motion_prompt": "Slow and deliberate 8-second crane up from ground level, starting from the woman's sleeping form (MS), revealing the abstract 3D visualization of the AI trading agent forming and operating above her bed, continuing to rise to showcase the AI's complex, geometric motions in elegant, synchronized patterns, stabilized, no jarring movements.",
+        "duration": 6,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Shot on RED V-Raptor 8K VV with Panavision Ultra Speed MKII vintage primes. Heavy halation bloom on digital interfaces, chromatic aberration on edge highlights. Fuji Eterna 500T film stock emulation with lifted blacks and subtle cyan shadows. 35mm grain structure at ISO 2500. Shallow depth of field with breathing focus pulls. Micro lens flares from practical light sources. The BotSpot interface, a clean, modern digital dashboard displaying a clear 'Profit Generated' metric in warm amber accents, with a cool blue-silver palette, displayed on a sleek, minimalist tablet or monitor, centered in safe zone. Wide shot (WS) of the BotSpot interface in context within a modern, serene bedroom as soft dawn light fills the room, clear environmental context. Soft overhead key light mimicking natural daylight filtering through large windows, white reflector bounces fill light from below the tablet to show appetizing interface details, warm ambient light sources add subtle comfort. fuji_film_stock color grade with Fuji Eterna 500T emulation. Shot on Arri Alexa Mini LF with Zeiss Master Prime cinema lenses. Super 35mm sensor crop for traditional cinematic look.",
+        "audio_prompt": "Gentle sounds of a peaceful dawn breaking – distant bird calls, a quiet rustle of leaves.",
+        "motion_prompt": "Static wide shot, locked-off tripod, observational documentary perspective, contemplative framing, focused on the BotSpot interface as dawn light subtly brightens the scene, no jarring movements.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "The Invisible Engine",
+    "visual_language": "Shot on RED V-Raptor 8K VV with Panavision Ultra Speed MKII vintage primes. Heavy halation bloom on digital interfaces, chromatic aberration on edge highlights. Fuji Eterna 500T film stock emulation with lifted blacks and subtle cyan shadows. 35mm grain structure at ISO 2500. Shallow depth of field with breathing focus pulls. Micro lens flares from practical light sources.",
+    "narrative_arc": "We open on a sleeping figure bathed in blue moonlight while global markets pulse across multiple time zones—Tokyo, London, New York. The camera cranes up to reveal an abstract 3D visualization of an AI trading agent working autonomously, geometric forms executing trades in elegant motion. We pull back through digital space to land on the BotSpot interface, simple and powerful, as dawn breaks—passive income generated while life happens.",
+    "audience_hook": "The psychological promise of reclaimed time—your money working intelligently while you sleep, removing the anxiety of missed opportunities and the burden of constant market monitoring.",
+    "cinematic_direction": {
+      "mood_notes": "Premium aspiration achieved through restraint. Cool blue-silver palette punctuated by warm amber accents representing profit/success. The tone is quiet confidence, not flashy excess. Think 'Her' meets Bloomberg Terminal aesthetics. Texture over polish—imperfection signals authenticity.",
+      "lighting_notes": "Studio lighting with motivated practicals. Key light through venetian blinds creating stripe patterns. Soft rim lighting on 3D elements with visible falloff. LED screens providing ambient fill with visible refresh flicker. Volumetric haze catching light beams for depth.",
+      "camera_notes": "Steadicam with subtle organic drift—never locked off. Crane moves are slow and deliberate, 8-second arcs minimum. Motivated camera movement that follows the AI's 'thinking'—push-ins on decision moments. Micro-vibrations in handheld inserts for human contrast against digital precision."
+    },
+    "production_recommendations": {
+      "visual_engine": "flux",
+      "video_engine": "runway",
+      "voice_vibe": "Measured, intelligent, warm baritone. Think David Attenborough meets a thoughtful tech founder. Unhurried pacing with intentional pauses. No hard sell—observational and confident. Slight breath before key phrases."
+    }
+  },
+  "research_brief": "{\n  \"Product Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empower anyone to create and deploy profitable, automated AI trading strategies in seconds, no coding required, for 24/7 passive trading.\",\n  \"Target Audience\": \"Individual traders, retail investors, and financial enthusiasts seeking to leverage AI for automated trading without technical barriers (coding knowledge).\",\n  \"Key Features\": [\n    \"AI Trading Agent creation\",\n    \"Automated trading bot deployment\",\n    \"No-code strategy building\",\n    \"Rapid strategy creation (in seconds)\",\n    \"24/7 trading operation\"\n  ],\n  \"Brand Vibe\": \"Innovative, Efficient, Accessible, Tech-forward, Empowering\",\n  \"Industry\": \"Fintech, Algorithmic Trading, AI Investing, Automated Trading\"\n}",
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": null,
+  "video_model": "runway",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": [
+    "[23:24:42] [RESEARCH] Analyzing target URL: https://botspot.trade/...",
+    "[23:24:47] [RESEARCH] Site analysis complete. Extracted 748 chars of context.",
+    "[23:24:47] [STRATEGY] Initializing creative brainstorm for: Create a commercial for creative ad for our company. \n        Style: Cinematic, 3D Render. \n        Mood: Premium, Aspirational. \n        Camera: Steadicam, Crane. \n        Target platform: Netflix, Hulu. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+    "[23:25:04] [STRATEGY] Strategic angle developed: N/A",
+    "[23:25:04] [GEMINI] Generating cinematic screenplay & shotlist...",
+    "[23:25:29] [GEMINI] Screenplay generated with 3 scenes."
+  ]
+}

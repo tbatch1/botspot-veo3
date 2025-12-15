@@ -1,0 +1,105 @@
+{
+  "id": "83e2a943-d494-4b10-923d-15e6ed428535",
+  "user_input": "Simple Nike running shoes ad",
+  "status": "planning",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Every journey begins with a single step.",
+        "time_range": "0-5s",
+        "audio_path": null
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Comfort that carries you further.",
+        "time_range": "5-10s",
+        "audio_path": null
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Simple design, relentless spirit.",
+        "time_range": "10-15s",
+        "audio_path": null
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Feel the ground, defy your limits.",
+        "time_range": "15-20s",
+        "audio_path": null
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Nike. Just Do It.",
+        "time_range": "20-25s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Inspiring",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Early morning, sun just rising, casting long, golden hour volumetric light rays through a light mist over a dew-kissed, winding forest trail. A pair of new, pristine Simple Nike running shoes rest on a mossy rock, slightly off-center. Shot on Arri Alexa 65 with a vintage anamorphic lens (Panavision C-series), f/1.4 depth of field, shallow focus on the shoes, background slightly blurred but still identifiable. Hyper-realistic, 4k, highly detailed textures of moss, dew, and shoe material. The air feels crisp and cool.",
+        "audio_prompt": "Gentle forest ambience: distant birds chirping, soft rustling of leaves, subtle morning mist sounds.",
+        "motion_prompt": "Slow, cinematic dolly shot pushing slightly forward, then subtly arcing around the shoes, revealing the depth of the forest.",
+        "duration": 5,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Mid-day, a runner's feet, clad in the Simple Nike running shoes, in motion on a modern, well-maintained running track. Dynamic, high-key natural lighting with crisp shadows. Low angle eye-level shot, focusing on the shoes and lower legs. Shot on Red V-Raptor, 50mm prime lens, f/2.0 depth of field, capturing every stitch and texture of the shoe as it flexes. The track surface is a vibrant blue, creating a strong contrast. Motion blur on the background elements (trackside trees/fence) to emphasize speed. Hyper-realistic, 4k.",
+        "audio_prompt": "Rhythmic, steady sound of footsteps on the track, synchronized with a subtle, uplifting percussive beat. Distant, light urban hum.",
+        "motion_prompt": "Smooth, fluid low-angle tracking shot, perfectly matching the runner's pace, moving alongside their feet.",
+        "duration": 5,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Late afternoon, an urban runner's point-of-view, looking down at their feet in the Simple Nike running shoes, navigating a bustling city sidewalk. The ground is wet from a recent shower, reflecting neon signs and streetlights (volumetric rain reflections). Soft, diffused natural light mixes with artificial city glow, creating interesting reflections on the shoes and pavement. Shot on Sony Venice, 24mm wide-angle lens, f/2.8, emphasizing the environment and the runner's movement through it. Hyper-realistic, 4k, highly detailed wet concrete and shoe tread.",
+        "audio_prompt": "Muffled city sounds: distant traffic, occasional chatter, a soft 'slap' of wet pavement with each step.",
+        "motion_prompt": "Stabilized POV shot, gentle up-and-down motion mimicking running, with subtle side-to-side drifts as the runner navigates.",
+        "duration": 5,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 4,
+        "visual_prompt": "Golden hour, sun dipping low, casting dramatic, long shadows and a warm, directional light across a rugged, dusty trail leading up a hill. A close-up shot of the Simple Nike running shoe's sole gripping the uneven terrain, kicking up a tiny puff of dust. Low angle, emphasizing effort and grip. Rembrandt lighting on the shoe's textures. Shot on Arri Mini LF, 85mm prime lens, f/1.8 depth of field, rendering the dust particles in exquisite detail. Hyper-realistic, 4k, showcasing the tenacity of the run.",
+        "audio_prompt": "Heavy, rhythmic breathing of a runner (not panting, but controlled effort), subtle crunch of gravel underfoot.",
+        "motion_prompt": "Slow, deliberate cinematic push-in on the shoe as it lands and grips, then a slight pull-back as the foot lifts.",
+        "duration": 5,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 5,
+        "visual_prompt": "Sunset, panoramic shot from a mountain peak or high vantage point, with the runner silhouetted, arms raised in triumph. The sky is ablaze with deep oranges, purples, and blues, volumetric light filtering through clouds. The runner is centered, with a wide, breathtaking vista behind them. As the runner lowers their arms, the camera slowly racks focus to a clean, well-lit shot of the Simple Nike running shoes placed perfectly side-by-side on a smooth rock in the foreground, catching the last rays of sun. Shot on DJI Inspire 3 with X9-8K Air Gimbal Camera, 16mm wide-angle lens, f/4.0, emphasizing both scale and detail. Crisp, cinematic, 8k.",
+        "audio_prompt": "Expansive, atmospheric synth pad music swells. Then, a final, clear, crisp sound of the Nike swoosh logo appearing.",
+        "motion_prompt": "Slow drone flyover, revealing the vast landscape, then a gradual descent and push-in, transitioning to a stable, locked-off shot on the shoes.",
+        "duration": 5,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

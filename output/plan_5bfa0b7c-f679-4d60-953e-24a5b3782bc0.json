@@ -1,0 +1,46 @@
+{
+  "id": "5bfa0b7c-f679-4d60-953e-24a5b3782bc0",
+  "user_input": "luxury watch",
+  "status": "planning",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Time, redefined. Luxury, refined.",
+        "time_range": "0-8s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Aspirational",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "An extreme close-up of a sleek, polished rose gold luxury watch with a dark sapphire leather strap, resting on a soft, dark velvet cushion. Cinematic three-point lighting, with a soft key light highlighting the watch's intricate details and a subtle golden hour backlight catching the polished edges. Perfectly centered in the frame, within the safe zone.",
+        "audio_prompt": "Subtle, distant ticking sound, elegant ambient music fades in.",
+        "motion_prompt": "Locked-off static, with a very subtle and slow macro focus pull from the watch hands to the logo.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "The same rose gold luxury watch, elegantly worn on the wrist of an unseen, impeccably dressed individual. The watch face is prominently displayed, reflecting soft, diffused natural light from a large window. Background is subtly blurred, suggesting a sophisticated high-end environment. The watch remains centered in the safe zone.",
+        "audio_prompt": "Gentle ambient room tone, soft jazz music continues.",
+        "motion_prompt": "Slow dolly push-in, followed by a subtle, elegant turn of the wrist to catch the light.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

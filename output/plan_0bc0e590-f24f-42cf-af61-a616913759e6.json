@@ -1,0 +1,59 @@
+{
+  "id": "0bc0e590-f24f-42cf-af61-a616913759e6",
+  "user_input": "Botspot.trade - AI Trading Agents",
+  "status": "completed",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Tired of trading stress? Botspot.trade: Your AI agent, designed to support a calmer, more strategic approach. Trade smarter, aim for greater peace of mind.",
+        "time_range": "0-5s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_29aaae19f2432682664958322b1cfe95.mp3"
+      }
+    ],
+    "mood": "Helpful & quirky",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3. A sleek, minimalist tablet device displaying the Botspot.trade AI trading agent interface. The screen shows intricate patterns of dynamic financial charts, algorithm code snippets, and subtle glowing indicators of AI activity. The device itself has a matte black finish with brushed aluminum edges, showcasing high-end industrial design, with slight smudges on its screen. Extreme close-up (ECU) focusing on a specific section of the tablet's screen, highlighting the minute details of the AI interface and its display technology. Surface texture of the screen glass and device frame are clearly visible. Low-key chiaroscuro with a hard single-source key light coming from the left, creating deep, dramatic shadows across half the frame, particularly on the device's bezel, casting an air of mystery. A 3:1 key-to-fill ratio for high contrast. Desaturated bleach bypass processing, high contrast with intentionally reduced color saturation, giving a gritty action film aesthetic and a silver retention look for intense drama. The charts on the screen still show subtle red and green hues, but muted. Shot on Panavision DXL2 cinema camera with a 35mm f/1.4 prime lens, shallow depth of field, cinematic compression. Anamorphic 2.39:1 cinematic scope aspect ratio, theatrical presentation.",
+        "audio_prompt": "Subtle, deep electronic hum with faint, rhythmic clicks of digital data processing.",
+        "motion_prompt": "Slow 180-degree arc around the tablet, establishing geography and spatial relationships.",
+        "duration": 2,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\6300c656f618903c5519fc604ebb7c52.png",
+        "video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\videos\\7884c52bf98498a2fa1bb74294fb9565.mp4",
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_4a6e90cf4de973b7ead77bec593af614.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3. A dishevelled, 40-year-old male trader with visible stress lines on his forehead, slightly messy hair, and a slight sheen of sweat, wearing a rumpled white dress shirt. He is intensely focused on the same sleek, minimalist tablet device from scene 1, which now displays calming green charts instead of chaotic red. His hand hovers over the screen, showing slight tremor but a growing sense of relief. Visible pores and natural skin texture. Medium shot (MS), chest to head framing of the trader, with the tablet clearly visible in his hands, at eye level. Rembrandt lighting with a soft box key light positioned at 45 degrees to the left, creating a subtle triangle of light on the right cheek. A subtle rim light from the back-right highlights the edges of his hair and shoulders, separating him from the dark gradient background. Dramatic shadows define his form and facial features. Desaturated bleach bypass processing, high contrast with intentionally reduced color saturation, maintaining the gritty action film aesthetic and silver retention look for intense drama. The green glow from the tablet screen provides a subtle color accent. Shot on RED 8K Monstro sensor with 16-bit color depth, using Cooke S4 prime lenses with organic bokeh character. IMAX large format sensor, maximum resolution and clarity.",
+        "audio_prompt": "Quiet, anxious breathing from the trader, gradually relaxing, overlaid with soft clicks from the tablet.",
+        "motion_prompt": "Tracking shot following product line features, smoothly following the trader's hand as it hovers over the tablet screen.",
+        "duration": 2,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\2a38453c5aabb6b1d9f4d03f0f24b1cb.png",
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_93c193f0e6a39ecc13c15412c459f6ce.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3. A calm, confident 30-year-old man, 'Tom from BotSpot,' with a friendly, knowing smile, slight wrinkles around his eyes, and neatly combed light brown hair, wearing a crisp, soft green polo shirt. He is holding the same sleek, minimalist tablet device from scene 1, which displays the Botspot.trade logo and a simplified, thriving green portfolio summary. His expression is serene and reassuring, hinting at effortless success. Visible pores and natural skin tone. Wide shot (WS), showing Tom head-to-toe, with a clear, minimalist, bright modern office space as a subtle background. Even ring light illumination provides flawless appearance on Tom's skin, with heavy diffusion softening any textures. Perfect catchlights sparkle in his eyes. Minimal shadows for a clean, bright look, with a white background bounce maintaining brightness. Desaturated bleach bypass processing, high contrast with intentionally reduced color saturation, maintaining the gritty action film aesthetic and silver retention look for intense drama. The soft green of his polo and the tablet screen's green accents pop slightly against the desaturated background. Shot on Arri Alexa LF full-frame sensor, 4.5K resolution, using a Sigma Art 40mm f/1.4 lens for sharp cinematic rendering. Anamorphic 2.39:1 cinematic scope aspect ratio, theatrical presentation.",
+        "audio_prompt": "Gentle, calming ambient synth music with a soft, confident whoosh as the logo appears.",
+        "motion_prompt": "Slow pan to reveal final brand message, narratively punctuating the scene as it reveals Tom and the successful interface.",
+        "duration": 1,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\d1549dfbb570ce3f2fc50802a7f80087.png",
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_b22082b060cc85ff9cfeaf5bc8ff0ec6.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\output\\final_ad.mp4",
+  "video_model": "runway",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade"
+}

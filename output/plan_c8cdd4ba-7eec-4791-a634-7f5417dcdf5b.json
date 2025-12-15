@@ -1,0 +1,46 @@
+{
+  "id": "c8cdd4ba-7eec-4791-a634-7f5417dcdf5b",
+  "user_input": "luxury watch",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Time, refined. Experience refined elegance.",
+        "time_range": "0-8s",
+        "audio_path": "assets\\audio\\mock_speech_335.mp3"
+      }
+    ],
+    "mood": "Aspirational",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A men's rose gold luxury chronograph watch, its polished case and intricate dial catching warm light. It rests elegantly on a dark, textured leather cushion, positioned against a minimalist, charcoal grey background. Cinematic three-point lighting highlights its craftsmanship, making reflections gleam. The watch is perfectly centered in the frame, in a medium close-up shot.",
+        "audio_prompt": "Subtle, deep hum, almost inaudible, suggesting precision machinery.",
+        "motion_prompt": "Subtle Steadicam drift, very slowly pushing into a closer medium shot, maintaining a smooth, professional feel.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\a856b7587d060f3e77d3d1cd84fb586a.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_1820.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "The same rose gold luxury chronograph watch, now gracefully worn on a discerning male wrist. The hand is casually resting on a polished dark mahogany table, with a soft key light gently illuminating the watch face and its subtle gleam. The watch remains the focal point, centered in the frame, ensuring consistent hero framing.",
+        "audio_prompt": "Faint, luxurious ticking sound, mixed with a gentle ambient room tone.",
+        "motion_prompt": "Slow dolly push-in, with a gentle, almost imperceptible orbit around the watch, revealing more of its profile.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\e8fb42b032b1dd0e2faad6b8914ec96f.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_2758.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

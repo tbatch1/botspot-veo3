@@ -1,0 +1,46 @@
+{
+  "id": "e361e5d6-5a70-4e8a-a402-0a164c746b96",
+  "user_input": "test",
+  "status": "planning",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Test: Elevating precision.",
+        "time_range": "0-8s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Innovative",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A matte black high-tech diagnostic device, sleek design with a glowing blue screen displaying complex data, held in a gloved hand. Cinematic three-point lighting, medium close-up, centered composition.",
+        "audio_prompt": "Subtle hum of advanced electronics.",
+        "motion_prompt": "Slow dolly push-in, gradually revealing the device's screen details.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "The same matte black high-tech diagnostic device, now actively emitting a focused blue beam, scanning a miniature circuit board with intricate components. Soft key light, slightly wider shot revealing the device's ergonomic form and focused beam, maintaining hero framing.",
+        "audio_prompt": "Gentle, rhythmic beeps of diagnostic scanning.",
+        "motion_prompt": "Subtle Steadicam drift to the side, emphasizing the scanning process.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

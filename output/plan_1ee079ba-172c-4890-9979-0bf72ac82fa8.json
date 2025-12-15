@@ -1,0 +1,101 @@
+{
+  "id": "1ee079ba-172c-4890-9979-0bf72ac82fa8",
+  "user_input": "Create a commercial for creative ad for our company. \n        Style: Cinematic, 3D Render. \n        Mood: Premium, Aspirational. \n        Camera: Steadicam, Crane. \n        Target platform: Netflix, Hulu. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "seed": 968589782,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "While you dream, your digital presence can thrive. Discover opportunities for financial growth at botspot.trade.",
+        "time_range": "0-8s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_8f5e04a5e6727e68a029227b2b6bf302.mp3"
+      }
+    ],
+    "mood": "Premium, Aspirational",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Shot on RED V-Raptor 8K VV with Zeiss Supreme Prime Radiance lenses. Heavy halation bloom on interface lights, chromatic aberration on edge highlights. Fuji Eterna 500T film stock emulation with visible grain structure at ISO 2500. Natural sensor noise in shadow areas. Anamorphic lens breathing on focus pulls. A 38-year-old man, lean build, short, impeccably styled dark hair, wearing a loose-fitting, high-quality charcoal grey linen shirt and dark tailored trousers, exuding quiet confidence, face serene in sleep.\nExtreme close-up on his eye, almost macro perspective, reflecting subtle cool blue holographic data patterns on its surface, centered in safe zone.\nSoft key light mimicking golden hour sunlight through floor-to-ceiling windows, casting warm amber glow. Rim light from subtle cool blue holographic UI elements creating heavy halation bloom on the edge of his face. Deep shadows with lifted blacks in the folds of the linen, showing natural sensor noise.\nFuji Eterna 500T film stock emulation with visible grain structure at ISO 2500, heavy chromatic aberration on edge highlights of the reflected data.\nRED V-Raptor 8K VV with Zeiss Supreme Prime Radiance lenses, shallow depth of field, cinematic compression, Vista Vision large format, anamorphic lens breathing on focus pulls.",
+        "audio_prompt": "Soft, distant hum of a high-tech penthouse, almost imperceptible.",
+        "motion_prompt": "Smooth Steadicam float, subtly tracking across the man's temple, revealing the fine texture of his skin and the soft linen fabric of his pillow, avoiding jarring movements.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_a94b3ba8843654c7cf9bcb13586c81df.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Shot on RED V-Raptor 8K VV with Zeiss Supreme Prime Radiance lenses. Heavy halation bloom on interface lights, chromatic aberration on edge highlights. Fuji Eterna 500T film stock emulation with visible grain structure at ISO 2500. Natural sensor noise in shadow areas. Anamorphic lens breathing on focus pulls. The same 38-year-old man from scene 1, still asleep on his bed, surrounded by multiple glowing screens displaying global market data and autonomous trading bots in action.\nMedium shot, slowly pushing forward, starting from the man's chest to head framing, then a slow, deliberate crane shot that vertically rises to reveal the vast, minimal penthouse. Subject centered in safe zone.\nStudio-controlled natural light simulation, mimicking magic hour. Strong, directional soft light from large windows creating authentic but soft shadows. Cool blue and cyan holographic data projections across multiple screens provide fill and rim lights, creating heavy halation bloom and visible chromatic aberration on screen edges. Warm amber practical LEDs embedded in furniture provide motivated fill.\nFuji Eterna 500T film stock emulation with visible grain structure at ISO 2500, heavy chromatic aberration on edge highlights of the digital interfaces.\nRED V-Raptor 8K VV with Zeiss Supreme Prime Radiance lenses, characteristic anamorphic horizontal lens flares, anamorphic lens breathing on focus pulls.",
+        "audio_prompt": "Subtle, rhythmic clicks and whirs of automated systems, barely audible beneath a quiet city soundscape.",
+        "motion_prompt": "Slow crane shot, gradually rising and pushing forward, revealing the panoramic view of the penthouse and the city skyline beyond, showcasing the silent activity of the trading bots, movements motivated and deliberate.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_e8ab9ba4ab2bbb050df249c887edc186.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Shot on RED V-Raptor 8K VV with Zeiss Supreme Prime Radiance lenses. Heavy halation bloom on interface lights, chromatic aberration on edge highlights. Fuji Eterna 500T film stock emulation with visible grain structure at ISO 2500. Natural sensor noise in shadow areas. Anamorphic lens breathing on focus pulls. The same 38-year-old man from scene 1, now with eyes slowly opening, focusing on a notification on a nearby, subtly glowing holographic interface.\nMedium close-up, focusing on the man's eyes slowly opening, then subtly shifting focus to a nearby holographic display showing 'Profit Realized'. Subject centered in safe zone.\nContinuation of soft, warm amber magic hour light from the large windows. The holographic interface emits a bright, cool blue light, creating a strong rim light on his face and heavy halation bloom around the display, with significant chromatic aberration on its edges. Deep shadows with lifted blacks around his head, revealing natural sensor noise.\nFuji Eterna 500T film stock emulation with visible grain structure at ISO 2500, intense chromatic aberration on the glowing notification.\nRED V-Raptor 8K VV with Zeiss Supreme Prime Radiance lenses, utilizing a wide-angle prime perspective for environmental context, Anamorphic 2.39:1 cinematic scope aspect ratio, anamorphic lens breathing on focus pulls.",
+        "audio_prompt": "A faint, digital chime indicating a notification, followed by the soft rustle of linen as the man stirs.",
+        "motion_prompt": "Subtle handheld texture on the close-up as his eyes open and rack focus to the glowing holographic notification. Anamorphic lens breathing clearly visible during the focus pull, ensuring no jarring movements.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_5f1991e542b727ebdd145f4f246e0862.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "Silent Empire",
+    "visual_language": "Shot on RED V-Raptor 8K VV with Zeiss Supreme Prime Radiance lenses. Heavy halation bloom on interface lights, chromatic aberration on edge highlights. Fuji Eterna 500T film stock emulation with visible grain structure at ISO 2500. Natural sensor noise in shadow areas. Anamorphic lens breathing on focus pulls.",
+    "narrative_arc": "Open on a solitary figure in a vast, minimal penthouse at golden hour—they're asleep while holographic trading data cascades around them. A crane shot reveals multiple screens showing global markets in motion, bots executing trades autonomously. Close on their eyes opening to a notification: profit realized—the empire built itself while they dreamed.",
+    "audience_hook": "The fantasy of wealth working for you while you rest—algorithmic trading democratized, making the 'passive income' dream tangible and immediate for anyone willing to start.",
+    "cinematic_direction": {
+      "mood_notes": "Aspirational but grounded in texture. Avoid sterile tech aesthetics—lean into warm amber practicals against cool blue data visualizations. The premium feel comes from restraint: negative space, deliberate pacing, and tactile surfaces (linen sheets, brushed metal, frosted glass). Let silence speak.",
+      "lighting_notes": "Studio-controlled natural light simulation. Key with large soft sources mimicking floor-to-ceiling windows at magic hour. Rim lights from holographic UI elements create halation bloom. Deep shadows with lifted blacks—never crushed. Practical LEDs embedded in furniture provide motivated fill with visible falloff.",
+      "camera_notes": "Steadicam for the opening intimate moments—subtle float, never locked. Crane for the reveal shot: slow vertical rise from subject to architectural scale. All movements motivated and deliberate. Slight handheld texture on close-ups of interface interaction. Focus breathing visible on rack focuses between subject and data."
+    },
+    "production_recommendations": {
+      "visual_engine": "flux",
+      "video_engine": "runway",
+      "voice_vibe": "Understated Luxury—a low, unhurried male voice with natural breath and room tone. Think documentary narrator meets private wealth advisor. No hard sell, just quiet confidence. Sparse copy delivery with intentional pauses."
+    }
+  },
+  "research_brief": "{\n  \"Product Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empower users to create and deploy profitable, automated AI trading bots in seconds, with no coding required, enabling 24/7 passive trading.\",\n  \"Target Audience\": \"Retail traders, individual investors, and those interested in algorithmic trading or passive income generation, particularly those without programming expertise.\",\n  \"Key Features\": [\n    \"AI Trading Bot Creation\",\n    \"Automated Trading\",\n    \"No-Code Strategy Building\",\n    \"24/7 Trading Operation\",\n    \"Rapid Deployment\"\n  ],\n  \"Brand Vibe\": \"Innovative, Accessible Tech, Efficient, Empowering, Automated\",\n  \"Industry\": \"FinTech (Financial Technology), Algorithmic Trading, AI in Finance\"\n}",
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\bgm_8603f80ea650d4e1b590f5f229c0cc12.mp3",
+  "video_model": "veo",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": [
+    "[23:07:19] [RESEARCH] Analyzing target URL: https://botspot.trade/...",
+    "[23:07:23] [RESEARCH] Site analysis complete. Extracted 727 chars of context.",
+    "[23:07:23] [STRATEGY] Initializing creative brainstorm for: Create a commercial for creative ad for our company. \n        Style: Cinematic, 3D Render. \n        Mood: Premium, Aspirational. \n        Camera: Steadicam, Crane. \n        Target platform: Netflix, Hulu. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+    "[23:07:40] [STRATEGY] Strategic angle developed: N/A",
+    "[23:07:40] [GEMINI] Generating cinematic screenplay & shotlist...",
+    "[23:08:03] [GEMINI] Screenplay generated with 3 scenes.",
+    "[23:08:17] [PHASE 3] Starting Asset Generation...",
+    "[23:08:18] [VISUALS] Enforcing Google Ecosystem (Imagen 4 + Gemini)",
+    "[23:08:24] [VISUALS] Generating Scene 1 via ImagenProvider...",
+    "[23:08:24] [ERROR] Image Gen Failed for Scene 1: ImagenProvider.generate_image() got an unexpected keyword argument 'seed'",
+    "[23:08:24] [VISUALS] Generating Scene 2 via ImagenProvider...",
+    "[23:08:24] [ERROR] Image Gen Failed for Scene 2: ImagenProvider.generate_image() got an unexpected keyword argument 'seed'",
+    "[23:08:24] [VISUALS] Generating Scene 3 via ImagenProvider...",
+    "[23:08:24] [ERROR] Image Gen Failed for Scene 3: ImagenProvider.generate_image() got an unexpected keyword argument 'seed'",
+    "[23:08:51] [CONFIG] Switiching Video Engine from Runway (Paid) to Veo (Free/Preview).",
+    "[23:08:51] [PHASE 4] Starting Motion Synthesis (veo)...",
+    "[23:08:53] [PHASE 5] Assembling Final Video..."
+  ]
+}

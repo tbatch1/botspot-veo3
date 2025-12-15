@@ -1,0 +1,101 @@
+{
+  "id": "c34831d7-c50e-40fe-9388-63baa44ac7ec",
+  "user_input": "Botspot.trade - AI Trading Agents",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "seed": 2121418133,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Tired of fighting the market storm? Botspot.trade helps organize market data for a clearer perspective.",
+        "time_range": "0-15s",
+        "audio_path": "c:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_171c4a996c75ec75b0c951dd46f909d8.mp3"
+      }
+    ],
+    "mood": "Premium, Aspirational, Mysterious",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Shot on RED Komodo 6K with vintage Zeiss Super Speed MK II lenses (T1.3). Heavy halation bleeding from monitor glows and lightning flashes. 35mm Kodak 5219 film stock emulation with pronounced grain structure at ISO 2500. Chromatic aberration on edge highlights. Anamorphic lens flares. Natural skin texture with visible pores, sweat beads, stress lines. Atmospheric haze and volumetric fog throughout. A single, glistening bead of sweat slowly tracing a path down the temple of a weary, determined male trader, late 30s, with a stubble, bloodshot eyes, and disheveled dark hair. The reflected light from a flickering monitor projects frantic market data across his skin, creating a claustrophobic effect. He wears a slightly rumpled, dark grey dress shirt with the top button undone, sleeves rolled up, revealing faint stress lines on his forearms.\nExtreme close-up (ECU) on the sweat bead and skin texture, subtly revealing the frantic data on his face. Subject centered in safe zone.\nLow-key, harsh practicals only. Flickering monitor light casts unstable, dancing shadows on his face. Intermittent, sharp lightning flashes create stark, high-contrast silhouettes. The overall mood is oppressive, enhancing the dread.\nTeal and orange color grade with high contrast, crushed blacks for deep cinematic depth, reflecting the chaotic and oppressive environment. Warm skin tones are desaturated and appear stressed against the cool, chaotic screen light, achieving a blockbuster film aesthetic, theatrical release quality.\nShot on Sony Venice 2 full-frame 8.6K sensor, utilizing its cutting-edge digital cinema technology, paired with a Sigma Art 40mm f/1.4 lens for sharp, cinematic rendering, emphasizing shallow depth of field. Vista Vision large format for premium image quality.",
+        "audio_prompt": "Distant rumble of thunder, frantic keyboard clicks, low hum of server fans, subtle rain ambiance.",
+        "motion_prompt": "Wide tracking shot, executed as a slow, slightly unstable orbit around the trader's head, mimicking fighting the wind, creating intentional micro-drift and breathing.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "c:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_2df8afb4d00e697fb76fd4fd5a3d6977.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Shot on RED Komodo 6K with vintage Zeiss Super Speed MK II lenses (T1.3). Heavy halation bleeding from monitor glows and lightning flashes. 35mm Kodak 5219 film stock emulation with pronounced grain structure at ISO 2500. Chromatic aberration on edge highlights. Anamorphic lens flares. Natural skin texture with visible pores, sweat beads, stress lines. Atmospheric haze and volumetric fog throughout. The same weary, determined male trader from scene 1, now looking intently at a sleek, minimalist interface on a large monitor. On the screen, abstract, luminous geometric patterns form a crystalline, calm data visualization representing Botspot emerging from the chaotic data, a moment of revelation. He is framed chest to head.\nMedium shot (MS), chest to head framing, standard dialogue composition, balanced and relatable, conversational distance, centered in safe zone.\nA single, clean shaft of ethereal light cuts through the darkness and atmospheric haze, illuminating the trader's face and the Botspot interface. This hard directional light creates bold dramatic shadows and deep blacks, contrasting with the luminous screen, creating a fashion editorial aesthetic and striking visual impact.\nTeal and orange color grade with high contrast, crushed blacks for cinematic depth. Warm skin tones appear in the clean shaft of light against cool, mysterious backgrounds, maintaining a blockbuster film aesthetic, theatrical release quality.\nShot on Sony Venice 2 full-frame 8.6K sensor, leveraging its cutting-edge digital cinema technology, paired with a 24mm f/1.4 wide-angle prime lens for environmental storytelling. Anamorphic 2.39:1 cinematic scope aspect ratio for a theatrical presentation.",
+        "audio_prompt": "Fading storm sounds, subtle electronic hum, gentle chime of discovery.",
+        "motion_prompt": "Wide crane shot descending from a high angle to reveal the scene, transitioning into a controlled push-in, subtly rack-focusing from the trader's stressed expression to the calm, geometric AI construct on the screen.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "c:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_6ece939a2eecf3aa165c5a188ea8fc98.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Shot on RED Komodo 6K with vintage Zeiss Super Speed MK II lenses (T1.3). Heavy halation bleeding from monitor glows and lightning flashes. 35mm Kodak 5219 film stock emulation with pronounced grain structure at ISO 2500. Chromatic aberration on edge highlights. Anamorphic lens flares. Natural skin texture with visible pores, sweat beads, stress lines. Atmospheric haze and volumetric fog throughout. The same male trader from scene 1, now relaxed and peaceful, leaning back slightly in his ergonomic office chair, a subtle smile playing on his lips. His eyes are closed or gazing calmly at the serene, clean interface of Botspot on a distant screen, which is autonomously processing data. The surrounding office space is now calm and organized, the violent chaos gone. He is visible head-to-toe, clear environmental context, centered in safe zone.\nWide shot (WS), subject head-to-toe visible, clear environmental context, balanced composition, establishing perspective.\nSoft, diffused dawn light streams in through a large window, creating subtle god rays through the atmospheric particulate. No direct artificial lighting. Gentle ambient bounce fill from light-colored walls creates a peaceful, warm environment.\nTeal and orange color grade, but with a softer, more harmonious contrast. Blacks are still rich but not crushed, giving a sense of depth and tranquility. Warm skin tones glow against the cool, ethereal background, conveying a blockbuster film aesthetic, theatrical release quality.\nShot on Arri Alexa Mini LF, a compact large format cinema camera, Netflix approved, paired with a Canon CN-E anamorphic lens, producing characteristic horizontal lens flares. Enhanced with 35mm film grain texture for an organic analog feel.",
+        "audio_prompt": "Soft, diffused morning city ambiance, distant birdsong, gentle, almost imperceptible electronic hum.",
+        "motion_prompt": "Wide crane shot descending from a high angle to reveal the serene scene, executed as a smooth, confident glide, the camera itself finding peace. Always living movement, no locked-off shots.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "c:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_46ea8b5ffa30ff349920f93175ae1a8b.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "The Eye of the Storm",
+    "visual_language": "Shot on RED Komodo 6K with vintage Zeiss Super Speed MK II lenses (T1.3). Heavy halation bleeding from monitor glows and lightning flashes. 35mm Kodak 5219 film stock emulation with pronounced grain structure at ISO 2500. Chromatic aberration on edge highlights. Anamorphic lens flares. Natural skin texture with visible pores, sweat beads, stress lines. Atmospheric haze and volumetric fog throughout.",
+    "narrative_arc": "A weathered trader stands in a metaphorical tempest—screens flickering, data cascading like rain, markets crashing around them in violent chaos. They discover Botspot, visualized as a geometric AI construct emerging from the noise—and suddenly the storm parts, revealing crystalline clarity and automated precision. The final moment: serene stillness as the AI works autonomously, the trader finally at peace.",
+    "audience_hook": "The exhaustion of constant market vigilance transformed into liberation. For those who've lost sleep watching charts, this speaks to the fantasy of trusted automation—your intelligence, working while you rest.",
+    "cinematic_direction": {
+      "mood_notes": "Begin with dread and overwhelm—claustrophobic, oppressive. The storm is both literal and psychological. Transition through a moment of revelation (discovering Botspot) into ethereal calm. The mystery comes from the AI's almost supernatural precision—we never fully 'see' it, only its effects. Premium quality conveyed through restraint, not excess.",
+      "lighting_notes": "Opening: Low-key, harsh practicals only—flickering monitor light casting unstable shadows, lightning flashes creating stark contrast. Transition: Single shaft of clean light cutting through darkness. Resolution: Soft, diffused dawn light with subtle god rays through atmospheric particulate. No direct artificial lighting in final moments.",
+      "camera_notes": "Steadicam with intentional micro-drift and breathing. Opening shots: Slow orbit around the trader, slightly unstable as if the operator is fighting the wind. Storm sequence: Controlled push-ins with subtle rack focus hunting. Final sequence: Smooth, confident glide—the camera itself finds peace. No locked-off shots; always living movement."
+    },
+    "production_recommendations": {
+      "visual_engine": "flux",
+      "video_engine": "runway",
+      "voice_vibe": "Measured, low register. Think documentary narrator with gravitas—not selling, revealing. Subtle breath between phrases. Intimate, as if sharing a secret rather than making a pitch. British or European-neutral accent preferred for mysterious authority."
+    }
+  },
+  "research_brief": "{\n  \"Product Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empower anyone to create and deploy profitable AI trading strategies automatically and instantly, with no coding required, enabling 24/7 automated trading.\",\n  \"Target Audience\": \"Individuals interested in automated financial trading, particularly those without programming skills or financial market experts seeking to automate strategies quickly.\",\n  \"Key Features\": [\n    \"AI Trading Bot Creation\",\n    \"Automated Trading Strategy Deployment\",\n    \"No-Code Strategy Builder\",\n    \"24/7 Automated Trading\",\n    \"Instant Strategy Generation\"\n  ],\n  \"Brand Vibe\": \"Tech, Innovative, Efficient, Empowering, Automated\",\n  \"Industry\": \"Fintech, Automated Trading, AI Trading\"\n}",
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": "c:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\bgm_678486b7271db5f98f2101b3d73523cc.mp3",
+  "video_model": "veo",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": [
+    "[13:01:25] [RESEARCH] Analyzing target URL: https://botspot.trade...",
+    "[13:01:28] [RESEARCH] Site analysis complete. Extracted 740 chars of context.",
+    "[13:01:28] [STRATEGY] Initializing creative brainstorm for: Botspot.trade - AI Trading Agents",
+    "[13:01:47] [STRATEGY] Strategic angle developed: N/A",
+    "[13:01:47] [GEMINI] Generating cinematic screenplay & shotlist...",
+    "[13:02:16] [GEMINI] Screenplay generated with 3 scenes.",
+    "[13:02:36] [PHASE 3] Starting Asset Generation...",
+    "[13:02:36] [VISUALS] Enforcing Google Ecosystem (Imagen 4 + Gemini)",
+    "[13:02:41] [FLUX] Generating visuals for Scene 1...",
+    "[13:02:41] [ERROR] Image Gen Failed for Scene 1: ImagenProvider.generate_image() got an unexpected keyword argument 'seed'",
+    "[13:02:41] [FLUX] Generating visuals for Scene 2...",
+    "[13:02:41] [ERROR] Image Gen Failed for Scene 2: ImagenProvider.generate_image() got an unexpected keyword argument 'seed'",
+    "[13:02:41] [FLUX] Generating visuals for Scene 3...",
+    "[13:02:41] [ERROR] Image Gen Failed for Scene 3: ImagenProvider.generate_image() got an unexpected keyword argument 'seed'",
+    "[13:03:10] [CONFIG] Switiching Video Engine from Runway (Paid) to Veo (Free/Preview).",
+    "[13:03:10] [PHASE 4] Starting Motion Synthesis (veo)...",
+    "[13:03:12] [PHASE 5] Assembling Final Video..."
+  ]
+}

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\tommy\Desktop\botspot-veo3\tests\test_premier_flow.py", line 36, in test_direct_injection_logic
+    script_data = self.ad_gen.plan(user_input=topic)
+  File "C:\Users\tommy\Desktop\botspot-veo3\ott_ad_builder\pipeline.py", line 114, in plan
+    if not config_overrides.get('image_provider') and recs.get('visual_engine'):
+           ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'

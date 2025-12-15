@@ -1,0 +1,105 @@
+{
+  "id": "5ee6af28-175a-41ee-be50-b387e6d72c3d",
+  "user_input": "coffee race car",
+  "status": "processing",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Tired of the slow lane?",
+        "time_range": "0-4s",
+        "audio_path": "assets\\audio\\mock_speech_814.mp3"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "It's time for an upgrade.",
+        "time_range": "4-9s",
+        "audio_path": "assets\\audio\\mock_speech_3827.mp3"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Fuel your ambition.",
+        "time_range": "9-13s",
+        "audio_path": "assets\\audio\\mock_speech_3941.mp3"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Unleash your inner speed demon.",
+        "time_range": "13-17s",
+        "audio_path": "assets\\audio\\mock_speech_4813.mp3"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Coffee Race Car. Shift your day into focus.",
+        "time_range": "17-22s",
+        "audio_path": "assets\\audio\\mock_speech_7990.mp3"
+      }
+    ],
+    "mood": "Exhilarating",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "HYPER-REALISTIC, 4K CINEMATIC SHOT. A sleepy hand with faint creases reaching slowly for a ceramic mug on a polished, dark wood kitchen counter. Subtle volumetric dawn light filters through a window, casting long, soft shadows. Shot on Arri Alexa 65 with a Lomo anamorphic prime lens, f/1.8 depth of field, showcasing the fine dust motes dancing in the light and the warm condensation on the mug's surface. The background is softly blurred, hinting at an empty, quiet kitchen. Muted, cool color palette with warm highlights.",
+        "audio_prompt": "Distant city hum, gentle creak of a floorboard, soft, ambient morning sounds.",
+        "motion_prompt": "Slow, deliberate cinematic push-in on the groggy hand and mug, then a gentle lift to reveal the sleepy face.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_5131.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "HYPER-REALISTIC, 4K CINEMATIC REVEAL. A sleek, futuristic 'coffee race car' device, crafted from polished chrome and matte black carbon fiber, emerges from dramatic, high-contrast shadows on a minimalist, reflective black plinth. Sharp, focused Rembrandt lighting sculpts its contours, highlighting intricate vents and glowing crimson accents. Wisps of ethereal, backlit steam curl gracefully from a nozzle. Shot on Arri Alexa LF with a Panavision H-series prime lens, f/2.8, rendering every minute detail and reflection with breathtaking clarity. A sense of sophisticated power and anticipation.",
+        "audio_prompt": "Subtle, futuristic hum, gentle hiss of steam escaping, building to a low, powerful drone.",
+        "motion_prompt": "Cinematic pull-back reveal, starting close on a glowing detail, then slowly tracking out and orbiting slightly to reveal the entire product.",
+        "duration": 5,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_471.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "HYPER-REALISTIC, 4K MACRO CINEMATIC SHOT. Extreme close-up of rich, dark espresso cascading powerfully into a pristine, matte black ceramic mug, creating a perfect, golden crema. Intense, warm, focused spotlight from above illuminates the liquid's texture, steam plumes rising vigorously and catching the light. Shot on Arri Alexa Mini LF with a Laowa macro probe lens, f/1.4, capturing every swirling current and bubble with incredible resolution. The background is a velvety, abstract blur of warm, earthy tones, emphasizing the intensity and purity of the coffee.",
+        "audio_prompt": "Deep, satisfying gurgle of coffee pouring, subtle metallic clinks, distant hum of high-performance machinery.",
+        "motion_prompt": "Smooth, downward crane shot following the pour, then a slight rotation as the mug fills, maintaining razor-sharp focus on the coffee.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_953.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 4,
+        "visual_prompt": "HYPER-REALISTIC, 4K DYNAMIC CINEMATIC SHOT. A vibrant, energized young professional, eyes sparkling with newfound focus, takes a confident sip from a sleek, black coffee mug. The scene is bathed in dynamic, high-key lighting, with sharp highlights on their face and hands. In the subtly motion-blurred background, abstract streaks of light and color, reminiscent of a hyper-speed tunnel or race track, convey immense velocity and momentum. Shot on Arri Alexa 35 with a Cooke S7/i prime lens, f/4, with a subtle 35mm film grain texture, evoking an exhilarating, unstoppable feeling.",
+        "audio_prompt": "A quick, sharp *WHOOSH* sound, followed by a subtle, deep engine-like thrumming, increasing in intensity.",
+        "motion_prompt": "Rapid whip pan from the mug to the person's alert eyes, followed by a subtle, energetic camera shake that quickly stabilizes.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_9984.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 5,
+        "visual_prompt": "HYPER-REALISTIC, 4K PRISTINE STUDIO SHOT. The 'coffee race car' device, gleaming under precise, multi-point LED studio lighting, sits majestically on a highly reflective black surface. A freshly prepared, steaming mug of coffee rests beside it, radiating warmth. A confident, manicured hand, perfectly framed, reaches in and firmly grasps the mug. Every minute detail—the device's metallic sheen, the subtle condensation on the mug, the texture of the hand—is rendered with photographic perfection. Shot on Arri Alexa LF with a Zeiss Supreme Prime lens, f/2.8, creating a razor-sharp image with exquisite depth and contrast. A mood of ultimate control and effortless power.",
+        "audio_prompt": "A satisfying, confident 'clink' as the mug is picked up, followed by a powerful, sustained low-frequency drone.",
+        "motion_prompt": "Slow, precise push-in on the product, then a smooth arc around as the hand reaches for and firmly picks up the mug.",
+        "duration": 5,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_6935.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

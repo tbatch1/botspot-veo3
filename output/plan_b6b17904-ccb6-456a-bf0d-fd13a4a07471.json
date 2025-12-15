@@ -1,0 +1,18 @@
+{
+  "id": "b6b17904-ccb6-456a-bf0d-fd13a4a07471",
+  "user_input": "Test Topic",
+  "status": "planning",
+  "error": null,
+  "script": {},
+  "strategy": {
+    "production_recommendations": {
+      "visual_engine": "flux"
+    }
+  },
+  "research_brief": null,
+  "final_video_path": null,
+  "video_model": "runway",
+  "image_provider": "imagen",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade"
+}

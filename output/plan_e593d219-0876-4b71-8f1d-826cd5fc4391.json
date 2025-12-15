@@ -1,0 +1,46 @@
+{
+  "id": "e593d219-0876-4b71-8f1d-826cd5fc4391",
+  "user_input": "chocolate",
+  "status": "planning",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Pure bliss, in every moment.",
+        "time_range": "0-8s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Indulgent",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A pristine, dark chocolate bar slowly breaking apart, revealing a smooth, rich interior. Soft golden hour lighting, extreme close-up.",
+        "audio_prompt": "Subtle crunch and quiet ambient sound.",
+        "motion_prompt": "Slow push in on the breaking chocolate.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "A perfectly tempered piece of dark chocolate melting sensuously on a warm surface, forming a glossy pool. Soft, warm overhead lighting, close-up, shallow depth of field.",
+        "audio_prompt": "Gentle, almost imperceptible melting sounds.",
+        "motion_prompt": "Static shot with very subtle steam rising.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

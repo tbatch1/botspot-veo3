@@ -1,0 +1,66 @@
+{
+  "id": "718f9274-893a-4dde-954d-4a0c97d61914",
+  "user_input": "\n    Create an Intense, Real-Life ad for Botspot.\n    Focus on the PAIN of manual trading (exhaustion, red eyes) vs the RELIEF of automation.\n    Visuals MUST look like a Netflix Documentary (Halation, Grain, Imperfect).\n    NO \"AI Gloss\". Make it gritty.\n    ",
+  "status": "completed",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Tired of fighting the market alone? Let Botspot automate your trading. Free up your time, reduce your stress.",
+        "time_range": "0-8s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_9bd9516e723c2e1b1870afa8744a72e3.mp3"
+      }
+    ],
+    "mood": "Intense",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3, a 38-year-old Caucasian man, unkempt dark brown hair, five o'clock shadow stubble, deeply bloodshot, tired eyes, wearing a sweat-stained grey t-shirt, slumped over a keyboard, face illuminated by multiple trading monitors displaying red candlesticks and complex financial data. Empty energy drink cans and crumpled snack wrappers are strewn across the desk.\nExtreme close-up (ECU) on the man's trembling fingers hovering over a mouse, then pushing uncomfortably into his bloodshot eye reflecting flickering red charts, centered in safe zone.\nHarsh monitor glow as the sole practical light source, creating deep, unflattering eye shadows and visible pores, aggressive halation bleeding from the bright monitor screens onto his face and the lens, low-key chiaroscuro with extreme contrast, film noir aesthetic.\nHeavy film grain with visible emulsion scratches, pushed 2 stops, teal and orange color grade with high contrast, crushed blacks for cinematic depth, natural skin texture showing fatigue, bloodshot capillaries, gritty documentary style, not glossy.\nShot on Arri Alexa LF full-frame sensor with a Cooke S4 prime lens, 24mm f/1.4 wide-angle, visible ISO 3200 sensor noise in darker areas, Vista Vision large format feel, organic analog imperfection.",
+        "audio_prompt": "Subtle hum of computer fans, distant keyboard clicks, the low thrum of exhaustion, claustrophobic silence, heavy breathing.",
+        "motion_prompt": "Handheld micro-tremors throughout, a slow, uncomfortable push-in from the trembling fingers to the bloodshot eye, no stabilization.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\db05dcf4c72c8bcef26beeedacd0f7d9.png",
+        "video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\videos\\0cfaef9eeb5972d3c88c57da4aa3905d.mp4",
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_6f02b6ec3b64bbcd38fe672ed5204125.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3, the same 38-year-old Caucasian man from scene 1, now asleep slumped over his desk, head resting on his arm. On one of the monitors, bright green charts are climbing steadily, displaying 'BotSpot' interface with automated trading active. An untouched, steaming coffee cup sits beside him, morning light through venetian blinds illuminating dust particles in the air.\nMedium shot (MS), chest to head framing of the sleeping man, with a slow, handheld push-down to reveal the 'BotSpot' interface on the monitor screen, then widening slightly to encompass the peaceful desk, centered in safe zone.\nSoft morning window light streaming through blinds, creating visible dust particles in the air, gentle ambient bounce fill from white walls, warm color temperature 3200K, naturalistic and imperfect, shallow depth of field isolates the subject beautifully.\nHeavy film grain with visible emulsion scratches, pushed 2 stops, teal and orange color grade with high contrast, crushed blacks, warm skin tones against cool backgrounds, gritty documentary resolution, not glossy.\nShot on Arri Alexa LF full-frame sensor with a Cooke S4 prime lens, 50mm f/1.2 portrait lens, visible ISO 3200 sensor noise in darker areas, 35mm film grain texture and organic analog feel, no stabilization.",
+        "audio_prompt": "Gentle, distant city awakening sounds, soft bird chirping outside, the quiet hum of BotSpot software, peaceful silence, soft breathing.",
+        "motion_prompt": "Handheld with visible micro-tremors, a slow, controlled push-in and subtle vertical track down from the man's sleeping face to the BotSpot interface on the monitor, then a slow, static wide shot, allowing stillness to speak, no stabilization.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_1cf5566e9c3aa9044751a0f5af18e7fb.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "The Breaking Point",
+    "visual_language": "Shot on handheld 16mm Bolex, pushed 2 stops, heavy film grain with visible emulsion scratches. Cooke S4 lenses with natural chromatic aberration on highlights. ISO 3200 sensor noise in darker scenes. Aggressive halation bleeding from monitor screens. Natural skin texture showing fatigue—visible pores, oil, bloodshot capillaries in eyes. No color correction smoothing.",
+    "narrative_arc": "We open on a trader at 3AM—face lit only by multiple monitors, red candlesticks reflecting in bloodshot eyes, energy drink cans scattered like casualties. His hands shake over the keyboard, missing another trade. Cut to black, then reveal: the same desk, morning light through blinds, coffee steaming untouched—he's asleep while green charts climb on screen, BotSpot running silently.",
+    "audience_hook": "The visceral, relatable exhaustion of trying to beat the market manually—tapping into the fear of burnout and the desperate desire for freedom from the screen.",
+    "cinematic_direction": {
+      "mood_notes": "Oppressive and claustrophobic in the 'before'—sweat, tension, desperation. The relief should feel earned, not glossy. Think 'Uncut Gems' anxiety meets quiet documentary resolution. No triumphant music—just silence and breath.",
+      "lighting_notes": "First half: harsh monitor glow as sole practical light source, unflattering uplighting creating deep eye shadows. Flickering chart reflections on face. Second half: soft morning window light with visible dust particles, naturalistic and imperfect.",
+      "camera_notes": "Handheld with visible micro-tremors throughout. Extreme close-ups on bloodshot eyes, trembling fingers, cracked lips. Slow, uncomfortable push-ins. Final shot: static wide, letting stillness speak. No stabilization."
+    },
+    "production_recommendations": {
+      "visual_engine": "flux",
+      "video_engine": "runway",
+      "voice_vibe": "No voiceover. Text only—white, minimal, typewriter font. Let the visuals breathe. If VO required: exhausted whisper, cracked voice, real human fatigue—not polished narrator."
+    }
+  },
+  "research_brief": "{\n  \"Product Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Automated, profitable AI trading strategies built quickly without coding, enabling 24/7 autonomous trading.\",\n  \"Target Audience\": \"Aspiring and experienced traders, individuals interested in automated investing who lack coding skills.\",\n  \"Key Features\": [\n    \"AI trading bots\",\n    \"Automatic trading execution\",\n    \"Profitable strategy creation\",\n    \"No coding required\",\n    \"Rapid deployment (in seconds)\",\n    \"24/7 trading operation\"\n  ],\n  \"Brand Vibe\": \"Innovative, Efficient, Accessible Tech, Empowering.\",\n  \"Industry\": \"FinTech, Algorithmic Trading, AI/Machine Learning\"\n}",
+  "final_video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\output\\final_ad.mp4",
+  "video_model": "runway",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "logs": []
+}

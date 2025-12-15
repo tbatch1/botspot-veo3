@@ -1,0 +1,83 @@
+{
+  "id": "4cf21b74-876a-4ee1-9ba1-5d926317c7f8",
+  "user_input": "Create a commercial for build a cool constructive algorithm campaign for my company. \n        Style: Cinematic, 3D Render. \n        Mood: Authentic, Premium. \n        Camera: Steadicam, Crane. \n        Target platform: Netflix, Hulu. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+  "status": "planning",
+  "error": null,
+  "seed": 3956657088,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Unlock the power. With a single touch, command intelligent algorithms that trade and empower your potential, day and night.",
+        "time_range": "0-8s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Authentic, Premium",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Shot on RED Komodo 6K with Zeiss Supreme Prime Radiance lenses. Heavy halation bloom on digital interface elements. Fuji Eterna 8553 film stock simulation with crushed blacks and lifted shadows. Visible chromatic aberration on edge highlights. 35mm grain structure at ISO 2500. Lens breathing on focus pulls. Subtle barrel distortion on wide establishing shots. A meticulously crafted sculptural obsidian interface panel, with subtle, dormant micro-LED patterns embedded beneath its cool, smooth surface. A male hand, mid-30s, lean build, with a gold wedding band, gently approaches and touches the center of the panel with his index finger, a moment of intimate connection between flesh and machine. Extreme close-up (ECU) on the male hand's fingertip connecting with the obsidian interface, revealing microscopic textures and the faint glow of the dormant micro-LEDs beneath. Dramatic practicals only, with a single hard cool tungsten source creating deep, architectural shadows across the obsidian surface, motivated by a soft, warm amber screen glow from within the panel itself, emphasizing the point of contact. Specular highlights on the obsidian and ring bloom with natural halation. Fuji Eterna 8553 film stock simulation with crushed blacks and lifted shadows, visible chromatic aberration on edge highlights. RED Komodo 6K, Zeiss Supreme Prime Radiance 85mm lens, shallow depth of field f/1.4 for dramatic subject isolation, full-frame sensor depth.",
+        "audio_prompt": "Subtle, deep hum of dormant technology, faint metallic friction as finger meets surface.",
+        "motion_prompt": "A smooth, controlled, low-altitude 'drone-like' push, treating the interface as an expansive landscape of detail, slowly revealing its intricate texture before settling gently on the point of human contact, evoking the organic micro-movements of a steadicam.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Shot on RED Komodo 6K with Zeiss Supreme Prime Radiance lenses. Heavy halation bloom on digital interface elements. Fuji Eterna 8553 film stock simulation with crushed blacks and lifted shadows. Visible chromatic aberration on edge highlights. 35mm grain structure at ISO 2500. Lens breathing on focus pulls. Subtle barrel distortion on wide establishing shots. The same sculptural obsidian interface panel from scene 1, now acting as a base from which an intricate, breathing 3D construct of light and geometry rapidly assembles. This construct is composed of countless glowing, architectural shards, each pulsating with internal light and representing real-time trading data. The male hand from scene 1 is visible in the lower frame, slightly retracted, observing the algorithmic manifestation with quiet awe. Medium shot (MS) focusing on the unfolding 3D algorithmic construct, with the interface panel and part of the hand visible in the lower third, emphasizing the connection between man and machine. Hard directional cool tungsten light raking across the obsidian interface and the forming algorithmic construct, creating dramatic, bold shadows that emphasize depth. The construct itself glows with a soft internal amber light, casting blooming specular highlights and creating heavy halation bloom. Fuji Eterna 8553 film stock simulation with crushed blacks and lifted shadows, visible chromatic aberration on edge highlights. RED Komodo 6K, Zeiss Supreme Prime Radiance 35mm lens, shallow depth of field f/1.4 for cinematic compression, full-frame sensor depth.",
+        "audio_prompt": "Soft, complex digital chimes and subtle, organic swells of energy as the algorithm forms.",
+        "motion_prompt": "A slow, deliberate crane shot, lifting smoothly from just above the interface, ascending to reveal the full, breathing 3D algorithmic construct as it assembles from fractured geometric shards, a controlled vertical motion that feels like discovery rather than spectacle, as guided by the Creative Director.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Shot on RED Komodo 6K with Zeiss Supreme Prime Radiance lenses. Heavy halation bloom on digital interface elements. Fuji Eterna 8553 film stock simulation with crushed blacks and lifted shadows. Visible chromatic aberration on edge highlights. 35mm grain structure at ISO 2500. Lens breathing on focus pulls. Subtle barrel distortion on wide establishing shots. The same male character from scene 1, asleep peacefully in a premium, minimalist bedroom, illuminated by the soft glow of an urban night. In the background, seen through a vast window or on a large, subtle display screen, the fully formed, architectural 3D algorithm construct from scene 2 is subtly active, its glowing shards pulsing gently, signifying autonomous market activity throughout the night while the creator sleeps. Wide shot (WS) of the bedroom, clearly showing the sleeping figure and the subtle, active algorithm in the background, establishing a sense of quiet command. Soft, motivated cool moonlight streaming through a large window, creating deep, defined shadows. The ambient fill is minimal, embracing the darkness. The subtle glow from the active algorithm in the background provides warm amber halation, contrasting with the cool ambient light. Fuji Eterna 8553 film stock simulation with crushed blacks and lifted shadows, visible chromatic aberration on edge highlights. RED Komodo 6K, Zeiss Supreme Prime Radiance 24mm wide-angle prime lens, anamorphic 2.39:1 cinematic scope aspect ratio, full-frame sensor depth.",
+        "audio_prompt": "Faint, distant city sounds, a subtle, rhythmic digital pulse from the active algorithm.",
+        "motion_prompt": "A gliding, 'drone-like' push through the quiet, dark bedroom, starting wide and slowly advancing to reveal the sleeping figure, then subtly panning towards the distant window where the algorithm's glow is visible, a smooth and reverent movement reminiscent of a steadicam's quiet observation.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "The Algorithm Awakens",
+    "visual_language": "Shot on RED Komodo 6K with Zeiss Supreme Prime Radiance lenses. Heavy halation bloom on digital interface elements. Fuji Eterna 8553 film stock simulation with crushed blacks and lifted shadows. Visible chromatic aberration on edge highlights. 35mm grain structure at ISO 2500. Lens breathing on focus pulls. Subtle barrel distortion on wide establishing shots.",
+    "narrative_arc": "We open on a single human hand touching a cold, sculptural interface—a moment of connection between flesh and machine. The algorithm manifests as an intricate, breathing 3D construct that assembles itself from fractured geometric shards, each piece representing a trading decision being made in real-time. The final beat reveals the construct working autonomously through the night while the creator sleeps, markets pulsing in the darkness.",
+    "audience_hook": "The democratization of power—what once required teams of quants and millions in infrastructure is now summoned with a single touch. You're not just using technology; you're commanding it.",
+    "cinematic_direction": {
+      "mood_notes": "Authentic premium means restraint. No flashy UI overlays or sci-fi tropes. The algorithm visualization should feel architectural and substantial—like a Tadao Ando building made of light. The emotion is quiet confidence, not hype. Think Denis Villeneuve's approach to technology: reverent, tactile, grounded.",
+      "lighting_notes": "Dramatic practicals only. Single hard source creating deep shadows with motivated fill. Cool tungsten mixed with warm amber from screen glow. Specular highlights should bloom with natural halation. No flat corporate lighting—embrace the darkness to create depth and mystery.",
+      "camera_notes": "Steadicam for the human moments—smooth but with organic micro-movements and settling. Crane for the algorithm reveal—a slow, deliberate descent that feels like discovery rather than spectacle. All movements motivated by curiosity. Crossfade transitions should feel like breath between thoughts."
+    },
+    "production_recommendations": {
+      "visual_engine": "flux",
+      "video_engine": "runway",
+      "voice_vibe": "Understated authority. Low register, unhurried cadence. Think a thoughtful architect describing their life's work at 2am—intimate, precise, with natural breath and subtle room tone. No announcer energy. Real human imperfection in delivery."
+    }
+  },
+  "research_brief": "{\n  \"Product Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empower users to create and deploy profitable AI trading bots automatically, in seconds, with no coding required, enabling 24/7 automated trading.\",\n  \"Target Audience\": \"Individuals and retail investors seeking to leverage AI for automated trading strategies, particularly those without coding expertise.\",\n  \"Key Features\": [\n    \"AI trading bot creation\",\n    \"Automated trading execution\",\n    \"No-code strategy builder\",\n    \"Rapid deployment (in seconds)\",\n    \"24/7 trading operation\"\n  ],\n  \"Brand Vibe\": \"Tech-forward, Empowering, Efficient, Accessible\",\n  \"Industry\": \"FinTech, Algorithmic Trading, Artificial Intelligence, Investment Technology\"\n}",
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": null,
+  "video_model": "runway",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": []
+}

@@ -1,0 +1,46 @@
+{
+  "id": "985553f2-4a1e-4b75-8545-b6255b17b0fa",
+  "user_input": "luxury watch",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Time perfected. Your legacy, defined.",
+        "time_range": "0-8s",
+        "audio_path": "assets\\audio\\mock_speech_7599.mp3"
+      }
+    ],
+    "mood": "Aspirational",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A distinguished 40-year-old man, impeccably dressed in a dark bespoke suit, sits confidently at a polished mahogany desk. His left wrist, featuring a gleaming silver luxury watch with a deep blue face and intricate dial, rests casually. Cinematic three-point lighting highlights the watch and his confident expression. Medium close-up, perfectly centered in the safe zone.",
+        "audio_prompt": "Soft, ambient hum of a luxurious office.",
+        "motion_prompt": "Slow, subtle dolly push-in towards the man's wrist.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\95341ffc457b7df22c4de9d49a6065f2.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_2156.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "The same distinguished 40-year-old man from Scene 1, now standing by a large window overlooking a vibrant city skyline at dusk. He subtly adjusts the cuff of his suit jacket, revealing a clear, detailed shot of the gleaming silver luxury watch on his wrist. Golden hour backlight catches the watch's intricate details, maintaining hero framing. The man's face is in profile, looking out, watch prominent.",
+        "audio_prompt": "Subtle, distant city sounds and a gentle ticking of a clock.",
+        "motion_prompt": "Gentle Steadicam orbit from his profile to a three-quarter view, slightly revealing the watch face more directly.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\a2303342fd7938ac59fa2528818fc1ae.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_6869.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

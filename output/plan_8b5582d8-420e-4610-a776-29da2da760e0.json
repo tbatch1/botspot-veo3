@@ -1,0 +1,46 @@
+{
+  "id": "8b5582d8-420e-4610-a776-29da2da760e0",
+  "user_input": "smartphone",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Your world, seamlessly connected.",
+        "time_range": "0-8s",
+        "audio_path": "assets\\audio\\mock_speech_5791.mp3"
+      }
+    ],
+    "mood": "Aspirational",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A 30-year-old man, diverse ethnicity, short well-groomed hair, wearing a smart casual dark grey shirt, holding a sleek, modern smartphone in his right hand, looking at its screen with a focused yet calm expression. Cinematic three-point lighting, medium close-up, centered within the safe zone.",
+        "audio_prompt": "Soft, distant city hum and gentle digital interface clicks.",
+        "motion_prompt": "Slow, subtle Steadicam drift to the left, maintaining subject's focus.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\bbcf56e3296b6a86e5fac36bbfe7b84a.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_8090.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "The same man from scene 1, now looking up from the smartphone with a subtle, confident smile, making eye contact. The smartphone is now casually held at his side. Golden hour backlight softly illuminates his profile, creating a warm, inviting atmosphere. Medium shot, face remains centered within the safe zone.",
+        "audio_prompt": "Subtle, uplifting ambient electronic music track begins softly.",
+        "motion_prompt": "Smooth, slow dolly push-in towards the man, holding steady on his gaze.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\8671cb4b6755ec86812121bb0854757a.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_1839.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

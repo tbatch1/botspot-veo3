@@ -1,0 +1,100 @@
+{
+  "id": "cc4cb075-c8b1-4b19-b10e-ac6668450f53",
+  "user_input": "Create a commercial for creative ad for our company. \n        Style: Cinematic, 3D Render. \n        Mood: Premium, Aspirational. \n        Camera: Steadicam, Crane. \n        Target platform: Netflix, Hulu. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "seed": 216203497,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "While the world sleeps, your edge is awake. BotSpot. Optimize your strategy, reclaim your focus.",
+        "time_range": "0-15s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_5f363e579c7b0dcd10195dcd409108fc.mp3"
+      }
+    ],
+    "mood": "Premium, Aspirational",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Shot on RED V-Raptor with Zeiss Supreme Prime Radiance lenses. Fuji Eterna 500T emulation with lifted blacks. Heavy halation blooming from holographic UI elements, chromatic aberration on edge highlights. 35mm grain structure at ISO 2500. Skin rendered with visible pores, micro-imperfections, subsurface scattering showing vein detail under harsh light. A 40-year-old man, tired, with short, slightly disheveled brown hair and a five o'clock shadow, wearing a dark, rumpled shirt and a silver wedding band. His bloodshot eye, heavy with fatigue, reflects flickering, chaotic market data on a screen. Extreme close-up (ECU) on the man's anxious eye, centered in safe zone. Low-key chiaroscuro with a cool blue monitor glow as key light, creating hard dramatic shadows across half his face. Warm sodium street light bleeds through the rain-covered window. Fuji Eterna 500T emulation with lifted blacks, heavy halation blooming from future holographic UI elements, chromatic aberration on edge highlights. Shot on RED V-Raptor with Zeiss Supreme Prime Radiance lenses. IMAX large format sensor for maximum resolution and clarity.",
+        "audio_prompt": "Subtle distant city hum with the gentle sound of rain streaking down glass, punctuated by the soft, anxious breathing of the man.",
+        "motion_prompt": "Slow dolly back, gradually revealing the man's stressed face and the dim, rain-streaked apartment interior, culminating in a luminous holographic interface appearing before him with subtle blooming light.",
+        "duration": 5,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_db54faa4ac7b4d9f704ae72c50fea715.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Shot on RED V-Raptor with Zeiss Supreme Prime Radiance lenses. Fuji Eterna 500T emulation with lifted blacks. Heavy halation blooming from holographic UI elements, chromatic aberration on edge highlights. 35mm grain structure at ISO 2500. Skin rendered with visible pores, micro-imperfections, subsurface scattering showing vein detail under harsh light. The same 40-year-old man from scene 1, now with a dawning look of focused, controlled precision as he interacts with the luminous holographic interface. His fingers hover and gesture over illuminated controls, a faint cyan glow emanating onto his face. Medium shot (MS), chest to head framing of the man, positioned in the center 80% safe zone. Cool blue monitor glow from the holographic interface acts as the key light, creating soft cyan halation that wraps his face and hands. Warm sodium street light continues to bleed through the rain-covered window in the background, offering a stark contrast. Hard shadows, no fill. Fuji Eterna 500T emulation with lifted blacks, heavy halation blooming from holographic UI elements, chromatic aberration on edge highlights. Shot on RED V-Raptor with Zeiss Supreme Prime Radiance lenses, using a 50mm f/1.2 portrait lens for beautiful subject separation and bokeh.",
+        "audio_prompt": "Quiet hum of advanced technology, soft clicking of holographic interface interaction, with the continued distant rain and city ambiance.",
+        "motion_prompt": "Smooth Steadicam float, subtly tracking the man's intimate, deliberate movements as he engages with the holographic interface, emphasizing his newfound control and the transformation from chaos to precision.",
+        "duration": 5,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_21749eb6ab6271471a3ba70bf3e1fe10.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Shot on RED V-Raptor with Zeiss Supreme Prime Radiance lenses. Fuji Eterna 500T emulation with lifted blacks. Heavy halation blooming from holographic UI elements, chromatic aberration on edge highlights. 35mm grain structure at ISO 2500. Skin rendered with visible pores, micro-imperfections, subsurface scattering showing vein detail under harsh light. The same 40-year-old man from scene 1, a contemplative silhouette against the softly glowing holographic interface, framed within his dimly lit, rain-streaked apartment. Wide shot (WS) revealing the man and his apartment environment, clear environmental context, centered in safe zone. Predominantly dark apartment interior with a single, soft cyan glow from the holographic interface illuminating the man's profile. External city lights appear as distant, muted warm sodium glows through the heavily rain-streaked window. Hard shadows dominate, no fill. Fuji Eterna 500T emulation with lifted blacks, heavy halation blooming from holographic UI elements, chromatic aberration on edge highlights. Shot on RED V-Raptor with Zeiss Supreme Prime Radiance lenses, using a Sigma Art 40mm f/1.4 for sharp cinematic rendering.",
+        "audio_prompt": "Gentle, expanding city soundscape, distant muted traffic, and the persistent soft rain, fading as the camera pulls further back.",
+        "motion_prompt": "Slow and deliberate wide crane ascent, pulling back through the rain-spattered window glass of the apartment, gradually revealing the vast, sleeping city below and around him, emphasizing his solitary control over his invisible edge.",
+        "duration": 5,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_3dbd1df1a30b9996e3b3c7937f266bde.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "The Invisible Edge",
+    "visual_language": "Shot on RED V-Raptor with Zeiss Supreme Prime Radiance lenses. Fuji Eterna 500T emulation with lifted blacks. Heavy halation blooming from holographic UI elements, chromatic aberration on edge highlights. 35mm grain structure at ISO 2500. Skin rendered with visible pores, micro-imperfections, subsurface scattering showing vein detail under harsh light.",
+    "narrative_arc": "A trader sits alone in a dim, rain-streaked apartment as markets crash around them—stress visible in every line of their face. A single interaction with a luminous holographic interface transforms chaos into orchestrated precision. We pull back through glass to reveal a city of sleeping millions while their AI trades relentlessly through the night.",
+    "audience_hook": "The fear of missing out while you sleep, combined with the aspiration of effortless wealth—BotSpot positions the viewer as someone who deserves to win without the grind.",
+    "cinematic_direction": {
+      "mood_notes": "Premium through restraint. Silence and negative space create tension. The aspirational quality comes from control, not excess—the protagonist gains power through stillness while the world moves frantically around them.",
+      "lighting_notes": "Studio-controlled practicals only. Cool blue monitor glow as key light, warm sodium street light bleeding through rain-covered windows. Hard shadows, no fill. Holographic UI elements emit soft cyan halation that wraps faces.",
+      "camera_notes": "Steadicam for intimate opening—breathing, organic movement tracking the protagonist's anxiety. Crane ascent for the final reveal, slow and deliberate, pulling through rain-spattered glass into the city expanse. No snap zooms or aggressive moves—everything earned."
+    },
+    "production_recommendations": {
+      "visual_engine": "flux",
+      "video_engine": "runway",
+      "voice_vibe": "Quiet authority. Low register, measured pace—think a whispered secret between equals. No announcer energy. Intimate, almost ASMR-adjacent proximity. Male or female, but weathered, knowing."
+    }
+  },
+  "research_brief": "{\n  \"Product Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Automated, profitable AI trading strategies, deployed instantly, no coding required, running 24/7.\",\n  \"Target Audience\": \"Aspiring and current traders, investors, and individuals seeking to automate and enhance their trading profitability without needing coding expertise.\",\n  \"Key Features\": [\n    \"AI trading bot creation\",\n    \"Automated strategy deployment\",\n    \"No-code strategy building\",\n    \"24/7 continuous trading\"\n  ],\n  \"Brand Vibe\": \"Innovative, Empowering, Efficient, Accessible, Cutting-edge Tech\",\n  \"Industry\": \"FinTech, Artificial Intelligence, Automated Trading\"\n}",
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\bgm_10118d136a4c88261d4b3dcdef720167.mp3",
+  "video_model": "runway",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": [
+    "[02:13:18] [RESEARCH] Analyzing target URL: https://botspot.trade/...",
+    "[02:13:25] [RESEARCH] Site analysis complete. Extracted 651 chars of context.",
+    "[02:13:25] [STRATEGY] Initializing creative brainstorm for: Create a commercial for creative ad for our company. \n        Style: Cinematic, 3D Render. \n        Mood: Premium, Aspirational. \n        Camera: Steadicam, Crane. \n        Target platform: Netflix, Hulu. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+    "[02:13:45] [STRATEGY] Strategic angle developed: N/A",
+    "[02:13:45] [GEMINI] Generating cinematic screenplay & shotlist...",
+    "[02:14:10] [GEMINI] Screenplay generated with 3 scenes.",
+    "[02:14:29] [PHASE 3] Starting Asset Generation...",
+    "[02:14:30] [VISUALS] Initialized Flux 1.1 Pro (High Fidelity)",
+    "[02:14:32] [FLUX] Generating visuals for Scene 1...",
+    "[02:14:32] [ERROR] Image Gen Failed for Scene 1: FluxProvider.generate_image() got an unexpected keyword argument 'safety_tolerance'",
+    "[02:14:32] [FLUX] Generating visuals for Scene 2...",
+    "[02:14:32] [ERROR] Image Gen Failed for Scene 2: FluxProvider.generate_image() got an unexpected keyword argument 'safety_tolerance'",
+    "[02:14:32] [FLUX] Generating visuals for Scene 3...",
+    "[02:14:32] [ERROR] Image Gen Failed for Scene 3: FluxProvider.generate_image() got an unexpected keyword argument 'safety_tolerance'",
+    "[02:15:02] [PHASE 4] Starting Motion Synthesis (runway)...",
+    "[02:15:03] [PHASE 5] Assembling Final Video..."
+  ]
+}

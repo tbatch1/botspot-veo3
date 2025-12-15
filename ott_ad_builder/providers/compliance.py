@@ -17,7 +17,7 @@ class ComplianceProvider:
         """
         Reviews the script for compliance violations and auto-corrects if necessary.
         """
-        print(f"⚖️ Compliance Officer: Reviewing script for {industry} regulations...")
+        print(f"[COMPLIANCE] Compliance Officer: Reviewing script for {industry} regulations...")
         
         rules_text = "\n- ".join(self.default_rules)
         
@@ -51,13 +51,13 @@ class ComplianceProvider:
             validated_script = Script(**data)
             
             if validated_script != script:
-                print("⚠️ Compliance Issue Found: Script was auto-corrected.")
+                print("[WARN] Compliance Issue Found: Script was auto-corrected.")
             else:
-                print("✅ Compliance Check Passed.")
+                print("[OK] Compliance Check Passed.")
                 
             return validated_script
             
         except Exception as e:
-            print(f"❌ Compliance Check Failed: {e}")
+            print(f"[ERROR] Compliance Check Failed: {e}")
             print("   Proceeding with original script (User should review manually).")
             return script

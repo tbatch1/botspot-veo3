@@ -1,0 +1,79 @@
+{
+  "id": "fd7bfafb-0af3-49bb-ae5e-34518c305c25",
+  "user_input": "A gritty 1970s detective movie trailer set in rainy New York.",
+  "status": "planning",
+  "error": null,
+  "seed": 628188972,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "In this city, the truth hides in shadows... and some secrets refuse to stay buried.",
+        "time_range": "0-8s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Premium",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Shot on Arri 416 with Zeiss Super Speed MkII primes (T1.3 wide open for shallow focus). Kodak 7219 500T pushed one stop for crushed blacks and muddy midtones. Heavy halation bleeding from streetlamps and neon signage. 35mm anamorphic squeeze with oval bokeh. Visible gate weave and splice marks. ISO 800 grain structure with clumped emulsion texture. Chromatic aberration on wide shots, particularly cyan/magenta fringing on rain-slicked surfaces. Extreme close-up on the rain-slicked, worn leather of a weathered male detective's trench coat collar, a single drop of rain catching the artificial light, subtly reflecting a distant distorted neon sign. The dark brown/olive green fabric shows visible wear and tear, and fine threads are illuminated. Extreme close-up (ECU) on the rain-soaked collar, focused tightly on the water droplets and coarse fabric, centered in safe zone. Heavy halation bleeding from a distant sodium vapor streetlamp, casting sickly orange and deep shadows across the wet fabric. Minimal fill. Specular highlights from rain bloom and flare. Crushed blacks and muddy midtones, heavy halation, ISO 800 grain structure with clumped emulsion texture. Chromatic aberration, particularly cyan/magenta fringing on rain-slicked surfaces. Paranoid, oppressive, morally ambiguous mood, realistic, filmic. Anamorphic 35mm film format.",
+        "audio_prompt": "Drip of rain, distant siren wail.",
+        "motion_prompt": "Slow 180-degree arc around the detective's collar, revealing the texture and the glint of distant, distorted light, with subtle handheld breathing movement.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Shot on Arri 416 with Zeiss Super Speed MkII primes (T1.3 wide open for shallow focus). Kodak 7219 500T pushed one stop for crushed blacks and muddy midtones. Heavy halation bleeding from streetlamps and neon signage. 35mm anamorphic squeeze with oval bokeh. Visible gate weave and splice marks. ISO 800 grain structure with clumped emulsion texture. Chromatic aberration on wide shots, particularly cyan/magenta fringing on rain-slicked surfaces. The same weathered male detective from scene 1, mid-50s, tired eyes, stubbled face, wearing his rumpled, rain-soaked dark brown/olive green trench coat, a stained white shirt, and loosened dark tie. He holds a bulky rotary telephone receiver to his ear. His face is half-lit, eyes often lost in darkness. Medium shot (MS) of the detective, chest to head framing, slightly low angle looking up, isolating him against the grimy background, centered in safe zone. Single practical desk lamp casting harsh lines across his face, revealing sweat and exhaustion. Deep shadows envelop the rest of the room. Sodium vapor light from outside leaks through a grimy window, creating a sickly orange hue. Crushed blacks and muddy midtones, heavy halation, ISO 800 grain structure with clumped emulsion texture. Paranoid, oppressive, morally ambiguous mood. The city is indifferent, hostile, realistic, filmic. Anamorphic 35mm film format.",
+        "audio_prompt": "Muffled, distorted voice from the phone receiver, the detective's heavy breathing, distant rumble of a subway.",
+        "motion_prompt": "Slow dolly push-in, slightly off-axis, with subtle breathing movement, revealing the detective's troubled expression as he listens intently. Rack focus arriving slightly late on his eyes.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Shot on Arri 416 with Zeiss Super Speed MkII primes (T1.3 wide open for shallow focus). Kodak 7219 500T pushed one stop for crushed blacks and muddy midtones. Heavy halation bleeding from streetlamps and neon signage. 35mm anamorphic squeeze with oval bokeh. Visible gate weave and splice marks. ISO 800 grain structure with clumped emulsion texture. Chromatic aberration on wide shots, particularly cyan/magenta fringing on rain-slicked surfaces. The same weathered male detective from scene 1, his rumpled dark brown/olive green trench coat visible, standing isolated in a vast, dimly lit, concrete parking garage, surrounded by abstract shadows. He is seen head-to-toe, looking small against the imposing environment. Wide shot (WS), detective head-to-toe visible in the lower third of the frame, towering concrete pillars and dim, flickering fluorescent lights filling the upper frame, creating an oppressive atmosphere, centered in safe zone. Single flickering fluorescent light source from above, casting long, distorted shadows and deep, oppressive darkness. Volumetric haze visible in the light beams, adding to the dramatic contrast and mysterious mood. Crushed blacks and muddy midtones, heavy halation from the flickering light. ISO 800 grain structure with clumped emulsion texture, chromatic aberration on wide shots. Paranoid, oppressive, morally ambiguous, dangerous, lived-in, realistic, filmic. Anamorphic 35mm film format.",
+        "audio_prompt": "Eerie silence, distant dripping water, footsteps echoing, building to a sudden, sharp, almost imperceptible metallic clang just before fade to black.",
+        "motion_prompt": "Locked-off composition, emphasizing the stillness and tension, followed by a quick, subtle fade to black.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "Shadows on the Pavement",
+    "visual_language": "Shot on Arri 416 with Zeiss Super Speed MkII primes (T1.3 wide open for shallow focus). Kodak 7219 500T pushed one stop for crushed blacks and muddy midtones. Heavy halation bleeding from streetlamps and neon signage. 35mm anamorphic squeeze with oval bokeh. Visible gate weave and splice marks. ISO 800 grain structure with clumped emulsion texture. Chromatic aberration on wide shots, particularly cyan/magenta fringing on rain-slicked surfaces.",
+    "narrative_arc": "A weathered detective receives a cryptic phone call that pulls him back into a case he thought was buried. Rain-soaked streets and flickering neon become his confessional as he descends through a web of corruption that reaches higher than he ever imagined. The trailer climaxes with a confrontation in a dimly lit parking garage—truth revealed, but justice uncertain.",
+    "audience_hook": "Nostalgia for an era of morally complex anti-heroes and tactile filmmaking—before digital smoothed every edge. This is cinema that feels dangerous, lived-in, and unapologetically human.",
+    "cinematic_direction": {
+      "mood_notes": "Paranoid, oppressive, morally ambiguous. Every frame should feel like 3 AM after too many cigarettes. The city is a character—indifferent, hostile, beautiful in its decay. Lean into the melancholy of a man who knows too much and trusts no one.",
+      "lighting_notes": "Practicals only—sodium vapor streetlights casting sickly orange pools, neon signs providing accent color (predominantly red and blue). Deep shadows with minimal fill. Faces half-lit, eyes often lost in darkness. Rain creates specular highlights that bloom and flare. Interior scenes lit by single desk lamps or venetian blind slats cutting harsh lines across faces.",
+      "camera_notes": "Handheld with subtle breathing movement during dialogue. Slow zooms during revelations (70s Pakula/Lumet style). Whip pans between suspects. Low angles looking up at towering buildings, high angles isolating the detective in empty streets. Rack focuses that arrive slightly late, as if the camera operator is discovering the scene in real-time."
+    },
+    "production_recommendations": {
+      "visual_engine": "flux",
+      "video_engine": "veo",
+      "voice_vibe": "Gravelly baritone with exhaustion baked into every syllable. Think worn leather and black coffee. Sparse narration—each word deliberate, weighted with regret. Mid-Atlantic delivery with New York edges. The voice of a man narrating his own downfall."
+    }
+  },
+  "research_brief": null,
+  "final_video_path": null,
+  "video_model": "veo",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "logs": []
+}

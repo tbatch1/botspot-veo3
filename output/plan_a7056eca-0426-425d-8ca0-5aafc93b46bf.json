@@ -1,0 +1,159 @@
+{
+  "id": "a7056eca-0426-425d-8ca0-5aafc93b46bf",
+  "user_input": "Create a commercial for botspot.trade",
+  "status": "planned",
+  "error": null,
+  "seed": 2929095643,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "[pause: 0.3s] Some moments... change everything.",
+        "time_range": "0s-4s",
+        "audio_path": null
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Introducing a new standard. Built for those who demand more.",
+        "time_range": "4s-9s",
+        "audio_path": null
+      },
+      {
+        "speaker": "Narrator",
+        "text": "This is it. [pause: 0.5s] Are you ready?",
+        "time_range": "9s-14s",
+        "audio_path": null
+      }
+    ],
+    "mood": "cinematic",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A photo of Dramatic opening shot of botspot.trade interface emerging from darkness, volumetric lighting illuminating the screen, professional tech environment. Shot on Arri Alexa, Cooke S4 prime lens, shallow depth of field f/2.8, cinematic lighting.",
+        "audio_prompt": "AMBIANCE: Natural environment sounds. MUSIC: Epic cinematic.",
+        "motion_prompt": "Camera: Smooth cinematic motion. Visual: Dramatic opening shot of botspot.trade interface emerging from darkness, volumetric lighting illuminating the screen, professional tech environment. Slow dolly push-in, smooth and deliberate. Style: Professional, cinematic quality.",
+        "duration": 4,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": null,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "A photo of Wide shot revealing botspot.trade dashboard in full operation, showing key features and UI, golden hour lighting streaming through modern office window. Shot on Arri Alexa, Cooke S4 prime lens, shallow depth of field f/2.8, cinematic lighting.",
+        "audio_prompt": "AMBIANCE: Natural environment sounds. MUSIC: Epic cinematic.",
+        "motion_prompt": "Camera: Smooth cinematic motion. Visual: Wide shot revealing botspot.trade dashboard in full operation, showing key features and UI, golden hour lighting streaming through modern office window. Slow pan across the scene, revealing details. Style: Professional, cinematic quality.",
+        "duration": 5,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": null,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "A photo of Close-up of botspot.trade logo and key feature highlight, premium lighting setup with brand colors. Shot on Arri Alexa, Cooke S4 prime lens, shallow depth of field f/2.8, cinematic lighting.",
+        "audio_prompt": "AMBIANCE: Natural environment sounds. MUSIC: Epic cinematic.",
+        "motion_prompt": "Camera: Smooth cinematic motion. Visual: Close-up of botspot.trade logo and key feature highlight, premium lighting setup with brand colors. Slow orbit around display, settling on logo. Style: Professional, cinematic quality.",
+        "duration": 5,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": null,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "botspot.trade Premium Showcase",
+    "visual_language": "Shot on Arri Alexa, Cooke S4 prime lens, natural film grain, shallow depth of field",
+    "product_name": "botspot.trade",
+    "scenes": [
+      {
+        "scene_number": 1,
+        "beat": "hook",
+        "duration": 4,
+        "visual_direction": "Dramatic opening shot of botspot.trade interface emerging from darkness, volumetric lighting illuminating the screen, professional tech environment",
+        "motion_direction": "Slow dolly push-in, smooth and deliberate",
+        "emotional_goal": "Intrigue and curiosity",
+        "voiceover_content": "[pause: 0.3s] Some moments... change everything.",
+        "sfx_description": "Deep bass tone, subtle whoosh"
+      },
+      {
+        "scene_number": 2,
+        "beat": "solution",
+        "duration": 5,
+        "visual_direction": "Wide shot revealing botspot.trade dashboard in full operation, showing key features and UI, golden hour lighting streaming through modern office window",
+        "motion_direction": "Slow pan across the scene, revealing details",
+        "emotional_goal": "Understanding and desire",
+        "voiceover_content": "Introducing a new standard. Built for those who demand more.",
+        "sfx_description": "Ambient atmosphere, subtle music swell"
+      },
+      {
+        "scene_number": 3,
+        "beat": "payoff",
+        "duration": 5,
+        "visual_direction": "Close-up of botspot.trade logo and key feature highlight, premium lighting setup with brand colors",
+        "motion_direction": "Slow orbit around display, settling on logo",
+        "emotional_goal": "Aspiration and action",
+        "voiceover_content": "This is it. [pause: 0.5s] Are you ready?",
+        "sfx_description": "Impactful final note, sonic brand signature"
+      }
+    ],
+    "audio_signature": {
+      "music_mood": "epic",
+      "voiceover_style": "cinematic_narrator"
+    },
+    "cinematic_direction": {
+      "mood_notes": "Premium, Aspirational",
+      "lighting_notes": "Dramatic three-point lighting with rim highlights",
+      "camera_notes": "Steady, controlled movements"
+    }
+  },
+  "research_brief": "{\n  \"Product/Service Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empowers users to create and deploy AI trading agents and profitable trading strategies in seconds with no coding required, enabling automated 24/7 trading.\",\n  \"Target Audience\": \"Individuals interested in automated or algorithmic trading, investors seeking passive income through AI, and those without coding expertise who want to build trading bots quickly.\",\n  \"Top 5 Key Features\": [\n    \"Create & Deploy AI Trading Agents\",\n    \"No coding required for strategy creation\",\n    \"Build profitable trading strategies in seconds\",\n    \"Automated trading functionality\",\n    \"24/7 trading operation\"\n  ],\n  \"Brand Tone\": \"Innovative, Empowering, Accessible, Fast, Revolutionary, Professional\",\n  \"Industry\": \"Finance, Fintech, AI, Algorithmic Trading\",\n  \"Competitors Mentioned\": \"None\",\n  \"One-Sentence Pitch\": \"BotSpot revolutionizes trading by allowing anyone to create and deploy profitable AI trading bots in seconds, no coding required, for automated 24/7 market engagement.\"\n}",
+  "detected_style": {
+    "aesthetic": "photorealistic",
+    "format": "product_showcase",
+    "tone": "triumphant",
+    "pacing": "fast",
+    "confidence": 0.7,
+    "confidence_breakdown": {
+      "aesthetic": 0.3,
+      "format": 1.0,
+      "tone": 0.5,
+      "pacing": 1.0
+    }
+  },
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": null,
+  "video_model": "veo",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": [
+    "[01:01:07] [RESEARCH] Analyzing target URL: https://botspot.trade...",
+    "[01:01:07] [RESEARCH] Site analysis complete. Extracted 1057 chars of context.",
+    "[01:01:07] [STRATEGY] Initializing creative brainstorm for: Create a commercial for botspot.trade",
+    "[01:01:57] [STRATEGY] Strategic angle developed: N/A",
+    "[01:01:57] [GPT-5.2] Formatting scenes with spatial reasoning...",
+    "[01:01:57] [GPT-5.2] Formatted 3 scenes with spatial specs.",
+    "[01:02:03] [PHASE 1.5] Detecting creative style intent...",
+    "[01:02:03] [STYLE] Aesthetic detected: photorealistic (30% confidence)",
+    "[01:02:03] [STYLE] Format: product_showcase",
+    "[01:02:03] [STYLE] Tone: triumphant",
+    "[01:02:03] [SYSTEM] PLAN_COMPLETE. Transitioning to Asset Generation Phase."
+  ]
+}

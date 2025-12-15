@@ -1,0 +1,66 @@
+{
+  "id": "5934872c-95cd-464b-8616-1672223c2a11",
+  "user_input": "\n    Create an Intense, Real-Life ad for Botspot.\n    Focus on the PAIN of manual trading (exhaustion, red eyes) vs the RELIEF of automation.\n    Visuals MUST look like a Netflix Documentary (Halation, Grain, Imperfect).\n    NO \"AI Gloss\". Make it gritty.\n    ",
+  "status": "planning",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Manual trading can be relentless. Discover more personal time. Botspot: automate your trades, simplify your routine.",
+        "time_range": "0-10s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Intense",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3. A 30-year-old male trader, visibly exhausted, with dark circles under his bloodshot eyes, stubble on his face, wearing a crumpled dark t-shirt. His fingers are stained with dried coffee. Extreme close-up (ECU) on his bloodshot eye reflecting endless green candlestick charts, then slowly pushing into his trembling fingertips hovering over a mechanical keyboard, then back to his sweat-sheen face. Harsh, unflattering illumination from multiple monitor screens creating a sickly blue-green glow, complemented by a single desk lamp casting deep shadows under his eyes. No fill light. Darkness eats the frame edges. Heavy halation blooms from monitor glow. Teal and orange color grade with high contrast, crushed blacks for cinematic depth, warm skin tones against cool backgrounds, gritty Netflix documentary look. Shot on handheld Bolex 16mm film camera aesthetic, Kodak Vision3 500T film stock pushed two stops for heavy grain and crushed blacks, Anamorphic Kowa lenses with visible chromatic aberration on edges, high ISO sensor noise, 2.39:1 anamorphic cinematic scope aspect ratio. Important subjects centered in 80% safe zone.",
+        "audio_prompt": "Quiet room tone, the subtle, rhythmic click-clack of a mechanical keyboard, a distant, almost imperceptible hum of server fans, and the faint, intermittent flicker of overhead fluorescent lights.",
+        "motion_prompt": "Slow, creeping handheld micro-shake push-in that feels invasive, moving from the eye to the trembling fingertips, then slowly pulling back to the exhausted face, never fully steady. Speed is very slow and deliberate.",
+        "duration": 5,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\42db466eb21ba59dca807606ad4c1419.png",
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_81bed31962304aaeeb13393f3736417b.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3. The same 30-year-old male trader from scene 1, now sleeping peacefully, head resting on his arms on the desk, the monitors behind him dimly glowing, showing Botspot running automatically. Medium shot (MS), chest to head framing, showing his relaxed posture. Subtly softer practical lighting compared to scene 1, with a muted glow from the now-automated trading desk screens and a faint, distant ambient practical light. Still no direct fill light, but the harshness on his face is absent, replaced by gentle shadows. Darkness still surrounds the frame edges. Teal and orange color grade with high contrast, crushed blacks for cinematic depth, warm skin tones against cool backgrounds, gritty Netflix documentary look. Shot on Panavision DXL2 cinema camera aesthetic, Cooke S4 prime lenses, full-frame sensor depth with natural film grain texture, 2.39:1 anamorphic cinematic scope aspect ratio. Important subjects centered in 80% safe zone.",
+        "audio_prompt": "Extremely quiet room tone, the faint, rhythmic hum of the Botspot software running in the background, a very subtle, distant city hum. The sound of peaceful, deep breathing.",
+        "motion_prompt": "Static locked-off hero shot, perfectly composed, capturing the stillness and earned calm. No camera movement.",
+        "duration": 5,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\31a3664b5d972746144ff5ae06cce42c.png",
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_77e961d6483eff5f6cb81aa224fabb11.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "The Burnout Before The Bot",
+    "visual_language": "Shot on handheld Bolex 16mm film camera, Kodak Vision3 500T stock, pushed two stops for heavy grain and crushed blacks. Anamorphic Kowa lenses with visible chromatic aberration on edges. High ISO sensor noise in digital pickup shots. Natural overhead fluorescent flicker. Skin shows fatigue—dark circles, visible pores, sweat sheen under harsh practical light. Heavy halation blooming from monitor glow.",
+    "narrative_arc": "We open tight on bloodshot eyes reflecting endless candlestick charts, fingers trembling over a keyboard at 3AM—the human cost of manual trading laid bare. A moment of collapse, head in hands, monitors casting sickly blue halation across exhausted features. Cut to stillness: the same desk, but now the trader sleeps peacefully while BotSpot runs—the relief of automation visualized through absence of struggle.",
+    "audience_hook": "Every trader knows the 3AM dread—the fear of missing a move, the exhaustion of constant vigilance. This taps into the visceral pain point before offering the escape: reclaim your life while the bot works.",
+    "cinematic_direction": {
+      "mood_notes": "Oppressive and claustrophobic in the first half—we feel the trader's prison. The intensity comes from intimacy, not action. Silence and ambient room tone amplify discomfort. The relief in the final beat should feel like exhaling after holding your breath.",
+      "lighting_notes": "Practicals only. Multiple monitor screens as key light source creating unflattering, sickly illumination. Single desk lamp creating harsh shadows under eyes. No fill. Let the darkness eat the frame edges. Fluorescent overhead with visible flicker in wide shots.",
+      "camera_notes": "Extreme close-ups with shallow depth of field—eyes, fingertips, coffee cup trembling. Handheld micro-shake, never steady. Slow creeping push-ins that feel invasive. Final peaceful shot can stabilize slightly—the calm earned."
+    },
+    "production_recommendations": {
+      "visual_engine": "flux",
+      "video_engine": "runway",
+      "voice_vibe": "No voiceover. Let ambient sound and silence do the work. If text overlay needed, use sparse lowercase sans-serif—understated, documentary-style lower thirds."
+    }
+  },
+  "research_brief": "{\n  \"Product Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empowers users to create, deploy, and manage AI trading bots in seconds without coding, enabling automated, profitable, and 24/7 trading strategies.\",\n  \"Target Audience\": \"Non-technical traders, individuals seeking passive income through automated trading, aspiring algo-traders, and those looking to simplify access to AI-driven financial markets.\",\n  \"Key Features\": [\n    \"AI trading bot creation\",\n    \"Automated trading execution\",\n    \"No-coding strategy builder\",\n    \"Rapid deployment (in seconds)\",\n    \"24/7 autonomous operation\"\n  ],\n  \"Brand Vibe\": \"Innovative, Accessible Tech, Empowering, Efficient, Financial Automation\",\n  \"Industry\": \"FinTech, Artificial Intelligence (AI), Automated Trading, Financial Technology\"\n}",
+  "final_video_path": null,
+  "video_model": "runway",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "logs": []
+}

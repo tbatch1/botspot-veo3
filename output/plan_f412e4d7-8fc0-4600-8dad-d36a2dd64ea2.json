@@ -1,0 +1,59 @@
+{
+  "id": "f412e4d7-8fc0-4600-8dad-d36a2dd64ea2",
+  "user_input": "Botspot.trade - AI Trading Agents",
+  "status": "planning",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Don't let market chaos steal your peace. Botspot.trade: AI agents are designed to help you navigate trading with greater focus.",
+        "time_range": "0-8s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Helpful & quirky",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3. A close-up on the frantic, sweat-beaded face of a 32-year-old man with short, slightly messy brown hair and stubble, eyes wide with panic fixed on an unseen screen, showing visible pores and skin texture. He's wearing a slightly wrinkled white button-down shirt, looking imperfect and real. Extreme close-up (ECU) on the man's face, showing minute details of his anxious expression, with a macro perspective on his skin texture. Low-key chiaroscuro with a hard single-source key light from the side, casting deep dramatic shadows across half his face, creating a film noir aesthetic with a 3:1 key-to-fill ratio for high contrast, theatrical mood. Fuji Pro 400H color palette with soft pastel tones, subtle green cast in shadows, gentle magenta highlights, nostalgic analog film emulsion look, wedding photography aesthetic. Shot on Arri Alexa Mini LF, a compact large format cinema camera, using a 50mm f/1.2 portrait lens with beautiful subject separation and bokeh, Anamorphic 2.39:1 cinematic scope aspect ratio.",
+        "audio_prompt": "Faint, frantic keyboard clicking, distant sighs of stress.",
+        "motion_prompt": "Slow dolly back from the close detail of the man's face, gradually revealing his full environment – a cluttered home office desk with multiple monitors displaying plummeting stock charts.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3. The same 32-year-old man from scene 1, now frozen mid-panic, sitting at his desk. Next to him, a 40-year-old man named Tom appears, impossibly calm, with a friendly, knowing smile, wearing a clean, emerald green polo shirt and neat hair. Both characters are imperfect and real with visible skin texture and pores. Medium shot (MS), chest to head framing for both men, balanced and relatable, conversational distance. Butterfly lighting (Paramount style) from directly above both subjects, creating soft beauty light and perfect catchlights in their eyes. A dedicated hair light separates them from the background. The background is a white seamless backdrop for a clean magazine look. Fuji Pro 400H color palette with soft pastel tones, subtle green cast in shadows, gentle magenta highlights, nostalgic analog film emulsion look, wedding photography aesthetic. Shot on Panavision DXL2 cinema camera, using a Canon CN-E anamorphic lens with characteristic horizontal lens flares, IMAX large format sensor.",
+        "audio_prompt": "A sudden, brief, subtle 'whoosh' sound as Tom appears, followed by quiet office hum.",
+        "motion_prompt": "Slow vertical crane down, majestically revealing Tom's appearance beside the frozen, panicked trader, settling at their eye level.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3. The same 32-year-old man from scene 1, now with a look of dawning relief and calm replacing his panic, subtly gesturing towards his computer screen, which now displays stable, green-positive charts. Next to him, the same 40-year-old man, Tom, from scene 2, gives a confident, knowing nod and a slight, reassuring smile. Both characters are in their respective outfits, looking real with visible pores and textures. Wide shot (WS), showing both subjects head-to-toe at the desk, with clear environmental context of a bright, clean office space, balanced composition. High-key lighting, bright and airy, with soft fill light eliminating harsh shadows. Colorful practical lights are visible in the background adding life. Motivated natural window light creates an authentic feel, vibrant energy. Fuji Pro 400H color palette with soft pastel tones, subtle green cast in shadows, gentle magenta highlights, nostalgic analog film emulsion look, wedding photography aesthetic. Shot on RED 8K Monstro sensor with 16-bit color depth, using a 24mm f/1.4 wide-angle prime, environmental storytelling lens, 35mm film grain texture and organic analog feel.",
+        "audio_prompt": "A subtle, digital 'ping' sound, followed by a soft, calming synth pad and quiet, satisfied exhales.",
+        "motion_prompt": "Crane up and away from the scene, with a gradual fade to black as Tom nods, creating an elegant ending flourish.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade"
+}

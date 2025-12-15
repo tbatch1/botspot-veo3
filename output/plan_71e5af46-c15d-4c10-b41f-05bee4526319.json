@@ -1,0 +1,82 @@
+{
+  "id": "71e5af46-c15d-4c10-b41f-05bee4526319",
+  "user_input": "race car video",
+  "status": "planning",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Experience the ultimate rush. Play now.",
+        "time_range": "0-5s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Adrenaline",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Close-up, low angle of a race car's slick tire ready on the asphalt, with soft morning light. A sense of powerful anticipation.",
+        "audio_prompt": "Distant hum of engines",
+        "motion_prompt": "Static shot",
+        "duration": 1,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Medium close-up of a driver's gloved hands intensely gripping a carbon-fiber steering wheel, dynamic interior lighting. Pure focus.",
+        "audio_prompt": "Engine revs briefly, determined breath",
+        "motion_prompt": "Slow push in",
+        "duration": 1,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Wide shot, ground level, a sleek futuristic race car blurs past at incredible speed on a sun-drenched track. Raw velocity.",
+        "audio_prompt": "Thunderous engine roar, air rushing",
+        "motion_prompt": "Pan right following the car",
+        "duration": 1,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 4,
+        "visual_prompt": "First-person POV from the cockpit, the track ahead a blur of speed and vibrant golden hour light. Intense, immersive action.",
+        "audio_prompt": "High-pitched engine whine, tires screeching",
+        "motion_prompt": "Static shot (from moving car)",
+        "duration": 1,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 5,
+        "visual_prompt": "Wide shot, a victorious race car crosses the finish line, dramatic low angle, cinematic twilight and a flash of celebratory light. A moment of triumph.",
+        "audio_prompt": "Roaring crowd cheer builds, triumphant sounder",
+        "motion_prompt": "Slow zoom out to reveal logo",
+        "duration": 1,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

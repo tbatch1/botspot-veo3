@@ -1,0 +1,46 @@
+{
+  "id": "a0fd6e84-11de-41a7-aa42-ec2d8cf179cf",
+  "user_input": "sneakers",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Unleash your stride.",
+        "time_range": "0-8s",
+        "audio_path": "assets\\audio\\mock_speech_3861.mp3"
+      }
+    ],
+    "mood": "Dynamic",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A close-up shot of a sleek, modern sneaker, showcasing intricate fabric textures and pristine white soles, bathed in soft, natural morning light.",
+        "audio_prompt": "Distant, gentle city hum.",
+        "motion_prompt": "Slow push in on the sneaker.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\76c9fb6b2814d9b2e9cebfb516275c53.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_5678.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Low angle shot of a runner's feet, clad in the sneakers, poised at the starting line of a track under bright, golden hour sunlight, dynamic shadows stretching.",
+        "audio_prompt": "Subtle, anticipatory track ambiance.",
+        "motion_prompt": "Static shot, focusing on the feet.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\62d930ac653e87fe2d64e14c7348d9a4.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_5728.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

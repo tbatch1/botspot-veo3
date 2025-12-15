@@ -1,0 +1,59 @@
+{
+  "id": "94776f8f-09f7-4d62-afde-30a051578be7",
+  "user_input": "Rivian R2",
+  "status": "planning",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "In a wired world, the Rivian R2 isn't just a vehicle. It's your escape to the untamed electric frontier.",
+        "time_range": "0-8s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Cyberpunk",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A rugged, angular Rivian R2, its deep metallic charcoal body gleaming, meticulously detailed panel gaps and durable adventure-ready textures reflecting myriad electric cyan, magenta, and deep violet neon city lights, with the subtle warm white glow of its LED light bar cutting through ambient haze. Extreme close-up shot of the front quarter panel, showcasing intricate surface patterns and technical precision, centered within the safe zone. Soft, even lighting illuminating the minute product details, with vibrant neon reflections providing the dominant color palette and subtle shadows to define form. Kodak Vision3 5219 film stock characteristics, deep contrast with rich saturated colors, slight organic grain texture for a cinematic feel. Shot on Arri Alexa Mini LF with Zeiss Master Prime cinema lenses for clinical sharpness, Vista Vision large format for premium image quality.",
+        "audio_prompt": "Subtle hum of distant future technology, gentle synthetic city ambiance, faint rain-slicked street sounds.",
+        "motion_prompt": "Slow, smooth 180-degree arc movement around the Rivian R2's detailed front quarter panel, establishing the macro geography and spatial relationship to the reflected urban environment, avoiding any jarring movements.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "The same Rivian R2 from scene 1, now active and moving, its powerful LED headlights cutting through synthetic urban fog, prominently centered within the safe zone. Towering holographic advertisements and digital noise are visible in the claustrophobic, neon-drenched metropolis background. Medium shot, framing the R2's front half as it navigates the electric jungle. Lighting sculpted by practical neon sources from surrounding signs, undercarriage glow, and reflected city light, creating dramatic highlights and shadows in electric cyan and magenta, adhering to a professional three-point setup effect but with high contrast and saturated color. Kodak Vision3 5219 film stock characteristics, deep contrast with rich saturated colors, slight organic grain texture. Shot on Panavision DXL2 cinema camera with a 24mm f/1.4 wide-angle prime lens to emphasize environmental storytelling, IMAX large format sensor for maximum resolution and clarity.",
+        "audio_prompt": "Muted, distant cyberpunk city soundscape, subtle synth frequencies, whoosh of passing autonomous vehicles.",
+        "motion_prompt": "Slow, deliberate 180-degree arc movement orbiting the Rivian R2 as it moves through the urban canyon, establishing the spatial relationships within the claustrophobic cityscape, executed with fluid, stable drone-like precision.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "The same Rivian R2 from scene 1, now speeding confidently across a vast, untamed, rugged landscape at the edge of the city, perfectly centered within the safe zone, contrasting with the expansive environment. Above, a sweeping night sky glows with bioluminescent aurora-style electric blues and magentas, giving way to starlight. Wide shot showing the entire R2 and its clear environmental context, establishing a sense of liberation. Low-key chiaroscuro lighting, where the bioluminescent sky and moonlit terrain act as the hard single-source key light, casting deep dramatic shadows across the landscape and silhouetting the R2, creating a theatrical mood with a 3:1 key-to-fill ratio. Kodak Vision3 5219 film stock characteristics, deep contrast with rich saturated colors, slight organic grain texture for a professional cinematic feel. Shot on Panavision DXL2 cinema camera with a Canon CN-E anamorphic lens, featuring characteristic horizontal lens flares, Anamorphic 2.39:1 cinematic scope aspect ratio for theatrical presentation.",
+        "audio_prompt": "Ethereal wilderness ambiance, distant electric crackle, low, powerful rumble of the R2's electric motor.",
+        "motion_prompt": "Wide, smooth tracking shot following the Rivian R2 as it traverses the rugged landscape, maintaining a fluid Steadicam float to convey environmental immersion and a sense of freedom, with dramatic altitude changes to emphasize the expansive wilderness.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "89da0084-9a32-4245-9c0c-0eb92bca991d",
+  "user_input": "sports car",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Unleash the extraordinary.",
+        "time_range": "0-8s",
+        "audio_path": "assets\\audio\\mock_speech_3890.mp3"
+      }
+    ],
+    "mood": "Premium",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A high-performance luxury sports car, deep metallic obsidian black, gleaming finish, parked on a sleek, polished concrete floor in a minimalist gallery space. Cinematic three-point lighting, with a strong, soft key light highlighting its curves and a subtle blue accent light from the floor. Low-angle hero shot, centered composition, revealing the front quarter of the car, tires visible, in the safe zone.",
+        "audio_prompt": "Subtle hum of electricity, distant, luxurious ambient drone.",
+        "motion_prompt": "Slow dolly push-in, subtle left pan.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\842b64f7f6e55ad708fa772bee0f9dc1.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_1899.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "The same deep metallic obsidian black high-performance luxury sports car from scene 1. Camera orbits slowly around the rear quarter, revealing its distinctive sleek taillights and dual exhaust pipes, maintaining the cinematic three-point lighting. Centered composition, maintaining hero framing, in the safe zone.",
+        "audio_prompt": "Faint, sophisticated engine purr, almost imperceptible, high-end car showroom ambiance.",
+        "motion_prompt": "Subtle Steadicam orbit around the rear, slight upward tilt.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\c7a19bb21267dab8b33cf478eab17e99.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_6411.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "3b83e227-f4bf-4438-b569-b181379667d2",
+  "user_input": "coffee",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "The perfect start.",
+        "time_range": "0-8s",
+        "audio_path": "assets\\audio\\mock_speech_4655.mp3"
+      }
+    ],
+    "mood": "Invigorating",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Early morning light, soft and warm, illuminates a close-up shot of rich coffee slowly pouring into a minimalist ceramic mug, steam gently rising.",
+        "audio_prompt": "Gentle pouring sound, subtle ceramic clink.",
+        "motion_prompt": "Slow push in",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\b89443032fd8e919db5fe72350b8678f.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_9752.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Golden hour light streams through a window, highlighting a hand gently holding the steaming coffee mug, a wide shot revealing a cozy, blurred background.",
+        "audio_prompt": "Subtle ambient room tone, distant city hum.",
+        "motion_prompt": "Static shot",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\d80e5770fcbe6536c6e7e9d76567063f.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_7884.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

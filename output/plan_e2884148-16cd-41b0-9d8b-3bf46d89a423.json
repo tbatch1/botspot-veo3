@@ -1,0 +1,46 @@
+{
+  "id": "e2884148-16cd-41b0-9d8b-3bf46d89a423",
+  "user_input": "luxury perfume",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "The essence of you.",
+        "time_range": "0-8s",
+        "audio_path": "assets\\audio\\mock_speech_5565.mp3"
+      }
+    ],
+    "mood": "Aspirational",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A 30-year-old woman with long, wavy dark hair, wearing a minimalist deep emerald silk slip dress, delicate gold jewelry, holding a sleek, frosted luxury perfume bottle, admiring it with a subtle, serene smile. Cinematic three-point lighting, soft key light, medium close-up, centered in frame.",
+        "audio_prompt": "Soft, rich orchestral swell, very subtle.",
+        "motion_prompt": "Subtle Steadicam drift, almost imperceptible.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\feafa5390a9a2906e71b9cfce33859cf.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_9669.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "The same woman from scene 1, her eyes gently closed in serene bliss as she subtly brings the perfume bottle towards her neck, as if just applied. Golden hour backlight creating a soft halo around her hair and shoulders, gentle close-up on her face and shoulder, centered.",
+        "audio_prompt": "Delicate, sparkling chime sound, followed by subtle ambient room tone.",
+        "motion_prompt": "Slow, graceful dolly push-in towards her face.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\7bc2bf26cae90a13702691ff57afa770.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_4202.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

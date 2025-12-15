@@ -1,0 +1,59 @@
+{
+  "id": "489f54e0-f4fc-4607-8d0a-0a9bd9061adb",
+  "user_input": "Phone",
+  "status": "planning",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Experience remarkable clarity and powerful performance. The future of connection is here.",
+        "time_range": "0-5s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Bold",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A sleek, obsidian black smartphone with a matte finish, featuring a triple-lens camera array and a seamless edge-to-edge display, its metallic frame glinting subtly, centered in safe zone. Extreme close-up (ECU) on the intricate patterns of the camera lenses, surface texture visible, macro perspective, technical precision. Golden hour soft sunlight streaming through large window, gentle ambient bounce fill from white walls, warm color temperature 3200K creates inviting glow, shallow depth of field isolates subject beautifully. Cool blue and cyan dominant tones, reduced warmth in shadows, clinical precision feel, modern technological aesthetic, sharp and analytical mood. Shot on Arri Alexa LF full-frame sensor, 4.5K resolution, professional cinema camera, 85mm f/1.4 with gorgeous compression and creamy background blur, IMAX large format sensor, maximum resolution and clarity.",
+        "audio_prompt": "Subtle, crisp electronic hum, barely perceptible.",
+        "motion_prompt": "Slow, steady dolly back from the close detail of the phone's camera, gradually revealing its full form and the surrounding environment.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "The same sleek, obsidian black smartphone from scene 1, held in the hand of a confident 35-year-old man, wearing a charcoal grey suit jacket with a minimalist white shirt, his thumb gently swiping across its vibrant edge-to-edge display, centered in safe zone. Medium shot (MS), chest to head framing, standard dialogue composition, balanced and relatable, conversational distance. Dramatic side lighting reveals the phone's curves and body lines, rim light highlights its metallic frame and reflections against a studio black infinity background for complete isolation, hard directional key light sculpts form. Cool blue and cyan dominant tones, reduced warmth in shadows, clinical precision feel, modern technological aesthetic, sharp and analytical mood. Shot on Arri Alexa LF full-frame sensor, 4.5K resolution, professional cinema camera, Sigma Art 40mm f/1.4, sharp cinematic rendering, 35mm film grain texture and organic analog feel.",
+        "audio_prompt": "Quiet, almost imperceptible interface sounds and subtle ambient room tone.",
+        "motion_prompt": "Smooth gimbal tracking shot, slowly orbiting the man's hand to showcase the phone's design and display from various angles.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "The same sleek, obsidian black smartphone from scene 1, resting elegantly on a polished concrete desk beside a minimalist, steaming ceramic coffee cup, within a sun-drenched, modern, open-plan office space with large windows and lush green plants, centered in safe zone. Wide shot (WS), the phone and desk are visible, establishing perspective, clear environmental context. High-key lighting, bright and airy, soft fill light eliminates harsh shadows, colorful practical lights from the distant office add life, motivated natural window light creates an authentic feel, vibrant energy. Cool blue and cyan dominant tones, reduced warmth in shadows, clinical precision feel, modern technological aesthetic, sharp and analytical mood. Panavision DXL2 cinema camera, professional Hollywood production standard, 24mm f/1.4 wide-angle prime, environmental storytelling lens, full-frame sensor depth and dramatic subject isolation.",
+        "audio_prompt": "Gentle, distant corporate office hum and a faint, comforting coffee aroma soundscape.",
+        "motion_prompt": "Slow, steady dolly pull back from the phone on the desk, gradually widening to reveal the full aspirational office environment.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade"
+}

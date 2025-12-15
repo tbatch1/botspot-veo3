@@ -1,0 +1,90 @@
+{
+  "id": "169c9a67-3a9a-4d1c-b3bf-b502a0a65715",
+  "user_input": "Create a commercial for creative ad for our company. \n        Style: Cinematic, 3D Render. \n        Mood: Premium, Aspirational. \n        Camera: Steadicam, Crane. \n        Target platform: Netflix, Hulu. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "seed": 355710769,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Imagine an empire built while you rest. Botspot: The intelligent platform designed to help grow your wealth.",
+        "time_range": "0-15s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_300d67cf0a459af147bbaaa809186b15.mp3"
+      }
+    ],
+    "mood": "Premium, Aspirational",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Shot on RED V-Raptor 8K VV with Panavision Ultra Vista anamorphic lenses. Fuji Eterna 500T 8573 film stock emulation with pronounced halation bloom on holographic UI elements. Heavy chromatic aberration on edge frames, 35mm grain structure at ISO 2500. Subtle lens breathing on focus pulls. Micro dust particles catching volumetric light. Extreme close-up (ECU) on the intricate, glowing patterns of a holographic UI element, showing minute product detail, surface texture visible, and technical precision, centered in safe zone. The holographic UI elements themselves act as the primary light source, casting subtle, motivated light onto surrounding dark, highly reflective surfaces. Volumetric haze catches the light, creating visible light beams, with deep shadows dominating. Color graded with a Fuji Eterna film stock look, emphasizing cold steel blues contrasted with subtle warm amber data points. Shot with Panavision Ultra Vista anamorphic lenses, capturing clinical sharpness and dramatic subject isolation typical of full-frame sensor depth.",
+        "audio_prompt": "Subtle hum of advanced technology, faint distant data chirps, quiet.",
+        "motion_prompt": "Slow dolly back from the close detail, gradually revealing the immediate environment and subtle context, weighted and deliberate movement, no jarring.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_4086a7da38b9e6167015ed3945874d8c.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Shot on RED V-Raptor 8K VV with Panavision Ultra Vista anamorphic lenses. Fuji Eterna 500T 8573 film stock emulation with pronounced halation bloom on holographic UI elements. Heavy chromatic aberration on edge frames, 35mm grain structure at ISO 2500. Subtle lens breathing on focus pulls. Micro dust particles catching volumetric light. The same 32-year-old man with short, neatly combed dark hair, wearing a charcoal grey high-collar long-sleeve shirt made of a premium, subtly textured fabric, from scene 1, seated alone in a vast, dark, high-tech trading space. He is framed in a medium shot (MS), chest to head, looking contemplative and observing. Deep shadows engulf the space, with the emerging holographic AI bots and the trader's monitor as primary, motivated practical light sources. Subtle rim lighting accentuates the trader's silhouette. Color graded with a Fuji Eterna film stock look, enhancing tech-noir aesthetic with cold blues and deep blacks. Shot with Panavision Ultra Vista anamorphic lenses, providing a cinematic 2.39:1 aspect ratio with gorgeous compression and creamy background blur.",
+        "audio_prompt": "Growing subtle ambient hum with digital pulses, very quiet.",
+        "motion_prompt": "Steadicam orbit around the trader, smooth but with organic micro-drift, as the first faint, luminous outlines of AI trading bots begin to materialize around him, emanating a soft, cool glow.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_3e0e6b83db59a78c407e87e06643bc0a.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Shot on RED V-Raptor 8K VV with Panavision Ultra Vista anamorphic lenses. Fuji Eterna 500T 8573 film stock emulation with pronounced halation bloom on holographic UI elements. Heavy chromatic aberration on edge frames, 35mm grain structure at ISO 2500. Subtle lens breathing on focus pulls. Micro dust particles catching volumetric light. The same 32-year-old man from scene 1, now leaning back in his chair, a small, steaming coffee cup in his hand, a look of calm satisfaction on his face. Around him, the luminous AI trading bots have multiplied into a dense swarm, elegantly moving upward and across complex, glowing market data streams that form vast, dynamic constellations, within a wide shot (WS) that shows the subject head-to-toe and clear environmental context. The multiplying bots and data streams are the dominant light sources, casting dynamic, interactive light spills that dance across the dark, textured surfaces of the vast space. Warm amber profit indicators contrast with cool blue data streams. Rim lighting highlights the trader. Color graded with a Fuji Eterna film stock look, reverent and awe-inspiring, with pronounced contrast and rich, deep tones. Shot with Panavision Ultra Vista anamorphic lenses, providing an IMAX large format sensor feel for maximum resolution and clarity, with beautiful subject separation and bokeh.",
+        "audio_prompt": "Expansive, ethereal synth pads with very subtle, high-frequency digital shimmer, quiet.",
+        "motion_prompt": "Crane pull-back, slow and gravitational, to reveal the immense scale of the 'Infinite Trade Floor' and the intricate, glowing activity of the bots surrounding the now relaxed trader.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_3de541c57c5806873c0d0c840d169f16.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "The Infinite Trade Floor",
+    "visual_language": "Shot on RED V-Raptor 8K VV with Panavision Ultra Vista anamorphic lenses. Fuji Eterna 500T 8573 film stock emulation with pronounced halation bloom on holographic UI elements. Heavy chromatic aberration on edge frames, 35mm grain structure at ISO 2500. Subtle lens breathing on focus pulls. Micro dust particles catching volumetric light.",
+    "narrative_arc": "A single trader sits alone in a vast, dark space—suddenly, luminous AI trading bots materialize around them like constellations coming to life. The bots multiply and swarm upward in elegant formation, executing trades across glowing market data streams. Final reveal: the trader leans back, coffee in hand, as their wealth compounds autonomously—'Your empire runs while you sleep.'",
+    "audience_hook": "The fantasy of passive wealth generation—watching money work FOR you 24/7 while you reclaim your time. Taps into the aspiration of financial freedom without the grind of constant screen-watching.",
+    "cinematic_direction": {
+      "mood_notes": "Premium tech-noir meets aspirational wealth aesthetic. Think 'Blade Runner 2049' meets high-end fintech advertising. Cold steel blues contrasted with warm amber profit indicators. Reverence and awe, not flashy hype.",
+      "lighting_notes": "Deep shadows with motivated practicals—holographic UI elements as primary light sources. Volumetric haze catching beams. Rim lighting on the trader's silhouette. Subtle interactive light spill from bot activity onto surfaces. No flat, even lighting.",
+      "camera_notes": "Opening: Slow crane descent into the space, weighted and deliberate. Mid-section: Steadicam orbit around trader as bots emerge—smooth but with organic micro-drift. Finale: Crane pull-back to reveal scale. All movements should feel gravitational, not floaty."
+    },
+    "production_recommendations": {
+      "visual_engine": "flux",
+      "video_engine": "runway",
+      "voice_vibe": "Deep Cinematic—authoritative but intimate. Think a younger Morgan Freeman or a premium automotive voiceover. Measured pacing with deliberate pauses. No urgency, pure confidence."
+    }
+  },
+  "research_brief": "{\n  \"Product Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empowers users to create and deploy profitable AI trading bots automatically in seconds, requiring no coding.\",\n  \"Target Audience\": \"Individuals interested in automated financial trading, including beginners and experienced traders seeking efficient, code-free strategy deployment.\",\n  \"Key Features\": [\n    \"AI Trading Agents/Bots\",\n    \"Automated Trading\",\n    \"Rapid Strategy Creation & Deployment (in seconds)\",\n    \"No Coding Required\",\n    \"24/7 Bot Operation\"\n  ],\n  \"Brand Vibe\": \"Innovative, Efficient, Accessible, Tech-forward, Empowering\",\n  \"Industry\": \"FinTech, AI Trading, Automated Investments\"\n}",
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\bgm_3e787f718cfc0d5598b2cb8107cbf7f2.mp3",
+  "video_model": "runway",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": [
+    "[01:27:11] [RESEARCH] Analyzing target URL: https://botspot.trade/...",
+    "[01:27:15] [RESEARCH] Site analysis complete. Extracted 678 chars of context.",
+    "[01:27:15] [STRATEGY] Initializing creative brainstorm for: Create a commercial for creative ad for our company. \n        Style: Cinematic, 3D Render. \n        Mood: Premium, Aspirational. \n        Camera: Steadicam, Crane. \n        Target platform: Netflix, Hulu. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+    "[01:27:31] [STRATEGY] Strategic angle developed: N/A",
+    "[01:27:31] [GEMINI] Generating cinematic screenplay & shotlist...",
+    "[01:27:57] [GEMINI] Screenplay generated with 3 scenes."
+  ]
+}

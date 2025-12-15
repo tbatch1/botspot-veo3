@@ -1,0 +1,83 @@
+{
+  "id": "ec1e7f97-9428-4604-86cb-6763368f07d0",
+  "user_input": "Create a commercial for i want a cool commercial for our company . \n        Style: Cinematic, 3D Render. \n        Mood: Premium, Authentic. \n        Camera: Steadicam, Crane. \n        Target platform: Netflix, Hulu. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+  "status": "planning",
+  "error": null,
+  "seed": 845228016,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Markets never sleep. Now, neither do your opportunities. Botspot: intelligent trading, for a life of greater freedom.",
+        "time_range": "0-15s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Premium, Authentic",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Shot on RED Komodo 6K with Zeiss Master Prime lenses. Fuji Eterna 500T film stock emulation with lifted blacks and muted greens. Visible halation bleeding from monitor glows and UI elements. 35mm grain structure with chromatic aberration on edge highlights. Natural skin texture on any human subjects要isible pores, micro-imperfections under mixed color temperature lighting. ISO 2500 sensor noise in shadow areas. The Botspot Core, a sleek, minimalist AI trading device, approximately 6 inches square, with a matte obsidian finish and a single, subtly pulsating LED light that shifts from deep red to emerald green, its surface meticulously engineered with microscopic cooling vents and a textured, almost organic feel.\nExtreme close-up (ECU) on a minute product detail of the Botspot Core, revealing its intricate micro-etchings and the subtle shimmer of the LED light, macro perspective highlighting technical precision, centered in safe zone.\nSoft warm-toned lighting 2700K emanating from practical lamps visible just out of focus, creating a cozy intimate atmosphere with comforting glows and deep, slightly lifted shadows.\nFuji Eterna 500T film stock emulation with elevated blacks and muted greens, visible halation, 35mm grain, and subtle chromatic aberration on edge highlights.\nRED 8K Monstro sensor with 16-bit color depth for ultra-high resolution cinema capture, Sigma Art 40mm f/1.4 lens for sharp cinematic rendering, Vista Vision large format for premium image quality.",
+        "audio_prompt": "Subtle, quiet hum of advanced electronics and a soft, rhythmic pulse of ambient energy.",
+        "motion_prompt": "Crane up smoothly from ground level, slowly revealing the Botspot Core with a dramatic vertical ascent, conveying epic scale and deliberate discovery.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Shot on RED Komodo 6K with Zeiss Master Prime lenses. Fuji Eterna 500T film stock emulation with lifted blacks and muted greens. Visible halation bleeding from monitor glows and UI elements. 35mm grain structure with chromatic aberration on edge highlights. Natural skin texture on any human subjects要isible pores, micro-imperfections under mixed color temperature lighting. ISO 2500 sensor noise in shadow areas. The same Botspot Core from scene 1, now conceptually visualized as elegant 3D geometric neural pathways on a translucent, holographic display. A calm 40-year-old man, with salt-and-pepper hair and a neatly trimmed beard, wearing a relaxed charcoal cashmere sweater, is seated comfortably in a sunlit, minimalist study.\nMedium shot (MS) of the man from chest to head, framed with balanced and relatable composition, centered for a conversational distance.\nButterfly lighting (Paramount style) from directly above, creating soft beauty light with perfect catchlights in his eyes, complemented by a dedicated hair light for separation, all against a subtly luminous, clean backdrop.\nFuji Eterna 500T film stock emulation with elevated blacks and muted greens, visible halation, 35mm grain, and subtle chromatic aberration on edge highlights.\nRED 8K Monstro sensor with 16-bit color depth for ultra-high resolution cinema capture, 50mm f/1.2 portrait lens providing beautiful subject separation and creamy bokeh, Vista Vision large format for premium image quality.",
+        "audio_prompt": "Gentle rustle of turning pages, distant, muffled city ambience, and a barely perceptible, calming synth pad.",
+        "motion_prompt": "An impossibly smooth, drone-like push-in or pull-out that subtly reveals the expansive, serene environment around the man, mimicking a bird's eye perspective subtly descending or ascending over his personal 'landscape' of calm.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Shot on RED Komodo 6K with Zeiss Master Prime lenses. Fuji Eterna 500T film stock emulation with lifted blacks and muted greens. Visible halation bleeding from monitor glows and UI elements. 35mm grain structure with chromatic aberration on edge highlights. Natural skin texture on any human subjects要isible pores, micro-imperfections under mixed color temperature lighting. ISO 2500 sensor noise in shadow areas. The 40-year-old man from scene 2, now walking leisurely along a pristine, expansive beach during the golden hour, wearing light linen trousers and a breathable shirt. He carries a stylish, lightweight messenger bag, a serene and fulfilled expression on his face, occasionally glancing at the horizon, embodying the freedom provided by the Botspot Core from scene 1.\nWide shot (WS) showing the man head-to-toe, with clear environmental context of the vast beach and ocean, balanced composition, establishing perspective within the natural landscape, centered in safe zone.\nNatural hard sunlight creating strong, authentic shadows and a warm glow, lighting motivated by the actual low sun position, subtle lens flare adding realism, resulting in high contrast and vibrant saturation reflecting the real location atmosphere.\nFuji Eterna 500T film stock emulation with elevated blacks and muted greens, visible halation, 35mm grain, and subtle chromatic aberration on edge highlights.\nSony Venice 2 full-frame 8.6K sensor for cutting-edge digital cinema technology, 24mm f/1.4 wide-angle prime lens for environmental storytelling, Anamorphic 2.39:1 cinematic scope aspect ratio for theatrical presentation.",
+        "audio_prompt": "Soft ocean waves lapping the shore, gentle seabreeze, distant calls of gulls, creating a tranquil natural soundscape.",
+        "motion_prompt": "Wide tracking shot following the man's leisurely pace along the beach, smooth Steadicam float immersing the viewer in the environmental contours, creating a sense of serene movement and freedom.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "Silent Machines, Loud Gains",
+    "visual_language": "Shot on RED Komodo 6K with Zeiss Master Prime lenses. Fuji Eterna 500T film stock emulation with lifted blacks and muted greens. Visible halation bleeding from monitor glows and UI elements. 35mm grain structure with chromatic aberration on edge highlights. Natural skin texture on any human subjects要isible pores, micro-imperfections under mixed color temperature lighting. ISO 2500 sensor noise in shadow areas.",
+    "narrative_arc": "We open on the quiet tension of markets moving in darkness溶umbers cascading, opportunity slipping away. A single interaction births an AI trading bot into existence, its neural pathways visualized as elegant 3D geometry coming alive. We pull back to reveal the bot working tirelessly while life happens elsewhere葉he ultimate liberation from the screen.",
+    "audience_hook": "The psychological weight of 'always-on' trading anxiety transformed into automated confidence. The promise that sophisticated AI technology doesn't require sophistication from you曜ust intent.",
+    "cinematic_direction": {
+      "mood_notes": "Premium through restraint, not excess. Authenticity comes from imperfection葉he slight flicker of a monitor, the dust motes in volumetric light. The technology feels tangible and grounded, not sci-fi fantasy. Confidence without arrogance.",
+      "lighting_notes": "Studio setup with motivated practicals. Cool monitor glow as key light source mixing with warm tungsten accents. Volumetric haze to catch light rays. Deep shadows with crushed blacks lifted slightly for that Fuji film look. Rim lighting on 3D bot elements to separate from background.",
+      "camera_notes": "Steadicam for fluid reveals of the bot creation sequence耀mooth but with organic micro-movements, never sterile. Crane for the final pull-back moment showing scale and liberation. Deliberate pacing様et moments breathe. Subtle focus breathing on rack focuses between human and machine elements."
+    },
+    "production_recommendations": {
+      "visual_engine": "flux",
+      "video_engine": "runway",
+      "voice_vibe": "Understated Authority様ow register, measured pace, zero hype. Think documentary narrator meets premium tech whisper. Confident silence between phrases. No urgency, just inevitability."
+    }
+  },
+  "research_brief": "{\n  \"Product Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empowers users to rapidly create and deploy profitable AI trading bots with no coding required, automating trading strategies 24/7.\",\n  \"Target Audience\": \"Non-technical individuals and traders seeking to automate and optimize their investment strategies using artificial intelligence.\",\n  \"Key Features\": [\n    \"AI Trading Bot Creation\",\n    \"Automated 24/7 Trading\",\n    \"No-Code Strategy Building\",\n    \"Instant Agent Deployment\"\n  ],\n  \"Brand Vibe\": \"Innovative, Accessible Tech, Efficient, Empowering\",\n  \"Industry\": \"Fintech, AI Trading, Automated Investing\"\n}",
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": null,
+  "video_model": "runway",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": []
+}

@@ -1,0 +1,46 @@
+{
+  "id": "0930d396-3e69-4b22-a6e4-6b295166d50f",
+  "user_input": "Create a Premium commercial for a product in the style of Cinematic, 3D Render, Anime. Target platform: YouTube TV. Duration: 15s.",
+  "status": "planning",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Experience tomorrow, today. In your grasp.",
+        "time_range": "0-8s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Premium",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A highly detailed 3D render, cinematic anime style, close-up hero shot of a 'Lumen X' holographic projector watch. It is deep obsidian black with subtle chrome accents, made of high-grade aerospace aluminum and sapphire glass, resting on a minimalist, textured brushed metallic surface. Cinematic three-point lighting with a soft key light highlights its sleek curves, reflecting subtle anime-style glow. Centered in the lower third, in safe zone.",
+        "audio_prompt": "Subtle hum of advanced technology, gentle ambient synth drone.",
+        "motion_prompt": "Slow, elegant push-in, subtle Steadicam drift.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "A highly detailed 3D render, cinematic anime style, featuring the same 'Lumen X' holographic projector watch from scene 1, now worn on the wrist of a 28-year-old androgynous individual in a sleek, futuristic charcoal grey tunic. A soft, ethereal blue holographic display emanates from the watch, projecting intricate data. Golden hour backlight creates a soft rim around the individual's wrist and the watch, with the holographic projection casting a subtle glow. Medium close-up on the wrist and the holographic projection, centered in safe zone.",
+        "audio_prompt": "Gentle shimmering sound of the holographic projection, soft electronic beeps.",
+        "motion_prompt": "Camera orbits slowly around the wrist, maintaining focus on the watch and holographic projection.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

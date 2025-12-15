@@ -1,0 +1,103 @@
+{
+  "id": "371e84f7-364b-4f85-a5ae-373338847c53",
+  "user_input": "Botspot.trade - AI Trading Agents",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "seed": 1629813275,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "The market never sleeps. With Botspot.trade, intelligent insights can help you stay ahead. Navigate the noise, focus your strategy.",
+        "time_range": "0-15s",
+        "audio_path": "c:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_5d4407cfc72e8d459958826bcf3db288.mp3"
+      }
+    ],
+    "mood": "Premium, Aspirational, Mysterious",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Shot on RED Komodo 6K with vintage Lomo Anamorphic lenses (circa 1970s). Heavy halation bleeding from all light sources, pronounced chromatic aberration on frame edges. 35mm Kodak Vision3 500T emulation with aggressive grain structure at ISO 2500. Shallow depth of field with soft bokeh rendering. Deliberate lens breathing on focus pulls. Subtle sensor noise in shadow areas, natural skin texture with visible pores and micro-imperfections under stress. A chaotic, dynamic scene of a modern trading desk, with flickering multiple monitors displaying aggressive red and green numbers, scattered papers violently swirling, and tangled wires. Extreme close-up (ECU) on the specific texture of worn keyboard keys and the subtle shimmer of a high-resolution screen displaying market data, revealing minute environmental details. [Camera] Extreme close-up (ECU) on the chaotic elements of the trading desk. [Lighting] Low-key practical lighting from multiple monitors casting competing cool blues and aggressive reds, heavy halation blooming aggressively from screen edges, single overhead practical dims subtly as the storm intensifies, dramatic shadows. [Style] Teal and orange color grade with high contrast from monitor lights, crushed blacks for cinematic depth, aggressive film grain, unsettling beauty in the chaos. [Technical] RED Komodo 6K cinema camera, vintage Lomo Anamorphic lenses (circa 1970s), Anamorphic 2.39:1 cinematic scope aspect ratio, centered in safe zone.",
+        "audio_prompt": "Frantic, low-frequency hum of server racks, distant, muffled shouts, rustling papers like violent wind, punctuated by sharp, digital blips and chaotic screen sounds.",
+        "motion_prompt": "Slow orbit around the chaotic elements of the trading desk as chaos builds, camera occasionally buffeted by 'wind' causing subtle shake.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "c:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_cf8090495906199c87b13a5ab82228c8.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Shot on RED Komodo 6K with vintage Lomo Anamorphic lenses (circa 1970s). Heavy halation bleeding from all light sources, pronounced chromatic aberration on frame edges. 35mm Kodak Vision3 500T emulation with aggressive grain structure at ISO 2500. Shallow depth of field with soft bokeh rendering. Deliberate lens breathing on focus pulls. Subtle sensor noise in shadow areas, natural skin texture with visible pores and micro-imperfections under stress. The same 40-year-old man from scene 1, lean build, with short, slightly disheveled dark hair and deep-set eyes, a faint five-o-clock shadow, wearing a rumpled charcoal grey dress shirt with the top two buttons undone, sleeves rolled up. His face shows visible signs of exhaustion and stress, but now with a flicker of intrigue as he extends a hand to summon the luminous, minimalist tablet-like Botspot.trade interface from scene 1, characterized by elegant, glowing golden lines forming complex, evolving geometric patterns on a deep, dark sapphire background. His expression shifts from panic to focused curiosity. [Camera] Medium shot (MS), chest to head framing on the subject. [Lighting] Initial light from competing cool blues and aggressive reds of monitors, transitioning as the luminous Botspot interface introduces warm amber/gold volumetric light that begins to gradually overtake the frame, creating dramatic contrast and glowing highlights on the subject's face. [Style] Teal and orange color grade, evolving from high contrast, aggressive market glow to an inviting, mysterious amber/gold luminescence, deep shadows, pronounced film grain. [Technical] RED Komodo 6K cinema camera, vintage Lomo Anamorphic lenses (circa 1970s), Anamorphic 2.39:1 cinematic scope aspect ratio, centered in safe zone.",
+        "audio_prompt": "The chaotic sounds from Scene 1 begin to subtly fade, replaced by a growing, low, almost melodic hum of intelligent system activation, mixed with soft, ambient electronic tones.",
+        "motion_prompt": "Smooth push-in on the subject as the luminous interface begins to appear, imperceptible breathing movement.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "c:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_6952c29aa824c12e04329438bc357d3a.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Shot on RED Komodo 6K with vintage Lomo Anamorphic lenses (circa 1970s). Heavy halation bleeding from all light sources, pronounced chromatic aberration on frame edges. 35mm Kodak Vision3 500T emulation with aggressive grain structure at ISO 2500. Shallow depth of field with soft bokeh rendering. Deliberate lens breathing on focus pulls. Subtle sensor noise in shadow areas, natural skin texture with visible pores and micro-imperfections under stress. The same 40-year-old man from scene 1, now completely still, a serene and almost transcendent calm on his face. His eyes, clear and focused, reflect the golden, ordered pathways of the luminous Botspot.trade interface from scene 1, which now subtly glows in the background as a stable constellation of data. His rumpled shirt is still visible, but the chaos is gone, replaced by absolute stillness. [Camera] Medium close-up (MCU) on the subject's face, emphasizing his eyes reflecting the interface. [Lighting] Single soft key creating Rembrandt lighting on subject's face from the side, deep shadows elsewhere, the golden volumetric light from the Botspot interface now softly illuminates the background, creating a sense of serene order. [Style] Teal and orange color grade, with the golden light creating warm highlights on the face against cool, deep shadows. High contrast, crushed blacks for cinematic depth, prominent film grain, a meditative stillness in the resolution. [Technical] RED Komodo 6K cinema camera, vintage Lomo Anamorphic lenses (circa 1970s), Anamorphic 2.39:1 cinematic scope aspect ratio, centered in safe zone.",
+        "audio_prompt": "Absolute stillness, a near-silent environment, with only a very subtle, deep ambient hum of algorithmic precision, like distant, harmonious stars, almost imperceptible.",
+        "motion_prompt": "Near-static frame with imperceptible breathing movement.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "c:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_bae9e21421f0dbfd89f56eead78bba89.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "The Eye of the Storm",
+    "visual_language": "Shot on RED Komodo 6K with vintage Lomo Anamorphic lenses (circa 1970s). Heavy halation bleeding from all light sources, pronounced chromatic aberration on frame edges. 35mm Kodak Vision3 500T emulation with aggressive grain structure at ISO 2500. Shallow depth of field with soft bokeh rendering. Deliberate lens breathing on focus pulls. Subtle sensor noise in shadow areas, natural skin texture with visible pores and micro-imperfections under stress.",
+    "narrative_arc": "A weathered trader sits surrounded by chaos—flickering screens, cascading red numbers, papers swirling in impossible wind—his face illuminated only by the violent glow of market collapse. A single gesture summons a luminous geometric form (the Botspot interface), and the storm begins to crystallize into ordered, golden pathways of light. The final frame: absolute stillness, the trader's eyes reflecting algorithmic precision as markets move silently around him like constellations.",
+    "audience_hook": "The terror of missing the trade while you sleep—transformed into the serenity of knowing something smarter never rests. This speaks to the exhausted retail trader who's lost money to emotion and timing, promising liberation through intelligent automation.",
+    "cinematic_direction": {
+      "mood_notes": "Premium mystery achieved through restraint—never show the full picture. The AI agent is felt, not explained. Aspirational quality comes from the transformation: from human panic to machine calm. Think Denis Villeneuve's 'Arrival' meets fintech. Unsettling beauty in the chaos, meditative stillness in the resolution.",
+      "lighting_notes": "Low-key practical lighting only. Opening chaos lit by multiple monitors casting competing color temperatures (cool blues, aggressive reds). Halation blooms aggressively from screen edges. Single overhead practical dims as storm intensifies. The Botspot interface introduces warm amber/gold volumetric light that gradually overtakes the frame. Final shot: single soft key creating Rembrandt lighting on subject's face, deep shadows elsewhere.",
+      "camera_notes": "Steadicam with deliberate micro-drift, never locked. Opening: slow orbit around subject as chaos builds, camera occasionally buffeted by 'wind' causing subtle shake. Transition: camera settles into smooth push-in as order emerges. Final: near-static frame with imperceptible breathing movement. All moves motivated by emotional state, not spectacle."
+    },
+    "production_recommendations": {
+      "visual_engine": "flux",
+      "video_engine": "runway",
+      "voice_vibe": "Low, measured baritone with subtle gravel—think a weary oracle who's seen markets rise and fall. Sparse narration, almost whispered. No urgency, only certainty. Breath audible between phrases. The voice of someone who no longer needs to shout because they've found the answer."
+    }
+  },
+  "research_brief": "{\n  \"Product Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empower users to create and deploy profitable AI trading strategies in seconds, without any coding, enabling 24/7 automated trading.\",\n  \"Target Audience\": \"Individual investors, traders seeking automated solutions, non-technical users interested in algorithmic trading, and those looking to leverage AI for financial gains.\",\n  \"Key Features\": [\n    \"AI trading agent creation\",\n    \"Automated trading execution\",\n    \"No-code strategy builder\",\n    \"24/7 bot operation\",\n    \"Rapid deployment\"\n  ],\n  \"Brand Vibe\": \"Innovative Tech, Empowering, Efficient\",\n  \"Industry\": \"FinTech, Algorithmic Trading, AI in Finance\"\n}",
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": "c:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\bgm_6c8d8b6cbe0e94351865d8ecc656df5b.mp3",
+  "video_model": "runway",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": [
+    "[10:56:12] [RESEARCH] Analyzing target URL: https://botspot.trade...",
+    "[10:56:18] [RESEARCH] Site analysis complete. Extracted 686 chars of context.",
+    "[10:56:18] [STRATEGY] Initializing creative brainstorm for: Botspot.trade - AI Trading Agents",
+    "[10:56:44] [STRATEGY] Strategic angle developed: N/A",
+    "[10:56:44] [GEMINI] Generating cinematic screenplay & shotlist...",
+    "[10:57:10] [GEMINI] Screenplay generated with 3 scenes.",
+    "[10:57:25] [PHASE 3] Starting Asset Generation...",
+    "[10:57:26] [VISUALS] Initialized Flux 1.1 Pro (High Fidelity)",
+    "[10:57:29] [FLUX] Generating visuals for Scene 1...",
+    "[10:57:30] [ERROR] Image Gen Failed for Scene 1: ReplicateError Details:\ntitle: Insufficient credit\nstatus: 402\ndetail: You have insufficient credit to run this model. Go to https://replicate.com/account/billing#billing to purchase credit. Once you purchase credit, please wait a few minutes before trying again.",
+    "[10:57:30] [FAILOVER] Flux failed. Retrying Scene 1 with Imagen...",
+    "[10:57:32] [FLUX] Generating visuals for Scene 2...",
+    "[10:57:32] [ERROR] Image Gen Failed for Scene 2: ReplicateError Details:\nstatus: 429\ndetail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~9s.",
+    "[10:57:32] [FAILOVER] Flux failed. Retrying Scene 2 with Imagen...",
+    "[10:57:34] [FLUX] Generating visuals for Scene 3...",
+    "[10:57:34] [ERROR] Image Gen Failed for Scene 3: ReplicateError Details:\nstatus: 429\ndetail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~7s.",
+    "[10:57:34] [FAILOVER] Flux failed. Retrying Scene 3 with Imagen...",
+    "[10:58:10] [PHASE 4] Starting Motion Synthesis (runway)...",
+    "[10:58:11] [PHASE 5] Assembling Final Video..."
+  ]
+}

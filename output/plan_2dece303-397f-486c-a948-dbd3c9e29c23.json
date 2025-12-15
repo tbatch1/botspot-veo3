@@ -1,0 +1,186 @@
+{
+  "id": "2dece303-397f-486c-a948-dbd3c9e29c23",
+  "user_input": "Create a commercial for make a cool creative ad. \n        Style: Cinematic. \n        Mood: Premium. \n        Camera: Steadicam. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+  "status": "videos_complete",
+  "error": null,
+  "seed": 2351623155,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "[pause: 0.3s] Some moments... change everything.",
+        "time_range": "0s-4s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_866871b729667eed0ff605cf5a31c80c.mp3"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Introducing a new standard. Built for those who demand more.",
+        "time_range": "4s-9s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_cd6df695e29cf6f9dff9e22eb283eb89.mp3"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "This is it. [pause: 0.5s] Are you ready?",
+        "time_range": "9s-14s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_3803539ea29ae53fc1f5e7ddda6ea009.mp3"
+      }
+    ],
+    "mood": "cinematic",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A photo of Dramatic opening shot of the product emerging from darkness, volumetric lighting. Shot on Arri Alexa, Cooke S4 prime lens, shallow depth of field f/2.8, cinematic lighting.. IMPORTANT FIX: Pass. IMPORTANT FIX: Pass. IMPORTANT FIX: Pass",
+        "audio_prompt": "AMBIANCE: Natural environment sounds. MUSIC: Epic cinematic.",
+        "motion_prompt": "Camera: Smooth cinematic motion. Visual: Dramatic opening shot of the product emerging from darkness, volumetric lighting. Slow dolly push-in, smooth and deliberate. Style: Professional, cinematic quality.",
+        "duration": 4,
+        "primary_subject": "product",
+        "subject_description": "A generic product emerging from darkness with volumetric lighting.",
+        "subject_reference": null,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\91afbefe370c6ad5502373494c03ad31.png",
+        "video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\videos\\36605a7a3c4b5ecd6c46d81fa4255a4c.mp4",
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_b4f80b9245c24e13e8c3f89b916f193d.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "[CONSISTENCY CRITICAL] Feature the same product from Scene 1 (A generic product emerging from darkness with volumetric lighting.).\n\nA photo of Wide shot revealing the full product in context, golden hour lighting. Shot on Arri Alexa, Cooke S4 prime lens, shallow depth of field f/2.8, cinematic lighting.",
+        "audio_prompt": "AMBIANCE: Natural environment sounds. MUSIC: Epic cinematic.",
+        "motion_prompt": "Camera: Smooth cinematic motion. Visual: Wide shot revealing the full product in context, golden hour lighting. Slow pan across the scene, revealing details. Style: Professional, cinematic quality.",
+        "duration": 5,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": "the same product from Scene 1 (A generic product emerging from darkness with volumetric lighting.)",
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\c89128b03b14ee097d360e460b88aee4.png",
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_b4f80b9245c24e13e8c3f89b916f193d.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "[CONSISTENCY CRITICAL] Feature the same product from Scene 1 (A generic product emerging from darkness with volumetric lighting.).\n\nA photo of Close-up product beauty shot with brand logo, premium lighting setup. Shot on Arri Alexa, Cooke S4 prime lens, shallow depth of field f/2.8, cinematic lighting.. IMPORTANT FIX: Pass. IMPORTANT FIX: Pass. IMPORTANT FIX: Pass",
+        "audio_prompt": "AMBIANCE: Natural environment sounds. MUSIC: Epic cinematic.",
+        "motion_prompt": "Camera: Smooth cinematic motion. Visual: Close-up product beauty shot with brand logo, premium lighting setup. Slow orbit around product, settling on logo. Style: Professional, cinematic quality.",
+        "duration": 5,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": "the same product from Scene 1 (A generic product emerging from darkness with volumetric lighting.)",
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\35e441f5692dfe3185d5a4f04e67a273.png",
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_b4f80b9245c24e13e8c3f89b916f193d.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "Premium Brand Showcase",
+    "visual_language": "Shot on Arri Alexa, Cooke S4 prime lens, natural film grain, shallow depth of field",
+    "scenes": [
+      {
+        "scene_number": 1,
+        "beat": "hook",
+        "duration": 4,
+        "visual_direction": "Dramatic opening shot of the product emerging from darkness, volumetric lighting",
+        "motion_direction": "Slow dolly push-in, smooth and deliberate",
+        "emotional_goal": "Intrigue and curiosity",
+        "voiceover_content": "[pause: 0.3s] Some moments... change everything.",
+        "sfx_description": "Deep bass tone, subtle whoosh"
+      },
+      {
+        "scene_number": 2,
+        "beat": "solution",
+        "duration": 5,
+        "visual_direction": "Wide shot revealing the full product in context, golden hour lighting",
+        "motion_direction": "Slow pan across the scene, revealing details",
+        "emotional_goal": "Understanding and desire",
+        "voiceover_content": "Introducing a new standard. Built for those who demand more.",
+        "sfx_description": "Ambient atmosphere, subtle music swell"
+      },
+      {
+        "scene_number": 3,
+        "beat": "payoff",
+        "duration": 5,
+        "visual_direction": "Close-up product beauty shot with brand logo, premium lighting setup",
+        "motion_direction": "Slow orbit around product, settling on logo",
+        "emotional_goal": "Aspiration and action",
+        "voiceover_content": "This is it. [pause: 0.5s] Are you ready?",
+        "sfx_description": "Impactful final note, sonic brand signature"
+      }
+    ],
+    "audio_signature": {
+      "music_mood": "epic",
+      "voiceover_style": "cinematic_narrator"
+    },
+    "cinematic_direction": {
+      "mood_notes": "Premium, Aspirational",
+      "lighting_notes": "Dramatic three-point lighting with rim highlights",
+      "camera_notes": "Steady, controlled movements"
+    }
+  },
+  "research_brief": "{\n  \"Product/Service Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empowers users to create and deploy AI trading agents and profitable strategies in seconds, automatically, with no coding required, revolutionizing access to automated finance.\",\n  \"Target Audience\": \"Individuals interested in automated trading, investing, or leveraging AI for financial gains, particularly those without coding experience or seeking efficient, hands-off investment solutions.\",\n  \"Top 5 Key Features\": [\n    \"Rapid creation and deployment of AI trading agents (in seconds)\",\n    \"Builds fully automated trading bots\",\n    \"Enables creation of profitable trading strategies\",\n    \"Requires no coding for bot development\",\n    \"Bots operate and trade 24/7\"\n  ],\n  \"Brand Tone\": \"Innovative, Empowering, Efficient, Accessible, Revolutionary\",\n  \"Industry\": \"FinTech, Artificial Intelligence, Automated Trading, Finance\",\n  \"Competitors Mentioned\": \"None\",\n  \"One-Sentence Pitch\": \"BotSpot allows anyone to instantly create and deploy AI trading bots to generate profitable strategies automatically, running 24/7 without a single line of code.\"\n}",
+  "detected_style": {
+    "aesthetic": "photorealistic",
+    "format": "product_showcase",
+    "tone": "dramatic",
+    "pacing": "fast",
+    "confidence": 0.7083333333333333,
+    "confidence_breakdown": {
+      "aesthetic": 0.3333333333333333,
+      "format": 1.0,
+      "tone": 1.0,
+      "pacing": 0.5
+    }
+  },
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\bgm_31e2f3f472f5b7c35fc2c34567da3150.mp3",
+  "video_model": "veo",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": [
+    "[12:34:22] [RESEARCH] Analyzing target URL: https://botspot.trade/...",
+    "[12:34:22] [RESEARCH] Site analysis complete. Extracted 1134 chars of context.",
+    "[12:34:22] [STRATEGY] Initializing creative brainstorm for: Create a commercial for make a cool creative ad. \n        Style: Cinematic. \n        Mood: Premium. \n        Camera: Steadicam. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+    "[12:35:14] [STRATEGY] Strategic angle developed: N/A",
+    "[12:35:14] [GPT-5.2] Formatting scenes with spatial reasoning...",
+    "[12:35:15] [GPT-5.2] Formatted 3 scenes with spatial specs.",
+    "[12:35:20] [PHASE 1.5] Detecting creative style intent...",
+    "[12:35:20] [STYLE] Aesthetic detected: photorealistic (33% confidence)",
+    "[12:35:20] [STYLE] Format: product_showcase",
+    "[12:35:20] [STYLE] Tone: dramatic",
+    "[12:35:20] [SYSTEM] PLAN_COMPLETE. Transitioning to Asset Generation Phase.",
+    "[12:35:36] [APPROVAL_GATE_1] User approved strategy. Starting image + audio generation...",
+    "[12:35:36] [PHASE 3A] Starting Asset Generation...",
+    "[12:35:37] [VISUALS] Fal.ai Flux 1.1 Pro initialized",
+    "[12:35:41] [OPTIMIZATION] Parallel image generation enabled",
+    "[12:35:46] [VISUALS] Scene 1 NEEDS FIX (7/10): Pass",
+    "[12:35:47] [VISUALS] Scene 3 NEEDS FIX (7/10): Pass",
+    "[12:35:49] [VISUALS] Scene 2 PASS (7/10)",
+    "[12:35:49] [VISUALS] Scene 2 completed successfully",
+    "[12:35:55] [VISUALS] Scene 1 NEEDS FIX (7/10): Pass",
+    "[12:35:55] [VISUALS] Scene 3 NEEDS FIX (7/10): Pass",
+    "[12:36:01] [VISUALS] Scene 3 NEEDS FIX (7/10): Pass",
+    "[12:36:01] [VISUALS] Scene 3 completed successfully",
+    "[12:36:02] [VISUALS] Scene 1 NEEDS FIX (7/10): Pass",
+    "[12:36:02] [VISUALS] Scene 1 completed successfully",
+    "[12:36:02] [PERFORMANCE] Parallel image generation: 21.4s",
+    "[12:36:04] [OPTIMIZATION] Character consistency references injected",
+    "[12:36:04] [OPTIMIZATION] Parallel audio generation enabled",
+    "[12:36:14] [PERFORMANCE] Parallel audio generation: 9.8s",
+    "[12:36:14] [APPROVAL_GATE_1] Images + Audio complete. Awaiting user approval...",
+    "[12:36:27] [APPROVAL_GATE_2] User approved images. Starting video generation...",
+    "[12:36:27] [PHASE 4] Starting Motion Synthesis...",
+    "[12:36:29] [OPTIMIZATION] Parallel video generation active (Veo 3.1 Ultra + Runway fallback)",
+    "[12:36:29] [OPTIMIZATION] Parallel video generation: 3 scenes",
+    "[12:36:46] [VIDEO] Scene 1 generated successfully",
+    "[12:36:50] [ERROR] Scene 3 video generation failed",
+    "[12:36:50] [ERROR] Scene 2 video generation failed",
+    "[12:36:50] [PERFORMANCE] Parallel video generation: 8.8s",
+    "[12:36:50] [APPROVAL_GATE_2] Videos complete. Awaiting user approval..."
+  ]
+}

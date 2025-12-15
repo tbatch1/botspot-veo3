@@ -1,0 +1,105 @@
+{
+  "id": "dae24752-4c87-4a42-9910-c56d2d5d1227",
+  "user_input": "race car coffee",
+  "status": "processing",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Before the roar, before the checkered flag...",
+        "time_range": "0-5s",
+        "audio_path": "assets\\audio\\mock_speech_4707.mp3"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "...there's the ritual.",
+        "time_range": "5-10s",
+        "audio_path": "assets\\audio\\mock_speech_5300.mp3"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Cultivate your focus.",
+        "time_range": "10-15s",
+        "audio_path": "assets\\audio\\mock_speech_9840.mp3"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Stoke your ambition.",
+        "time_range": "15-22s",
+        "audio_path": "assets\\audio\\mock_speech_5396.mp3"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Race Car Coffee. For the drive ahead.",
+        "time_range": "22-25s",
+        "audio_path": "assets\\audio\\mock_speech_3197.mp3"
+      }
+    ],
+    "mood": "Exhilarating",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A pristine, high-performance open-wheel race car gleams under the deep blues and purples of pre-dawn volumetric light filtering through a high, frosted window in a minimalist, hyper-clean garage. Dust motes dance in the cool light shafts. The carbon fiber bodywork shows every weave, reflecting the subtle environmental colors. A close-up on a driver's gloved hand, still and anticipatory, resting gently on the alcantara-wrapped steering wheel. Shot on Arri Alexa LF with an anamorphic lens, f/2.8 depth of field, showcasing incredible detail and a wide cinematic scope. 4k, hyper-realistic, with a subtle 35mm film grain overlay.",
+        "audio_prompt": "Distant, low hum of advanced machinery. Gentle, spacious garage reverb. Very subtle, almost inaudible wind whispers from outside.",
+        "motion_prompt": "A slow, deliberate cinematic push-in from a medium shot of the car towards the driver's hand on the steering wheel, ending in a tight close-up.",
+        "duration": 5,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_187.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Extreme macro close-up of dark, rich espresso coffee brewing into a sleek, matte black ceramic mug. Steam plumes elegantly rise, catching warm golden hour lighting from an unseen window. The crema forms a perfect, velvety layer on top, exhibiting hyper-detailed micro-bubbles and textures. The polished chrome and steel of the high-tech espresso machine reflect subtle environmental light. Shot on Arri Alexa Mini LF with a dedicated macro lens, f/1.4, creating an incredibly shallow depth of field with creamy bokeh. 4k, photorealistic, cinematic.",
+        "audio_prompt": "The satisfying, intricate hiss and gurgle of a high-end espresso machine. Subtly amplified liquid pouring sounds. The faint scent of rich coffee suggested by sound design.",
+        "motion_prompt": "A precise, smooth horizontal slider shot, tracking across the brewing process from the espresso spout to the rising coffee in the mug.",
+        "duration": 5,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_2273.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "A strong, confident hand (the race car driver's) swiftly lifts the 'Race Car Coffee' branded mug to lips. A sharp, decisive sip. The driver's eyes, initially slightly out of focus, snap into intense, razor-sharp concentration as the mug is lowered. Their expression shifts from calm to focused determination. Volumetric backlighting creates a subtle halo around the silhouette of the head. The background is a highly blurred, abstract suggestion of cockpit screens and technical readouts. Shot on Arri Alexa LF, 50mm prime, f/1.8 for dramatic cinematic bokeh and sharp subject focus. 4k, hyper-realistic skin and fabric textures.",
+        "audio_prompt": "A crisp, amplified, satisfying sound of a quick liquid sip. A subtle, rising electronic hum, like an engine powering up to idle.",
+        "motion_prompt": "A swift, slightly dutch-angled, handheld push-in to emphasize the sudden jolt of energy, then settling into a stable frame on the driver's eyes.",
+        "duration": 5,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_4721.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 4,
+        "visual_prompt": "Dynamic, low-angle tracking shot of the race car rocketing out of a pit lane or powering through a high-speed corner on a sun-drenched, asphalt track. Tiny flecks of rubber and asphalt kick up from the tires. The driver's helmet, emblazoned with subtle branding, is visible through the tinted visor, showing intense focus. Prominent golden hour lens flares streak across the frame from the low sun. Heat haze shimmers visibly over the hot asphalt. Shot on Arri Alexa 65 with a wide anamorphic lens, f/4.0 to keep the car sharp while conveying immense speed. Heavy 35mm film grain, 4k, hyper-realistic, capturing every detail of the car's aerodynamic design.",
+        "audio_prompt": "The thunderous, guttural roar of a high-performance race engine, sharp tire squeals, and the rushing sound of wind. Immersive, directional audio.",
+        "motion_prompt": "A high-speed, ground-level tracking shot matching the car's acceleration, transitioning into a quick, smooth pan to follow its rapid exit from frame.",
+        "duration": 7,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_4578.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 5,
+        "visual_prompt": "A beautiful, stylized product shot of the 'Race Car Coffee' bag/packaging, perfectly centered and pristine, resting on a polished dark concrete surface. A subtle, elegant wisp of steam rises gently from behind the product, diffusing softly. Dramatic Rembrandt lighting emphasizes the brand logo, product information, and the rich texture of the packaging. A faint, elegant silhouette of a race track is subtly reflected in the polished surface beneath the product. Shot on Arri Alexa Mini LF with a macro lens, f/2.8, achieving crisp focus and luxurious depth. 4k, hyper-realistic, cinematic.",
+        "audio_prompt": "A final, satisfying 'whoosh' sound, fading into a clean, professional voiceover. Very subtle, refined high-performance car engine idling sounds underneath the voiceover, fading out slowly.",
+        "motion_prompt": "A very slow, graceful 360-degree orbital camera movement around the product, revealing its details and premium aesthetic.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_4299.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

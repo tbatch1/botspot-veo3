@@ -5,60 +5,95 @@ import google.auth
 from google.auth.transport.requests import Request
 from ..config import config
 from .base import ImageProvider
+from ..constants.style_profiles import IMAGE_POSITIVE_EMPHASIS
 
 class ImagenProvider(ImageProvider):
-    """Nano Banana Pro (Gemini 3 Pro Image) implementation for Visuals."""
+    """Imagen 4 Ultra implementation - Highest quality image generation for premium clients."""
 
     def __init__(self):
         self.project_id = "876386907816"  # Same project as video (gen-lang-client-0590133327)
         self.location = "us-central1"
-        # Nano Banana Pro uses different endpoint format
-        self.model_id = config.IMAGEN_MODEL  # gemini-3-pro-image-preview
+        # Imagen 4 Ultra for premium quality (imagen-4.0-ultra-generate-001)
+        self.model_id = config.IMAGEN_MODEL
         self.api_endpoint = f"https://{self.location}-aiplatform.googleapis.com/v1/projects/{self.project_id}/locations/{self.location}/publishers/google/models/{self.model_id}:predict"
 
         # Get credentials
         self.credentials, self.project = google.auth.default()
-        
+        self._current_aesthetic = "photorealistic"  # Default aesthetic
+
     def _get_token(self):
         if not self.credentials.valid:
             self.credentials.refresh(Request())
         return self.credentials.token
 
-    def generate_image(self, prompt: str, aspect_ratio: str = "16:9") -> str:
+    def set_aesthetic_style(self, aesthetic: str):
+        """Set the aesthetic style for next image generation (adaptive prompting)"""
+        self._current_aesthetic = aesthetic
+        print(f"[IMAGEN 4 ULTRA] Aesthetic style set to: {aesthetic}")
+
+    def generate_image(
+        self,
+        prompt: str,
+        aspect_ratio: str = "16:9",
+        seed: int = None,
+        image_input: str = None
+    ) -> str:
         """
-        Generates an image using Nano Banana Pro (Gemini 3 Pro Image) REST API.
-        Supports up to 4K resolution with enhanced text rendering and creative controls.
+        Generates an image using Imagen 4 Ultra REST API.
+        Ultra version provides highest quality with 2K resolution.
         Returns the path to the saved image.
         """
+        # Log and handle unsupported parameters
+        if seed is not None:
+            print(f"[IMAGEN 4 ULTRA] Note: seed parameter ({seed}) not supported by Imagen API, ignoring.")
+
+        if image_input is not None:
+            print(f"[IMAGEN 4 ULTRA] Note: image_input not supported by Imagen API, ignoring.")
+            print(f"[IMAGEN 4 ULTRA] Suggestion: Use FluxProvider for image-to-image generation.")
+
         token = self._get_token()
         headers = {
             "Authorization": f"Bearer {token}",
             "Content-Type": "application/json; charset=utf-8"
         }
 
-        # Nano Banana Pro enhanced parameters
+        # ADAPTIVE: Apply style-specific positive emphasis
+        # Imagen 4 does NOT support negative prompts - use positive emphasis instead
+        aesthetic_style = self._current_aesthetic
+        positive_emphasis = IMAGE_POSITIVE_EMPHASIS.get(aesthetic_style, IMAGE_POSITIVE_EMPHASIS['photorealistic'])
+
+        # OPTIMIZATION (2025 Research): "A photo of..." prefix boosts photorealism ~40%
+        if aesthetic_style == "photorealistic" and not prompt.lower().startswith(("a photo", "photo of", "photograph")):
+            prompt = f"A photo of {prompt}"
+        
+        # Enhance prompt with style-specific keywords
+        enhanced_prompt = f"{prompt}. {positive_emphasis}"
+
         payload = {
             "instances": [
                 {
-                    "prompt": prompt,
+                    "prompt": enhanced_prompt,  # Use enhanced prompt with style emphasis
                 }
             ],
             "parameters": {
                 "sampleCount": 1,
                 "aspectRatio": aspect_ratio,
-                "addWatermark": False,  # Nano Banana Pro supports watermark-free images
-                "outputMimeType": "image/png",  # High quality PNG output
-                # Nano Banana Pro supports additional creative controls
-                "personGeneration": "allow_all",  # Allow person generation
+                "sampleImageSize": "2K",  # FIXED: Correct parameter name for 2K resolution
+                "addWatermark": False,
+                "outputOptions": {
+                    "mimeType": "image/png"
+                },
+                "personGeneration": "allow_all"
+                # negativePrompt removed - not supported by imagen-4.0-ultra-generate-001
             }
         }
 
-        print(f"[NANO BANANA PRO] Generating image: {prompt[:60]}...")
+        print(f"[IMAGEN 4 ULTRA] Generating 2K image ({aesthetic_style} style, {aspect_ratio}): {prompt[:60]}...")
         response = requests.post(self.api_endpoint, headers=headers, json=payload)
 
         if response.status_code != 200:
-            raise Exception(f"Nano Banana Pro API Error: {response.text}")
-            
+            raise Exception(f"Imagen 4 Ultra API Error: {response.text}")
+
         # Parse response
         data = response.json()
         try:
@@ -83,7 +118,7 @@ class ImagenProvider(ImageProvider):
                  raise Exception(f"Unexpected prediction type: {type(first_pred)}")
 
         except Exception as e:
-             raise Exception(f"Failed to parse Nano Banana Pro response: {e}. Raw data: {data}")
+             raise Exception(f"Failed to parse Imagen 4 Ultra response: {e}. Raw data: {data}")
 
         # Save to file
         import base64
@@ -98,5 +133,5 @@ class ImagenProvider(ImageProvider):
         with open(filepath, "wb") as f:
             f.write(image_data)
 
-        print(f"[NANO BANANA PRO] ✅ Generated: {filepath}")
+        print(f"[IMAGEN 4 ULTRA] [OK] Generated 2K image: {filepath}")
         return filepath

@@ -1,0 +1,80 @@
+{
+  "id": "d3a02231-a943-4eb6-b352-a5322e1f19f6",
+  "user_input": "Neon Brew: A cyberpunk coffee brand. Dark, neon, rainy Tokyo streets. High energy visuals.",
+  "status": "completed",
+  "error": null,
+  "seed": 1502765088,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "In the neon maze, chaos surrenders. Your ritual begins. Find your focus.",
+        "time_range": "0-8s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_8e187901c8d5b4d396c2af59ce0e203b.mp3"
+      }
+    ],
+    "mood": "High Energy",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Shot on RED Komodo 6K with vintage Helios 44-2 58mm anamorphic-adapted lenses. Heavy halation bleeding from neon signage into rain-slicked surfaces. Kodak Vision3 500T 5219 emulation with pushed processing. ISO 4000 sensor noise visible in shadow areas. Chromatic aberration on edge highlights from cheap glass simulation. 16mm Bolex B-roll intercuts with heavy gate weave and film grain structure. A 28-year-old androgynous figure with short, dark, spiky hair, wearing a distressed oversized black trench coat made of a heavy, waxed canvas, dark cargo pants, and worn-out, high-top combat boots, their face partially obscured by rain and shadow, standing in a rain-drenched Tokyo alleyway. Keep subject in center 80%. Extreme wide shot (EWS), vast environment visible with flickering holographic advertisements and vibrant neon signs, subject small in epic space, grand cinematic scale, establishing geography, with a subtle handheld feel simulating operator breathing. Low-key chiaroscuro with hard single-source key light from a distant neon sign (magenta and cyan hues), deep dramatic shadows across half the frame casting mystery, film noir aesthetic, 3:1 key-to-fill ratio for high contrast, theatrical mood. Practicals only, no fill light. Deep blacks crushed in grade. Rain catching light as streaking particles. Teal and orange color grade with high contrast, crushed blacks for cinematic depth, warm skin tones against cool backgrounds, blockbuster film aesthetic, theatrical release quality. Palpable humidity—every surface wet, every light source diffused through moisture. Shot on Arri Alexa LF full-frame sensor, 4.5K resolution, professional cinema camera, with a 24mm f/1.4 wide-angle prime lens, leveraging full-frame sensor depth for dramatic subject isolation.",
+        "audio_prompt": "Distant city hum, the rhythmic patter of heavy rain, and muffled, distorted neon sign buzz.",
+        "motion_prompt": "Slow dolly back from a close detail of a glistening rain droplet on a grimy surface, gradually revealing the full rain-drenched alleyway and the lone figure.",
+        "duration": 3,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\a017e07518944f280b21727f5bf4ec0d.png",
+        "video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\videos\\2d9864e19621cb85e3b7a907d5d82f11.mp4",
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_c4ed4c36bd1372bb8c260cd3c9fdc10a.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Shot on RED Komodo 6K with vintage Helios 44-2 58mm anamorphic-adapted lenses. Heavy halation bleeding from neon signage into rain-slicked surfaces. Kodak Vision3 500T 5219 emulation with pushed processing. ISO 4000 sensor noise visible in shadow areas. Chromatic aberration on edge highlights from cheap glass simulation. 16mm Bolex B-roll intercuts with heavy gate weave and film grain structure. The same androgynous figure from scene 1, now inside a cramped underground coffee bar, their gloved hand reaching for a cup of coffee. Steam rises from the cup. Keep subject in center 80%. Medium shot (MS), chest to head framing, standard dialogue composition, balanced and relatable, conversational distance. Macro insert of steam rising from industrial brewing apparatus, then the coffee cup. Low-key chiaroscuro with hard single-source key light from harsh neon tubes (amber and magenta) casting dramatic shadows across weathered faces, film noir aesthetic, 3:1 key-to-fill ratio for high contrast, theatrical mood. Practicals only. Deep blacks crushed in grade. Motivated light sources creating hard shadows with soft halation halos. Teal and orange color grade with high contrast, crushed blacks for cinematic depth, warm skin tones against cool backgrounds, blockbuster film aesthetic, theatrical release quality. Tension between urban chaos and the meditative act of consumption. Shot on Arri Alexa LF full-frame sensor, 4.5K resolution, professional cinema camera, with an 85mm f/1.4 lens creating gorgeous compression and creamy background blur. Super 35mm sensor crop for a traditional cinematic look.",
+        "audio_prompt": "Subtle clinking of ceramic, the low hum of industrial coffee machinery, and soft rising steam hisses.",
+        "motion_prompt": "Slow dolly push-in towards the figure's hand and the steaming coffee cup, revealing product details with hero lighting, a dramatic unveiling, emphasizing the mechanical, inevitable ritual.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_6f93a2fa5d5e115a6419d64f20f86c87.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Shot on RED Komodo 6K with vintage Helios 44-2 58mm anamorphic-adapted lenses. Heavy halation bleeding from neon signage into rain-slicked surfaces. Kodak Vision3 500T 5219 emulation with pushed processing. ISO 4000 sensor noise visible in shadow areas. Chromatic aberration on edge highlights from cheap glass simulation. 16mm Bolex B-roll intercuts with heavy gate weave and film grain structure. The same androgynous figure from scene 1, their face now clearly visible, an expression of deep calm and heightened focus. Close-up on the coffee cup with condensation. Keep subject/cup in center 80%. Close-up (CU) of the figure's eyes, then a macro insert on the coffee cup, face fills frame, emotional detail and subtle nuance visible, an intimate revelation of profound focus. Hard directional light from a single, unseen fluorescent flicker, creating deep blacks and bold dramatic shadows, a fashion editorial aesthetic, striking visual impact, magazine-quality lighting. Practical light only, no fill. Teal and orange color grade with high contrast, crushed blacks for cinematic depth, warm skin tones against cool backgrounds, blockbuster film aesthetic, theatrical release quality. The perception of the city outside shifting from chaos to ordered patterns, conveyed through the figure's intense focus. Shot on Panavision DXL2 cinema camera, professional Hollywood production standard, with a Canon CN-E anamorphic lens producing characteristic horizontal lens flares. IMAX large format sensor, maximum resolution and clarity.",
+        "audio_prompt": "A focused, almost silent ambiance, with a faint, deep resonant hum growing as the frame fades to black.",
+        "motion_prompt": "Fade to black with a locked-off composition, a clean professional finish.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_0cec2a8d62aff6c739aa3c6458a5d11e.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "Electric Ritual",
+    "visual_language": "Shot on RED Komodo 6K with vintage Helios 44-2 58mm anamorphic-adapted lenses. Heavy halation bleeding from neon signage into rain-slicked surfaces. Kodak Vision3 500T 5219 emulation with pushed processing. ISO 4000 sensor noise visible in shadow areas. Chromatic aberration on edge highlights from cheap glass simulation. 16mm Bolex B-roll intercuts with heavy gate weave and film grain structure.",
+    "narrative_arc": "A lone figure navigates rain-drenched alleyways beneath flickering holographic advertisements, their breath visible in the cold air. They push through a hidden doorway into a cramped underground coffee bar where steam rises from industrial brewing apparatus, neon tubes casting harsh shadows across weathered faces. The ritual of the first sip triggers a surge of clarity—pupils dilating, rain outside becoming rhythm, the city transforming from chaos into controllable data streams.",
+    "audience_hook": "The primal need for control in overwhelming environments—coffee as the chemical key that transforms sensory overload into focused power.",
+    "cinematic_direction": {
+      "mood_notes": "Frenetic energy contained within deliberate stillness. Quick cuts during movement sequences, held shots during the coffee ritual. Tension between urban chaos and the meditative act of consumption. Palpable humidity—every surface wet, every light source diffused through moisture.",
+      "lighting_notes": "Practicals only—neon tubes (magenta, cyan, amber), LED signage bleed, fluorescent flicker from vending machines. No fill light. Deep blacks crushed in grade. Motivated light sources casting hard shadows with soft halation halos. Rain catching light as streaking particles.",
+      "camera_notes": "Handheld with visible operator breathing during street sequences. Slow dolly push-ins during coffee preparation—mechanical, inevitable. Dutch angles in transitional moments. Macro inserts of liquid, steam, condensation with shallow depth creating abstract texture. Whip pans between neon sources creating motion blur streaks."
+    },
+    "production_recommendations": {
+      "visual_engine": "flux",
+      "video_engine": "runway",
+      "voice_vibe": "Low, gravelly whisper—like a noir narrator who's been awake for three days. Sparse. Japanese-accented English fragments mixed with silence. More breath than words."
+    }
+  },
+  "research_brief": null,
+  "final_video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\output\\final_ad.mp4",
+  "bgm_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\bgm_01ad8c58cb20109cb0b2a7af6adeeda8.mp3",
+  "video_model": "runway",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "logs": []
+}

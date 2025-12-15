@@ -1,0 +1,82 @@
+{
+  "id": "0a52447d-6f12-4b69-8240-c6beef43abf1",
+  "user_input": "race car coffee",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Unleash your drive.",
+        "time_range": "0-5s",
+        "audio_path": "assets\\audio\\mock_speech_4156.mp3"
+      }
+    ],
+    "mood": "Energetic",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A gleaming, blurred close-up of a race car tire spinning on asphalt, low angle, dappled sunlight.",
+        "audio_prompt": "Distant rumble of an engine.",
+        "motion_prompt": "Fast pan right.",
+        "duration": 1,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_561.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Extreme close-up on dark roasted coffee beans, rich texture, soft directional lighting from above.",
+        "audio_prompt": "Gentle rustle of beans.",
+        "motion_prompt": "Slow push in.",
+        "duration": 1,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_7894.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Macro shot of dark, rich coffee crema forming in a mug, dramatic rim lighting.",
+        "audio_prompt": "Subtle brewing sounds, hiss.",
+        "motion_prompt": "Static shot.",
+        "duration": 1,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_5911.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 4,
+        "visual_prompt": "Close-up on a hand (wearing a racing glove) gripping a coffee mug, steam rising, warm backlight.",
+        "audio_prompt": "Faint sip sound.",
+        "motion_prompt": "Slight tilt down.",
+        "duration": 1,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_3452.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 5,
+        "visual_prompt": "The 'Race Car Coffee' branded mug and bag on a pit crew tool chest, wide shot, high contrast lighting.",
+        "audio_prompt": "Distant, revving engine fading.",
+        "motion_prompt": "Quick pull out.",
+        "duration": 1,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_6288.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

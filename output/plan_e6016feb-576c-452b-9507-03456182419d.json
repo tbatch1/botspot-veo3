@@ -1,0 +1,46 @@
+{
+  "id": "e6016feb-576c-452b-9507-03456182419d",
+  "user_input": "Create a Premium commercial for a product in the style of Anime, Cinematic, Cyberpunk. Target platform: Hulu. Duration: 15s.",
+  "status": "planning",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Expand your perception. Discover new realities.",
+        "time_range": "0-8s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Premium",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "In a cyberpunk-infused anime style, a sleek, obsidian-black 'ChronoLens' augmented reality device, crafted from brushed titanium and composite glass, rests on a futuristic display pedestal. Subtle electric blue energy pulses within its core, casting faint reflections on its polished surface. Cinematic neon backlighting and a soft key light illuminate its premium finish. Medium close-up, perfectly centered within the safe zone.",
+        "audio_prompt": "Low, resonant hum of advanced technology, distant, almost inaudible synth-wave city ambience.",
+        "motion_prompt": "Slow, deliberate dolly push-in towards the device, with a subtle Steadicam drift.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "The same obsidian-black 'ChronoLens' augmented reality device from scene 1, now effortlessly integrated, projects a vivid, interactive holographic interface of a hyper-stylized neon-drenched metropolis, swirling around an unseen user's eye-line. Intricate micro-details on the device's surface become visible as light shifts. The scene maintains the anime, cinematic, cyberpunk aesthetic with deep purples and electric blues dominating.",
+        "audio_prompt": "Crisp, soft electronic interface sounds and atmospheric data flow, building gently in intensity.",
+        "motion_prompt": "Smooth, controlled orbital camera movement around the floating holographic interface and the device, revealing its immersive activation.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

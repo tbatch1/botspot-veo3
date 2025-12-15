@@ -1,0 +1,46 @@
+{
+  "id": "dc5baa96-73e2-4e79-aa3b-f93d5641ea9a",
+  "user_input": "luxury perfume",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Unveil your essence.",
+        "time_range": "0-8s",
+        "audio_path": "assets\\audio\\mock_speech_6060.mp3"
+      }
+    ],
+    "mood": "Elegant",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Close-up of a meticulously crafted luxury perfume bottle on a smooth, reflective surface. Soft, diffused lighting highlights its intricate design.",
+        "audio_prompt": "Subtle, deep synth pad.",
+        "motion_prompt": "Slow push in",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\182e29999b6f2c9aa71ddd50ec5245d0.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_5874.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Extreme close-up on an elegant wrist, a fine mist of luxury perfume gently settles on the skin. Golden hour lighting creates a warm glow.",
+        "audio_prompt": "Delicate spritz sound, followed by a soft, ambient hum.",
+        "motion_prompt": "Static shot",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\3be6c51f9ccb22f181036e939437540a.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_1376.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

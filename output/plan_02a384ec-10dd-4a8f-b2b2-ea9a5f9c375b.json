@@ -1,0 +1,89 @@
+{
+  "id": "02a384ec-10dd-4a8f-b2b2-ea9a5f9c375b",
+  "user_input": "\n    Create a 100% realistic documentary-style ad for Botspot.\n    SUBJECT: A tired, real human trader at his kitchen table late at night.\n    STORY: He looks exhausted, staring at a laptop. Then he closes it, smiles, and walks away to sleep.\n    MESSAGE: \"Stop watching charts. Let the bots take over.\"\n    VISUALS: Grainy, handheld, low light, warm practical lamps. NO GLOSSY 3D. NO CYBERPUNK.\n    It must look like a NETFLIX DOCUMENTARY.\n    ",
+  "status": "completed",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Stop watching charts. Let the bots take over. Reclaim your nights. With Botspot, a better night's rest can be within reach.",
+        "time_range": "0-8s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Authentic",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3, A 40-year-old male trader, visibly exhausted, with short messy brown hair and stubble, wearing a plain, slightly rumpled grey t-shirt, slouched forward at a dimly lit kitchen table. His face is illuminated by the harsh blue-white glow of a laptop screen, creating deep shadows under his eyes. Medium Wide Shot (MWS), slightly high angle looking down, showing the trader at his kitchen table, laptop prominent, with glimpses of the dark kitchen background. Only practical lighting from a single warm tungsten desk lamp in the periphery and the laptop screen itself. Deep, dark shadows fill the background. No artificial fill. Desaturated, gritty, with lifted blacks and a prominent 16mm film grain texture. Color temperature leans cool from the laptop on his face, contrasting with the warm practical lamp in the room. Documentary realism. Shot on a vintage digital cinema camera emulating a 16mm film look, 35mm equivalent lens, slight focus hunting on his face. Centered in safe zone.",
+        "audio_prompt": "Faint hum of a laptop fan, distant muffled city sounds, a quiet sigh.",
+        "motion_prompt": "Slow, subtle handheld drift, mimicking a documentarian observing a private moment, moving slightly from left to right.",
+        "duration": 2,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\8731122a3a1b304e5a26b2b09e459701.png",
+        "video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\videos\\a368c63a912bf3a234db7d3a5670c6f7.mp4",
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_92aba3b44c068ba948c4991d5e882c45.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3, The same 40-year-old male trader from scene 1, his tired eyes fixed on a complex stock chart displayed on his laptop screen. His fingers are resting on the keyboard, but motionless. Close-up (CU) on the trader's face, focusing on his eyes and the subtle tension in his jaw. The laptop screen's blue light reflects in his pupils. Dominated by the sickly blue-white light from the laptop screen illuminating his face. The warm practical lamp is now out of frame, leaving the background in deeper darkness. Same desaturated, grainy, documentary realism. The blue cast on his face is more pronounced, highlighting exhaustion. Shot on the same vintage digital cinema camera emulating a 16mm film look as scene 1, 50mm equivalent lens, allowing slight imperfections in focus to enhance realism. Centered in safe zone.",
+        "audio_prompt": "Soft, rhythmic click of keys on the laptop, faint hum from the screen, his own slow, deep breathing.",
+        "motion_prompt": "A slow, subtle handheld push-in towards the trader's face, almost imperceptible, emphasizing the internal struggle.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_cd1b6949caebfaf3e94be226a22b4b37.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3, The same 40-year-old male trader from scene 1, his hand slowly reaching out and closing the lid of the laptop with quiet finality. The blue light vanishes from his face. A flicker of relief crosses his features. Medium shot (MS) of the trader and the laptop. As the laptop closes, the blue-white light disappears. The warm tungsten practical lamp, previously a background element, now becomes the primary key light, casting warm amber on his face and the table. Shadows shift and deepen. Retains the desaturated, grainy, documentary feel. The shift to warmer, softer light as the laptop closes signifies a change. Shot on the same vintage digital cinema camera emulating a 16mm film look as scene 1, 35mm equivalent lens, slightly wider to capture the action of closing the laptop. Centered in safe zone.",
+        "audio_prompt": "The soft, definitive click of the laptop closing. A very subtle, almost inaudible sigh of relief.",
+        "motion_prompt": "Subtle handheld sway, capturing the natural, unposed action of the trader.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_0a0a1bcc3d33319e449d113826f6ab49.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 4,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3, The same 40-year-old male trader from scene 1, slowly rising from the kitchen table, a small, genuine smile forming on his face. He turns and walks towards a dark hallway leading to a bedroom, gradually receding into deep shadows. Wide shot (WS) of the kitchen table and the trader. The warm tungsten practical lamp illuminates the table area. The hallway he walks into is almost entirely dark, a deep void. The ambient light in the kitchen is minimal, emphasizing the 'late night' feel. Desaturated, grainy, with deep blacks and the 16mm texture. The final smile, catching the last of the warm light, feels like a private, earned victory. Shot on the same vintage digital cinema camera emulating a 16mm film look as scene 1, 35mm equivalent lens, slightly wider to encompass his movement. Centered in safe zone.",
+        "audio_prompt": "The faint creak of a chair as he stands. Soft, receding footsteps fading into silence.",
+        "motion_prompt": "Handheld, static wide shot, allowing the trader to move naturally out of frame towards the darkness, as if the camera operator is simply documenting.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_7b7807f762580d6e0fb3f30816a1539f.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "The Last Chart",
+    "visual_language": "Handheld, documentary-style cinematography with natural grain and imperfect framing—like a late-night scene from a Netflix true crime doc or 'Chef's Table' intimate moment. Warm tungsten practicals (desk lamp, kitchen light) create pools of amber against deep shadows. The camera feels present, almost voyeuristic, catching a real moment. Color grade should be desaturated, slightly lifted blacks, with that distinctive 16mm texture. No polish, no gloss—just truth.",
+    "narrative_arc": "We find a exhausted trader alone at his kitchen table, bathed in laptop glow, the weight of endless market-watching etched on his face. A moment of realization crosses his expression—he closes the laptop with quiet finality. He rises, walks toward the dark hallway to bed, and for the first time, he smiles—because something else is watching the charts now.",
+    "audience_hook": "Every trader knows the prison of 24/7 markets—the anxiety of sleeping while money moves. This taps into the universal exhaustion of constant vigilance and offers the emotional release of permission to let go. It's not about getting rich; it's about getting your life back.",
+    "cinematic_direction": {
+      "mood_notes": "Authenticity is everything. This should feel discovered, not directed. The exhaustion must be palpable—think 'Making a Murderer' interview intimacy meets 'The Social Dilemma' quiet tension. The final smile should feel earned, like a small private victory witnessed by accident.",
+      "lighting_notes": "Single warm practical lamp as key light, laptop screen as fill creating that sickly blue-white glow on the face. Deep shadows in the kitchen background. When he walks away, let him move into darkness—the bedroom hallway should be barely visible. No artificial bounce, no beauty lighting.",
+      "camera_notes": "Handheld with subtle drift and breathing—never locked off. Stay on a 35mm or 50mm equivalent for intimacy. Allow slight focus hunting. One slow push-in on his tired face, then a static wide as he walks away. Movement should feel observational, like a documentarian trying not to disturb the moment."
+    },
+    "production_recommendations": {
+      "visual_engine": "flux",
+      "video_engine": "runway",
+      "voice_vibe": "Deep, gritty, real person—like a weary trader who's been there, speaking in a quiet late-night confession tone. Think narrator from 'Icarus' or 'Wild Wild Country'—someone who sounds like they've seen things, not a polished announcer. Slightly raspy, intimate, almost whispered."
+    }
+  },
+  "research_brief": "{\n  \"Product Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Automated, profitable AI trading strategies built and deployed in seconds, requiring no coding expertise, for 24/7 market operation.\",\n  \"Target Audience\": \"Individuals and traders looking to automate their trading, create profitable strategies without coding, and monitor their investments around the clock.\",\n  \"Key Features\": [\n    \"Build AI trading bots\",\n    \"Automated trading functionality\",\n    \"Create profitable trading strategies quickly\",\n    \"No coding required\",\n    \"Deploy AI agents in seconds\",\n    \"24/7 trading and monitoring\"\n  ],\n  \"Brand Vibe\": \"Innovative, Tech, Efficient, Empowering, Accessible (FinTech)\",\n  \"Industry\": \"FinTech, Algorithmic Trading, Artificial Intelligence (AI) for Finance\"\n}",
+  "final_video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\output\\final_ad.mp4",
+  "video_model": "runway",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade"
+}

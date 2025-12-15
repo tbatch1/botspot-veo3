@@ -1,0 +1,46 @@
+{
+  "id": "31e84b02-afd1-45d0-9900-5933b9a39c20",
+  "user_input": "luxury watch",
+  "status": "planning",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Time perfected. A legacy worn.",
+        "time_range": "0-8s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Aspirational",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A 40-year-old elegant woman with sleek dark hair pulled back, wearing a tailored navy silk blouse, her left wrist prominently displaying a luxury watch with a polished silver case and a dark leather strap. She is seated at a minimalist, sophisticated office desk. Cinematic three-point lighting with a soft key light exquisitely highlights the watch's gleam and her poised hand, centered within the safe zone.",
+        "audio_prompt": "Subtle, distant city hum.",
+        "motion_prompt": "Slow dolly push-in, gradually revealing the watch on her wrist.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "The same 40-year-old elegant woman from scene 1. She subtly adjusts the cuff of her navy silk blouse, further revealing the luxury watch on her wrist, then slowly lifts her gaze and meets the camera with a confident, slight smile. A soft key light from the side catches the watch's metallic reflections and the subtle texture of her blouse. Her face and the watch remain centered in the safe zone.",
+        "audio_prompt": "Gentle, sophisticated jazz instrumental note.",
+        "motion_prompt": "Subtle Steadicam drift to the right, followed by a very slow push-in as she makes eye contact.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "0fc0b1fe-365f-4f4f-b4f7-01433735be56",
+  "user_input": "\n    Create an Intense, Real-Life ad for Botspot.\n    Focus on the PAIN of manual trading (exhaustion, red eyes) vs the RELIEF of automation.\n    Visuals MUST look like a Netflix Documentary (Halation, Grain, Imperfect).\n    NO \"AI Gloss\". Make it gritty.\n    ",
+  "status": "completed",
+  "error": null,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "The market never sleeps, but you can. Automate your strategy. Reclaim your time.",
+        "time_range": "0-10s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_c68bce9af0603584a56953168e49d241.mp3"
+      }
+    ],
+    "mood": "Intense",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3. A 30-35 year old man, exhausted, with unkempt dark hair and a shadow of stubble, wearing a rumpled, plain dark t-shirt. His bloodshot eyes are strained, reflecting the intense blue-green glow of a trading chart on a monitor. Visible pores and deep fatigue lines around his eyes, skin texture showing imperfection. Extreme close-up (ECU) on his eyes and slightly trembling fingers hovering over a worn keyboard, centered in safe zone. Harsh practical lighting from a single, intensely blue monitor screen acting as key light, casting deep, oppressive shadows under his eyes and chin. No fill light. A faint, warm practical light (desk lamp) barely illuminates the edge of his temple, creating a motivated rim. Shadows go to pure black. Heavy sensor noise from pushed ISO 6400, prominent 35mm film grain overlay, pronounced halation bleeding from the monitor glow into his face, subtle chromatic aberration on edges. Gritty, desaturated look with strong cool blue tones dominating, creating a feeling of oppressive coldness. High contrast with deep, crushed blacks and pronounced shadows, minimal mid-tones. Shallow depth of field with soft focus falloff on background elements, emphasizing his face. Shot on Sony FX3 with a vintage Helios 44-2 lens, captured at 1080p, natural skin texture visible.",
+        "audio_prompt": "Faint, rhythmic clicks of a mouse and keyboard, distant hum of a computer fan, very subtle, almost subliminal.",
+        "motion_prompt": "Handheld, subtle breathing movement, slowly pushing in on his face, feeling invasive and claustrophobic.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\2f4896ceea23fd69a7b3ff9ea2e72684.png",
+        "video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\videos\\614bfb905f48d4e5cda8c353b07e1bbf.mp4",
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_cac729f0cf988be438f71f1fcbf3af63.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Raw photo, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3. The same 30-35 year old man from scene 1, now leaning back in his chair, hands gently resting on the desk, eyes still a bit tired but visibly relaxed, looking at a monitor showing green upward-ticking numbers. His posture is finally released from tension, slight smile of relief. Visible pores and natural skin texture. Static medium shot (MS) of the man, chest to head framing, showing his upper body and the top of the monitor, centered in safe zone. Softer, diffused morning light filtering through blinds, gently illuminating his face from the side. The blue monitor glow is still present but softened, now complemented by the natural light, creating a sense of calm. Shadows are still present but not as harsh, providing gentle contour. Heavy sensor noise, prominent 35mm film grain overlay, subtle halation. Transitioning to a slightly warmer, more neutral color palette, still retaining grit and natural imperfection. High contrast, with lifted shadows but still deep blacks, reflecting a quiet shift to relief. Natural skin texture. Shot on Sony FX3 with a vintage Helios 44-2 lens, captured at 1080p.",
+        "audio_prompt": "Quiet, distant city sounds (very subtle), a barely audible soft hum of the computer, a soft, audible sigh of relief.",
+        "motion_prompt": "Static shot, holding the moment of quiet release, a physical easing of tension.",
+        "duration": 4,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_8d14f11c315b241725013bc53fac63c2.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "The Burnout Before the Bot",
+    "visual_language": "Shot on Sony FX3 with vintage Helios 44-2 lens, pushed to ISO 6400 for heavy sensor noise. 35mm film grain overlay, pronounced halation bleeding from monitor glow into subject's face. Chromatic aberration on edges. Shallow depth of field with soft focus falloff. Natural skin texture showing fatigue lines, bloodshot eyes, visible pores under harsh blue screen light.",
+    "narrative_arc": "We open tight on exhausted eyes reflecting candlestick charts at 3AM—red, strained, blinking slowly. Cut to trembling fingers hovering over a keyboard, coffee cups stacked, the weight of sleepless nights visible in every frame. Final beat: hands release from keyboard, lean back, as green numbers tick upward autonomously—relief without words.",
+    "audience_hook": "Every manual trader knows the 3AM dread—the fear of missing a move while you sleep. This targets the visceral exhaustion of 'always on' trading and positions automation as liberation, not laziness.",
+    "cinematic_direction": {
+      "mood_notes": "Oppressive tension in the first 7 seconds—suffocating, claustrophobic. The relief at the end should feel like exhaling after holding your breath. No triumphant music. Just quiet release.",
+      "lighting_notes": "Harsh practical lighting only. Blue monitor glow as key light creating deep shadows under eyes. No fill. Single warm practical (desk lamp) for motivated rim. Let shadows go black. The final beat shifts to softer, diffused morning light through blinds—hope without being saccharine.",
+      "camera_notes": "Handheld with subtle breathing movement. Extreme close-ups dominate—eye macro, finger twitches, sweat on temple. Slow, deliberate push-ins that feel invasive. Final shot: static wide as subject physically releases tension."
+    },
+    "production_recommendations": {
+      "visual_engine": "flux",
+      "video_engine": "runway",
+      "voice_vibe": "No voiceover. Ambient sound design only—keyboard clicks, fan hum, heartbeat-like bass pulse that fades to silence at the end. If text is needed, use minimal white sans-serif: 'Stop trading your sleep.'"
+    }
+  },
+  "research_brief": "{\n  \"Product Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empowering users to create and deploy profitable AI trading bots and strategies in seconds, without any coding required, enabling automated 24/7 trading.\",\n  \"Target Audience\": \"Aspiring traders, investors, and individuals interested in automated financial trading who lack coding expertise or seek rapid strategy deployment.\",\n  \"Key Features\": [\n    \"AI Trading Bot Creation\",\n    \"Automated Trading\",\n    \"No-Code Strategy Builder\",\n    \"Profitable Strategy Generation\",\n    \"24/7 Trading Operation\"\n  ],\n  \"Brand Vibe\": \"Innovative, Accessible Tech, Empowering, Efficient, Modern Fintech\",\n  \"Industry\": \"Fintech, AI, Automated Trading, Algorithmic Trading\"\n}",
+  "final_video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\output\\final_ad.mp4",
+  "video_model": "runway",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "logs": []
+}

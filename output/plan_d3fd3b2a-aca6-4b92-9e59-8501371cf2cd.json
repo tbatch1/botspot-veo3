@@ -1,0 +1,117 @@
+{
+  "id": "d3fd3b2a-aca6-4b92-9e59-8501371cf2cd",
+  "user_input": "Create a commercial for cool ad. \n        Style: Cinematic. \n        Mood: Premium. \n        Camera: Steadicam. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+  "status": "planned",
+  "error": null,
+  "seed": 803640459,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "[pause: 0.3s] Innovation meets excellence.",
+        "time_range": "0s-5s",
+        "audio_path": null
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Discover botspot.trade. Built for those who demand more.",
+        "time_range": "5s-10s",
+        "audio_path": null
+      },
+      {
+        "speaker": "Narrator",
+        "text": "This is your moment. [pause: 0.5s] Are you ready?",
+        "time_range": "10s-15ss",
+        "audio_path": null
+      }
+    ],
+    "mood": "cinematic",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A photo of botspot.trade interface emerging from darkness, volumetric lighting illuminating a sleek modern dashboard, professional tech environment. Shot on Arri Alexa, Cooke S4 prime lens, f/2.8, cinematic lighting.",
+        "audio_prompt": null,
+        "motion_prompt": "Camera: Slow dolly push-in. Visual: botspot.trade dashboard coming to life. Style: Cinematic, premium.",
+        "duration": 5,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": null,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "A photo of botspot.trade dashboard in full operation showing key features, golden hour lighting streaming through modern office window, professional workspace. Shot on Arri Alexa, Cooke S4 prime lens, f/2.8.",
+        "audio_prompt": null,
+        "motion_prompt": "Camera: Slow pan across screen. Visual: botspot.trade features revealed. Style: Cinematic, premium.",
+        "duration": 5,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": null,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "A photo of botspot.trade logo prominently displayed with brand colors, premium lighting setup, sleek minimalist backdrop. Shot on Arri Alexa, Cooke S4 prime lens, f/2.8.",
+        "audio_prompt": null,
+        "motion_prompt": "Camera: Slow orbit settling on logo. Visual: botspot.trade brand reveal. Style: Cinematic, premium.",
+        "duration": 5,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": null,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "botspot.trade Premium Showcase",
+    "visual_language": "Shot on Arri Alexa, Cooke S4 prime lens, natural film grain",
+    "product_name": "botspot.trade"
+  },
+  "research_brief": "{\n  \"Product/Service Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empowers users to create, deploy, and profit from AI trading bots instantly and automatically, without requiring any coding knowledge.\",\n  \"Target Audience\": \"Individuals interested in automated trading, beginners to intermediate traders, and those seeking to leverage AI for financial gain without programming expertise.\",\n  \"Top 5 Key Features\": [\n    \"Create AI Trading Agents in Seconds\",\n    \"Deploy AI Trading Agents Instantly\",\n    \"No Coding Required for Strategy Creation\",\n    \"Automated Trading (bots trade for you)\",\n    \"24/7 Trading Operation\"\n  ],\n  \"Brand Tone\": \"Innovative, Empowering, Efficient, Professional, Results-Oriented\",\n  \"Industry\": \"FinTech (Financial Technology), Automated Trading, AI/Machine Learning\",\n  \"Competitors Mentioned\": \"None\",\n  \"One-Sentence Pitch\": \"BotSpot revolutionizes trading by enabling anyone to create and deploy profitable AI trading agents automatically in seconds, with no coding required, to trade 24/7.\"\n}",
+  "detected_style": {
+    "aesthetic": "photorealistic",
+    "format": "product_showcase",
+    "tone": "dramatic",
+    "pacing": "mixed",
+    "confidence": 0.6583333333333332,
+    "confidence_breakdown": {
+      "aesthetic": 0.3333333333333333,
+      "format": 1.0,
+      "tone": 1.0,
+      "pacing": 0.3
+    }
+  },
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": null,
+  "video_model": "veo",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": [
+    "[01:51:20] [RESEARCH] Analyzing target URL: https://botspot.trade/...",
+    "[01:51:20] [RESEARCH] Site analysis complete. Extracted 1038 chars of context.",
+    "[01:51:20] [STRATEGY] Initializing creative brainstorm for: Create a commercial for cool ad. \n        Style: Cinematic. \n        Mood: Premium. \n        Camera: Steadicam. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+    "[01:51:20] [GPT-5.2] Running full creative direction...",
+    "[01:51:21] [GPT-5.2] Created strategy + 3 scenes in one pass",
+    "[01:51:27] [PHASE 1.5] Detecting creative style intent...",
+    "[01:51:27] [STYLE] Aesthetic detected: photorealistic (33% confidence)",
+    "[01:51:27] [STYLE] Format: product_showcase",
+    "[01:51:27] [STYLE] Tone: dramatic",
+    "[01:51:27] [SYSTEM] PLAN_COMPLETE. Transitioning to Asset Generation Phase."
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "id": "8ffca3c3-9125-4ae8-a300-94eb83f4fc67",
+  "user_input": "Create a commercial for make a dope commercial for our company. \n        Style: Cinematic. \n        Mood: Premium. \n        Camera: Steadicam. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+  "status": "planned",
+  "error": null,
+  "seed": 2598413664,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "[pause: 0.3s] Is your potential truly limitless?",
+        "time_range": "0-3s",
+        "audio_path": null
+      },
+      {
+        "speaker": "Narrator",
+        "text": "[sighs] Or are opportunities slipping away?",
+        "time_range": "3-6s",
+        "audio_path": null
+      },
+      {
+        "speaker": "Narrator",
+        "text": "[excited] Empower your ambition with precision.",
+        "time_range": "6-10s",
+        "audio_path": null
+      },
+      {
+        "speaker": "Narrator",
+        "text": "BotSpot. Smart tools, always on.",
+        "time_range": "10-15s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Premium",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Standard cinematic presentation with natural film grain. An extreme close-up of The BotSpot Interface, a minimalist holographic display showing intricate, pulsing green and blue trading algorithms and data streams, individual pixels and light refractions clearly visible, sleek black glass surface beneath. Extreme close-up (ECU) shot, focusing on the minute patterns of light. Cool color temperature 5600K with sharp cyan and magenta edge lighting defining the holographic projections and the sleek lines of the interface, minimal shadows for a high-tech aesthetic. Hollywood blockbuster color grade with high contrast. Shot on Arri Alexa LF full-frame sensor, 4.5K resolution, professional cinema camera, Canon CN-E anamorphic lens producing characteristic horizontal lens flares across the screen, IMAX large format sensor, maximum resolution and clarity, centered in safe zone.",
+        "audio_prompt": "AMBIANCE: Subtle, low-frequency hum of advanced computing systems. SFX: Gentle, rhythmic digital pulses and soft chimes accompanying data flow. MUSIC MOOD: tech",
+        "motion_prompt": "Slow 180-degree arc movement around the high-tech desk surface, gradually revealing the spatial relationship of the interface details.",
+        "duration": 3,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": null,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Standard cinematic presentation with natural film grain. The same BotSpot Interface from scene 1 is now seen on a premium, ultra-thin tablet held by a 30-something professional with short, neat dark hair, wearing a charcoal grey cashmere sweater, seated at a sophisticated home office desk. The character's face shows an initial pensive expression, slowly shifting to curiosity and intrigue as they interact with the interface. Medium shot (MS), framed from chest to head, centered in safe zone. Soft warm-toned lighting 2700K from a stylish practical lamp on the desk, creating a cozy intimate atmosphere with a comforting glow. Hollywood blockbuster color grade with a subtle shift towards warmer hues. Shot on Sony Venice 2 full-frame 8.6K sensor, cutting-edge digital cinema technology, 50mm f/1.2 portrait lens for beautiful subject separation and bokeh, 35mm film grain texture and organic analog feel.",
+        "audio_prompt": "AMBIANCE: Gentle hum of a quiet home office, distant, soft city sounds. SFX: Subtle, satisfying touch-screen taps and soft interface transitions from the tablet. MUSIC MOOD: tech",
+        "motion_prompt": "Slow 180-degree arc movement around the character and their home office setup, subtly establishing their environment and the product's presence.",
+        "duration": 3,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": null,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Standard cinematic presentation with natural film grain. The same professional character from scene 2, now looking confident and serene, stands in a luxurious, minimalist penthouse living space with expansive city views during golden hour. They hold the same premium, ultra-thin tablet displaying The BotSpot Interface, now showing positive, flourishing trading metrics. The character's posture is open, conveying success and contentment, centered in safe zone. Wide shot (WS), showing the subject head-to-toe and the clear environmental context of the opulent apartment. Golden hour soft sunlight streaming through a large floor-to-ceiling window, gentle ambient bounce fill from pristine white walls, warm color temperature 3200K creating an inviting glow, shallow depth of field beautifully isolates the subject. Hollywood blockbuster color grade, emphasizing warm, rich tones. Shot on Sony Venice 2 full-frame 8.6K sensor, cutting-edge digital cinema technology, Sigma Art 40mm f/1.4 for sharp cinematic rendering, Super 35mm sensor crop for a traditional cinematic look. This visual holds for the remainder of the ad duration, fading slightly to reveal the 'BotSpot.trade' URL and logo over the last few seconds.",
+        "audio_prompt": "AMBIANCE: Refined, distant city ambience, barely audible. SFX: Subtle, ascending digital flourish indicating success, followed by a soft, sustained drone. MUSIC MOOD: tech",
+        "motion_prompt": "Slow dolly back from a medium shot of the character's satisfied face, gradually revealing their full figure and the expansive, luxurious penthouse environment, culminating in a wide, stable shot.",
+        "duration": 2,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": null,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "Commercial for Create a commercial for make a dope commercial for our company. \n        Style: Cinematic. \n        Mood: Premium. \n        Camera: Steadicam. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+    "visual_language": "Standard cinematic presentation with natural film grain",
+    "story_beats": {
+      "hook": "Opening arresting visual of the product or problem",
+      "problem": "Relatable pain point the audience recognizes",
+      "solution_reveal": "Product enters as the solution",
+      "transformation": "Visible change and relief",
+      "payoff": "Aspirational outcome with call to action"
+    },
+    "audience_hook": "Quality and Performance",
+    "cinematic_direction": {
+      "mood_notes": "Professional",
+      "lighting_notes": "Balanced",
+      "camera_notes": "Steady"
+    }
+  },
+  "research_brief": "{\n  \"Product/Service Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empowers users to create and deploy AI-powered trading bots and profitable strategies in seconds, without requiring any coding knowledge.\",\n  \"Target Audience\": \"Individual traders, investors, or financial enthusiasts seeking to automate their trading strategies using AI, particularly those without programming experience.\",\n  \"Top 5 Key Features\": [\n    \"Rapid AI Trading Agent Creation & Deployment\",\n    \"Fully Automated Trading Execution\",\n    \"No-Code Strategy Builder\",\n    \"Focus on Profitable Strategy Generation\",\n    \"24/7 Continuous Trading Bot Operation\"\n  ],\n  \"Brand Tone\": \"Innovative, Empowering, Accessible, Efficient, Cutting-edge\",\n  \"Industry\": \"Fintech, AI, Automated Trading, Financial Technology\",\n  \"Competitors Mentioned\": \"None\",\n  \"One-Sentence Pitch\": \"BotSpot revolutionizes trading by allowing anyone to create and deploy AI trading agents in seconds to automatically execute profitable strategies 24/7, no coding required.\"\n}",
+  "detected_style": {
+    "aesthetic": "photorealistic",
+    "format": "product_showcase",
+    "tone": "dramatic",
+    "pacing": "fast",
+    "confidence": 0.7083333333333333,
+    "confidence_breakdown": {
+      "aesthetic": 0.3333333333333333,
+      "format": 1.0,
+      "tone": 1.0,
+      "pacing": 0.5
+    }
+  },
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": null,
+  "video_model": "veo",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": [
+    "[15:08:29] [RESEARCH] Analyzing target URL: https://botspot.trade/...",
+    "[15:08:29] [RESEARCH] Site analysis complete. Extracted 1031 chars of context.",
+    "[15:08:29] [STRATEGY] Initializing creative brainstorm for: Create a commercial for make a dope commercial for our company. \n        Style: Cinematic. \n        Mood: Premium. \n        Camera: Steadicam. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+    "[15:09:20] [STRATEGY] Strategic angle developed: N/A",
+    "[15:09:20] [GPT-5.2] Formatting scenes with spatial reasoning...",
+    "[15:09:21] [GPT-5.2] Formatted 0 scenes with spatial specs.",
+    "[15:09:21] [WARNING] GPT-5.2 returned 0 scenes. Falling back to Gemini...",
+    "[15:09:21] [GEMINI] Fallback: Generating cinematic screenplay...",
+    "[15:09:45] [GEMINI] Screenplay generated with 3 scenes.",
+    "[15:10:00] [PHASE 1.5] Detecting creative style intent...",
+    "[15:10:00] [STYLE] Aesthetic detected: photorealistic (33% confidence)",
+    "[15:10:00] [STYLE] Format: product_showcase",
+    "[15:10:00] [STYLE] Tone: dramatic",
+    "[15:10:00] [SYSTEM] PLAN_COMPLETE. Transitioning to Asset Generation Phase."
+  ]
+}

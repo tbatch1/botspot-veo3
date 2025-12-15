@@ -1,0 +1,83 @@
+{
+  "id": "0db05554-dcd0-4edc-b84b-ab7ff791710a",
+  "user_input": "Create a commercial for creative ad be funny can be raunchy. \n        Style: Cinematic, 3D Render. \n        Mood: Premium, Aspirational. \n        Camera: Steadicam, Crane. \n        Target platform: Netflix, YouTube TV. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+  "status": "failed",
+  "error": "Assembly failed: No video clips available for assembly. All video generation failed.",
+  "seed": 2755021684,
+  "script": {
+    "lines": [],
+    "mood": "cinematic",
+    "scenes": []
+  },
+  "strategy": {
+    "core_concept": "Commercial for Create a commercial for creative ad be funny can be raunchy. \n        Style: Cinematic, 3D Render. \n        Mood: Premium, Aspirational. \n        Camera: Steadicam, Crane. \n        Target platform: Netflix, YouTube TV. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+    "visual_language": "Standard cinematic presentation with natural film grain",
+    "story_beats": {
+      "hook": "Opening arresting visual of the product or problem",
+      "problem": "Relatable pain point the audience recognizes",
+      "solution_reveal": "Product enters as the solution",
+      "transformation": "Visible change and relief",
+      "payoff": "Aspirational outcome with call to action"
+    },
+    "audience_hook": "Quality and Performance",
+    "cinematic_direction": {
+      "mood_notes": "Professional",
+      "lighting_notes": "Balanced",
+      "camera_notes": "Steady"
+    }
+  },
+  "research_brief": "{\n  \"Product/Service Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empowers users to create and deploy AI-powered trading bots and profitable strategies in seconds, without requiring any coding knowledge.\",\n  \"Target Audience\": \"Individual traders, investors, or financial enthusiasts seeking to automate their trading strategies using AI, particularly those without programming experience.\",\n  \"Top 5 Key Features\": [\n    \"Rapid AI Trading Agent Creation & Deployment\",\n    \"Fully Automated Trading Execution\",\n    \"No-Code Strategy Builder\",\n    \"Focus on Profitable Strategy Generation\",\n    \"24/7 Continuous Trading Bot Operation\"\n  ],\n  \"Brand Tone\": \"Innovative, Empowering, Accessible, Efficient, Cutting-edge\",\n  \"Industry\": \"Fintech, AI, Automated Trading, Financial Technology\",\n  \"Competitors Mentioned\": \"None\",\n  \"One-Sentence Pitch\": \"BotSpot revolutionizes trading by allowing anyone to create and deploy AI trading agents in seconds to automatically execute profitable strategies 24/7, no coding required.\"\n}",
+  "detected_style": {
+    "aesthetic": "photorealistic",
+    "format": "product_showcase",
+    "tone": "triumphant",
+    "pacing": "fast",
+    "confidence": 0.5833333333333333,
+    "confidence_breakdown": {
+      "aesthetic": 0.3333333333333333,
+      "format": 1.0,
+      "tone": 0.5,
+      "pacing": 0.5
+    }
+  },
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\bgm_31e2f3f472f5b7c35fc2c34567da3150.mp3",
+  "video_model": "veo",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": [
+    "[18:16:49] [RESEARCH] Analyzing target URL: https://botspot.trade/...",
+    "[18:16:49] [RESEARCH] Site analysis complete. Extracted 1031 chars of context.",
+    "[18:16:49] [STRATEGY] Initializing creative brainstorm for: Create a commercial for creative ad be funny can be raunchy. \n        Style: Cinematic, 3D Render. \n        Mood: Premium, Aspirational. \n        Camera: Steadicam, Crane. \n        Target platform: Netflix, YouTube TV. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+    "[18:17:40] [STRATEGY] Strategic angle developed: N/A",
+    "[18:17:40] [GPT-5.2] Formatting scenes with spatial reasoning...",
+    "[18:17:41] [GPT-5.2] Formatted 0 scenes with spatial specs.",
+    "[18:17:42] [PHASE 1.5] Detecting creative style intent...",
+    "[18:17:42] [STYLE] Aesthetic detected: photorealistic (33% confidence)",
+    "[18:17:42] [STYLE] Format: product_showcase",
+    "[18:17:42] [STYLE] Tone: triumphant",
+    "[18:17:42] [SYSTEM] PLAN_COMPLETE. Transitioning to Asset Generation Phase.",
+    "[18:17:47] [APPROVAL_GATE_1] User approved strategy. Starting image + audio generation...",
+    "[18:17:47] [PHASE 3A] Starting Asset Generation...",
+    "[18:17:48] [VISUALS] Fal.ai Flux 1.1 Pro initialized",
+    "[18:17:52] [OPTIMIZATION] Parallel image generation enabled",
+    "[18:17:52] [PERFORMANCE] Parallel image generation: 0.0s",
+    "[18:17:52] [OPTIMIZATION] Character consistency references injected",
+    "[18:17:52] [OPTIMIZATION] Parallel audio generation enabled",
+    "[18:17:58] [PERFORMANCE] Parallel audio generation: 5.7s",
+    "[18:17:58] [APPROVAL_GATE_1] Images + Audio complete. Awaiting user approval...",
+    "[18:18:03] [APPROVAL_GATE_2] User approved images. Starting video generation...",
+    "[18:18:03] [PHASE 4] Starting Motion Synthesis...",
+    "[18:18:05] [OPTIMIZATION] Parallel video generation active (Runway + Veo fallback)",
+    "[18:18:05] [APPROVAL_GATE_2] Videos complete. Awaiting user approval...",
+    "[18:18:13] [APPROVAL_GATE_3] User approved videos. Starting final assembly...",
+    "[18:18:13] [PHASE 5] Assembling Final Video...",
+    "[18:18:13] [FATAL] No video clips available for assembly. All video generation failed.",
+    "[18:18:13] [FATAL] Assembly failed: No video clips available for assembly. All video generation failed.",
+    "[18:18:13] [TRACEBACK] Traceback (most recent call last):\n  File \"C:\\Users\\tommy\\Desktop\\botspot-veo3\\ott_ad_builder\\pipeline.py\", line 996, in assemble_final\n    raise Exception(error_msg)\nException: No video clips available for assembly. All video generation failed.\n"
+  ]
+}

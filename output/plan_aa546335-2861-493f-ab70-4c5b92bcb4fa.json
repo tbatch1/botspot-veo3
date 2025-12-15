@@ -1,0 +1,71 @@
+{
+  "id": "aa546335-2861-493f-ab70-4c5b92bcb4fa",
+  "user_input": "BotSpot.trade - Create a cinematic character-driven commercial featuring \"The Bot Master\" - a mysterious, skilled trader who commands AI trading bots in a neon-lit cyberpunk world. \n\nWorld Building:\n- Dark, moody cyberpunk aesthetic (Blade Runner meets The Matrix)\n- Holographic trading interfaces\n- Sleek, powerful atmosphere\n- The character is confident, in control, represents accessibility and power\n\nStory Beat: The Bot Master activates their trading bot army with a single gesture. This is episode 1 of a series.\n\nBrand: BotSpot.trade - AI trading made accessible. No-code bot builder. $99/month.",
+  "status": "failed",
+  "error": "Generation failed: ffmpeg error (see stderr output for detail)",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Command the market. Unleash your AI trading army. BotSpot.trade: Your power, unleashed.",
+        "time_range": "0-15s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_399828cf0fe61c69948b1cbe063afc03.mp3"
+      }
+    ],
+    "mood": "Bold",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Kai, a man in his late 30s with short, dark, meticulously styled hair, and a sharp, focused gaze, wearing a sleek, obsidian-black tech-wear trench coat with razor-thin, glowing cyan and magenta strips along the seams, stands in silhouette, centered and head-to-toe visible, facing a wall of dormant, dark holographic trading screens. Rain streaks down the vast penthouse windows behind him, reflecting the distant neon glow of a cyberpunk city. Wide shot (WS) clearly establishing the vast, dark, rain-streaked penthouse. Cool color temperature (5600K) permeates the scene, with sharp, focused cyan and magenta edge lighting from unseen sources subtly defining the sleek lines of the penthouse interior and Kai's silhouette. Minimal shadows create a high-tech, pristine aesthetic, with volumetric haze visible from exterior city lights. Bleach Bypass color grade, desaturating skin tones while preserving the punch of neon lights, conveying a mythic presence. Shot on Sony Venice 2 full-frame 8.6K sensor, using a 24mm f/1.4 wide-angle prime lens, with 35mm film grain texture for an organic analog feel.",
+        "audio_prompt": "Subtle hum of advanced dormant technology, distant ambient city rain and neon glow.",
+        "motion_prompt": "Slow, deliberate 180-degree gimbal arc around the location, starting from behind Kai and moving to reveal the scale of the penthouse and the city, establishing geography and spatial relationships without being jarring.",
+        "duration": 2,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\5e87a0447b64040dad57acdf2468123e.png",
+        "video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\videos\\335427de0c14f65766eab9336467532d.mp4",
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_8ca56cd2ef1f3fd5349c65858ec311ad.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "The same character from scene 1, Kai, now seen in a medium shot, his hand raised confidently, fingers poised for a single, decisive gesture. The glowing strips on his tech-wear trench coat subtly pulse. His face remains partially in shadow, building anticipation, centered from chest to head. Medium shot (MS) emphasizing his poised hand and focused expression. Dramatic rim lighting in electric purples and hot pinks carves Kai's form from the deep shadows of the room. Holographic UI elements (still dormant) behind him provide subtle, cool-toned motivated fill light, preventing him from disappearing into darkness. Shadows are deep and inky. Bleach Bypass color grade, enhancing the dramatic contrast between the neon highlights and profound darkness, giving an almost sculptural quality to Kai. Shot on Sony Venice 2 full-frame 8.6K sensor, using an 85mm f/1.4 lens, providing gorgeous compression and a creamy background blur for focus on Kai, with 35mm film grain texture.",
+        "audio_prompt": "The low hum deepens, a subtle electronic crackle as energy gathers.",
+        "motion_prompt": "A slow, smooth Steadicam float tracking shot, slightly pushing in as Kai raises his hand, highlighting the intentionality of his gesture. The movement is precise and controlled, never jarring.",
+        "duration": 2,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\9dda67a042960fe982dfd60e6576220e.png",
+        "video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\videos\\3aaac99db19b1c265acfe0fe91d735af.mp4",
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_10abde0d2f13cc87509f8eb0b075dbbb.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "A close-up on the same character from scene 1, Kai's hand as he executes the decisive gesture – a swift, controlled snap of his fingers. In the background, out of focus but visible, the first holographic screens flicker to life with complex AI trading bot interfaces. Close-up (CU) on Kai's hand, filling the frame and centered, emphasizing the precision and power of his gesture. Dynamic, rapid-fire flashes of cyan and magenta light emanate from the awakening holographic screens, casting dramatic, shifting reflections and rim lighting across Kai's hand and arm. These light sources act as motivated fill and key light, creating intense visual impact. Deep shadows persist around the non-illuminated areas. Bleach Bypass color grade, intensifying the stark contrast between the vibrant, flashing neon and the deep, shadowy details of Kai's skin and clothing. Shot on Panavision DXL2 cinema camera, using a 50mm f/1.2 portrait lens, creating beautiful subject separation and bokeh for the background elements, with 35mm film grain texture.",
+        "audio_prompt": "A sharp, distinct electronic 'snap' sound, immediately followed by a rapid escalation of complex digital chimes and whirs as the bots activate.",
+        "motion_prompt": "A subtle, slow push-in, synchronized with the snap of his fingers, creating a sense of intimate revelation and impact.",
+        "duration": 2,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\fa080dcc36599076fc3808d791e7d8de.png",
+        "video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\videos\\a2401c4503996d88b0466c20e62db1f7.mp4",
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_26e1f5bf1857e42f7370c3e3343391a1.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 4,
+        "visual_prompt": "The same character from scene 1, Kai, now in a powerful medium close-up, his face and upper torso illuminated by the vibrant, oscillating cyan and magenta glow of the fully activated holographic trading interfaces, which now fill the previously dormant wall behind him. His expression is calm, confident, and utterly in control, a subtle smirk playing on his lips. Medium close-up (MCU), powerful and centered, focusing on Kai's face and upper torso, the glow of the active holographic interfaces serving as his background. Multiple motivated light sources from the myriad active holographic trading screens cast dynamic, shifting cyan and magenta light onto Kai's face, creating intricate patterns of light and shadow. Volumetric haze highlights the intense light beams, giving depth to the digital energy. Shadows are deep, adding to the mystery and power. Bleach Bypass color grade intensifies the cyberpunk aesthetic, making Kai's illuminated face almost iconic against the pulsating digital landscape. Shot on Panavision DXL2 cinema camera, using a Canon CN-E anamorphic lens, providing characteristic horizontal lens flares that emphasize the high-tech environment and delivering dramatic full-frame sensor depth.",
+        "audio_prompt": "An impressive, surging symphony of complex digital activity, subtle victorious arpeggios, and the low, powerful thrum of a fully operational AI network.",
+        "motion_prompt": "A slow, deliberate push-in, originating from a medium shot and ending on a powerful medium close-up of Kai's face, holding still to convey his complete mastery. The movement is reverent and precise.",
+        "duration": 2,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\ea0470687273669e1ca39fada00eca67.png",
+        "video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\videos\\dc30d0e4ca53ab540acdd35f1ae3b12d.mp4",
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_d8ca10815cfc48de854e0b9ca9856a8c.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade"
+}

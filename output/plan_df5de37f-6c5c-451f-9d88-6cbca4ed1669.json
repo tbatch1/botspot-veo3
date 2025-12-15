@@ -1,0 +1,82 @@
+{
+  "id": "df5de37f-6c5c-451f-9d88-6cbca4ed1669",
+  "user_input": "energy drink",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Unleash your drive.",
+        "time_range": "0-5s",
+        "audio_path": "assets\\audio\\mock_speech_6622.mp3"
+      }
+    ],
+    "mood": "Energetic",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Close-up of a sleek energy drink can, condensation beading, against a vibrant, blurred background. Dynamic soft lighting.",
+        "audio_prompt": "Subtle fizzing sound.",
+        "motion_prompt": "Slow push in.",
+        "duration": 1,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\61d36478091776e793336ed46ae700da.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_7034.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Low angle shot of an athlete's hand gripping a rock climbing hold, muscles tense. Golden hour lighting.",
+        "audio_prompt": "Distant gym ambient sounds.",
+        "motion_prompt": "Static shot.",
+        "duration": 1,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\7d574e8cd57c80f143de2cc3c53c1014.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_5391.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Medium shot of a cyclist speeding through an urban landscape, blur of motion in the background. Bright daylight.",
+        "audio_prompt": "Whoosh of wind.",
+        "motion_prompt": "Pan right, following the cyclist.",
+        "duration": 1,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\63c389560d92a79ca82184d5d1590b80.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_1041.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 4,
+        "visual_prompt": "Extreme close-up on an eye, intensely focused, a glint of determination. Dramatic soft lighting.",
+        "audio_prompt": "Heartbeat fades in then out.",
+        "motion_prompt": "Slow zoom out from the eye.",
+        "duration": 1,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\fc0c7766e0fe9cbdf4bfe6cda075941c.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_951.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 5,
+        "visual_prompt": "Wide shot of the energy drink can prominently placed on a futuristic stand, with a subtle glow. Cinematic low-key lighting.",
+        "audio_prompt": "Clean, crisp \"pop\" of a can opening.",
+        "motion_prompt": "Static shot, subtle light shift.",
+        "duration": 1,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\c15966411bbba8c173d97b3cfba8a335.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_7793.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

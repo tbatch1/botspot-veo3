@@ -1,0 +1,190 @@
+{
+  "id": "5f10fdd5-caa0-4eb1-9ee6-b94e461b4c09",
+  "user_input": "Create a commercial for make a creative ad for our business. \n        Style: Cinematic. \n        Mood: Premium. \n        Camera: Steadicam. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+  "status": "videos_complete",
+  "error": null,
+  "seed": 603052806,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "[pause: 0.3s] Some moments... spark new possibilities.",
+        "time_range": "0s-4s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_f59b13b1b8515f3dbdff2ef7014fc7ac.mp3"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Experience powerful innovation. Built for those who demand more.",
+        "time_range": "4s-9s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_10cb1141a6f4f49a1b61bd7afd4246aa.mp3"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "This is it. [pause: 0.5s] Are you ready?",
+        "time_range": "9s-14s",
+        "audio_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\vo_3803539ea29ae53fc1f5e7ddda6ea009.mp3"
+      }
+    ],
+    "mood": "cinematic",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A photo of Dramatic opening shot of an interface emerging from darkness, volumetric lighting illuminating the screen, professional tech environment. Shot on Arri Alexa, Cooke S4 prime lens, shallow depth of field f/2.8, cinematic lighting.. IMPORTANT FIX: Pass. IMPORTANT FIX: Pass. IMPORTANT FIX: Pass",
+        "audio_prompt": "AMBIANCE: Natural environment sounds. MUSIC: Epic cinematic.",
+        "motion_prompt": "Camera: Smooth cinematic motion. Visual: Dramatic opening shot of an interface emerging from darkness, volumetric lighting illuminating the screen, professional tech environment. Slow dolly push-in, smooth and deliberate. Style: Professional, cinematic quality.",
+        "duration": 4,
+        "primary_subject": "digital interface",
+        "subject_description": "A dramatic digital interface emerging from darkness, illuminated by volumetric lighting on its screen, set within a professional tech environment.",
+        "subject_reference": null,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\ab00c0b0543b00a8c18b6929cd1dee7f.png",
+        "video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\videos\\d056d2154fb0cb81a28aebccfc2b0440.mp4",
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_b4f80b9245c24e13e8c3f89b916f193d.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "[CONSISTENCY CRITICAL] Feature the same digital interface from Scene 1 (A dramatic digital interface emerging from darkness, illuminated by volumetric lighting on its screen, set within a professional tech environment.).\n\nA photo of Wide shot revealing a dashboard in full operation, showing key features and UI, golden hour lighting streaming through a modern office window. Shot on Arri Alexa, Cooke S4 prime lens, shallow depth of field f/2.8, cinematic lighting.",
+        "audio_prompt": "AMBIANCE: Natural environment sounds. MUSIC: Epic cinematic.",
+        "motion_prompt": "Camera: Smooth cinematic motion. Visual: Wide shot revealing a dashboard in full operation, showing key features and UI, golden hour lighting streaming through a modern office window. Slow pan across the scene, revealing details. Style: Professional, cinematic quality.",
+        "duration": 5,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": "the same digital interface from Scene 1 (A dramatic digital interface emerging from darkness, illuminated by volumetric lighting on its screen, set within a professional tech environment.)",
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\e792a7fcc5da21860a8ca3781d038d77.png",
+        "video_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\videos\\419edcb711985b5f1c0d992d0e934183.mp4",
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_b4f80b9245c24e13e8c3f89b916f193d.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "[CONSISTENCY CRITICAL] Feature the same digital interface from Scene 1 (A dramatic digital interface emerging from darkness, illuminated by volumetric lighting on its screen, set within a professional tech environment.).\n\nA photo of Close-up of a logo and key feature highlight, premium lighting setup with brand colors. Shot on Arri Alexa, Cooke S4 prime lens, shallow depth of field f/2.8, cinematic lighting.. IMPORTANT FIX: Pass. IMPORTANT FIX: Pass. IMPORTANT FIX: Pass",
+        "audio_prompt": "AMBIANCE: Natural environment sounds. MUSIC: Epic cinematic.",
+        "motion_prompt": "Camera: Smooth cinematic motion. Visual: Close-up of a logo and key feature highlight, premium lighting setup with brand colors. Slow orbit around display, settling on logo. Style: Professional, cinematic quality.",
+        "duration": 5,
+        "primary_subject": null,
+        "subject_description": null,
+        "subject_reference": "the same digital interface from Scene 1 (A dramatic digital interface emerging from darkness, illuminated by volumetric lighting on its screen, set within a professional tech environment.)",
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\22c2d7db6f66b93d28224f3728a21717.png",
+        "video_path": null,
+        "sfx_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\sfx_b4f80b9245c24e13e8c3f89b916f193d.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "make a creative ad for our business. \n        Style: Cinematic. \n        Mood: Premium. \n        Camera: Steadicam. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. Premium Showcase",
+    "visual_language": "Shot on Arri Alexa, Cooke S4 prime lens, natural film grain, shallow depth of field",
+    "product_name": "make a creative ad for our business. \n        Style: Cinematic. \n        Mood: Premium. \n        Camera: Steadicam. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/.",
+    "scenes": [
+      {
+        "scene_number": 1,
+        "beat": "hook",
+        "duration": 4,
+        "visual_direction": "Dramatic opening shot of make a creative ad for our business. \n        Style: Cinematic. \n        Mood: Premium. \n        Camera: Steadicam. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. interface emerging from darkness, volumetric lighting illuminating the screen, professional tech environment",
+        "motion_direction": "Slow dolly push-in, smooth and deliberate",
+        "emotional_goal": "Intrigue and curiosity",
+        "voiceover_content": "[pause: 0.3s] Some moments... change everything.",
+        "sfx_description": "Deep bass tone, subtle whoosh"
+      },
+      {
+        "scene_number": 2,
+        "beat": "solution",
+        "duration": 5,
+        "visual_direction": "Wide shot revealing make a creative ad for our business. \n        Style: Cinematic. \n        Mood: Premium. \n        Camera: Steadicam. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. dashboard in full operation, showing key features and UI, golden hour lighting streaming through modern office window",
+        "motion_direction": "Slow pan across the scene, revealing details",
+        "emotional_goal": "Understanding and desire",
+        "voiceover_content": "Introducing a new standard. Built for those who demand more.",
+        "sfx_description": "Ambient atmosphere, subtle music swell"
+      },
+      {
+        "scene_number": 3,
+        "beat": "payoff",
+        "duration": 5,
+        "visual_direction": "Close-up of make a creative ad for our business. \n        Style: Cinematic. \n        Mood: Premium. \n        Camera: Steadicam. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. logo and key feature highlight, premium lighting setup with brand colors",
+        "motion_direction": "Slow orbit around display, settling on logo",
+        "emotional_goal": "Aspiration and action",
+        "voiceover_content": "This is it. [pause: 0.5s] Are you ready?",
+        "sfx_description": "Impactful final note, sonic brand signature"
+      }
+    ],
+    "audio_signature": {
+      "music_mood": "epic",
+      "voiceover_style": "cinematic_narrator"
+    },
+    "cinematic_direction": {
+      "mood_notes": "Premium, Aspirational",
+      "lighting_notes": "Dramatic three-point lighting with rim highlights",
+      "camera_notes": "Steady, controlled movements"
+    }
+  },
+  "research_brief": "{\n  \"Product/Service Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empowers users to create, deploy, and profit from AI trading bots instantly and automatically, without requiring any coding knowledge.\",\n  \"Target Audience\": \"Individuals interested in automated trading, beginners to intermediate traders, and those seeking to leverage AI for financial gain without programming expertise.\",\n  \"Top 5 Key Features\": [\n    \"Create AI Trading Agents in Seconds\",\n    \"Deploy AI Trading Agents Instantly\",\n    \"No Coding Required for Strategy Creation\",\n    \"Automated Trading (bots trade for you)\",\n    \"24/7 Trading Operation\"\n  ],\n  \"Brand Tone\": \"Innovative, Empowering, Efficient, Professional, Results-Oriented\",\n  \"Industry\": \"FinTech (Financial Technology), Automated Trading, AI/Machine Learning\",\n  \"Competitors Mentioned\": \"None\",\n  \"One-Sentence Pitch\": \"BotSpot revolutionizes trading by enabling anyone to create and deploy profitable AI trading agents automatically in seconds, with no coding required, to trade 24/7.\"\n}",
+  "detected_style": {
+    "aesthetic": "photorealistic",
+    "format": "product_showcase",
+    "tone": "serious",
+    "pacing": "mixed",
+    "confidence": 0.6583333333333332,
+    "confidence_breakdown": {
+      "aesthetic": 0.3333333333333333,
+      "format": 1.0,
+      "tone": 1.0,
+      "pacing": 0.3
+    }
+  },
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\audio\\bgm_31e2f3f472f5b7c35fc2c34567da3150.mp3",
+  "video_model": "veo",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": [
+    "[01:10:11] [RESEARCH] Analyzing target URL: https://botspot.trade/...",
+    "[01:10:15] [RESEARCH] Site analysis complete. Extracted 1038 chars of context.",
+    "[01:10:15] [STRATEGY] Initializing creative brainstorm for: Create a commercial for make a creative ad for our business. \n        Style: Cinematic. \n        Mood: Premium. \n        Camera: Steadicam. \n        Target platform: Netflix. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+    "[01:11:08] [STRATEGY] Strategic angle developed: N/A",
+    "[01:11:08] [GPT-5.2] Formatting scenes with spatial reasoning...",
+    "[01:11:08] [GPT-5.2] Formatted 3 scenes with spatial specs.",
+    "[01:11:28] [PHASE 1.5] Detecting creative style intent...",
+    "[01:11:28] [STYLE] Aesthetic detected: photorealistic (33% confidence)",
+    "[01:11:28] [STYLE] Format: product_showcase",
+    "[01:11:28] [STYLE] Tone: serious",
+    "[01:11:28] [SYSTEM] PLAN_COMPLETE. Transitioning to Asset Generation Phase.",
+    "[01:14:37] [APPROVAL_GATE_1] User approved strategy. Starting image + audio generation...",
+    "[01:14:37] [PHASE 3A] Starting Asset Generation...",
+    "[01:14:37] [VISUALS] Fal.ai Flux 1.1 Pro initialized",
+    "[01:14:39] [OPTIMIZATION] Parallel image generation enabled",
+    "[01:14:46] [VISUALS] Scene 2 PASS (7/10)",
+    "[01:14:46] [VISUALS] Scene 2 completed successfully",
+    "[01:14:47] [VISUALS] Scene 3 NEEDS FIX (7/10): Pass",
+    "[01:14:48] [VISUALS] Scene 1 NEEDS FIX (7/10): Pass",
+    "[01:14:53] [VISUALS] Scene 1 NEEDS FIX (7/10): Pass",
+    "[01:14:53] [VISUALS] Scene 3 NEEDS FIX (7/10): Pass",
+    "[01:14:58] [VISUALS] Scene 1 NEEDS FIX (7/10): Pass",
+    "[01:14:58] [VISUALS] Scene 1 completed successfully",
+    "[01:14:59] [VISUALS] Scene 3 NEEDS FIX (7/10): Pass",
+    "[01:14:59] [VISUALS] Scene 3 completed successfully",
+    "[01:14:59] [PERFORMANCE] Parallel image generation: 20.1s",
+    "[01:15:01] [OPTIMIZATION] Character consistency references injected",
+    "[01:15:01] [OPTIMIZATION] Parallel audio generation enabled",
+    "[01:15:11] [PERFORMANCE] Parallel audio generation: 9.6s",
+    "[01:15:11] [APPROVAL_GATE_1] Images + Audio complete. Awaiting user approval...",
+    "[01:15:31] [APPROVAL_GATE_2] User approved images. Starting video generation...",
+    "[01:15:31] [PHASE 4] Starting Motion Synthesis...",
+    "[01:15:33] [OPTIMIZATION] Parallel video generation active (Veo 3.1 Ultra + Runway fallback)",
+    "[01:15:33] [OPTIMIZATION] Parallel video generation: 3 scenes",
+    "[01:15:37] [VEO] Scene 1 submitted: b831e6ef-6703-4724-bc44-7e467d...",
+    "[01:15:45] [VEO] Scene 2 submitted: 24830456-2d44-4915-9083-c37381...",
+    "[01:15:52] [VEO] Scene 3 submitted: 2a7dc377-b0ce-42a8-8d1e-527668...",
+    "[01:15:54] [VIDEO] Scene 1 generated successfully",
+    "[01:15:55] [ERROR] Scene 3 video generation failed",
+    "[01:16:01] [VIDEO] Scene 2 generated successfully",
+    "[01:16:01] [PERFORMANCE] Parallel video generation: 8.1s",
+    "[01:16:01] [APPROVAL_GATE_2] Videos complete. Awaiting user approval..."
+  ]
+}

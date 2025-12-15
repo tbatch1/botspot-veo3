@@ -1,0 +1,46 @@
+{
+  "id": "03d4ebcf-5895-442c-8061-d00e3e5b5e4d",
+  "user_input": "premium coffee",
+  "status": "failed",
+  "error": "Generation failed: No video clips to compose!",
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Elevate your everyday.",
+        "time_range": "0-8s",
+        "audio_path": "assets\\audio\\mock_speech_2642.mp3"
+      }
+    ],
+    "mood": "Aspirational",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "A luxurious, matte black coffee bag with minimalist gold foil lettering, perfectly sealed, pristine and reflecting soft key light. The bag is centered in a clean, high-contrast studio setting, showcasing its premium packaging. Cinematic three-point lighting, medium close-up, centered composition.",
+        "audio_prompt": "Subtle ambient hum, gentle and clean.",
+        "motion_prompt": "Slow dolly push-in, focusing on the intricate details of the coffee bag.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\2ba60088f4e9d574b826bca8a405fc6e.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_2630.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "A hand elegantly pours dark, rich coffee, creating a perfect crema, into a sleek, minimalist ceramic cup. The corner of 'the same luxurious matte black coffee bag' from scene 1 is visible in the soft-focused background. Golden hour backlighting illuminates the steam rising from the cup, centered on the pour and cup.",
+        "audio_prompt": "Gentle pour sound, subtle clink of ceramic, very light background cafe murmurs.",
+        "motion_prompt": "Subtle Steadicam drift, slowly revealing the smooth motion of the pour.",
+        "duration": 4,
+        "image_path": "C:\\Users\\tommy\\Desktop\\botspot-veo3\\assets\\images\\77aa1af9e67dbd15608a570e68b39697.png",
+        "video_path": null,
+        "sfx_path": "assets\\audio\\mock_sfx_1678.mp3",
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "final_video_path": null,
+  "video_model": "runway",
+  "style_preset": "Cinematic"
+}

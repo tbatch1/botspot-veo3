@@ -1,0 +1,90 @@
+{
+  "id": "1edc9829-6d8b-4fd0-8e44-16e72f583da4",
+  "user_input": "Create a commercial for creative ad for our company. \n        Style: Cinematic, 3D Render. \n        Mood: Premium, Aspirational. \n        Camera: Steadicam, Crane. \n        Target platform: Netflix, Hulu. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+  "status": "planning",
+  "error": null,
+  "seed": 3114175178,
+  "script": {
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "BotSpot: Rediscover your time. Our AI trades tirelessly, so you don't have to.",
+        "time_range": "0-8s",
+        "audio_path": null
+      }
+    ],
+    "mood": "Premium, Aspirational",
+    "scenes": [
+      {
+        "id": 1,
+        "visual_prompt": "Shot on RED V-Raptor 8K VV with Zeiss Supreme Prime Radiance lenses for controlled halation on digital interfaces. Heavy chromatic aberration on edge lighting. 35mm Kodak Vision3 200T 5213 film stock simulation with visible grain structure at ISO 800. Subtle sensor noise in shadow areas. All 3D renders treated with lens breathing artifacts and micro-focus shifts to break the 'CG perfection' trap. A 32-year-old male trader with a gaunt face and tired eyes, wearing a rumpled dark grey hoodie, his hands hovering over multiple chaotic financial monitor screens, extreme close-up on the frantic data feeds and his stressed expression, then revealing his isolated presence in the dark room, Crane shot descends smoothly from an extreme close-up of a screen's chaotic data, gradually revealing the trader's overwhelmed face and the claustrophobic room, keeping him centered in the safe zone, Low-key practical lighting with the harsh, desaturated glow of the monitors as the primary light source, creating deep shadows and pronounced halation blooms on screen reflections, Desaturated Fuji film stock color grade, reflecting a cold, stressful mood, Shot on Panavision DXL2 cinema camera with Zeiss Master Prime cinema lenses, Super 35mm sensor crop for a traditional cinematic look.",
+        "audio_prompt": "Quiet corporate office atmosphere, subtle keyboard clicks, distant hum of servers, growing sense of pressure.",
+        "motion_prompt": "Crane shot descends smoothly and deliberately, moving from an extreme close-up of the screen's chaotic data to a wider view encompassing the stressed trader and his isolated environment.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 2,
+        "visual_prompt": "Shot on RED V-Raptor 8K VV with Zeiss Supreme Prime Radiance lenses for controlled halation on digital interfaces. Heavy chromatic aberration on edge lighting. 35mm Kodak Vision3 200T 5213 film stock simulation with visible grain structure at ISO 800. Subtle sensor noise in shadow areas. All 3D renders treated with lens breathing artifacts and micro-focus shifts to break the 'CG perfection' trap. The same 32-year-old male trader from scene 1, his expression shifting from stress to subtle relief and comprehension, seated at his desk, as elegant, flowing volumetric light structures representing AI neural networks materialize around him, replacing the chaotic market data on his screens, Slow dolly back from a medium shot of the trader's face, gradually revealing the expanding AI light structures and the transformation of his immediate environment, keeping the trader centered in the safe zone, Transition lighting with cool blue LED accents emanating from the materializing AI neural networks, contrasting with residual monitor glow, Cool-toned Fuji film stock color grade with subtle blue saturation from AI lights, Shot on Sony Venice 2 full-frame 8.6K sensor with a Sigma Art 40mm f/1.4 lens, Vista Vision large format.",
+        "audio_prompt": "Subtle, evolving synth hum with gentle, ethereal whooshes as AI elements materialize, transitioning to a calming, rhythmic pulse.",
+        "motion_prompt": "Slow dolly back from a medium shot, gradually revealing the full environment as AI neural networks gracefully expand and envelop the trading space.",
+        "duration": 3,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      },
+      {
+        "id": 3,
+        "visual_prompt": "Shot on RED V-Raptor 8K VV with Zeiss Supreme Prime Radiance lenses for controlled halation on digital interfaces. Heavy chromatic aberration on edge lighting. 35mm Kodak Vision3 200T 5213 film stock simulation with visible grain structure at ISO 800. Subtle sensor noise in shadow areas. All 3D renders treated with lens breathing artifacts and micro-focus shifts to break the 'CG perfection' trap. The same 32-year-old male trader from scene 1, now appearing calm and rejuvenated, walks confidently towards large windows, leaving his sophisticated trading desk behind where the elegant AI neural network structures from Scene 2 actively manage the market with controlled, glowing light, Fluid steadicam pull-back, starting on the trader and widening to reveal him walking away into warm golden hour light, while the automated AI bots continue working endlessly behind him, with subtle operator drift, keeping key elements in the safe zone, Soft golden hour wraparound light filtering through large windows, providing a warm, aspirational glow, studio-controlled with negative fill to maintain depth, Warm, aspirational Fuji film stock color grade, emphasizing golden tones and human relief, Shot on Arri Alexa LF full-frame sensor with an 85mm f/1.4 lens for gorgeous compression and creamy background blur, Vista Vision large format.",
+        "audio_prompt": "Soft, inspiring ambient music swell, gentle hum of efficient technology, distant, relaxed city sounds, conveying peace and freedom.",
+        "motion_prompt": "Fluid steadicam pull-back with subtle operator drift, widening to reveal the trader walking away into the golden hour light, while the AI bots continue their seamless operation in the background.",
+        "duration": 2,
+        "image_path": null,
+        "video_path": null,
+        "sfx_path": null,
+        "composition_sources": [],
+        "composition_prompt": null
+      }
+    ]
+  },
+  "strategy": {
+    "core_concept": "The Infinite Trade",
+    "visual_language": "Shot on RED V-Raptor 8K VV with Zeiss Supreme Prime Radiance lenses for controlled halation on digital interfaces. Heavy chromatic aberration on edge lighting. 35mm Kodak Vision3 200T 5213 film stock simulation with visible grain structure at ISO 800. Subtle sensor noise in shadow areas. All 3D renders treated with lens breathing artifacts and micro-focus shifts to break the 'CG perfection' trap.",
+    "narrative_arc": "A lone trader stares at chaotic market screens in a dark room, overwhelmed—crane shot descends into their world of stress. A single interaction with BotSpot transforms the space: AI neural networks materialize as elegant, flowing light structures that take over the trading. Final steadicam pull-back reveals the trader walking away into golden hour light while their bots work endlessly behind them.",
+    "audience_hook": "Freedom from the screen. The psychological promise isn't just profit—it's reclaiming your life while AI handles the relentless 24/7 market grind.",
+    "cinematic_direction": {
+      "mood_notes": "Premium aspiration achieved through restraint, not excess. The 'before' state is claustrophobic and desaturated. The 'after' state opens up with warm, natural light bleeding into the frame. Avoid glossy tech-utopia clichés—ground the aspiration in tangible human relief.",
+      "lighting_notes": "Opening: Low-key practicals only—monitor glow as key light, creating harsh shadows and visible halation blooms on screen reflections. Transition: Cool blue LED accents from AI visualization. Finale: Soft golden hour wraparound light through large windows, studio-controlled with negative fill to maintain depth.",
+      "camera_notes": "Crane descent in opening to establish scale and isolation. Steadicam work during transformation—fluid but with organic micro-shake, never perfectly stabilized. Final pull-back on steadicam with subtle drift, mimicking a human operator's natural sway. All moves motivated by emotional beats, not technical showmanship."
+    },
+    "production_recommendations": {
+      "visual_engine": "flux",
+      "video_engine": "runway",
+      "voice_vibe": "Restrained Authority—think a calm, measured male voice with slight gravel. Not the booming movie trailer style. Closer to a premium documentary narrator: confident, unhurried, with natural breath pauses. Whispered intensity on the hook line."
+    }
+  },
+  "research_brief": "{\n  \"Product Name\": \"BotSpot\",\n  \"Core Value Proposition (USP)\": \"Empower users to create and deploy profitable AI trading bots automatically in seconds, without requiring any coding expertise, enabling 24/7 automated trading.\",\n  \"Target Audience\": \"Individuals interested in automated trading, retail investors, novice traders, and experienced traders seeking efficient, no-code AI-driven trading solutions.\",\n  \"Key Features\": [\n    \"Build AI trading bots\",\n    \"Automated trading\",\n    \"Create profitable trading strategies\",\n    \"No coding required\",\n    \"Deploy bots in seconds\",\n    \"Bots trade 24/7\"\n  ],\n  \"Brand Vibe\": \"Tech, Innovative, Empowering, Efficient, Accessible, Automated, Financial\",\n  \"Industry\": \"FinTech, Algorithmic Trading, Artificial Intelligence, Investment\"\n}",
+  "final_video_path": null,
+  "final_video_path_4k": null,
+  "bgm_path": null,
+  "video_model": "runway",
+  "image_provider": "flux",
+  "style_preset": "Cinematic",
+  "transition_type": "crossfade",
+  "uploaded_assets": [],
+  "uploaded_asset": null,
+  "logs": [
+    "[23:49:31] [RESEARCH] Analyzing target URL: https://botspot.trade/...",
+    "[23:49:35] [RESEARCH] Site analysis complete. Extracted 789 chars of context.",
+    "[23:49:35] [STRATEGY] Initializing creative brainstorm for: Create a commercial for creative ad for our company. \n        Style: Cinematic, 3D Render. \n        Mood: Premium, Aspirational. \n        Camera: Steadicam, Crane. \n        Target platform: Netflix, Hulu. \n        Duration: 15s. \n        URL: https://botspot.trade/. \n        ",
+    "[23:49:53] [STRATEGY] Strategic angle developed: N/A",
+    "[23:49:53] [GEMINI] Generating cinematic screenplay & shotlist...",
+    "[23:50:14] [GEMINI] Screenplay generated with 3 scenes."
+  ]
+}
