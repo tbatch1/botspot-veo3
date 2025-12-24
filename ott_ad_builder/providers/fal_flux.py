@@ -75,17 +75,55 @@ class FalFluxProvider(ImageProvider):
         Returns:
             Path to the saved image
         """
+        # UI/text-heavy prompts often produce "AI gibberish" (fake words/letters) on screens.
+        # For demo reliability, nudge Flux to keep screens text-free and abstract.
+        prompt_lower = (prompt or "").lower()
+        if any(
+            keyword in prompt_lower
+            for keyword in (
+                "dashboard",
+                "ui",
+                "interface",
+                "screen",
+                "monitor",
+                "laptop",
+                "app",
+                "website",
+                "web ",
+                "menu",
+                "chart",
+                "graphs",
+                "table",
+            )
+        ):
+            prompt = (
+                f"{prompt}\n\n"
+                "CRITICAL: no readable text, no letters, no words, no fake UI copy, no watermarks; "
+                "if a screen is visible, keep content abstract/blurred and text-free."
+            )
+
         print(f"[FAL.AI] Generating: {prompt[:60]}...")
-        
-        # Map aspect ratio to Fal format
+
+        # Map aspect ratio to Fal format (this model supports preset aspect sizes via `image_size`).
         aspect_map = {
             "16:9": "landscape_16_9",
-            "9:16": "portrait_16_9", 
+            "9:16": "portrait_16_9",
             "1:1": "square",
             "4:3": "landscape_4_3",
-            "3:4": "portrait_4_3"
+            "3:4": "portrait_4_3",
         }
         fal_aspect = aspect_map.get(aspect_ratio, "landscape_16_9")
+
+        # Veo image-to-video works best with source images at 720p or higher.
+        # Generate at least 1280x720 for 16:9 (still within ~1MP billing tier on Fal).
+        size_map = {
+            "16:9": (1280, 720),
+            "9:16": (720, 1280),
+            "1:1": (1024, 1024),
+            "4:3": (1152, 864),
+            "3:4": (864, 1152),
+        }
+        target_width, target_height = size_map.get(aspect_ratio, (1280, 720))
         
         # Build arguments
         arguments = {
@@ -136,10 +174,26 @@ class FalFluxProvider(ImageProvider):
             filename = hashlib.md5(prompt.encode()).hexdigest() + ".png"
             filepath = os.path.join(config.ASSETS_DIR, "images", filename)
             os.makedirs(os.path.dirname(filepath), exist_ok=True)
-            
+             
             with open(filepath, "wb") as f:
                 f.write(image_data)
-            
+
+            # Normalize to a Veo-friendly resolution/aspect for more stable image→video.
+            # Fal may return different preset sizes; we upscale/pad to our target output.
+            try:
+                from PIL import Image, ImageOps
+
+                with Image.open(filepath) as im:
+                    padded = ImageOps.pad(
+                        im.convert("RGB"),
+                        (int(target_width), int(target_height)),
+                        method=Image.Resampling.LANCZOS,
+                        color=(0, 0, 0),
+                    )
+                    padded.save(filepath, format="PNG")
+            except Exception as e:
+                print(f"[FAL.AI] Warning: failed to normalize image size: {e}")
+             
             print(f"[FAL.AI] [OK] Generated: {filepath}")
             return filepath
             
@@ -232,4 +286,3 @@ class FalFluxProvider(ImageProvider):
         except Exception as e:
             print(f"[FAL.AI] Training error: {e}")
             raise e
-

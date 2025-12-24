@@ -39,3 +39,17 @@ body {
 .animate-neon-pulse {
   animation: neon-pulse 2s infinite;
 }
+
+/* ReactFlow Handle positioning fixes - prevents dots/arrows from sitting on borders */
+.react-flow__handle {
+  transform: translate(-50%, -50%);
+}
+
+.react-flow__handle-left {
+  left: -8px !important;
+}
+
+.react-flow__handle-right {
+  right: -8px !important;
+  left: auto !important;
+}

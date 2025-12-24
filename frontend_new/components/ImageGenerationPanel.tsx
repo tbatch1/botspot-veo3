@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { CheckCircle2, Loader2, Image as ImageIcon, PlayCircle, RefreshCw, Pencil, X, AlertCircle } from 'lucide-react';
+import { CheckCircle2, Loader2, Image as ImageIcon, PlayCircle, RefreshCw, Pencil, X, AlertCircle, Sparkles, Upload } from 'lucide-react';
 import { api } from '@/lib/api';
 
 interface Scene {
@@ -12,6 +12,13 @@ interface Scene {
     duration: number;
     image_path?: string;
     video_path?: string;
+    image_source?: string; // "ai" or "upload:{filename}"
+}
+
+interface UploadedFile {
+    filename: string;
+    mode: 'reference' | 'direct';
+    previewUrl: string;
 }
 
 interface ImageGenerationPanelProps {
@@ -20,20 +27,36 @@ interface ImageGenerationPanelProps {
     projectId: string;
     onApproveImages: () => void;
     onRegenerateScene?: (sceneId: number, newPrompt?: string) => void;
+    availableUploads?: UploadedFile[];
     isVisible: boolean;
 }
 
-export default function ImageGenerationPanel({ 
-    scenes, 
-    status, 
+export default function ImageGenerationPanel({
+    scenes,
+    status,
     projectId,
-    onApproveImages, 
+    onApproveImages,
     onRegenerateScene,
-    isVisible 
+    availableUploads = [],
+    isVisible
 }: ImageGenerationPanelProps) {
     const [editingScene, setEditingScene] = useState<number | null>(null);
     const [editedPrompt, setEditedPrompt] = useState<string>('');
     const [regeneratingScene, setRegeneratingScene] = useState<number | null>(null);
+    const [sceneSources, setSceneSources] = useState<{[key: number]: string}>({});
+
+    const handleSourceChange = async (sceneId: number, source: string) => {
+        setSceneSources(prev => ({ ...prev, [sceneId]: source }));
+        try {
+            await api.updateSceneSource(projectId, sceneId, source);
+        } catch (error) {
+            console.error('Failed to update scene source:', error);
+        }
+    };
+
+    const getSceneSource = (scene: Scene) => {
+        return sceneSources[scene.id] || scene.image_source || 'ai';
+    };
 
     if (!isVisible) return null;
 
@@ -182,7 +205,27 @@ export default function ImageGenerationPanel({
                                     <span className="text-xs font-bold text-purple-400">Scene {scene.id}</span>
                                     <span className="text-xs text-slate-500">{scene.duration}s</span>
                                 </div>
-                                
+
+                                {/* Source Toggle - Show when there are direct uploads available */}
+                                {availableUploads.length > 0 && isComplete && (
+                                    <div className="mb-2">
+                                        <select
+                                            value={getSceneSource(scene)}
+                                            onChange={(e) => handleSourceChange(scene.id, e.target.value)}
+                                            className="w-full text-xs bg-slate-800 border border-slate-700 rounded px-2 py-1 text-slate-300 focus:outline-none focus:border-purple-500"
+                                        >
+                                            <option value="ai">
+                                                AI Generated
+                                            </option>
+                                            {availableUploads.map(upload => (
+                                                <option key={upload.filename} value={`upload:${upload.filename}`}>
+                                                    Upload: {upload.filename}
+                                                </option>
+                                            ))}
+                                        </select>
+                                    </div>
+                                )}
+
                                 {/* Editing Mode */}
                                 {editingScene === scene.id ? (
                                     <div className="mt-2">

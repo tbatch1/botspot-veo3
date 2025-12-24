@@ -1,7 +1,13 @@
 import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
 import { ProjectState, api } from './api';
 
 type WorkflowStep = 'input' | 'strategy' | 'images' | 'videos' | 'complete';
+
+interface UploadedAsset {
+    filename: string;
+    mode: 'reference' | 'direct';
+}
 
 interface AppState {
     project: ProjectState | null;
@@ -10,6 +16,7 @@ interface AppState {
     pollingInterval: NodeJS.Timeout | null;
     pollRetryCount: number;
     currentStep: WorkflowStep;
+    uploadedAssets: UploadedAsset[];
 
     createPlan: (input: string, config?: any) => Promise<ProjectState | void>;
     startGeneration: () => Promise<void>;
@@ -18,22 +25,52 @@ interface AppState {
     approveStrategy: () => Promise<void>;
     approveImages: () => Promise<void>;
     approveVideos: () => Promise<void>;
+    remixVoiceover: (scriptOverride: any, options?: {
+        regenerate_all?: boolean;
+        include_sfx?: boolean;
+        include_bgm?: boolean;
+        bgm_prompt?: string;
+        speaker_voice_map?: Record<string, string>;
+    }) => Promise<void>;
 
     pollStatus: () => void;
     stopPolling: () => void;
     reset: () => void;
-    updateScript: (script: any) => void; // In a real app, use proper type
+    updateScript: (script: any) => void;
+    setUploadedAssets: (assets: UploadedAsset[]) => void;
+    loadProjectFromBackend: (projectId: string) => Promise<void>;
 }
 
 const MAX_POLL_RETRIES = 20; // 20 retries * 3s = 60 seconds max
 
-export const useStore = create<AppState>((set, get) => ({
+export const useStore = create<AppState>()(
+  persist(
+    (set, get) => ({
     project: null,
     isLoading: false,
     error: null,
     pollingInterval: null,
     pollRetryCount: 0,
     currentStep: 'input',
+    uploadedAssets: [],
+
+    setUploadedAssets: (assets) => set({ uploadedAssets: assets }),
+
+    loadProjectFromBackend: async (projectId: string) => {
+        try {
+            const project = await api.getStatus(projectId);
+            let step: WorkflowStep = 'input';
+            if (project.status === 'planned') step = 'strategy';
+            else if (project.status === 'images_complete') step = 'images';
+            else if (project.status === 'videos_complete') step = 'videos';
+            else if (project.status === 'completed') step = 'complete';
+            else if (project.status === 'generating_images') step = 'images';
+            else if (project.status === 'generating_videos') step = 'videos';
+            set({ project, currentStep: step, error: null });
+        } catch (err) {
+            console.error('Failed to load project:', err);
+        }
+    },
 
     createPlan: async (input: string, config?: any) => {
         set({ isLoading: true, error: null, currentStep: 'input' });
@@ -107,6 +144,24 @@ export const useStore = create<AppState>((set, get) => ({
             get().pollStatus();
         } catch (err: any) {
             const errorMsg = err.response?.data?.detail || err.message || 'Failed to start final assembly';
+            set({ error: errorMsg, isLoading: false });
+        }
+    },
+
+    remixVoiceover: async (scriptOverride, options) => {
+        const { project } = get();
+        if (!project || !project.script) return;
+
+        set({ isLoading: true, error: null, pollRetryCount: 0 });
+        try {
+            const script = scriptOverride || project.script;
+            await api.remixVoiceover(project.id, script, options);
+            set((state) => ({
+                project: state.project ? { ...state.project, script } : null
+            }));
+            get().pollStatus();
+        } catch (err: any) {
+            const errorMsg = err.response?.data?.detail || err.message || 'Failed to remix voiceover';
             set({ error: errorMsg, isLoading: false });
         }
     },
@@ -199,4 +254,15 @@ export const useStore = create<AppState>((set, get) => ({
             project: state.project ? { ...state.project, script } : null
         }))
     }
-}));
+    }),
+    {
+      name: 'ott-builder-storage',
+      partialize: (state) => ({
+        // Only persist these fields (exclude functions and transient state)
+        project: state.project,
+        currentStep: state.currentStep,
+        uploadedAssets: state.uploadedAssets,
+      }),
+    }
+  )
+);

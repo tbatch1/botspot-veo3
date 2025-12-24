@@ -127,7 +127,7 @@ export default function Storyboard() {
                                     <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
                                         <p className="text-sm text-white font-medium truncate">{scene.visual_prompt}</p>
                                         <div className="flex items-center gap-2 mt-1 text-xs text-slate-400">
-                                            <span className="bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded">Runway: {scene.motion_prompt}</span>
+                                            <span className="bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded">Veo: {scene.motion_prompt}</span>
                                         </div>
                                     </div>
                                 </div>

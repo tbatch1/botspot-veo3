@@ -19,7 +19,7 @@ export default function LiveLog() {
         if (isLoading && !project) {
             setLogs([
                 `[${new Date().toLocaleTimeString()}] Establishing Neural Uplink...`,
-                `[${new Date().toLocaleTimeString()}] Handshaking with Claude Opus...`
+                `[${new Date().toLocaleTimeString()}] Handshaking with GPT-5.2 (OpenAI)...`
             ]);
         }
     }, [isLoading, project]);

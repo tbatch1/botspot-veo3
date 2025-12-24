@@ -4,6 +4,7 @@ import time
 import json
 import base64
 import hashlib
+import mimetypes
 from ..config import config
 from .base import VideoProvider
 
@@ -56,11 +57,13 @@ class RunwayProvider(VideoProvider):
         Submit video generation task and return task_id immediately.
         OPTIMIZATION: Enables parallel video generation (-60 seconds per commercial).
         """
-        # Encode image to data URI
+        # Encode image to data URI (use correct MIME type for uploads like JPG/WEBP).
+        mime, _ = mimetypes.guess_type(image_path)
+        if not mime or not mime.startswith("image/"):
+            mime = "image/png"
         with open(image_path, "rb") as f:
             img_data = base64.b64encode(f.read()).decode("utf-8")
-        
-        data_uri = f"data:image/png;base64,{img_data}"
+        data_uri = f"data:{mime};base64,{img_data}"
         
         # OPTIMIZATION: Format prompt using research-backed structure
         formatted_prompt = self._format_motion_prompt(prompt)
@@ -69,7 +72,8 @@ class RunwayProvider(VideoProvider):
             "model": config.RUNWAY_MODEL,
             "promptImage": data_uri,
             "promptText": formatted_prompt,
-            "ratio": "1280:768",
+            # Per docs.dev.runwayml.com: ratio is an enum; use 16:9 for OTT.
+            "ratio": "1280:720",
             "duration": duration
         }
 
@@ -78,7 +82,7 @@ class RunwayProvider(VideoProvider):
         
         response = requests.post(endpoint, headers=self.headers, json=payload)
         
-        if response.status_code != 200:
+        if response.status_code not in (200, 201):
             raise Exception(f"Runway API Error ({response.status_code}): {response.text}")
             
         task_id = response.json()["id"]
@@ -113,7 +117,32 @@ class RunwayProvider(VideoProvider):
             print(f"   [RUNWAY] Task {task_id[:8]}... Status: {status} ({elapsed:.0f}s)")
 
             if status == "SUCCEEDED":
-                video_url = status_data["output"][0]
+                video_url = None
+                output = status_data.get("output")
+                if isinstance(output, list) and output:
+                    first = output[0]
+                    if isinstance(first, str):
+                        video_url = first
+                    elif isinstance(first, dict):
+                        video_url = first.get("url") or first.get("uri") or first.get("href")
+                elif isinstance(output, str):
+                    video_url = output
+                elif isinstance(output, dict):
+                    video_url = output.get("url") or output.get("uri") or output.get("href")
+
+                if not video_url:
+                    # Alternative shapes some task APIs use
+                    for key in ("outputUrl", "output_url", "videoUrl", "video_url"):
+                        if isinstance(status_data.get(key), str) and status_data.get(key):
+                            video_url = status_data.get(key)
+                            break
+                    if not video_url and isinstance(status_data.get("outputUrls"), list) and status_data["outputUrls"]:
+                        if isinstance(status_data["outputUrls"][0], str):
+                            video_url = status_data["outputUrls"][0]
+
+                if not video_url:
+                    raise Exception(f"Runway task succeeded but no output URL was returned: keys={list(status_data.keys())}")
+
                 return self._download_video(video_url, prompt)
             elif status == "FAILED":
                 error = status_data.get("failureCode", "Unknown error")

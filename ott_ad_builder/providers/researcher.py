@@ -5,17 +5,56 @@ import json
 import re
 from pathlib import Path
 from datetime import datetime, timedelta
-from .base import LLMProvider
-from .gemini import GeminiProvider
 
 class ResearcherProvider:
     def __init__(self):
-        self.llm = GeminiProvider()
-
         # Cache configuration
         self.cache_dir = Path("cache/research")
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.cache_ttl = timedelta(hours=24)  # 24-hour cache
+
+    def _fetch_via_jina_reader(self, url: str) -> str | None:
+        """
+        Fallback extractor using Jina AI Reader (free) for sites that are:
+        - JS-heavy (little static HTML)
+        - blocked (403/anti-bot)
+        - noisy (hard to isolate main content)
+
+        Reader format: https://r.jina.ai/https://example.com
+        """
+        try:
+            normalized = (url or "").strip()
+            if not normalized:
+                return None
+            # Jina expects a full URL including scheme.
+            if not normalized.lower().startswith(("http://", "https://")):
+                normalized = f"https://{normalized}"
+
+            reader_url = f"https://r.jina.ai/{normalized}"
+            print(f"[RESEARCHER] Fallback (Jina Reader) {reader_url}...")
+            headers = {
+                "User-Agent": (
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                )
+            }
+            response = requests.get(reader_url, headers=headers, timeout=20)
+            response.raise_for_status()
+            text = (response.text or "").strip()
+            if len(text) < 200:
+                return None
+
+            # Keep payload size bounded and sentence-safe-ish.
+            if len(text) > 15000:
+                text = text[:15000]
+                last_period = text.rfind(". ")
+                if last_period > 2000:
+                    text = text[: last_period + 1]
+
+            return f"Source URL: {normalized}\n\n{text}"
+        except Exception as e:
+            print(f"[RESEARCHER] Jina Reader failed: {e}")
+            return None
 
     def _get_cache_key(self, url: str) -> str:
         """Generate cache key from URL hash"""
@@ -100,9 +139,9 @@ class ResearcherProvider:
 
         return combined
 
-    def fetch_and_analyze(self, url: str) -> str:
+    def fetch_and_extract(self, url: str) -> str:
         """
-        Scrapes the URL and uses Gemini to generate a structured product brief.
+        Scrapes the URL and returns extracted on-page text (no LLM call).
         Includes 24-hour caching and smart content extraction.
         """
         # Check cache first
@@ -120,41 +159,38 @@ class ResearcherProvider:
 
             # Use smart extraction
             raw_content = self._extract_content_smart(soup)
-
-            print("[RESEARCHER] Analyzing content with Gemini...")
-            # Use Gemini to summarize into structured brief
-            prompt = f"""
-            You are an expert Market Researcher. Analyze the following website content for a product/service.
-
-            Website Content:
-            {raw_content[:15000]}
-
-            Output a detailed 'Product Brief' containing:
-            1. Product/Service Name
-            2. Core Value Proposition (USP) - What makes it unique?
-            3. Target Audience - Who is this for?
-            4. Top 5 Key Features - Specific benefits or features
-            5. Brand Tone - (e.g., Luxury, Playful, Professional, Technical, Friendly)
-            6. Industry - Category for compliance (e.g., Healthcare, Finance, Tech, Consumer Goods)
-            7. Competitors Mentioned - Any competitors referenced
-            8. One-Sentence Pitch - Elevator pitch
-
-            Format as plain text, be concise but detailed. Focus on information that would help create an effective commercial.
-            """
-
-            brief = self.llm.model.generate_content(prompt).text
+            # If the site is JS-heavy, this can be near-empty. Trigger fallback.
+            if len(raw_content) < 400:
+                raise ValueError("Static HTML extraction too short; likely JS-rendered or blocked.")
+            extracted = f"Source URL: {url}\n\n{raw_content}"
 
             # Cache the result
-            self._cache_brief(url, brief)
+            self._cache_brief(url, extracted)
 
-            return brief
+            return extracted
 
         except requests.exceptions.Timeout:
             print(f"[ERROR] Researcher timeout for {url}")
+            fallback = self._fetch_via_jina_reader(url)
+            if fallback:
+                self._cache_brief(url, fallback)
+                return fallback
             return f"Website timeout. Using URL as context: {url}"
         except requests.exceptions.RequestException as e:
             print(f"[ERROR] Researcher request failed: {e}")
+            fallback = self._fetch_via_jina_reader(url)
+            if fallback:
+                self._cache_brief(url, fallback)
+                return fallback
             return f"Could not fetch website. Using URL as context: {url}"
         except Exception as e:
             print(f"[ERROR] Researcher failed: {e}")
+            fallback = self._fetch_via_jina_reader(url)
+            if fallback:
+                self._cache_brief(url, fallback)
+                return fallback
             return f"Could not analyze URL. Using raw input: {url}"
+
+    # Backwards-compatible alias (older code called this)
+    def fetch_and_analyze(self, url: str) -> str:
+        return self.fetch_and_extract(url)

@@ -5,12 +5,22 @@
 Your project is **LIVE and READY TO USE** right now!
 
 - **Backend API**: Running on http://localhost:4000
-- **Frontend**: Running on http://localhost:3000
+- **Frontend**: Running on http://localhost:3001
 - **Google Veo 3**: WORKING - Generated real video successfully!
 - **API Key**: Valid and tested
 
+### Demo Mode (Strict Providers)
+This repo is currently configured for a strict demo flow:
+- GPT-5.2 (OpenAI) for all planning/logic
+- Fal.ai Flux for images
+- Google Veo 3.1 (Vertex AI) for video
+- ElevenLabs for voiceover
+
+Required `.env` keys: `OPENAI_API_KEY`, `FAL_API_KEY`, `ELEVENLABS_API_KEY`.
+Veo requires Google Application Default Credentials (service account JSON or `gcloud auth application-default login`).
+
 ### Use Right Now:
-1. Open http://localhost:3000 in your browser
+1. Open http://localhost:3001 in your browser
 2. Go to the "Studio" tab
 3. Write a prompt or select a template
 4. Click "Generate Video"

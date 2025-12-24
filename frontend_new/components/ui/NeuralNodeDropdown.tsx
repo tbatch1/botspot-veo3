@@ -4,7 +4,6 @@ import React, { useState, useCallback, useEffect } from 'react';
 import ReactFlow, {
     Node,
     Edge,
-    Controls,
     Background,
     useNodesState,
     useEdgesState,
@@ -38,7 +37,7 @@ const OptionNode = ({ data, isConnectable }: any) => {
                 ? "bg-cyan-500/20 border-cyan-400 shadow-[0_0_15px_rgba(34,211,238,0.5)]"
                 : "bg-slate-900/90 border-slate-700 hover:border-cyan-500/50 hover:shadow-[0_0_10px_rgba(34,211,238,0.2)]"
         )}>
-            <Handle type="target" position={Position.Left} isConnectable={isConnectable} className="!bg-cyan-500 !w-2 !h-2" />
+            <Handle type="target" position={Position.Left} isConnectable={isConnectable} className="!bg-cyan-500 !w-2 !h-2 !-left-3" />
 
             <div className="flex items-start gap-3">
                 {/* Thumbnail or Icon */}
@@ -82,7 +81,7 @@ const RootNode = ({ data }: any) => {
     return (
         <div className="px-4 py-2 rounded-lg bg-purple-600/20 border border-purple-500 shadow-[0_0_15px_rgba(168,85,247,0.4)] text-purple-100 font-bold text-sm min-w-[100px] text-center">
             {data.label}
-            <Handle type="source" position={Position.Right} className="!bg-purple-500 !w-2 !h-2" />
+            <Handle type="source" position={Position.Right} className="!bg-purple-500 !w-2 !h-2 !-right-3" />
         </div>
     );
 };
@@ -266,7 +265,6 @@ export default function NeuralNodeDropdown({
                             className="bg-slate-950"
                         >
                             <Background color="#334155" gap={20} size={1} />
-                            <Controls className="!bg-slate-900 !border-slate-800 !fill-slate-400" />
                         </ReactFlow>
 
                         <div className="absolute bottom-4 left-4 right-4 pointer-events-none">

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """
 Start the OTT Ad Builder FastAPI backend server.
-This serves the API on port 8000 for the frontend_new UI.
+This serves the API on port 4000 for the frontend_new UI.
 """
 
 import uvicorn
@@ -21,10 +21,9 @@ if __name__ == "__main__":
     print("=" * 60)
     print("Starting OTT Ad Builder API Server")
     print("=" * 60)
-    print("API will be available at: http://localhost:8000")
-    print("API docs will be at: http://localhost:8000/docs")
-    print("Using GEMINI_API_KEY from .env file")
-    print("Mock providers enabled for Imagen, Runway, ElevenLabs")
+    print("API will be available at: http://localhost:4000")
+    print("API docs will be at: http://localhost:4000/docs")
+    print("Strict providers: GPT-5.2 + Fal Flux + Veo 3.1 + ElevenLabs")
     print("=" * 60)
     print()
 
@@ -37,8 +36,9 @@ if __name__ == "__main__":
         print(f"Failed to load API: {e}")
         print()
         print("Make sure:")
-        print("1. GEMINI_API_KEY is set in your .env file")
-        print("2. All dependencies are installed: pip install -r requirements.txt")
+        print("1. OPENAI_API_KEY, FAL_API_KEY, ELEVENLABS_API_KEY are set in your .env file")
+        print("2. Google ADC is configured (service account JSON or `gcloud auth application-default login`)")
+        print("3. All dependencies are installed: pip install -r requirements.txt")
         sys.exit(1)
 
     # Start the server

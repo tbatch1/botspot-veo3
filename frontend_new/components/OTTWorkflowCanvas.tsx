@@ -5,7 +5,7 @@ import { useStore } from '@/lib/store';
 import NeuralNodeDropdown from './ui/NeuralNodeDropdown';
 import PipelineFlow from './PipelineFlow';
 import { motion } from 'framer-motion';
-import { Play, Wand2, Loader2, Layers, Check } from 'lucide-react';
+import { Play, Wand2, Loader2, Layers, Check, Image, Sparkles } from 'lucide-react';
 import clsx from 'clsx';
 import axios from 'axios';
 import TerminalLog from './TerminalLog';
@@ -14,13 +14,17 @@ import ImageGenerationPanel from './ImageGenerationPanel';
 import VideoGenerationPanel from './VideoGenerationPanel';
 
 export default function OTTWorkflowCanvas() {
-    const { project, currentStep, isLoading, approveStrategy, approveImages, approveVideos } = useStore();
+    const { project, currentStep, isLoading, approveStrategy, approveImages, approveVideos, remixVoiceover, updateScript, uploadedAssets, setUploadedAssets, loadProjectFromBackend, pollStatus } = useStore();
     const fileInputRef = useRef<HTMLInputElement>(null);
     const [isUploading, setIsUploading] = useState(false);
 
-    // Multi-Asset State
-    const [uploadedFiles, setUploadedFiles] = useState<string[]>([]); // Array of filenames
-    const [previewUrls, setPreviewUrls] = useState<string[]>([]); // Array of local object URLs
+    // Multi-Asset State with mode tracking
+    interface UploadedFile {
+        filename: string;
+        mode: 'reference' | 'direct';
+        previewUrl: string;
+    }
+    const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([]);
 
     // Local state for the "New Project" flow
     const [config, setConfig] = useState({
@@ -31,10 +35,13 @@ export default function OTTWorkflowCanvas() {
         platform: ['Netflix'], // Multi-Select
         mood: ['Premium'], // Multi-Select
         transition: 'crossfade',
-        camera_style: ['Steadicam'], // Multi-Select
-        lighting_preference: 'dramatic',
-        color_grade: 'hollywood_blockbuster',
-        commercial_style: 'emotional_journey' // Iconic template selection
+        camera_style: ['Auto'], // Multi-Select
+        lighting_preference: 'auto',
+        color_grade: 'auto',
+        commercial_style: 'auto', // Iconic template selection
+        image_guidance: 'i2i_only', // Reference image guidance mode
+        player_mode: 'auto', // Final video player mode (advanced)
+        video_model: 'auto' // Veo / Runway selection
     });
 
     const handleConfigChange = (key: string, value: any) => {
@@ -42,46 +49,34 @@ export default function OTTWorkflowCanvas() {
     };
 
     const handleLaunch = async () => {
-        if (!config.topic.trim()) return;
-
-        // Helper to formatting arrays for prompt
-        const format = (val: string | string[]) => Array.isArray(val) ? val.join(', ') : val;
-
-        // Construct the prompt based on the config
-        const styles = format(config.style);
-        const platforms = format(config.platform);
-        const moods = format(config.mood);
-        const cameras = format(config.camera_style);
-
-        const prompt = `Create a commercial for ${config.topic}. 
-        Style: ${styles}. 
-        Mood: ${moods}. 
-        Camera: ${cameras}. 
-        Target platform: ${platforms}. 
-        Duration: ${config.duration}. 
-        URL: ${config.url}. 
-        ${uploadedFiles.length > 0 ? `[Visual References: ${uploadedFiles.join(', ')}]` : ''}`;
+        const userBrief = config.topic.trim();
+        if (!userBrief) return;
 
         // Call the store action with the full config object
         const fullConfig = {
             ...config,
-            uploaded_assets: uploadedFiles, // Pass list
-            uploaded_asset: uploadedFiles[0] // Fallback for legacy
+            // New v2 format with mode info
+            uploaded_assets_v2: uploadedFiles.map(f => ({
+                filename: f.filename,
+                mode: f.mode
+            })),
+            // Legacy format for backwards compatibility
+            uploaded_assets: uploadedFiles.map(f => f.filename),
+            uploaded_asset: uploadedFiles[0]?.filename
         };
-        const project = await useStore.getState().createPlan(prompt, fullConfig);
+        await useStore.getState().createPlan(userBrief, fullConfig);
 
         // Note: With approval workflow, we DON'T auto-start generation
         // User must approve strategy first via StrategyReviewCard
     };
 
-    const uploadFile = async (file: File) => {
+    const uploadFile = async (file: File, mode: 'reference' | 'direct' = 'reference') => {
         setIsUploading(true);
-        // Create local preview immediately
         const objectUrl = URL.createObjectURL(file);
-        setPreviewUrls(prev => [...prev, objectUrl]);
 
         const formData = new FormData();
         formData.append('file', file);
+        formData.append('mode', mode);
 
         try {
             const response = await axios.post('http://localhost:4000/api/upload', formData, {
@@ -91,14 +86,27 @@ export default function OTTWorkflowCanvas() {
             });
 
             if (response.data.status === 'success') {
-                setUploadedFiles(prev => [...prev, response.data.filename]);
+                setUploadedFiles(prev => [...prev, {
+                    filename: response.data.filename,
+                    mode: response.data.mode || mode,
+                    previewUrl: objectUrl
+                }]);
             }
         } catch (error) {
             console.error('Upload failed:', error);
-            // Optionally remove preview on failure
         } finally {
             setIsUploading(false);
         }
+    };
+
+    const updateFileMode = (index: number, newMode: 'reference' | 'direct') => {
+        setUploadedFiles(prev => prev.map((f, i) =>
+            i === index ? { ...f, mode: newMode } : f
+        ));
+    };
+
+    const removeFile = (index: number) => {
+        setUploadedFiles(prev => prev.filter((_, i) => i !== index));
     };
 
     const handleUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -107,6 +115,27 @@ export default function OTTWorkflowCanvas() {
             Array.from(files).forEach(file => uploadFile(file));
         }
     };
+
+    // Restore state from store on mount (for page refresh persistence)
+    useEffect(() => {
+        // If we have a project that's in a generating state, resume polling
+        if (project && (project.status === 'generating_images' || project.status === 'generating_videos' || project.status === 'assembling')) {
+            pollStatus();
+        }
+        // Restore uploaded assets from store (without preview URLs since those can't be persisted)
+        if (uploadedAssets.length > 0 && uploadedFiles.length === 0) {
+            setUploadedFiles(uploadedAssets.map(a => ({
+                filename: a.filename,
+                mode: a.mode,
+                previewUrl: `http://localhost:4000/api/assets/user_uploads/${a.filename}`
+            })));
+        }
+    }, []);
+
+    // Sync uploadedFiles to store for persistence
+    useEffect(() => {
+        setUploadedAssets(uploadedFiles.map(f => ({ filename: f.filename, mode: f.mode })));
+    }, [uploadedFiles, setUploadedAssets]);
 
     // Handle Paste Events
     useEffect(() => {
@@ -183,29 +212,13 @@ export default function OTTWorkflowCanvas() {
                             }}
                             placeholder="Message OTT Ad Builder..."
                             rows={1}
-                            className="w-full bg-slate-800/50 text-white border border-slate-700 rounded-3xl px-6 py-4 pr-14 text-base focus:outline-none focus:border-slate-600 resize-none placeholder:text-slate-500 transition-all shadow-lg hover:bg-slate-800/70"
+                            className="w-full bg-slate-800/50 text-white border border-slate-700 rounded-3xl px-6 py-4 text-base focus:outline-none focus:border-slate-600 resize-none placeholder:text-slate-500 transition-all shadow-lg hover:bg-slate-800/70"
                             style={{
                                 minHeight: '56px',
                                 maxHeight: '200px',
                                 overflow: 'auto'
                             }}
                         />
-                        <button
-                            onClick={handleLaunch}
-                            disabled={!config.topic.trim() || isLoading}
-                            className={clsx(
-                                "absolute right-3 bottom-3 p-2 rounded-xl transition-all",
-                                !config.topic.trim() || isLoading
-                                    ? "bg-slate-700 text-slate-500 cursor-not-allowed"
-                                    : "bg-white text-black hover:bg-slate-100 cursor-pointer"
-                            )}
-                        >
-                            {isLoading ? (
-                                <Loader2 className="w-5 h-5 animate-spin" />
-                            ) : (
-                                <Play className="w-5 h-5 fill-current" />
-                            )}
-                        </button>
                     </div>
                     <div className="mt-2 text-center text-xs text-slate-500">
                         Press Enter to send • Shift + Enter for new line
@@ -230,7 +243,7 @@ export default function OTTWorkflowCanvas() {
                     </div>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
                     {/* Node 1: Style */}
                     <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }}>
                         <NeuralNodeDropdown
@@ -265,6 +278,38 @@ export default function OTTWorkflowCanvas() {
                         />
                         <div className="mt-2 text-center text-xs text-slate-500">Delivery Format</div>
                     </motion.div>
+
+                    {/* Node 4: Reference Image Guidance */}
+                    <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.35 }}>
+                        <NeuralNodeDropdown
+                            label="Reference Image Guidance"
+                            value={config.image_guidance}
+                            options={[
+                                { value: "none", label: "None", description: "Ignore reference images (only use direct scene uploads)" },
+                                { value: "i2i_only", label: "Image-Directed (I2I)", description: "Use reference image to guide look; no prompt analysis" },
+                                { value: "prompt_only", label: "Prompt-Directed", description: "Extract palette/lighting into prompts; don't force I2I" },
+                                { value: "prompt_and_i2i", label: "Prompt + I2I", description: "Best fidelity: prompt enrichment + image-directed look" },
+                                { value: "veo_text_only", label: "Veo Max Prompt (Text-to-Video)", description: "Skip image generation; Veo generates from full scene prompt" },
+                            ]}
+                            onChange={(val) => handleConfigChange('image_guidance', val)}
+                        />
+                        <div className="mt-2 text-center text-xs text-slate-500">Consistency Control</div>
+                    </motion.div>
+
+                    {/* Node 5: Video Generator */}
+                    <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.4 }}>
+                        <NeuralNodeDropdown
+                            label="Video Generator"
+                            value={config.video_model}
+                            options={[
+                                { value: "auto", label: "Auto (Recommended)", description: "Chooses the best model per run (falls back if needed)" },
+                                { value: "veo", label: "Veo", description: "Highest quality; supports prompt-only (text-to-video) mode" },
+                                { value: "runway", label: "Runway", description: "Great for high-motion I2V shots (requires source images)" },
+                            ]}
+                            onChange={(val) => handleConfigChange('video_model', val)}
+                        />
+                        <div className="mt-2 text-center text-xs text-slate-500">Generation Engine</div>
+                    </motion.div>
                 </div>
 
                 {/* Commercial Style - Iconic Template Selection */}
@@ -278,6 +323,7 @@ export default function OTTWorkflowCanvas() {
                         label="🎬 Commercial Style"
                         value={config.commercial_style}
                         options={[
+                            { value: "auto", label: "Auto (Varied)", icon: "🎲", description: "Picks a different template + vibe per brand" },
                             { value: "mascot_story", label: "Mascot Story", icon: "🦎", description: "Geico/Progressive style character" },
                             { value: "sensory_metaphor", label: "Sensory Metaphor", icon: "🏔️", description: "Coors ice mountains feel" },
                             { value: "emotional_journey", label: "Emotional Journey", icon: "❤️", description: "eBay child heartstring" },
@@ -288,7 +334,7 @@ export default function OTTWorkflowCanvas() {
                         ]}
                         onChange={(val) => handleConfigChange('commercial_style', val)}
                     />
-                    <div className="mt-2 text-center text-xs text-slate-500">Iconic Commercial Template - Drives Claude's Creative Strategy</div>
+                    <div className="mt-2 text-center text-xs text-slate-500">Iconic Commercial Template - Drives GPT-5.2 Creative Strategy</div>
                 </motion.div>
 
                 {/* Advanced Cinematography Controls */}
@@ -310,6 +356,7 @@ export default function OTTWorkflowCanvas() {
                             label="Camera Movement"
                             value={config.camera_style}
                             options={[
+                                { value: "Auto", label: "Auto", icon: "🎲", description: "Varies camera language per scene" },
                                 { value: "Steadicam", label: "Steadicam", icon: "🎥", description: "Smooth floating movement" },
                                 { value: "Handheld", label: "Handheld", icon: "📹", description: "Raw documentary feel" },
                                 { value: "Crane", label: "Crane/Jib", icon: "🏗️", description: "Sweeping vertical moves" },
@@ -328,6 +375,7 @@ export default function OTTWorkflowCanvas() {
                             label="Lighting Style"
                             value={config.lighting_preference}
                             options={[
+                                { value: "auto", label: "Auto", preview: "Varies per scene" },
                                 { value: "dramatic", label: "Dramatic", preview: "High contrast" },
                                 { value: "natural", label: "Natural", preview: "Soft authentic" },
                                 { value: "studio", label: "Studio", preview: "Clean 3-point" },
@@ -344,6 +392,7 @@ export default function OTTWorkflowCanvas() {
                             label="Color Grading"
                             value={config.color_grade}
                             options={[
+                                { value: "auto", label: "Auto", description: "Varies per brand" },
                                 { value: "hollywood_blockbuster", label: "Blockbuster", description: "Teal & orange" },
                                 { value: "kodak_5219", label: "Kodak 5219", description: "Rich cinema film" },
                                 { value: "fuji_film_stock", label: "Fuji Pro 400H", description: "Pastel tones" },
@@ -362,7 +411,7 @@ export default function OTTWorkflowCanvas() {
                     animate={{ opacity: 1, y: 0 }}
                     className="flex flex-col md:flex-row justify-between items-end mt-12 gap-6 relative z-40"
                 >
-                    {/* Asset Upload Zone - Multi-Asset Support */}
+                    {/* Asset Upload Zone - Multi-Asset Support with Mode Selection */}
                     <div className="w-full md:w-auto">
                         <input
                             type="file"
@@ -370,79 +419,101 @@ export default function OTTWorkflowCanvas() {
                             className="hidden"
                             onChange={handleUpload}
                             accept="image/*,video/*"
-                            multiple // Enable multiple selection
+                            multiple
                         />
-                        <div
-                            onClick={() => fileInputRef.current?.click()}
-                            className={clsx(
-                                "relative w-full md:w-80 h-32 rounded-xl border-2 border-dashed transition-all cursor-pointer flex flex-col items-center justify-center gap-2 group backdrop-blur-sm overflow-hidden",
-                                isUploading
-                                    ? "border-cyan-500 bg-cyan-900/40"
-                                    : uploadedFiles.length > 0
-                                        ? "border-green-500 bg-green-900/40"
-                                        : "border-slate-700 hover:border-cyan-500/50 hover:bg-slate-800/80 bg-slate-900/20"
-                            )}
-                        >
-                            {/* Background Preview Image - Grid if multiple */}
-                            {previewUrls.length > 0 && (
-                                <div className="absolute inset-0 z-0 flex flex-wrap opacity-60 group-hover:opacity-40 transition-opacity">
-                                    {previewUrls.slice(0, 3).map((url, i) => (
-                                        <div key={i} className="flex-1 h-full relative border-r border-black/20 last:border-0">
-                                            <img
-                                                src={url}
-                                                alt={`Preview ${i}`}
-                                                className="w-full h-full object-cover"
-                                            />
-                                            {/* Show "+N" on last item if more exist */}
-                                            {i === 2 && previewUrls.length > 3 && (
-                                                <div className="absolute inset-0 flex items-center justify-center bg-black/60 text-white font-bold">
-                                                    +{previewUrls.length - 3}
-                                                </div>
-                                            )}
+
+                        {/* Show uploaded files with mode toggles */}
+                        {uploadedFiles.length > 0 ? (
+                            <div className="space-y-2">
+                                <div className="flex items-center justify-between mb-2">
+                                    <span className="text-xs text-slate-400 uppercase tracking-wider">{uploadedFiles.length} Asset{uploadedFiles.length > 1 ? 's' : ''} Ready</span>
+                                    <button
+                                        onClick={() => fileInputRef.current?.click()}
+                                        className="text-xs text-cyan-400 hover:text-cyan-300"
+                                    >
+                                        + Add More
+                                    </button>
+                                </div>
+                                {uploadedFiles.map((file, index) => (
+                                    <div key={index} className="flex items-center gap-3 p-2 bg-slate-800/50 rounded-lg border border-slate-700">
+                                        <img
+                                            src={file.previewUrl}
+                                            alt={file.filename}
+                                            className="w-12 h-12 object-cover rounded"
+                                        />
+                                        <div className="flex-1 min-w-0">
+                                            <div className="text-xs text-slate-300 truncate">{file.filename}</div>
+                                            <div className="flex gap-1 mt-1">
+                                                <button
+                                                    onClick={(e) => { e.stopPropagation(); updateFileMode(index, 'reference'); }}
+                                                    className={clsx(
+                                                        "flex items-center gap-1 px-2 py-0.5 text-[10px] rounded transition-all",
+                                                        file.mode === 'reference'
+                                                            ? "bg-purple-500/30 text-purple-300 border border-purple-500/50"
+                                                            : "bg-slate-700/50 text-slate-400 border border-slate-600/50 hover:border-slate-500"
+                                                    )}
+                                                >
+                                                    <Sparkles className="w-3 h-3" />
+                                                    AI Reference
+                                                </button>
+                                                <button
+                                                    onClick={(e) => { e.stopPropagation(); updateFileMode(index, 'direct'); }}
+                                                    className={clsx(
+                                                        "flex items-center gap-1 px-2 py-0.5 text-[10px] rounded transition-all",
+                                                        file.mode === 'direct'
+                                                            ? "bg-green-500/30 text-green-300 border border-green-500/50"
+                                                            : "bg-slate-700/50 text-slate-400 border border-slate-600/50 hover:border-slate-500"
+                                                    )}
+                                                >
+                                                    <Image className="w-3 h-3" />
+                                                    Use Directly
+                                                </button>
+                                            </div>
                                         </div>
-                                    ))}
-                                    <div className="absolute inset-0 bg-black/40" /> {/* Dimmer */}
-                                </div>
-                            )}
-
-                            <div className={clsx(
-                                "relative z-10 p-3 rounded-full transition-colors",
-                                isUploading ? "bg-cyan-500/20 text-cyan-400" :
-                                    uploadedFiles.length > 0 ? "bg-green-500/20 text-green-400" :
-                                        "bg-slate-800 text-slate-400 group-hover:text-cyan-400 group-hover:bg-cyan-500/10"
-                            )}>
-                                {isUploading ? <Loader2 className="w-6 h-6 animate-spin" /> :
-                                    uploadedFiles.length > 0 ? <Check className="w-6 h-6" /> :
-                                        <Layers className="w-6 h-6" />}
+                                        <button
+                                            onClick={(e) => { e.stopPropagation(); removeFile(index); }}
+                                            className="text-slate-500 hover:text-red-400 text-xs"
+                                        >
+                                            X
+                                        </button>
+                                    </div>
+                                ))}
                             </div>
-                            <div className="relative z-10 text-center space-y-1">
-                                <span className={clsx(
-                                    "block text-xs font-bold tracking-wider",
-                                    uploadedFiles.length > 0 ? "text-green-400" : "text-slate-400 group-hover:text-cyan-400"
+                        ) : (
+                            <div
+                                onClick={() => fileInputRef.current?.click()}
+                                className={clsx(
+                                    "relative w-full md:w-80 h-32 rounded-xl border-2 border-dashed transition-all cursor-pointer flex flex-col items-center justify-center gap-2 group backdrop-blur-sm overflow-hidden",
+                                    isUploading
+                                        ? "border-cyan-500 bg-cyan-900/40"
+                                        : "border-slate-700 hover:border-cyan-500/50 hover:bg-slate-800/80 bg-slate-900/20"
+                                )}
+                            >
+                                <div className={clsx(
+                                    "relative z-10 p-3 rounded-full transition-colors",
+                                    isUploading
+                                        ? "bg-cyan-500/20 text-cyan-400"
+                                        : "bg-slate-800 text-slate-400 group-hover:text-cyan-400 group-hover:bg-cyan-500/10"
                                 )}>
-                                    {isUploading ? "UPLOADING..." :
-                                        uploadedFiles.length > 0 ? `${uploadedFiles.length} ASSETS READY` :
-                                            "DROP OR PASTE"}
-                                </span>
-                                <span className="block text-[10px] text-slate-500 uppercase tracking-widest">
-                                    {uploadedFiles.length > 0 ? "Visuals Linked" : "Multiple Files OK"}
-                                </span>
-                            </div>
-
-                            {/* Paste Hint */}
-                            {uploadedFiles.length === 0 && !isUploading && (
-                                <div className="hidden group-hover:block absolute bottom-2 text-[9px] text-slate-600 font-mono transition-opacity animate-pulse">
-                                    CTRL+V SUPPORTED
+                                    {isUploading ? <Loader2 className="w-6 h-6 animate-spin" /> : <Layers className="w-6 h-6" />}
                                 </div>
-                            )}
-                        </div>
+                                <div className="relative z-10 text-center space-y-1">
+                                    <span className="block text-xs font-bold tracking-wider text-slate-400 group-hover:text-cyan-400">
+                                        {isUploading ? "UPLOADING..." : "DROP OR PASTE"}
+                                    </span>
+                                    <span className="block text-[10px] text-slate-500 uppercase tracking-widest">
+                                        Multiple Files OK
+                                    </span>
+                                </div>
+                                {!isUploading && (
+                                    <div className="hidden group-hover:block absolute bottom-2 text-[9px] text-slate-600 font-mono transition-opacity animate-pulse">
+                                        CTRL+V SUPPORTED
+                                    </div>
+                                )}
+                            </div>
+                        )}
                     </div>
 
-                    import TerminalLog from './TerminalLog';
-
-                    // ... existing imports ...
-
-                    // Inside the component return, at the bottom:
                     {/* Launch Button */}
                     <div className="relative">
                         <button
@@ -506,7 +577,9 @@ export default function OTTWorkflowCanvas() {
                         <ImageGenerationPanel
                             scenes={project.script.scenes}
                             status={project.status}
+                            projectId={project.id}
                             onApproveImages={approveImages}
+                            availableUploads={uploadedFiles.filter(f => f.mode === 'direct')}
                             isVisible={true}
                         />
                     </motion.div>
@@ -523,7 +596,11 @@ export default function OTTWorkflowCanvas() {
                             scenes={project.script.scenes}
                             status={project.status}
                             finalVideoPath={project.final_video_path}
+                            playerMode={project.player_mode || (config as any).player_mode}
                             onApproveFinal={approveVideos}
+                            script={project.script}
+                            onUpdateScript={updateScript}
+                            onRemixVoiceover={remixVoiceover}
                             isVisible={true}
                         />
                     </motion.div>

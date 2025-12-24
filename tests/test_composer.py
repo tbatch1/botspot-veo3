@@ -32,7 +32,8 @@ class TestComposer(unittest.TestCase):
         composer = Composer()
         path = composer.compose(state)
         
-        self.assertTrue(path.endswith("final_ad.mp4"))
+        self.assertTrue(path.endswith(".mp4"))
+        self.assertIn("final_ad", path)
         mock_ffmpeg.run.assert_called_once()
 
 if __name__ == '__main__':

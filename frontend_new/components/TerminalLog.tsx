@@ -24,9 +24,9 @@ export default function TerminalLog() {
         if (isLoading && !project) {
             setLogs([
                 `[SYSTEM] Initializing Neural Uplink...`,
-                `[SYSTEM] Handshaking with Claude Opus (Strategist)...`,
-                `[SYSTEM] Allocating Flux 1.1 Pro VRAM...`,
-                `[SYSTEM] Establishing Secure Link to Gemini Vision...`
+                `[SYSTEM] Handshaking with GPT-5.2 (OpenAI)...`,
+                `[SYSTEM] Allocating Flux (Fal) compute...`,
+                `[SYSTEM] Authenticating Vertex AI (Veo 3.1)...`
             ]);
         }
     }, [isLoading, project]);

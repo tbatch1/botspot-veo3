@@ -2,6 +2,13 @@
 .env
 **/.env
 
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+
 # Node
 node_modules/
 npm-debug.log*
@@ -28,3 +35,12 @@ build/
 dist/
 .env
 service-account.json
+
+# Generated runtime artifacts (keep repo clean)
+output/
+cache/
+assets/images/*.png
+assets/videos/*.mp4
+assets/audio/vo_*.mp3
+assets/audio/sfx_*.mp3
+assets/audio/bgm_*.mp3

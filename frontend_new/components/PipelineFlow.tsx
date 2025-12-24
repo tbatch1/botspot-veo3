@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import ReactFlow, { Node, Edge, Background, Controls, MarkerType } from 'reactflow';
+import ReactFlow, { Node, Edge, Background, MarkerType } from 'reactflow';
 import 'reactflow/dist/style.css';
 import { useStore } from '@/lib/store';
 import clsx from 'clsx';
@@ -45,61 +45,66 @@ export default function PipelineFlow() {
     const hasMotion = logs.some(l => l.includes("[PHASE 4]") || l.includes("Animating") || l.includes("[VIDEO]"));
     const hasAudio = logs.some(l => l.includes("ElevenLabs") || l.includes("audio"));
 
+    // Layout: Two rows with proper spacing to match design
+    // Top row: Market Research, Visual Production, Animation
+    // Bottom row: Creative Brief, Brand Strategy, Creative Direction, Sound Design, Final Cut, Distribution Ready
     const nodes: Node[] = [
+        // Bottom row (y: 160)
         {
             id: 'input',
             type: 'input',
             data: { label: 'Creative Brief' },
-            position: { x: 0, y: 150 },
+            position: { x: 50, y: 160 },
             style: getNodeStyle(false, true) // Always completed if started
-        },
-        {
-            id: 'researcher',
-            data: { label: 'Market Research' },
-            position: { x: 200, y: 50 },
-            style: getNodeStyle(isPlanning && !hasStrategy, hasResearch || isPlanned || isGeneratingImages || isImagesComplete || isGeneratingVideos || isVideosComplete || isAssembling || isCompleted)
         },
         {
             id: 'strategist',
             data: { label: 'Brand Strategy' },
-            position: { x: 200, y: 250 }, // Parallel to Researcher
+            position: { x: 230, y: 230 },
             style: getNodeStyle(isPlanning && hasResearch, hasStrategy || isPlanned || isGeneratingImages || isImagesComplete || isGeneratingVideos || isVideosComplete || isAssembling || isCompleted)
+        },
+        // Top row (y: 60)
+        {
+            id: 'researcher',
+            data: { label: 'Market Research' },
+            position: { x: 230, y: 60 },
+            style: getNodeStyle(isPlanning && !hasStrategy, hasResearch || isPlanned || isGeneratingImages || isImagesComplete || isGeneratingVideos || isVideosComplete || isAssembling || isCompleted)
         },
         {
             id: 'gemini',
             data: { label: 'Creative Direction' },
-            position: { x: 450, y: 150 }, // Converge here
+            position: { x: 430, y: 160 },
             style: getNodeStyle(isPlanning && hasStrategy, isPlanned || isGeneratingImages || isImagesComplete || isGeneratingVideos || isVideosComplete || isAssembling || isCompleted)
         },
         {
             id: 'flux',
             data: { label: 'Visual Production' },
-            position: { x: 700, y: 50 },
+            position: { x: 630, y: 60 },
             style: getNodeStyle(isGeneratingImages, hasVisuals || isImagesComplete || isGeneratingVideos || isVideosComplete || isAssembling || isCompleted)
         },
         {
             id: 'elevenlabs',
             data: { label: 'Sound Design' },
-            position: { x: 700, y: 150 },
+            position: { x: 630, y: 160 },
             style: getNodeStyle(isGeneratingImages, hasAudio || isImagesComplete || isGeneratingVideos || isVideosComplete || isAssembling || isCompleted)
         },
         {
             id: 'runway',
             data: { label: 'Animation' },
-            position: { x: 950, y: 50 },
+            position: { x: 830, y: 60 },
             style: getNodeStyle(isGeneratingVideos, hasMotion || isVideosComplete || isAssembling || isCompleted)
         },
         {
             id: 'composer',
             data: { label: 'Final Cut' },
-            position: { x: 1200, y: 150 },
+            position: { x: 1030, y: 160 },
             style: getNodeStyle(isAssembling, isCompleted)
         },
         {
             id: 'output',
             type: 'output',
             data: { label: 'Distribution Ready' },
-            position: { x: 1450, y: 150 },
+            position: { x: 1230, y: 160 },
             style: getNodeStyle(false, isCompleted)
         }
     ];
@@ -141,11 +146,18 @@ export default function PipelineFlow() {
                 fitView
                 className="bg-slate-950"
                 proOptions={{ hideAttribution: true }}
-                minZoom={0.5}
-                maxZoom={1.5}
+                zoomOnScroll={false}
+                zoomOnPinch={false}
+                zoomOnDoubleClick={false}
+                panOnDrag={false}
+                panOnScroll={false}
+                nodesDraggable={false}
+                nodesConnectable={false}
+                elementsSelectable={false}
+                minZoom={1}
+                maxZoom={1}
             >
                 <Background color="#334155" gap={20} size={1} />
-                <Controls className="!bg-slate-900 !border-slate-800 !fill-slate-400" />
             </ReactFlow>
         </div >
     );

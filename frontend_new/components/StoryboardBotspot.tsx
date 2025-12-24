@@ -17,18 +17,9 @@ export default function StoryboardBotspot() {
                     <p className="text-slate-400">Review the script and scenes before production.</p>
                 </div>
                 <div className="flex items-center gap-4">
-                    <select
-                        className="bg-slate-900 border border-slate-700 text-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-green-500 outline-none"
-                        onChange={(e) => {
-                            // TODO: Wire this up to update project state
-                            // For now we just log it, but ideally we call an API endpoint
-                            console.log("Selected Model:", e.target.value);
-                        }}
-                        defaultValue="runway"
-                    >
-                        <option value="runway">Runway Gen-3 Alpha</option>
-                        <option value="veo">Google Veo (Lumiere)</option>
-                    </select>
+                    <div className="bg-slate-900 border border-slate-700 text-slate-300 rounded-lg px-3 py-2 text-sm">
+                        Video: Veo 3.1 • Images: Flux • Voice: ElevenLabs
+                    </div>
                     <button
                         onClick={() => startGeneration()}
                         disabled={isLoading}
@@ -90,7 +81,7 @@ export default function StoryboardBotspot() {
                                     <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
                                         <p className="text-sm text-white font-medium truncate">{scene.visual_prompt}</p>
                                         <div className="flex items-center gap-2 mt-1 text-xs text-slate-400">
-                                            <span className="bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded">Runway: {scene.motion_prompt}</span>
+                                            <span className="bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded">Veo: {scene.motion_prompt}</span>
                                         </div>
                                     </div>
                                 </div>

@@ -53,10 +53,11 @@ export default function BriefInput() {
                 </div>
             </form>
 
-            <div className="flex gap-4 text-sm text-slate-500">
-                <span className="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">✨ Gemini 1.5 Flash</span>
-                <span className="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">🎨 Imagen 3</span>
-                <span className="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">🎬 Runway Gen-3</span>
+            <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
+                <span className="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">GPT-5.2 (OpenAI)</span>
+                <span className="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">Flux (Fal)</span>
+                <span className="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">Veo 3.1 (Vertex)</span>
+                <span className="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">ElevenLabs Voice</span>
             </div>
         </div>
     );

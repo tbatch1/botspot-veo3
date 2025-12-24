@@ -22,7 +22,7 @@
 
 ### 4. Google Gemini AI (Already Working!)
 - **API Key Page**: https://aistudio.google.com/app/apikey
-- **Your Current Key**: AIzaSyD5E8Ehrp_nhLA9_33yW3uEawMBZpJG-1U (WORKING)
+- **Your API Key**: (set `GEMINI_API_KEY` in your `.env`)
 - **Documentation**: https://ai.google.dev/gemini-api/docs
 
 ---
@@ -121,7 +121,7 @@
 # Google Cloud (Choose ONE method)
 
 ## Method A: Simple API Key (for Gemini AI SDK)
-GEMINI_API_KEY=AIzaSyD5E8Ehrp_nhLA9_33yW3uEawMBZpJG-1U
+GEMINI_API_KEY=your_gemini_api_key_here
 
 ## Method B: Service Account (for Vertex AI)
 GOOGLE_APPLICATION_CREDENTIALS=./service-account.json

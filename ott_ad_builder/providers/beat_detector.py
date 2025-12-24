@@ -1,6 +1,9 @@
-
-import librosa
-import numpy as np
+try:
+    import librosa  # type: ignore
+    import numpy as np  # type: ignore
+except Exception:  # pragma: no cover - optional dependency
+    librosa = None
+    np = None
 
 class BeatDetector:
     """
@@ -11,6 +14,8 @@ class BeatDetector:
         """
         Returns a list of timestamps (in seconds) where strong beats occur.
         """
+        if librosa is None:
+            return []
         try:
             print(f"[BEAT] Analyzing rhythm of {audio_path}...")
             # Load audio (mono)
@@ -38,6 +43,8 @@ class BeatDetector:
         Analyzes the audio energy (RMS) to determine the vibe: 'high' or 'low'.
         Returns 'high' if average RMS > threshold, else 'low'.
         """
+        if librosa is None or np is None:
+            return "low"
         try:
             y, sr = librosa.load(audio_path, duration=duration)
             rms = librosa.feature.rms(y=y)[0]

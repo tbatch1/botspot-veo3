@@ -4,12 +4,45 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2, Sparkles, Film, Lightbulb, Pencil, Save, X, Target, Eye, Camera } from 'lucide-react';
 
+interface BrandCard {
+    brand_name?: string;
+    what_it_is?: string;
+    category?: string;
+    target_audience?: string;
+    core_promise?: string;
+    key_benefits?: string[];
+    key_features?: string[];
+    differentiators?: string[];
+    proof_points?: string[];
+    constraints?: string[];
+    compliance_notes?: string[];
+    creative_angle?: string;
+    visual_motifs?: string[];
+    call_to_action?: string;
+}
+
+interface AppliedPreferences {
+    style?: string | string[];
+    mood?: string | string[];
+    platform?: string | string[];
+    commercial_style?: string;
+    camera_style?: string | string[];
+    lighting_preference?: string;
+    color_grade?: string;
+    url?: string;
+    [key: string]: unknown;
+}
+
 interface Strategy {
     core_concept?: string;
     visual_language?: string;
     narrative_arc?: string;
     audience_hook?: string;
     cinematic_direction?: Record<string, unknown>;
+    product_name?: string;
+    brand_card?: BrandCard;
+    brand_summary?: string;
+    applied_preferences?: AppliedPreferences;
 }
 
 interface Scene {
@@ -116,6 +149,10 @@ export default function StrategyReviewCard({ strategy, script, onApprove, isVisi
         setEditedLines(newLines);
     };
 
+    const clearVoiceover = () => {
+        setEditedLines([]);
+    };
+
     const updateScenePrompt = (index: number, newPrompt: string) => {
         const newScenes = [...editedScenes];
         newScenes[index] = { ...newScenes[index], visual_prompt: newPrompt };
@@ -130,6 +167,17 @@ export default function StrategyReviewCard({ strategy, script, onApprove, isVisi
 
     // Calculate total duration
     const totalDuration = editedScenes.reduce((sum, s) => sum + s.duration, 0);
+
+    const brandCard = editedStrategy.brand_card || {};
+    const appliedPreferences = editedStrategy.applied_preferences || {};
+    const resolvedBrandName = brandCard.brand_name || editedStrategy.product_name;
+
+    const formatPrefValue = (value: unknown) => {
+        if (!value) return '';
+        if (Array.isArray(value)) return value.join(', ');
+        if (typeof value === 'string') return value;
+        return String(value);
+    };
 
     return (
         <motion.div
@@ -175,6 +223,98 @@ export default function StrategyReviewCard({ strategy, script, onApprove, isVisi
                     Approval Gate 1
                 </span>
             </div>
+
+            {/* Brand Grounding + Dropdown Echo (Demo-proofing) */}
+            {(resolvedBrandName || editedStrategy.brand_summary || Object.keys(appliedPreferences).length > 0) && (
+                <div className="mb-6 p-5 bg-slate-800/40 rounded-xl border border-slate-700/40">
+                    <div className="flex items-center gap-2 mb-3">
+                        <Target className="w-5 h-5 text-emerald-400" />
+                        <h3 className="text-lg font-bold text-emerald-300">Brand Grounding</h3>
+                        {resolvedBrandName && (
+                            <span className="ml-2 px-2.5 py-1 bg-emerald-500/15 text-emerald-200 text-xs rounded-full border border-emerald-500/30">
+                                {resolvedBrandName}
+                            </span>
+                        )}
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                        {brandCard.what_it_is && (
+                            <div className="text-slate-300">
+                                <span className="text-slate-400">What it is:</span> {brandCard.what_it_is}
+                            </div>
+                        )}
+                        {brandCard.target_audience && (
+                            <div className="text-slate-300">
+                                <span className="text-slate-400">Target:</span> {brandCard.target_audience}
+                            </div>
+                        )}
+                        {brandCard.core_promise && (
+                            <div className="text-slate-300">
+                                <span className="text-slate-400">Promise:</span> {brandCard.core_promise}
+                            </div>
+                        )}
+                        {brandCard.call_to_action && (
+                            <div className="text-slate-300">
+                                <span className="text-slate-400">CTA:</span> {brandCard.call_to_action}
+                            </div>
+                        )}
+                    </div>
+
+                    {editedStrategy.brand_summary && (
+                        <p className="mt-3 text-slate-300 italic border-l-2 border-emerald-500/40 pl-3">
+                            &ldquo;{editedStrategy.brand_summary}&rdquo;
+                        </p>
+                    )}
+
+                    <div className="mt-4 flex flex-wrap gap-2">
+                        {appliedPreferences.style && (
+                            <span className="px-2 py-1 bg-slate-900/40 text-slate-200 text-xs rounded border border-slate-700/40">
+                                Style: {formatPrefValue(appliedPreferences.style)}
+                            </span>
+                        )}
+                        {appliedPreferences.mood && (
+                            <span className="px-2 py-1 bg-slate-900/40 text-slate-200 text-xs rounded border border-slate-700/40">
+                                Mood: {formatPrefValue(appliedPreferences.mood)}
+                            </span>
+                        )}
+                        {appliedPreferences.platform && (
+                            <span className="px-2 py-1 bg-slate-900/40 text-slate-200 text-xs rounded border border-slate-700/40">
+                                Platform: {formatPrefValue(appliedPreferences.platform)}
+                            </span>
+                        )}
+                        {appliedPreferences.commercial_style && (
+                            <span className="px-2 py-1 bg-slate-900/40 text-slate-200 text-xs rounded border border-slate-700/40">
+                                Template: {formatPrefValue(appliedPreferences.commercial_style)}
+                            </span>
+                        )}
+                        {appliedPreferences.camera_style && (
+                            <span className="px-2 py-1 bg-slate-900/40 text-slate-200 text-xs rounded border border-slate-700/40">
+                                Camera: {formatPrefValue(appliedPreferences.camera_style)}
+                            </span>
+                        )}
+                        {appliedPreferences.lighting_preference && (
+                            <span className="px-2 py-1 bg-slate-900/40 text-slate-200 text-xs rounded border border-slate-700/40">
+                                Lighting: {formatPrefValue(appliedPreferences.lighting_preference)}
+                            </span>
+                        )}
+                        {appliedPreferences.color_grade && (
+                            <span className="px-2 py-1 bg-slate-900/40 text-slate-200 text-xs rounded border border-slate-700/40">
+                                Grade: {formatPrefValue(appliedPreferences.color_grade)}
+                            </span>
+                        )}
+                        {appliedPreferences.url && (
+                            <a
+                                href={String(appliedPreferences.url)}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="px-2 py-1 bg-cyan-500/10 text-cyan-300 text-xs rounded border border-cyan-500/30 hover:bg-cyan-500/20 transition-colors"
+                            >
+                                URL: {String(appliedPreferences.url)}
+                            </a>
+                        )}
+                    </div>
+                </div>
+            )}
 
             {/* CREATIVE THESIS - New prominent summary */}
             <div className="mb-6 p-5 bg-gradient-to-r from-purple-900/40 to-blue-900/40 rounded-xl border border-purple-500/30">
@@ -347,10 +487,23 @@ export default function StrategyReviewCard({ strategy, script, onApprove, isVisi
                             Voiceover Script
                             {isEditing && <span className="text-xs text-amber-400 ml-2">(Click to edit)</span>}
                         </h3>
-                        <AIControlToggle 
-                            mode={voAIMode} 
-                            onToggle={() => setVoAIMode(voAIMode === 'enhance' ? 'exact' : 'enhance')}
-                        />
+                        <div className="flex items-center gap-2">
+                            {isEditing && (
+                                <button
+                                    type="button"
+                                    onClick={clearVoiceover}
+                                    className="inline-flex items-center gap-2 px-3 py-1.5 bg-red-500/15 text-red-300 text-xs rounded border border-red-500/30 hover:bg-red-500/25 transition-colors"
+                                    title="Remove all voiceover lines (no VO)"
+                                >
+                                    <X className="w-3 h-3" />
+                                    Remove VO
+                                </button>
+                            )}
+                            <AIControlToggle 
+                                mode={voAIMode} 
+                                onToggle={() => setVoAIMode(voAIMode === 'enhance' ? 'exact' : 'enhance')}
+                            />
+                        </div>
                     </div>
                     <div className="space-y-2 max-h-48 overflow-y-auto">
                         {editedLines.map((line, idx) => (
