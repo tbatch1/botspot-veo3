@@ -42,5 +42,11 @@ cache/
 assets/images/*.png
 assets/videos/*.mp4
 assets/audio/vo_*.mp3
+assets/audio/vo_*.wav
 assets/audio/sfx_*.mp3
 assets/audio/bgm_*.mp3
+assets/audio/preview_*.mp3
+assets/qrcodes/
+assets/user_uploads/*.png
+backend/package-lock.json
+nul
