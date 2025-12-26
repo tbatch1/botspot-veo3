@@ -44,6 +44,10 @@ class ScriptLine(BaseModel):
         None,
         description="Optional ElevenLabs voice_id override for this line (UI-selectable).",
     )
+    voice_style: Optional[str] = Field(
+        None,
+        description="Emotive style instructions for the voice actor (e.g. 'excited', 'whispering').",
+    )
     scene_id: Optional[int] = Field(
         None,
         description="Scene id this line should sync to (helps keep dialogue on the correct visual).",

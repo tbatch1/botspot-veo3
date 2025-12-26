@@ -315,3 +315,104 @@ class GoogleVideoProvider(VideoProvider):
         """Generate a video via Veo using predictLongRunning + fetchPredictOperation polling."""
         operation_name = self.submit_async(image_path=image_path, prompt=prompt, duration=duration)
         return self.poll_task(operation_name=operation_name, prompt=prompt)
+
+    def extend_video(self, video_path: str, prompt: str, extension_seconds: int = 7) -> str:
+        """
+        Extend an existing video by adding more seconds.
+        
+        Per Veo 3.1 docs:
+        - Each extension adds up to 7 seconds
+        - Input video can be extended multiple times
+        
+        Args:
+            video_path: Path to existing video
+            prompt: Motion/continuation prompt
+            extension_seconds: Seconds to add (default 7)
+            
+        Returns:
+            Path to the extended video file
+        """
+        if not os.path.exists(video_path):
+            raise FileNotFoundError(f"Video not found: {video_path}")
+        
+        token = self._get_token()
+        headers = {
+            "Authorization": f"Bearer {token}",
+            "Content-Type": "application/json; charset=utf-8"
+        }
+        
+        import base64
+        with open(video_path, "rb") as f:
+            video_b64 = base64.b64encode(f.read()).decode("utf-8")
+        
+        instances = [{
+            "prompt": prompt,
+            "video": {
+                "bytesBase64Encoded": video_b64,
+                "mimeType": "video/mp4"
+            }
+        }]
+        
+        parameters = {
+            "sampleCount": 1,
+            "extensionDurationSeconds": extension_seconds,
+            "aspectRatio": "16:9",
+            "resolution": "1080p",
+            "generateAudio": bool(self._generate_audio),
+        }
+        if self._seed is not None:
+            parameters["seed"] = self._seed
+        
+        payload = {"instances": instances, "parameters": parameters}
+        
+        print(f"[VEO EXTEND] Extending video by {extension_seconds}s...")
+        
+        response = requests.post(self.api_endpoint, headers=headers, json=payload)
+        if response.status_code != 200:
+            raise Exception(f"Veo Extend Error: {response.text}")
+        
+        data = response.json()
+        operation_name = data.get("name")
+        if not operation_name:
+            raise Exception(f"No operation in extend response: {data}")
+        
+        extended_prompt = f"{prompt}_ext_{int(time.time())}"
+        return self.poll_task(operation_name=operation_name, prompt=extended_prompt)
+
+    def generate_long_video(self, prompt: str, image_path: str = None, target_duration: int = 15) -> str:
+        """
+        Generate a long continuous video using Veo Extend.
+        
+        Strategy: Generate 8s clip, then extend to reach target.
+        
+        Args:
+            prompt: Visual prompt
+            image_path: Optional starting image
+            target_duration: Desired duration in seconds
+            
+        Returns:
+            Path to final video
+        """
+        initial = min(8, target_duration)
+        print(f"[VEO LONG] Generating {initial}s initial clip...")
+        video_path = self.generate_video(prompt=prompt, image_path=image_path, duration=initial)
+        
+        current = initial
+        max_ext = 3
+        
+        for i in range(max_ext):
+            if current >= target_duration:
+                break
+            remain = min(7, target_duration - current)
+            if remain < 2:
+                break
+            try:
+                print(f"[VEO LONG] Extending +{remain}s...")
+                video_path = self.extend_video(video_path, f"Continue: {prompt}", remain)
+                current += remain
+            except Exception as e:
+                print(f"[VEO LONG] Extension failed: {e}")
+                break
+        
+        print(f"[VEO LONG] Final: {current}s")
+        return video_path

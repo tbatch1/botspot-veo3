@@ -3,7 +3,9 @@ import os
 import time
 from .state import ProjectState
 from .providers.researcher import ResearcherProvider
+from .providers.researcher import ResearcherProvider
 from .providers.spatial_reasoning import SpatialReasoningProvider
+from .providers.agency_director import AgencyDirector
 from .config import config
 from .parallel_utils import (
     ParallelImageGenerator,
@@ -11,6 +13,7 @@ from .parallel_utils import (
     ParallelVideoGenerator,
 )
 from .utils.style_detector import StyleDetector
+from .showroom import publish_render
 
 class AdGenerator:
     """The Orchestrator."""
@@ -24,7 +27,9 @@ class AdGenerator:
         # Strict demo foundation: GPT-5.2 handles all logic side.
         # Other LLM providers are intentionally disabled/unused.
         self.spatial = SpatialReasoningProvider()
+        self.spatial = SpatialReasoningProvider()
         self.researcher = ResearcherProvider()
+        self.agency = AgencyDirector()
 
     @staticmethod
     def _parse_duration_seconds(value, default_seconds: int = 15) -> int:
@@ -86,6 +91,64 @@ class AdGenerator:
         # ~2.7 words/sec + a small constant for breath/punctuation.
         seconds = (len(words) / 2.7) + 0.2
         return max(0.6, min(seconds, 3.8))
+
+    def _adjust_scene_durations_for_audio(self) -> None:
+        """
+        AUDIO-FIRST TIMING: Adjust scene durations based on actual TTS length.
+        
+        1. Measure actual VO duration for each line
+        2. Store as line.actual_duration
+        3. Adjust scene durations using timing_engine
+        4. Snap to beat grid if available
+        
+        Called AFTER TTS generation, BEFORE video generation.
+        """
+        if not self.state or not self.state.script:
+            return
+        
+        scenes = getattr(self.state.script, "scenes", []) or []
+        lines = getattr(self.state.script, "lines", []) or []
+        
+        if not scenes or not lines:
+            return
+        
+        import os
+        
+        # Step 1: Measure actual duration for each line
+        try:
+            from .utils.timing_engine import probe_audio_duration
+            
+            for line in lines:
+                audio_path = getattr(line, "audio_path", None)
+                if audio_path and os.path.exists(str(audio_path)):
+                    duration = probe_audio_duration(str(audio_path))
+                    line.actual_duration = duration
+                    if duration > 0:
+                        print(f"   [VO MEASURED] Line: {duration:.2f}s")
+                else:
+                    line.actual_duration = 0.0
+        except Exception as e:
+            self.state.add_log(f"[WARN] VO duration measurement failed: {str(e)}")
+            return
+        
+        # Step 2: Adjust scene durations using timing engine
+        try:
+            from .utils.timing_engine import adjust_scene_durations
+            
+            beat_grid = getattr(self.state, "beat_grid", None)
+            
+            adjusted_scenes = adjust_scene_durations(
+                scenes=scenes,
+                lines=lines,
+                beat_grid=beat_grid,
+                vo_buffer=0.5,
+                min_scene_duration=4.0
+            )
+            
+            self.state.script.scenes = adjusted_scenes
+            self.state.add_log("[AUDIO-FIRST] Scene durations adjusted for VO fit")
+        except Exception as e:
+            self.state.add_log(f"[WARN] Scene adjustment failed: {str(e)}")
 
     def _auto_fit_voiceover_lines(self, eleven, strategy: dict | None = None) -> None:
         """
@@ -1114,12 +1177,39 @@ class AdGenerator:
             raise RuntimeError("GPT-5.2 is required for planning. Set OPENAI_API_KEY in the root .env file.")
 
         self.state.add_log("[GPT-5.2] Running full creative direction...")
-        strategy, script_data = self.spatial.full_creative_direction(
-            topic=user_input,
-            website_data=website_data,
-            constraints=config_overrides or {},
-            target_duration=target_duration,
-        )
+        
+        # [AGENCY DIRECTOR PIPELINE]
+        # Attempt to use the new 4-step Agency Director. 
+        # If it fails (or isn't available), fall back to the legacy single-shot Spatial Reasoning.
+        strategy = None
+        script_data = None
+        
+        try:
+            if self.agency.is_available():
+                self.state.add_log("[AGENCY] Engaging Agency Director (4-Step Pipeline)...")
+                strategy, script_data = self.agency.run_pipeline(
+                    topic=user_input,
+                    website_data=website_data,
+                    constraints=config_overrides or {},
+                    target_duration=target_duration
+                )
+                self.state.add_log("[AGENCY] Pipeline execution successful.")
+        except Exception as e:
+            print(f"[AGENCY] Pipeline failed ({type(e).__name__}): {e}")
+            self.state.add_log(f"[WARN] Agency Director failed. Falling back to legacy brain. Error: {e}")
+            strategy = None
+            script_data = None
+            
+        if not strategy or not script_data:
+            if self.agency.is_available(): # Only log if we TRIED agency and failed/skipped
+                 self.state.add_log("[FALLBACK] Running legacy Spatial Reasoning...")
+            
+            strategy, script_data = self.spatial.full_creative_direction(
+                topic=user_input,
+                website_data=website_data,
+                constraints=config_overrides or {},
+                target_duration=target_duration,
+            )
 
         scene_count = len(script_data.get("scenes", [])) if isinstance(script_data, dict) else 0
         if scene_count == 0:
@@ -1132,7 +1222,28 @@ class AdGenerator:
         from .state import Script, Scene, ScriptLine
         if isinstance(script_data, dict):
             scenes = [Scene(**s) if isinstance(s, dict) else s for s in script_data.get('scenes', [])]
-            lines = [ScriptLine(**l) if isinstance(l, dict) else l for l in script_data.get('lines', [])]
+            
+            # Map speaker names to voice styles for emotive TTS
+            char_map = {}
+            for ch in (strategy.get("characters") or []):
+                if isinstance(ch, dict):
+                    name = str(ch.get("name") or "").strip()
+                    style = str(ch.get("voice_style") or "").strip()
+                    if name and style:
+                        char_map[name] = style
+
+            lines = []
+            for l in script_data.get('lines', []):
+                if isinstance(l, dict):
+                    # Inject voice_style if missing
+                    if not l.get("voice_style"):
+                        sp = str(l.get("speaker") or "").strip()
+                        if sp in char_map:
+                            l["voice_style"] = char_map[sp]
+                    lines.append(ScriptLine(**l))
+                else:
+                    lines.append(l)
+
             script = Script(scenes=scenes, lines=lines)
         else:
             script = script_data
@@ -1568,11 +1679,35 @@ class AdGenerator:
 
             try:
                 start_time = time.time()
-                # If the plan didn't set voice_ids, always apply a default routed voice so demo VO
-                # doesn't fall back to a random/robotic system voice.
+                # Smart voice selection using voice_router
+                from .providers.voice_router import select_voice
+                
+                # Get mood/style from strategy for voice matching
+                mood = ""
+                style = ""
+                if isinstance(self.state.strategy, dict):
+                    prefs = self.state.strategy.get("applied_preferences", {})
+                    if isinstance(prefs, dict):
+                        mood = str(prefs.get("mood") or "").strip()
+                        style = str(prefs.get("style") or "").strip()
+                
                 for line in (self.state.script.lines or []):
                     if not getattr(line, "voice_id", None):
-                        line.voice_id = os.getenv("DEFAULT_TTS_VOICE", "openai:verse")
+                        # Use voice_hint from script if available
+                        voice_hint = getattr(line, "voice_hint", None)
+                        speaker = getattr(line, "speaker", "Narrator")
+                        selected_voice = select_voice(
+                            speaker=speaker,
+                            voice_hint=voice_hint,
+                            mood=mood,
+                            style=style
+                        )
+                        if selected_voice:
+                            line.voice_id = selected_voice
+                        else:
+                            # Silent scene - no voice needed
+                            line.voice_id = None
+
 
                 parallel_audio = ParallelAudioGenerator(tts, self.state)
                 vo_results = parallel_audio.generate_vo_batch(self.state.script.lines)
@@ -1604,6 +1739,12 @@ class AdGenerator:
                 self._auto_fit_voiceover_lines(tts, strategy=self.state.strategy if isinstance(self.state.strategy, dict) else None)
             except Exception as e:
                 self.state.add_log(f"[WARN] VO fit pass skipped: {str(e)}")
+
+            # AUDIO-FIRST TIMING: Adjust scene durations to fit audio
+            try:
+                self._adjust_scene_durations_for_audio()
+            except Exception as e:
+                self.state.add_log(f"[WARN] Audio-first timing skipped: {str(e)}")
 
             # Demo integrity: never proceed to SFX/BGM/video assembly if VO is missing.
             # A missing VO track yields a "random noises" output that looks broken to clients.
@@ -1674,10 +1815,25 @@ class AdGenerator:
                 self.state.bgm_path = None
                 try:
                     bgm_prompt = ""
+                    
+                    # Try to use music_direction from the new Creative Agency pipeline
                     if isinstance(self.state.strategy, dict):
-                        audio_sig = self.state.strategy.get("audio_signature")
-                        if isinstance(audio_sig, dict):
-                            bgm_prompt = str(audio_sig.get("bgm_prompt") or "").strip()
+                        music_dir = self.state.strategy.get("music_direction")
+                        if isinstance(music_dir, dict):
+                            # Build a rich BGM prompt from music direction
+                            genre = music_dir.get("genre", "cinematic")
+                            energy = music_dir.get("energy_curve", "build to climax")
+                            bpm = music_dir.get("bpm_feel", "medium")
+                            vibe = music_dir.get("vibe_keywords", "powerful")
+                            
+                            bgm_prompt = f"{genre} instrumental, {vibe}, {bpm} tempo, {energy} energy"
+                            print(f"   [MUSIC DIRECTOR] Using rich prompt: {bgm_prompt}")
+                        else:
+                            # Fallback to audio_signature
+                            audio_sig = self.state.strategy.get("audio_signature")
+                            if isinstance(audio_sig, dict):
+                                bgm_prompt = str(audio_sig.get("bgm_prompt") or "").strip()
+                    
                     if not bgm_prompt:
                         # Fallback: derive from mood + template if GPT didn't provide it.
                         mood = ""
@@ -1685,7 +1841,8 @@ class AdGenerator:
                             prefs = self.state.strategy.get("applied_preferences")
                             if isinstance(prefs, dict):
                                 mood = str(prefs.get("mood") or "").strip()
-                        bgm_prompt = (mood or "cinematic").strip()
+                        bgm_prompt = f"{mood or 'cinematic'} instrumental music, professional, high quality"
+                    
                     bgm_path = eleven.generate_bgm(bgm_prompt, duration=total_seconds)
                     if bgm_path and os.path.exists(bgm_path):
                         self.state.bgm_path = bgm_path
@@ -1695,6 +1852,21 @@ class AdGenerator:
                 except Exception as e:
                     print(f"   [WARN] BGM generation skipped/failed: {e}")
                     self.state.add_log(f"[WARN] BGM generation failed: {str(e)}")
+
+            # === AUDIO-FIRST: Extract beat grid from BGM ===
+            self.state.beat_grid = None
+            if self.state.bgm_path and os.path.exists(self.state.bgm_path):
+                try:
+                    from .utils.beat_detector import extract_beat_grid
+                    self.state.beat_grid = extract_beat_grid(
+                        self.state.bgm_path,
+                        duration=total_seconds,
+                        fallback_bpm=120
+                    )
+                    self.state.add_log(f"[BEAT] Grid extracted: {self.state.beat_grid.get('bpm', 0):.0f} BPM")
+                except Exception as e:
+                    print(f"   [WARN] Beat detection failed: {e}")
+                    self.state.add_log(f"[WARN] Beat detection failed: {str(e)}")
 
             self.save_state()
 
@@ -2353,7 +2525,16 @@ class AdGenerator:
             print("="*80 + "\n")
 
             self.state.status = "completed"
-            self.state.add_log("[APPROVAL_GATE_3] Final assembly complete!")
+            self.state.add_log("[COMPLETED] Final video assembled successfully")
+            
+            # [SHOWROOM] Auto-publish
+            try:
+                self.state.add_log("[SHOWROOM] Publishing to showroom manifest...")
+                publish_render(self.state.id, self.state.final_video_path)
+            except Exception as e:
+                print(f"[WARN] Showroom publish failed: {e}")
+                self.state.add_log(f"[WARN] Showroom publish failed: {e}")
+
             self.save_state()
 
         except Exception as e:
@@ -2377,6 +2558,7 @@ class AdGenerator:
         include_sfx: bool = False,
         include_bgm: bool = False,
         bgm_prompt: str | None = None,
+        sfx_style: str | None = None,
         speaker_voice_map: dict[str, str] | None = None,
     ) -> None:
         """
@@ -2447,9 +2629,23 @@ class AdGenerator:
         elapsed = time.time() - start_time
         self.state.add_log(f"[PERFORMANCE] VO remix: {elapsed:.1f}s")
 
-        # Optional SFX (uses scene.audio_prompt when present).
+        # Optional SFX (uses scene.audio_prompt when present, or derives from sfx_style).
         if include_sfx:
+            # Map sfx_style to default prompts
+            sfx_style_prompts = {
+                "cinematic": "cinematic transition, subtle whoosh, dramatic impact",
+                "minimal": "soft, subtle transition sound",
+                "punchy": "punchy impact hit, bass thump, energy burst",
+                "whoosh": "smooth whoosh sound, air movement, transition",
+                "tech": "digital glitch, futuristic beep, tech transition",
+                "none": None,
+            }
+            default_sfx_prompt = sfx_style_prompts.get(sfx_style or "cinematic", sfx_style_prompts["cinematic"])
+            
             for scene in self.state.script.scenes or []:
+                # Use existing audio_prompt or apply default from sfx_style
+                if not getattr(scene, "audio_prompt", None) and default_sfx_prompt:
+                    scene.audio_prompt = default_sfx_prompt
                 if getattr(scene, "audio_prompt", None):
                     scene.sfx_path = None
             try:
